@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Adetutu Aderogba">
+    <meta name="description" content="The official website for AEMBANK Website">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>African Extractive Minerals Development Bank (AEMBANK)</title>
+    <link rel="icon" href="images/Untitled-3.png" type="image/png">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <header class="header" id="header">
+        <a href="index.html">
+            <img src="images/MagicEraser_240731_182314.PNG" alt="Logo" class="logo">
+        </a>
+        <div class="group">
+            <nav>
+                <ul class="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <div>
+                        <li class="gallery-dropdown">
+                            <a href="#" onclick="toggleDropdown(event)">Services</a>
+                            <ul class="dropdown-menu">
+                                <!-- <img src="images/AEMBankLogo.png" alt="" width="200" height="200"> -->
+                                <li><a href="service.html">All Services</a>
+                                <li><a href="advisory.html">Advisory Services</a></li>
+                                <li><a href="development.html">Development Finance</a></li>
+                                <li><a href="trade.html">Trade Finance</a></li>
+                            </ul>
+                        </li>
+                    </div>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="search">
+                <span class="icon">
+                    <ion-icon name="search-outline" class="searchBtn"></ion-icon>
+                    <ion-icon name="close-outline" class="closeBtn"></ion-icon>
+                </span>
+            </div>
+            <ion-icon name="menu-outline" class="menuToggle"></ion-icon>
+        </div>
+        <div class="searchBox">
+            <input type="text" id="input-box" placeholder="Search Anything" autocomplete="off">
+        </div>
+        <div class="result-box"></div>
+        <div class="header__line" id="headerLine"></div>
+    </header>
+
+    <div class="container5">
+        <section class="about">
+            <div class="about-text1">
+                <h1>About Us</h1>
+                <p>The African Extractive Minerals Development Bank (AEMBANK) is a specialized multilateral financial
+                    institution whose main objective is to
+                    bridge the funding deficit which has caused the underdevelopment of the extractive minerals value chain in Continental
+                    African countries. Our goal is to encourage indigenous participation in the African extractive minerals sector
+                    by providing
+                    necessary access to funding.</p>
+            </div>
+            <div class="main">
+                <img src="images/vecteezy_businessman-hand-draws-business-success-chart_5245507.jpg">
+                <div class="about-text">
+                    <h5>Our <span>Mission</span></h5>
+                    <p>Our mission is to become Africa’s leading extractive minerals infrastructure financier, combining
+                        its strong local knowledge
+                        with a high quality balance sheet to deploy more investments across the continent’s blue
+                        economy. The bank’s
+                        investment philosophy prioritizes projects within the extractive minerals value chain that offer high
+                        developmental impact
+                        and competitive returns in its chosen markets.</p>
+                    <button type="button"><a href="learn.html#mission">Learn More</a></button>
+                </div>
+            </div>
+        </section>
+        <section class="about1">
+            <div class="main">
+                <div class="about-text">
+                    <h5>Our <span>Vision</span></h5>
+                    <p>
+                        Our vision is to establish ourselves as the preeminent provider of innovative and tailored
+                        financing solutions
+                        for operators within the African extractive minerals value chain. We are committed to supporting
+                        the growth and
+                        modernization of the extractive minerals sector through strategic financial partnerships,
+                        enabling stakeholders to navigate
+                        the complexities of the industry with confidence. By leveraging our deep industry expertise and
+                        comprehensive
+                        understanding of the unique challenges faced by extractive minerals operators, we aim to foster
+                        sustainable development,
+                        enhance operational efficiency, and drive economic prosperity across the African continent.</p>
+                    <button type="button"><a href="learn.html#vision">Learn More</a></button>
+                </div>
+                <img src="images/vecteezy_landscape-seen-through-the-lens-ball_2314822.jpg">
+            </div>
+        </section>
+        <section class="about">
+            <div class="main">
+                <img src="images/vecteezy_han-putting-the-biggest-target-board-on-wooden-block-for_6932834.jpg">
+                <div class="about-text">
+                    <h5>Core <span>Values</span></h5>
+                    <p>At AEMBANK, our core values guide our mission. Integrity ensures transparency and honesty.
+                        Teamwork fosters
+                        collaboration and diverse perspectives. Innovation drives creative solutions. We prioritize
+                        delivering quality
+                        and exceeding expectations. Accountability means we take responsibility for our actions.
+                        Commitment to
+                        stakeholders ensures we create lasting value for all.</p>
+                    <button type="button"><a href="learn.html#core">Learn More</a></button>
+                </div>
+            </div>
+        </section>
+        <section class="about1">
+            <div class="main">
+                <div class="about-text">
+                    <h5>Continental <span>Coverage</span></h5>
+                    <p> By leveraging local expertise and fostering
+                        partnerships with governments, businesses, and financial institutions, AEMBANK aims to drive
+                        economic growth,
+                        enhance infrastructure, and promote sustainable practices throughout Africa. Our comprehensive
+                        approach is
+                        designed to unlock the full potential of the continent's rich natural resources and strategic
+                        extractive
+                        minerals routes, contributing to long-term prosperity and development.</p>
+                    <button type="button"><a href="learn.html#region">Learn More</a></button>
+                </div>
+                <img src="images/opeyemi-adisa-cFT_Xq4XyA0-unsplash.jpg">
+            </div>
+        </section>
+        <section class="about">
+            <div class="main">
+                <img src="images/vecteezy_senior-committee-manager-reading-a-resume-during-a-job_1309421.jpg">
+                <div class="about-text">
+                    <h5>Board of <span>Directors</span></h5>
+                    <p id="governance">The Board of Directors has ultimate responsibility for policy formulation,
+                        strategy and decision
+                        making, with
+                        specific authority delegated to three subsidiary committees and Executive Management for
+                        day-to-day operations.
+                    </p>
+                    <button type="button"><a href="learn.html#board">Learn More</a></button>
+                </div>
+            </div>
+        </section>
+        <section class="about1">
+            <div class="main">
+                <div class="about-text">
+                    <h5>Corporate <span>Governance</span></h5>
+                    <p> The Bank has categories of shareholders, namely:
+                        CLASS “A” (made up of African governments), CLASS “B” (made up of African private investors and
+                        institutions), and CLASS “C”
+                        (made up of non-West & Central African institutions, export credit agencies and private
+                        investors).
+                    </p>
+                </div>
+                <img src="images/vecteezy_african-american-businessman-using-computer-with-expertis_32934129.jpg">
+            </div>
+        </section>
+    </div>
+
+    <div id="section3">
+        <footer class="footer">
+            <div class="containerr">
+                <div class="roww">
+                    <div class="footer-col">
+                        <h4>company overview</h4>
+                        <ul>
+                            <li><a href="#">about us</a></li>
+                            <li><a href="service.html">our services</a></li>
+                            <li><a href="privacy.html">privacy policy</a></li>
+                            <li><a href="index.html#customerprofile">customer profile</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>mission & activities</h4>
+                        <ul>
+                            <li><a href="company.html">company history</a></li>
+                            <li><a href="company.html#need">need for bank</a></li>
+                            <li><a href="contact.html">contact us</a></li>
+                        </ul>
+                    </div>
+                    <!-- <div class="footer-col">
+                        <h4>follow us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <div>
+                <p>&copy; 2024 CLG Securities Limited. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        let searchBtn = document.querySelector('.searchBtn');
+        let closeBtn = document.querySelector('.closeBtn');
+        let searchBox = document.querySelector('.searchBox');
+        let navigation = document.querySelector('.navigation');
+        let menuToggle = document.querySelector('.menuToggle');
+        let header = document.querySelector('header');
+
+        searchBtn.onclick = function () {
+            searchBox.classList.add('active');
+            closeBtn.classList.add('active');
+            searchBtn.classList.add('active');
+            menuToggle.classList.add('hide');
+            header.classList.remove('open');
+        }
+
+        closeBtn.onclick = function () {
+            if (searchBox.classList.contains('active')) {
+                searchBox.classList.remove('active');
+                closeBtn.classList.remove('active');
+                searchBtn.classList.remove('active');
+                menuToggle.classList.remove('hide');
+            } else {
+                header.classList.remove('open');
+                closeBtn.classList.remove('active');
+                menuToggle.classList.remove('hide');
+            }
+        }
+
+        menuToggle.onclick = function () {
+            header.classList.toggle('open');
+            closeBtn.classList.toggle('active');
+            searchBtn.classList.remove('active');
+            menuToggle.classList.toggle('hide');
+        }
+    </script>
+
+    <script>
+        window.addEventListener('scroll', function () {
+            const header = document.getElementById('header');
+            const headerLine = document.getElementById('headerLine');
+
+            if (window.scrollY > 0) {
+                header.classList.add('scrolled');
+                headerLine.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+                headerLine.classList.remove('scrolled');
+            }
+        });
+
+        function toggleDropdown(event) {
+            event.preventDefault();
+            var dropdownContent = event.target.nextElementSibling; // Get the next sibling (dropdown menu)
+            dropdownContent.style.display = (dropdownContent.style.display === 'block') ? 'none' : 'block';
+        }
+
+        // Close the dropdown when clicking outside of it
+        window.onclick = function (event) {
+            var dropdowns = document.querySelectorAll('.gallery-dropdown');
+            for (var i = 0; i < dropdowns.length; i++) {
+                if (!dropdowns[i].contains(event.target)) {
+                    var dropdownContent = dropdowns[i].querySelector('.dropdown-menu');
+                    dropdownContent.style.display = 'none';
+                }
+            }
+        }
+    </script>
+
+    <script>
+        let availableKeywords = [
+            { name: 'About Us', url: 'about.html' },
+            { name: 'Advisory Services', url: 'advisory.html' },
+            { name: 'Asset Disposal', url: 'advisory.html#asset-disposal' },
+            { name: 'Board of Directors', url: 'learn.html#board' },
+            { name: 'Capital Raising', url: 'advisory.html#capital-raising' },
+            { name: 'Company History', url: 'company.html' },
+            { name: 'Contact Us', url: 'contact.html' },
+            { name: 'Continental Coverage', url: 'index.html#section1' },
+            { name: 'Core Values', url: 'learn.html#values' },
+            { name: 'Corporate Finance', url: 'development.html#corporate-finance' },
+            { name: 'Corporate Governance', url: 'about.html#governance' },
+            { name: 'Customer Profile', url: 'index.html#customerprofile' },
+            { name: 'Development Finance', url: 'development.html' },
+            { name: 'Divestments & Unbundling', url: 'advisory.html#divestments' },
+            { name: 'Discounting', url: 'trade.html#lc-financing' },
+            { name: 'ECA Financing', url: 'trade.html#eca-financing' },
+            { name: 'Expansion Finance', url: 'development.html#expansion-finance' },
+            { name: 'Factoring/Forfaiting', url: 'trade.html#lc-financing' },
+            { name: 'Guarantees', url: 'development.html#guarantees' },
+            { name: 'Home', url: 'index.html' },
+            { name: 'IPOs', url: 'advisory.html#ipos' },
+            { name: 'LC Financing', url: 'trade.html#lc-financing' },
+            { name: 'Leveraged Finance', url: 'development.html#leveraged-finance' },
+            { name: 'Mezzanine/Structured Debt', url: 'developmental.html#mezzanine' },
+            { name: 'Need for Bank', url: 'company.html#need' },
+            { name: 'Notes Purchases', url: 'trade.html#notes-purchases' },
+            { name: 'Our Mission', url: 'learn.html#mission' },
+            { name: 'Our Vision', url: 'learn.html#vision' },
+            { name: 'Policy & Technical', url: 'advisory.html#capital-raising' },
+            { name: 'PPP', url: 'development.html#ppp' },
+            { name: 'Principal Investing', url: 'development.html#corporate-finance' },
+            { name: 'Privacy Policy', url: 'privacy.html' },
+            { name: 'Privatizations', url: 'advisory.html#privatizations' },
+            { name: 'Project Bond Issuance', url: 'development.html#bond-issuance' },
+            { name: 'Project Development', url: 'advisory.html#capital-raising' },
+            { name: 'Project Finance', url: 'development.html#corporate-finance' },
+            { name: 'Restructuring', url: 'advisory.html#restructuring' },
+            { name: 'Senior Loans/Refinancing', url: 'development.html#senior-loans' },
+            { name: 'Services', url: 'service.html' },
+            { name: 'Syndications', url: 'development.html#syndications' },
+            { name: 'Trade Finance', url: 'trade.html' }
+        ];
+
+        const resultsBox = document.querySelector(".result-box");
+        const inputBox = document.getElementById("input-box");
+
+        inputBox.onkeyup = function () {
+            let result = [];
+            let input = inputBox.value;
+            if (input.length) {
+                result = availableKeywords.filter((keyword) => {
+                    return keyword.name.toLowerCase().includes(input.toLowerCase());
+                });
+            }
+            display(result, input);
+        }
+
+        function display(result, input) {
+            const content = result.map((list) => {
+                const regex = new RegExp(`(${input})`, 'gi');
+                const highlightedName = list.name.replace(regex, '<span class="highlight">$1</span>');
+                return `<li onclick="location.href='${list.url}'">${highlightedName}</li>`;
+            }).join('');
+
+            resultsBox.innerHTML = `<ul>${content}</ul>`;
+            resultsBox.style.display = result.length ? 'block' : 'none';
+        }
+
+        document.addEventListener('click', function (event) {
+            const isClickInside = inputBox.contains(event.target) || resultsBox.contains(event.target);
+            if (!isClickInside) {
+                resultsBox.style.display = 'none';
+            }
+        });
+    </script>
+
+</body>
+
+</html>

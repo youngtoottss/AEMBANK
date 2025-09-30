@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Adetutu Aderogba">
+    <meta name="description" content="The official website for AEMBANK Website">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>African Extractive Minerals Development Bank (AEMBANK)</title>
+    <link rel="icon" href="images/Untitled-3.png" type="image/png">
+    <link rel="stylesheet" href="css/service.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <header class="header" id="header">
+        <a href="index.html">
+            <img src="images/MagicEraser_240731_182314.PNG" alt="Logo" class="logo">
+        </a>
+        <div class="group">
+            <nav>
+                <ul class="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <div>
+                        <li class="gallery-dropdown">
+                            <a href="#" onclick="toggleDropdown(event)">Services</a>
+                            <ul class="dropdown-menu">
+                                <!-- <img src="images/AEMBankLogo.png" alt="" width="200" height="200"> -->
+                                <li><a href="service.html">All Services</a>
+                                <li><a href="advisory.html">Advisory Services</a></li>
+                                <li><a href="development.html">Development Finance</a></li>
+                                <li><a href="trade.html">Trade Finance</a></li>
+                            </ul>
+                        </li>
+                    </div>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="search">
+                <span class="icon">
+                    <ion-icon name="search-outline" class="searchBtn"></ion-icon>
+                    <ion-icon name="close-outline" class="closeBtn"></ion-icon>
+                </span>
+            </div>
+            <ion-icon name="menu-outline" class="menuToggle"></ion-icon>
+        </div>
+        <div class="searchBox">
+            <input type="text" id="input-box" placeholder="Search Anything" autocomplete="off">
+        </div>
+        <div class="result-box"></div>
+        <div class="header__line" id="headerLine"></div>
+    </header>
+
+    <div class="container3">
+        <div class="service-wrapper">
+            <div class="service">
+                <h1 class="services_h1">All Services <span></span></h1>
+                <div class="h1paragraph">
+                    <p>At the heart of our mission, we cater to a diverse customer profile including Governments,
+                        Multinationals/Local Corporates, and Indigenous Extractive Minerals Operators. Our service
+                        offerings are designed to address the unique needs of these sectors through specialized
+                        practices in Advisory Services, Development Finance, and Trade Finance. Each of these services
+                        is crafted to enhance the value chain and promote sustainable economic growth within Africa's
+                        extractive minerals industry.</p>
+                </div>
+                <div class="cards">
+                    <a href="advisory.html">
+                        <div class="card3">
+                            <i class="fa-solid fa-comments"></i>
+                            <h2>Advisory Services</h2>
+                            <p>The Advisory Services practice provides comprehensive financial, economic, and strategic
+                                advice to
+                                governments and private companies with complex business problems or disputes with
+                                respect to improving the
+                                extractive minerals value chain. The knowledge, depth and expertise of our extractive
+                                minerals industry
+                                specialized teams is unmatched by any other financial institution in Africa.</p>
+                            <button class="card-button">Learn More</button>
+                        </div>
+                    </a>
+                    <a href="development.html">
+                        <div class="card3">
+                            <i class="fa-solid fa-layer-group"></i>
+                            <h2>Development Finance</h2>
+                            <p>The Development Finance practice adopts a transformative impact-financing approach
+                                towards promoting infrastructure investment and local economic development that retains
+                                value within the African continent. Working with governments, domestic banks and local
+                                businesses, the Bank will design, pilot and test out financing mechanisms and business
+                                models in both public and private sectors that support locally designed public
+                                investments and revenue generating capital investment projects. </p>
+                            <button class="card-button">Learn More</button>
+                        </div>
+                    </a>
+                    <a href="trade.html">
+                        <div class="card3">
+                            <i class="fa-solid fa-user-group"></i>
+                            <h2>Trade Finance</h2>
+                            <p>Trade finance unit offers a comprehensive range of trade finance programs to finance, and
+                                facilitate finance, that will support African trade with the rest of the world.</p>
+                            <button class="card-button">Learn More</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="section3">
+            <footer class="footer">
+                <div class="containerr">
+                    <div class="roww">
+                        <div class="footer-col">
+                            <h4>company overview</h4>
+                            <ul>
+                                <li><a href="about.html">about us</a></li>
+                                <li><a href="#">our services</a></li>
+                                <li><a href="privacy.html">privacy policy</a></li>
+                                <li><a href="index.html#customerprofile">customer profile</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>mission & activities</h4>
+                            <ul>
+                                <li><a href="company.html">company history</a></li>
+                                <li><a href="company.html#need">need for bank</a></li>
+                                <li><a href="contact.html">contact us</a></li>
+                            </ul>
+                        </div>
+                        <!-- <div class="footer-col">
+                            <h4>follow us</h4>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <div>
+                    <p>&copy; 2024 CLG Securities Limited. All rights reserved.</p>
+                </div>
+            </footer>
+        </div>
+
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+        <script>
+            let searchBtn = document.querySelector('.searchBtn');
+            let closeBtn = document.querySelector('.closeBtn');
+            let searchBox = document.querySelector('.searchBox');
+            let navigation = document.querySelector('.navigation');
+            let menuToggle = document.querySelector('.menuToggle');
+            let header = document.querySelector('header');
+
+            searchBtn.onclick = function () {
+                searchBox.classList.add('active');
+                closeBtn.classList.add('active');
+                searchBtn.classList.add('active');
+                menuToggle.classList.add('hide');
+                header.classList.remove('open');
+            }
+
+            closeBtn.onclick = function () {
+                if (searchBox.classList.contains('active')) {
+                    searchBox.classList.remove('active');
+                    closeBtn.classList.remove('active');
+                    searchBtn.classList.remove('active');
+                    menuToggle.classList.remove('hide');
+                } else {
+                    header.classList.remove('open');
+                    closeBtn.classList.remove('active');
+                    menuToggle.classList.remove('hide');
+                }
+            }
+
+            menuToggle.onclick = function () {
+                header.classList.toggle('open');
+                closeBtn.classList.toggle('active');
+                searchBtn.classList.remove('active');
+                menuToggle.classList.toggle('hide');
+            }
+        </script>
+
+        <script>
+            window.addEventListener('scroll', function () {
+                const header = document.getElementById('header');
+                const headerLine = document.getElementById('headerLine');
+                const navigation = document.querySelector('.navigation');
+
+                if (window.scrollY > 0) {
+                    header.classList.add('scrolled');
+                    headerLine.classList.add('scrolled');
+                    navigation.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                    headerLine.classList.remove('scrolled');
+                    navigation.classList.remove('scrolled');
+                }
+            });
+
+            function toggleDropdown(event) {
+                event.preventDefault();
+                var dropdownContent = event.target.nextElementSibling; // Get the next sibling (dropdown menu)
+                dropdownContent.style.display = (dropdownContent.style.display === 'block') ? 'none' : 'block';
+            }
+
+            // Close the dropdown when clicking outside of it
+            window.onclick = function (event) {
+                var dropdowns = document.querySelectorAll('.gallery-dropdown');
+                for (var i = 0; i < dropdowns.length; i++) {
+                    if (!dropdowns[i].contains(event.target)) {
+                        var dropdownContent = dropdowns[i].querySelector('.dropdown-menu');
+                        dropdownContent.style.display = 'none';
+                    }
+                }
+            }
+        </script>
+
+        <script>
+            let availableKeywords = [
+                { name: 'About Us', url: 'about.html' },
+                { name: 'Advisory Services', url: 'advisory.html' },
+                { name: 'Asset Disposal', url: 'advisory.html#asset-disposal' },
+                { name: 'Board of Directors', url: 'learn.html#board' },
+                { name: 'Capital Raising', url: 'advisory.html#capital-raising' },
+                { name: 'Company History', url: 'company.html' },
+                { name: 'Contact Us', url: 'contact.html' },
+                { name: 'Continental Coverage', url: 'index.html#section1' },
+                { name: 'Core Values', url: 'learn.html#values' },
+                { name: 'Corporate Finance', url: 'development.html#corporate-finance' },
+                { name: 'Corporate Governance', url: 'about.html#governance' },
+                { name: 'Customer Profile', url: 'index.html#customerprofile' },
+                { name: 'Development Finance', url: 'development.html' },
+                { name: 'Divestments & Unbundling', url: 'advisory.html#divestments' },
+                { name: 'Discounting', url: 'trade.html#lc-financing' },
+                { name: 'ECA Financing', url: 'trade.html#eca-financing' },
+                { name: 'Expansion Finance', url: 'development.html#expansion-finance' },
+                { name: 'Factoring/Forfaiting', url: 'trade.html#lc-financing' },
+                { name: 'Guarantees', url: 'development.html#guarantees' },
+                { name: 'Home', url: 'index.html' },
+                { name: 'IPOs', url: 'advisory.html#ipos' },
+                { name: 'LC Financing', url: 'trade.html#lc-financing' },
+                { name: 'Leveraged Finance', url: 'development.html#leveraged-finance' },
+                { name: 'Mezzanine/Structured Debt', url: 'developmental.html#mezzanine' },
+                { name: 'Need for Bank', url: 'company.html#need' },
+                { name: 'Notes Purchases', url: 'trade.html#notes-purchases' },
+                { name: 'Our Mission', url: 'learn.html#mission' },
+                { name: 'Our Vision', url: 'learn.html#vision' },
+                { name: 'Policy & Technical', url: 'advisory.html#capital-raising' },
+                { name: 'PPP', url: 'development.html#ppp' },
+                { name: 'Principal Investing', url: 'development.html#corporate-finance' },
+                { name: 'Privacy Policy', url: 'privacy.html' },
+                { name: 'Privatizations', url: 'advisory.html#privatizations' },
+                { name: 'Project Bond Issuance', url: 'development.html#bond-issuance' },
+                { name: 'Project Development', url: 'advisory.html#capital-raising' },
+                { name: 'Project Finance', url: 'development.html#corporate-finance' },
+                { name: 'Restructuring', url: 'advisory.html#restructuring' },
+                { name: 'Senior Loans/Refinancing', url: 'development.html#senior-loans' },
+                { name: 'Services', url: 'service.html' },
+                { name: 'Syndications', url: 'development.html#syndications' },
+                { name: 'Trade Finance', url: 'trade.html' }
+            ];
+
+            const resultsBox = document.querySelector(".result-box");
+            const inputBox = document.getElementById("input-box");
+
+            inputBox.onkeyup = function () {
+                let result = [];
+                let input = inputBox.value;
+                if (input.length) {
+                    result = availableKeywords.filter((keyword) => {
+                        return keyword.name.toLowerCase().includes(input.toLowerCase());
+                    });
+                }
+                display(result, input);
+            }
+
+            function display(result, input) {
+                const content = result.map((list) => {
+                    const regex = new RegExp(`(${input})`, 'gi');
+                    const highlightedName = list.name.replace(regex, '<span class="highlight">$1</span>');
+                    return `<li onclick="location.href='${list.url}'">${highlightedName}</li>`;
+                }).join('');
+
+                resultsBox.innerHTML = `<ul>${content}</ul>`;
+                resultsBox.style.display = result.length ? 'block' : 'none';
+            }
+
+            document.addEventListener('click', function (event) {
+                const isClickInside = inputBox.contains(event.target) || resultsBox.contains(event.target);
+                if (!isClickInside) {
+                    resultsBox.style.display = 'none';
+                }
+            });
+        </script>
+
+</body>
+
+</html>
