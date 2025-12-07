@@ -27,7 +27,6 @@
                         <li class="gallery-dropdown">
                             <a href="#" onclick="toggleDropdown(event)">Services</a>
                             <ul class="dropdown-menu">
-                                <!-- <img src="images/AEMBankLogo.png" alt="" width="200" height="200"> -->
                                 <li><a href="service.html">All Services</a>
                                 <li><a href="advisory.html">Advisory Services</a></li>
                                 <li><a href="development.html">Development Finance</a></li>
@@ -55,9 +54,8 @@
 
     <div>
         <section class="showcase">
-        <video id="background-video" muted loop autoplay playsinline>
-            <source src="https://res.cloudinary.com/dgowk0oun/video/upload/v1759261218/vecteezy_photovoltaics-solar-panels-in-a-solar-park-solar-panels-on_39940264_hgxlyu.mp4"
-                type="video/mp4">
+        <video id="background-video" muted loop autoplay playsinline preload="auto">
+            <source src="homepagevideo.mp4" type="video/mp4">
         </video>
 
         <div class="overlay"></div>
@@ -67,12 +65,8 @@
             <button class="cta-button"><a href="index.html#section1">Learn More</a></button>
         </div>
 
-        <!-- <div class="content">
-            <h1>Developing African Energy Transition through Critical Minerals</h1>
-            <button class="cta-button"><a href="index.html#section1">Learn More</a></button>
-        </div> -->
         <div class="scroll-down-indicator">
-            <span>&#x25BC;</span> <!-- Down arrow Unicode character -->
+            <span>&#x25BC;</span>
         </div>
         </section>
     </div>
@@ -92,7 +86,7 @@
                     <p id="customerprofile">It is estimated that optimal involvement of Africans can generate $500b per
                         annum in value from
                         the extractive minerals and energy sectors. Africa has the potential to install 310 gigawatts of clean
-                        renewable power, or half the continent’s total electricity generation capacity, to meet nearly a
+                        renewable power, or half the continent's total electricity generation capacity, to meet nearly a
                         quarter of its energy needs by 2030.</p>
                     <a href="about.html">About us</a>
                 </div>
@@ -157,15 +151,6 @@
                             <li><a href="contact.html">contact us</a></li>
                         </ul>
                     </div>
-                    <!-- <div class="footer-col">
-                        <h4>follow us</h4>
-                        <div class="social-links">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div> -->
                 </div>
             </div>
             <div>
@@ -230,11 +215,10 @@
 
         function toggleDropdown(event) {
             event.preventDefault();
-            var dropdownContent = event.target.nextElementSibling; // Get the next sibling (dropdown menu)
+            var dropdownContent = event.target.nextElementSibling;
             dropdownContent.style.display = (dropdownContent.style.display === 'block') ? 'none' : 'block';
         }
 
-        // Close the dropdown when clicking outside of it
         window.onclick = function (event) {
             var dropdowns = document.querySelectorAll('.gallery-dropdown');
             for (var i = 0; i < dropdowns.length; i++) {
@@ -323,7 +307,6 @@
             }
         });
     </script>
-
 
 </body>
 

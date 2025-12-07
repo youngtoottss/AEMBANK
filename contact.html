@@ -27,7 +27,6 @@
                         <li class="gallery-dropdown">
                             <a href="#" onclick="toggleDropdown(event)">Services</a>
                             <ul class="dropdown-menu">
-                                <!-- <img src="images/AEMBankLogo.png" alt="" width="200" height="200"> -->
                                 <li><a href="service.html">All Services</a>
                                 <li><a href="advisory.html">Advisory Services</a></li>
                                 <li><a href="development.html">Development Finance</a></li>
@@ -56,8 +55,7 @@
     <section class="contact">
         <div class="content">
             <h2>Contact Us</h2>
-            <p>The contact page at AEMBANK is your direct line to us. Whether you're seeking information on advisory services, development finance, or trade finance, simply fill out the form with your details and inquiries. We're
-                here to provide prompt assistance and ensure your needs are met efficiently as we aim to respond within 24 hours.</p>
+            <p>Connect with AEMBANK for comprehensive financial solutions. Whether you're seeking advisory services, development finance, or trade finance, our team is ready to assist you with tailored solutions for your extractive minerals projects.</p>
         </div>
         <div class="container1">
             <div class="contactInfo">
@@ -66,16 +64,8 @@
                     <div class="textt">
                         <h3>Location</h3>
                         <p>Africa</p>
-                        <!-- <p>4671 Sugar Camp Road, <br>Owatonna, Minnesota,<br>55060</p> -->
                     </div>
                 </div>
-                <!-- <div class="box1">
-                    <div class="iconn"><i class="fa fa-phone" aria-hidden="true"></i></div>
-                    <div class="textt">
-                        <h3>Phone</h3>
-                        <p>507-475-6094</p>
-                    </div>    
-                </div> -->
                 <div class="box1">
                     <div class="iconn"><i class="fa-regular fa-envelope"></i></div>
                     <div class="textt">
@@ -83,41 +73,213 @@
                         <p><a href="mailto:info@aembank.com" style="color: inherit;">info@aembank.com</a></p>
                     </div>
                 </div>
+                <div class="info-note">
+                    <p>We aim to respond to all inquiries within 24 hours during business days.</p>
+                </div>
             </div>
             <div class="contactForm">
-                <form action="https://api.web3forms.com/submit" method="POST">
-                    <h2>Send Message</h2>
+                <form action="https://api.web3forms.com/submit" method="POST" id="contactFormElement">
                     <input type="hidden" name="access_key" value="c8f5244f-cf16-420d-8c52-f0bbdf929d6b">
-                    <div class="inputBox">
-                        <input type="text" name="name" required="required">
-                        <span>Full Name</span>
+                    
+                    <div class="form-header">
+                        <h2>Submit Your Inquiry</h2>
+                        <p class="form-subtitle">Fill out the form below and we'll get back to you shortly</p>
                     </div>
-                    <div class="inputBox">
-                        <input type="text" name="email" required="required">
-                        <span>Email</span>
+
+                    <!-- Personal Information Section -->
+                    <div class="form-section">
+                        <h3 class="section-title">Personal Information</h3>
+                        <div class="form-row">
+                            <div class="inputBox half">
+                                <input type="text" name="firstName" required>
+                                <span>First Name</span>
+                            </div>
+                            <div class="inputBox half">
+                                <input type="text" name="lastName" required>
+                                <span>Last Name</span>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="inputBox half">
+                                <input type="email" name="email" required>
+                                <span>Email Address</span>
+                            </div>
+                            <div class="inputBox half">
+                                <input type="tel" name="phone">
+                                <span>Phone Number (Optional)</span>
+                            </div>
+                        </div>
+                        <div class="inputBox">
+                            <input type="text" name="company">
+                            <span>Company/Organization (Optional)</span>
+                        </div>
                     </div>
-                    <div class="inputBox">
-                        <select id="mainService" name="services" required="required" onchange="updateSubServices()">
-                            <option value="" disabled selected>Select a Service</option>
-                            <option value="advisory">Advisory Services</option>
-                            <option value="development">Development Finance</option>
-                            <option value="trade">Trade Finance</option>
-                            <option>Other</option>
-                        </select>
-                        <div class="line"></div>
+
+                    <!-- Inquiry Type Section -->
+                    <div class="form-section">
+                        <h3 class="section-title">Inquiry Details</h3>
+                        <div class="inputBox">
+                            <select id="inquiryType" name="inquiryType" required onchange="updateInquiryFields()">
+                                <option value="" disabled selected></option>
+                                <option value="general">General Inquiry</option>
+                                <option value="service">Service Request</option>
+                                <option value="transaction">Transaction Support</option>
+                                <option value="investor">Investor Interest</option>
+                                <option value="partnership">Partnership Opportunity</option>
+                            </select>
+                            <span>Type of Inquiry</span>
+                        </div>
+
+                        <!-- Service Request Fields -->
+                        <div id="serviceFields" class="conditional-section" style="display: none;">
+                            <div class="inputBox">
+                                <select id="mainService" name="services" onchange="updateSubServices()">
+                                    <option value="" disabled selected></option>
+                                    <option value="advisory">Advisory Services</option>
+                                    <option value="development">Development Finance</option>
+                                    <option value="trade">Trade Finance</option>
+                                </select>
+                                <span>Service Category</span>
+                            </div>
+                            <div class="inputBox" id="subServiceContainer" style="display: none;">
+                                <select id="subService" name="subService">
+                                    <option value="" disabled selected></option>
+                                </select>
+                                <span>Specific Service</span>
+                            </div>
+                        </div>
+
+                        <!-- Transaction Details Fields -->
+                        <div id="transactionFields" class="conditional-section" style="display: none;">
+                            <div class="form-row">
+                                <div class="inputBox half">
+                                    <select name="transactionType">
+                                        <option value="" disabled selected></option>
+                                        <option value="new">New Transaction</option>
+                                        <option value="existing">Existing Transaction</option>
+                                        <option value="refinancing">Refinancing</option>
+                                    </select>
+                                    <span>Transaction Type</span>
+                                </div>
+                                <div class="inputBox half">
+                                    <input type="text" name="transactionValue">
+                                    <span>Estimated Value (USD)</span>
+                                </div>
+                            </div>
+                            <div class="inputBox">
+                                <select name="sector">
+                                    <option value="" disabled selected></option>
+                                    <option value="mining">Mining</option>
+                                    <option value="oil-gas">Oil & Gas</option>
+                                    <option value="minerals">Mineral Processing</option>
+                                    <option value="infrastructure">Infrastructure</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <span>Industry Sector</span>
+                            </div>
+                            <div class="inputBox">
+                                <input type="text" name="projectLocation">
+                                <span>Project Location/Country</span>
+                            </div>
+                            <div class="inputBox">
+                                <select name="timeline">
+                                    <option value="" disabled selected></option>
+                                    <option value="immediate">Immediate (0-3 months)</option>
+                                    <option value="short">Short-term (3-6 months)</option>
+                                    <option value="medium">Medium-term (6-12 months)</option>
+                                    <option value="long">Long-term (12+ months)</option>
+                                </select>
+                                <span>Expected Timeline</span>
+                            </div>
+                        </div>
+
+                        <!-- Investor Interest Fields -->
+                        <div id="investorFields" class="conditional-section" style="display: none;">
+                            <div class="form-row">
+                                <div class="inputBox half">
+                                    <select name="investorType">
+                                        <option value="" disabled selected></option>
+                                        <option value="institutional">Institutional Investor</option>
+                                        <option value="corporate">Corporate Investor</option>
+                                        <option value="private">Private Equity</option>
+                                        <option value="individual">Individual Investor</option>
+                                    </select>
+                                    <span>Investor Type</span>
+                                </div>
+                                <div class="inputBox half">
+                                    <input type="text" name="investmentRange">
+                                    <span>Investment Range (USD)</span>
+                                </div>
+                            </div>
+                            <div class="inputBox">
+                                <select name="investmentFocus">
+                                    <option value="" disabled selected></option>
+                                    <option value="equity">Equity Investments</option>
+                                    <option value="debt">Debt Instruments</option>
+                                    <option value="hybrid">Hybrid Structures</option>
+                                    <option value="project">Project Finance</option>
+                                </select>
+                                <span>Investment Focus</span>
+                            </div>
+                            <div class="inputBox checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="sectors[]" value="mining">
+                                    <span class="checkbox-text">Mining</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="sectors[]" value="oil-gas">
+                                    <span class="checkbox-text">Oil & Gas</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="sectors[]" value="minerals">
+                                    <span class="checkbox-text">Mineral Processing</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="sectors[]" value="infrastructure">
+                                    <span class="checkbox-text">Infrastructure</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Partnership Fields -->
+                        <div id="partnershipFields" class="conditional-section" style="display: none;">
+                            <div class="inputBox">
+                                <select name="partnershipType">
+                                    <option value="" disabled selected></option>
+                                    <option value="strategic">Strategic Partnership</option>
+                                    <option value="joint-venture">Joint Venture</option>
+                                    <option value="technical">Technical Collaboration</option>
+                                    <option value="distribution">Distribution Agreement</option>
+                                </select>
+                                <span>Partnership Type</span>
+                            </div>
+                            <div class="inputBox">
+                                <input type="text" name="partnershipScope">
+                                <span>Geographic Scope</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="inputBox" id="subServiceContainer" style="display: none;">
-                        <select id="subService" name="subService" required>
-                            <option value="" disabled selected>Select a sub-service</option>
-                        </select>
-                        <div class="line"></div>
+
+                    <!-- Message Section -->
+                    <div class="form-section">
+                        <h3 class="section-title">Additional Information</h3>
+                        <div class="inputBox">
+                            <textarea name="message" required rows="5"></textarea>
+                            <span>Describe your inquiry in detail</span>
+                        </div>
+                        <div class="inputBox checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="nda" value="yes">
+                                <span class="checkbox-text">I would like to discuss under NDA</span>
+                            </label>
+                        </div>
                     </div>
-                    <div class="inputBox">
-                        <textarea required="required"></textarea>
-                        <span>Type your Message...</span>
-                    </div>
-                    <div class="inputBox">
-                        <input type="submit" name="" value="Send">
+
+                    <div class="form-actions">
+                        <button type="submit" class="submit-btn">
+                            <span>Submit Inquiry</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
                     </div>
                 </form>
             </div>
@@ -145,15 +307,6 @@
                             <li><a href="#">contact us</a></li>
                         </ul>
                     </div>
-                    <!-- <div class="footer-col">
-                        <h4>follow us</h4>
-                        <div class="social-links">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div> -->
                 </div>
             </div>
             <div>
@@ -200,9 +353,7 @@
             searchBtn.classList.remove('active');
             menuToggle.classList.toggle('hide');
         }
-    </script>
 
-    <script>
         window.addEventListener('scroll', function () {
             const header = document.getElementById('header');
             const headerLine = document.getElementById('headerLine');
@@ -218,11 +369,10 @@
 
         function toggleDropdown(event) {
             event.preventDefault();
-            var dropdownContent = event.target.nextElementSibling; // Get the next sibling (dropdown menu)
+            var dropdownContent = event.target.nextElementSibling;
             dropdownContent.style.display = (dropdownContent.style.display === 'block') ? 'none' : 'block';
         }
 
-        // Close the dropdown when clicking outside of it
         window.onclick = function (event) {
             var dropdowns = document.querySelectorAll('.gallery-dropdown');
             for (var i = 0; i < dropdowns.length; i++) {
@@ -232,18 +382,40 @@
                 }
             }
         }
-    </script>
 
-    <script>
+        // Update inquiry-specific fields
+        function updateInquiryFields() {
+            const inquiryType = document.getElementById('inquiryType').value;
+            const serviceFields = document.getElementById('serviceFields');
+            const transactionFields = document.getElementById('transactionFields');
+            const investorFields = document.getElementById('investorFields');
+            const partnershipFields = document.getElementById('partnershipFields');
+
+            // Hide all conditional sections
+            serviceFields.style.display = 'none';
+            transactionFields.style.display = 'none';
+            investorFields.style.display = 'none';
+            partnershipFields.style.display = 'none';
+
+            // Show relevant section
+            if (inquiryType === 'service') {
+                serviceFields.style.display = 'block';
+            } else if (inquiryType === 'transaction') {
+                transactionFields.style.display = 'block';
+            } else if (inquiryType === 'investor') {
+                investorFields.style.display = 'block';
+            } else if (inquiryType === 'partnership') {
+                partnershipFields.style.display = 'block';
+            }
+        }
+
         function updateSubServices() {
             var mainServiceSelect = document.getElementById('mainService');
             var subServiceSelect = document.getElementById('subService');
             var subServiceContainer = document.getElementById('subServiceContainer');
 
-            // Clear existing options except the placeholder option
-            subServiceSelect.innerHTML = '<option value="" disabled selected>Select a sub-service</option>';
+            subServiceSelect.innerHTML = '<option value="" disabled selected></option>';
 
-            // Determine which options to populate based on the main service selection
             switch (mainServiceSelect.value) {
                 case 'advisory':
                     populateOptions(subServiceSelect, [
@@ -282,12 +454,11 @@
                     ]);
                     break;
                 default:
-                    subServiceContainer.style.display = 'none'; // Hide sub-service container if no main service selected
+                    subServiceContainer.style.display = 'none';
                     break;
             }
 
-            // Show the sub-service container if options are populated
-            if (subServiceSelect.options.length > 1) { // Check if options are more than just the placeholder
+            if (subServiceSelect.options.length > 1) {
                 subServiceContainer.style.display = 'block';
             } else {
                 subServiceContainer.style.display = 'none';
@@ -303,9 +474,6 @@
             });
         }
 
-    </script>
-
-    <script>
         let availableKeywords = [
             { name: 'About Us', url: 'about.html' },
             { name: 'Advisory Services', url: 'advisory.html' },
