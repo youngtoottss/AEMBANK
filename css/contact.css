@@ -380,6 +380,7 @@ header .search {
     border-radius: 15px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     transition: all 0.3s ease;
+    overflow: hidden;
 }
 
 .container1 .contactInfo .box1:hover {
@@ -408,12 +409,23 @@ header .search {
     color: #fff;
     flex-direction: column;
     font-weight: 300;
+    word-wrap: break-word;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
 }
 
 .container1 .contactInfo .box1 .textt h3 {
     font-weight: 600;
     color: #00bcd4;
     margin-bottom: 5px;
+}
+
+.container1 .contactInfo .box1 .textt p,
+.container1 .contactInfo .box1 .textt a {
+    word-wrap: break-word;
+    word-break: break-word;
+    overflow-wrap: break-word;
 }
 
 .info-note {
