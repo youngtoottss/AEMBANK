@@ -11,6 +11,118 @@
     <link rel="icon" href="images/Untitled-3.png" type="image/png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* ── Card layout overrides ── */
+
+        .card-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 0 20px;
+            margin-top: 0;
+            align-items: stretch; /* makes all cards in a row the same height */
+        }
+
+        .card-row-three {
+            margin-top: 50px;
+            margin-bottom: 0;
+        }
+
+        .card-row-two {
+            margin-top: 20px;
+            margin-bottom: 0;
+            padding-bottom: 50px;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            width: 325px;
+            background-color: #f0f0f0;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+            margin: 0;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+
+        /* card-content fills remaining height and pushes btn to bottom */
+        .card-content {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            padding: 16px;
+        }
+
+        .card-content h3 {
+            font-size: 20px;
+            margin-bottom: 8px;
+            flex-shrink: 0;
+        }
+
+        .card-content p {
+            color: #666;
+            font-size: 15px;
+            line-height: 1.3;
+            flex: 1; /* pushes btn to the bottom */
+            margin-bottom: 0;
+        }
+
+        .pushdown {
+            margin-top: 34px;
+        }
+
+        /* btn always sticks to the bottom of the card */
+        .card-content .btn {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #333;
+            text-decoration: none;
+            border-radius: 15px;
+            margin-top: 16px;
+            color: #fff;
+            font-size: 15px;
+            align-self: flex-start;
+            flex-shrink: 0;
+        }
+
+        /* wider cards for the second row */
+        .card-wide {
+            width: 500px;
+        }
+
+        @media (max-width: 1140px) {
+            .card { width: 290px; }
+            .card-wide { width: 450px; }
+        }
+
+        @media (max-width: 1040px) {
+            .card-wide { width: calc(50% - 20px); }
+        }
+
+        @media (max-width: 900px) {
+            .card { width: calc(50% - 20px); }
+            .card-wide { width: calc(100% - 40px); max-width: 600px; }
+            .card-row-two { justify-content: center; }
+        }
+
+        @media (max-width: 600px) {
+            .card, .card-wide { width: calc(100% - 40px); max-width: 420px; }
+            .card-container { padding: 0 16px; }
+        }
+
+        @media (max-width: 400px) {
+            .card, .card-wide { width: 100%; border-radius: 0; }
+            .card-container { padding: 0; gap: 12px; }
+        }
+    </style>
 </head>
 
 <body>
@@ -96,10 +208,10 @@
 
     <div class="section3" id="section2">
         <h1>Customer Profile</h1>
-        <div class="card-container">
+        <!-- Row 1: Three original cards -->
+        <div class="card-container card-row-three">
             <div class="card">
-                <img src="images/vecteezy_confident-businessmen-of-different-ethnicities-laughing-in_24892054.jpg"
-                    alt="">
+                <img src="images/vecteezy_confident-businessmen-of-different-ethnicities-laughing-in_24892054.jpg" alt="">
                 <div class="card-content">
                     <h3>Governments</h3>
                     <p class="pushdown">This collaboration ensures the effective implementation of large-scale extractive minerals
@@ -109,8 +221,7 @@
                 </div>
             </div>
             <div class="card">
-                <img src="images/vecteezy_silhouettes-of-business-people-standing-in-front-of-digital_28852523.jpg"
-                    alt="">
+                <img src="images/vecteezy_silhouettes-of-business-people-standing-in-front-of-digital_28852523.jpg" alt="">
                 <div class="card-content">
                     <h3>Multinationals/Local Corporates</h3>
                     <p>AEMBANK is committed to offering technical assistance for project formulation, ensuring that
@@ -125,6 +236,25 @@
                     <p>AEMBank facilitates access to funding and provides technical assistance to aid in the formulation
                         of project proposals, ensuring these operators can effectively navigate the extractive minerals
                         sector.</p>
+                    <a href="service.html" class="btn">Service Offerings</a>
+                </div>
+            </div>
+        </div>
+        <!-- Row 2: Two wider cards -->
+        <div class="card-container card-row-two">
+            <div class="card card-wide">
+                <img src="https://images.pexels.com/photos/15970032/pexels-photo-15970032.jpeg?auto=compress&cs=tinysrgb&w=800&h=200&fit=crop" alt="Energy Operators">
+                <div class="card-content">
+                    <h3>Energy Operators</h3>
+                    <p>AEMBank provides structured financing and advisory support to energy operators and service providers across the hydrocarbon and gas value chain, including upstream exploration, gas development projects, midstream infrastructure and downstream processing. The Bank supports commercially viable projects that strengthen energy security, industrialisation and regional value addition within member states.</p>
+                    <a href="service.html" class="btn">Service Offerings</a>
+                </div>
+            </div>
+            <div class="card card-wide">
+                <img src="https://images.pexels.com/photos/3309498/pexels-photo-3309498.jpeg?auto=compress&cs=tinysrgb&w=800&h=200&fit=crop" alt="Maritime Projects">
+                <div class="card-content">
+                    <h3>Maritime Projects</h3>
+                    <p>AEMBank delivers structured financing and advisory support for maritime and offshore assets that enable resource development, trade and energy logistics. This includes vessel operators, Floating Production Storage and Offloading units (FPSOs), charter providers, offshore support services and port linked infrastructure critical to efficient regional supply chains.</p>
                     <a href="service.html" class="btn">Service Offerings</a>
                 </div>
             </div>
@@ -248,6 +378,7 @@
             { name: 'Divestments & Unbundling', url: 'advisory.html#divestments' },
             { name: 'Discounting', url: 'trade.html#lc-financing' },
             { name: 'ECA Financing', url: 'trade.html#eca-financing' },
+            { name: 'Energy Operators', url: 'index.html#section2' },
             { name: 'Expansion Finance', url: 'development.html#expansion-finance' },
             { name: 'Factoring/Forfaiting', url: 'trade.html#lc-financing' },
             { name: 'Guarantees', url: 'development.html#guarantees' },
@@ -255,6 +386,7 @@
             { name: 'IPOs', url: 'advisory.html#ipos' },
             { name: 'LC Financing', url: 'trade.html#lc-financing' },
             { name: 'Leveraged Finance', url: 'development.html#leveraged-finance' },
+            { name: 'Maritime Projects', url: 'index.html#section2' },
             { name: 'Mezzanine/Structured Debt', url: 'developmental.html#mezzanine' },
             { name: 'Need for Bank', url: 'company.html#need' },
             { name: 'Notes Purchases', url: 'trade.html#notes-purchases' },
