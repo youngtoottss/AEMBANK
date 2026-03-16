@@ -1267,8 +1267,6 @@ span {
     flex-wrap: wrap; gap: 16px;
 }
 
-.nbh-left {}
-
 .nbh-eyebrow {
     font-family: var(--font-body);
     font-size: 10px; font-weight: 700;
