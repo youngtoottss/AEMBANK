@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="author" content="Adetutu Aderogba">
+    <meta name="description" content="Nigeria formally signs the AEMBank Charter at the AFNIS London Roadshow, December 2025.">
+    <title>Nigeria Signs AEMBank Charter | African Extractive Minerals Development Bank</title>
+    <link rel="icon" href="images/Untitled-3.png" type="image/png">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <header class="header" id="header">
+        <a href="index.html">
+            <img src="images/MagicEraser_240731_182314.PNG" alt="Logo" class="logo">
+        </a>
+        <div class="group">
+            <nav>
+                <ul class="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <div>
+                        <li class="gallery-dropdown">
+                            <a href="#" onclick="toggleDropdown(event)">Services</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="service.html">All Services</a></li>
+                                <li><a href="advisory.html">Advisory Services</a></li>
+                                <li><a href="development.html">Development Finance</a></li>
+                                <li><a href="trade.html">Trade Finance</a></li>
+                            </ul>
+                        </li>
+                    </div>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="search">
+                <span class="icon">
+                    <ion-icon name="search-outline" class="searchBtn"></ion-icon>
+                    <ion-icon name="close-outline" class="closeBtn"></ion-icon>
+                </span>
+            </div>
+            <ion-icon name="menu-outline" class="menuToggle"></ion-icon>
+        </div>
+        <div class="searchBox">
+            <input type="text" id="input-box" placeholder="Search Anything" autocomplete="off">
+        </div>
+        <div class="result-box"></div>
+        <div class="header__line" id="headerLine"></div>
+    </header>
+
+    <!-- ── ARTICLE HERO ── -->
+    <div class="na-hero">
+        <div class="na-hero-inner">
+            <a href="news.html" class="na-breadcrumb">
+                <i class="fas fa-arrow-left"></i> News
+            </a>
+            <div class="na-tag">&#9670; Institutional Milestone</div>
+            <h1>Nigeria Signs AEMBank Charter</h1>
+            <p class="na-hero-sub">Nigeria formally joins the African Extractive Minerals Development Bank</p>
+            <div class="na-meta-bar">
+                <span><i class="far fa-calendar-alt"></i> December 2025</span>
+                <span><i class="fas fa-tag"></i> Institutional Milestone</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ── ARTICLE BODY ── -->
+    <div class="na-wrap">
+
+        <figure class="na-figure">
+            <img src="images/signing_ceremony.jpeg"
+                 alt="Nigeria signing the AEMBank Charter at the AFNIS London Roadshow, December 2025">
+            <figcaption>
+                Hajiya Fatima Umar Shinkafi, Executive Secretary of the Solid Minerals Development Fund, signs the
+                Charter of the African Extractive Minerals Development Bank on behalf of the Federal Republic of Nigeria
+                at the AFNIS London Roadshow, London, December 2025.
+            </figcaption>
+        </figure>
+
+        <div class="na-body">
+            <p>The Federal Republic of Nigeria has formally signed the Charter of the African Extractive Minerals
+                Development Bank (AEMBank), marking a significant milestone in the establishment of the institution
+                and reinforcing regional support for the Bank's mandate.</p>
+
+            <p>Nigeria's signing reflects the country's commitment to advancing the development of Africa's extractive
+                minerals sector and strengthening the continent's capacity to mobilise financing for mineral projects
+                across the value chain.</p>
+
+            <p>The African Extractive Minerals Development Bank has been established to support the sustainable
+                development and financing of mineral projects across Africa. The Bank works with governments, industry
+                participants, and financial partners to unlock value from the continent's significant mineral resources
+                while promoting responsible and inclusive mineral development.</p>
+
+            <p>Nigeria's participation as a member country further strengthens the foundation of the institution and
+                underscores growing continental momentum behind AEMBank's role in supporting Africa's mineral
+                development agenda.</p>
+        </div>
+
+        <hr class="na-rule">
+
+        <a href="news.html" class="na-back-btn">
+            <i class="fas fa-arrow-left"></i> Back to News
+        </a>
+
+    </div>
+
+    <!-- ── FOOTER ── -->
+    <footer class="footer">
+        <div class="containerr">
+            <div class="roww">
+                <div class="footer-col">
+                    <h4>company overview</h4>
+                    <ul>
+                        <li><a href="about.html">about us</a></li>
+                        <li><a href="service.html">our services</a></li>
+                        <li><a href="privacy.html">privacy policy</a></li>
+                        <li><a href="index.html#customerprofile">customer profile</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>mission &amp; activities</h4>
+                    <ul>
+                        <li><a href="company.html">company history</a></li>
+                        <li><a href="company.html#need">need for bank</a></li>
+                        <li><a href="news.html">news</a></li>
+                        <li><a href="contact.html">contact us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p>&copy; 2024 African Extractive Minerals Development Bank (AEMBank). All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        let searchBtn = document.querySelector('.searchBtn');
+        let closeBtn = document.querySelector('.closeBtn');
+        let searchBox = document.querySelector('.searchBox');
+        let navigation = document.querySelector('.navigation');
+        let menuToggle = document.querySelector('.menuToggle');
+        let header = document.querySelector('header');
+
+        searchBtn.onclick = function () {
+            searchBox.classList.add('active');
+            closeBtn.classList.add('active');
+            searchBtn.classList.add('active');
+            menuToggle.classList.add('hide');
+            header.classList.remove('open');
+        }
+
+        closeBtn.onclick = function () {
+            if (searchBox.classList.contains('active')) {
+                searchBox.classList.remove('active');
+                closeBtn.classList.remove('active');
+                searchBtn.classList.remove('active');
+                menuToggle.classList.remove('hide');
+            } else {
+                header.classList.remove('open');
+                closeBtn.classList.remove('active');
+                menuToggle.classList.remove('hide');
+            }
+        }
+
+        menuToggle.onclick = function () {
+            header.classList.toggle('open');
+            closeBtn.classList.toggle('active');
+            searchBtn.classList.remove('active');
+            menuToggle.classList.toggle('hide');
+        }
+    </script>
+
+    <script>
+        window.addEventListener('scroll', function () {
+            const header = document.getElementById('header');
+            const headerLine = document.getElementById('headerLine');
+
+            if (window.scrollY > 0) {
+                header.classList.add('scrolled');
+                headerLine.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+                headerLine.classList.remove('scrolled');
+            }
+        });
+
+        function toggleDropdown(event) {
+            event.preventDefault();
+            var dropdownContent = event.target.nextElementSibling;
+            dropdownContent.style.display = (dropdownContent.style.display === 'block') ? 'none' : 'block';
+        }
+
+        window.onclick = function (event) {
+            var dropdowns = document.querySelectorAll('.gallery-dropdown');
+            for (var i = 0; i < dropdowns.length; i++) {
+                if (!dropdowns[i].contains(event.target)) {
+                    var dropdownContent = dropdowns[i].querySelector('.dropdown-menu');
+                    dropdownContent.style.display = 'none';
+                }
+            }
+        }
+    </script>
+
+</body>
+</html>

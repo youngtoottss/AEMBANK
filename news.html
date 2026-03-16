@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="author" content="Adetutu Aderogba">
+    <meta name="description" content="Latest news and announcements from the African Extractive Minerals Development Bank (AEMBank).">
+    <title>News | African Extractive Minerals Development Bank (AEMBANK)</title>
+    <link rel="icon" href="images/Untitled-3.png" type="image/png">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ── HEADER ── -->
+    <header class="header" id="header">
+        <a href="index.html">
+            <img src="images/MagicEraser_240731_182314.PNG" alt="Logo" class="logo">
+        </a>
+        <div class="group">
+            <nav>
+                <ul class="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <div>
+                        <li class="gallery-dropdown">
+                            <a href="#" onclick="toggleDropdown(event)">Services</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="service.html">All Services</a></li>
+                                <li><a href="advisory.html">Advisory Services</a></li>
+                                <li><a href="development.html">Development Finance</a></li>
+                                <li><a href="trade.html">Trade Finance</a></li>
+                            </ul>
+                        </li>
+                    </div>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="search">
+                <span class="icon">
+                    <ion-icon name="search-outline" class="searchBtn"></ion-icon>
+                    <ion-icon name="close-outline" class="closeBtn"></ion-icon>
+                </span>
+            </div>
+            <ion-icon name="menu-outline" class="menuToggle"></ion-icon>
+        </div>
+        <div class="searchBox">
+            <input type="text" id="input-box" placeholder="Search Anything" autocomplete="off">
+        </div>
+        <div class="result-box"></div>
+        <div class="header__line" id="headerLine"></div>
+    </header>
+
+    <!-- ── HERO ── -->
+    <div class="news-hero">
+        <div class="news-hero-inner">
+            <div class="news-hero-eyebrow">AEMBank</div>
+            <h1>News &amp; <em>Announcements</em></h1>
+            <p class="news-hero-sub">
+                The latest updates, milestones, and institutional news from the African
+                Extractive Minerals Development Bank.
+            </p>
+        </div>
+    </div>
+
+    <!-- ── NEWS BODY ── -->
+    <section class="news-body">
+        <div class="news-body-inner">
+
+            <div class="news-section-row">
+                <div>
+                    <div class="news-section-label">Latest</div>
+                    <div class="news-section-title">Recent Updates</div>
+                </div>
+            </div>
+
+            <!-- FEATURED article -->
+            <a href="news-nigeria-signing.html" class="featured-card">
+                <div class="fc-image">
+                    <img src="images/signing_ceremony.jpeg"
+                         alt="Nigeria signs the AEMBank Charter at the AFNIS London Roadshow, December 2025">
+                </div>
+                <div class="fc-body">
+                    <span class="fc-tag">&#9670; Institutional Milestone</span>
+                    <h2>Nigeria Signs AEMBank Charter</h2>
+                    <p>The Federal Republic of Nigeria has formally signed the Charter of the African Extractive
+                        Minerals Development Bank, marking a significant milestone in the establishment of the
+                        institution and reinforcing regional support for the Bank's mandate.</p>
+                    <div class="fc-meta">
+                        <span><i class="far fa-calendar-alt"></i> December 2025</span>
+                    </div>
+                    <div class="fc-read">Read Full Story <i class="fas fa-arrow-right"></i></div>
+                </div>
+            </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ── FOOTER ── -->
+    <footer class="footer">
+        <div class="containerr">
+            <div class="roww">
+                <div class="footer-col">
+                    <h4>company overview</h4>
+                    <ul>
+                        <li><a href="about.html">about us</a></li>
+                        <li><a href="service.html">our services</a></li>
+                        <li><a href="privacy.html">privacy policy</a></li>
+                        <li><a href="index.html#customerprofile">customer profile</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>mission &amp; activities</h4>
+                    <ul>
+                        <li><a href="company.html">company history</a></li>
+                        <li><a href="company.html#need">need for bank</a></li>
+                        <li><a href="news.html">news</a></li>
+                        <li><a href="contact.html">contact us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p>&copy; 2024 African Extractive Minerals Development Bank (AEMBank). All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        let searchBtn = document.querySelector('.searchBtn');
+        let closeBtn = document.querySelector('.closeBtn');
+        let searchBox = document.querySelector('.searchBox');
+        let navigation = document.querySelector('.navigation');
+        let menuToggle = document.querySelector('.menuToggle');
+        let header = document.querySelector('header');
+
+        searchBtn.onclick = function () {
+            searchBox.classList.add('active');
+            closeBtn.classList.add('active');
+            searchBtn.classList.add('active');
+            menuToggle.classList.add('hide');
+            header.classList.remove('open');
+        }
+
+        closeBtn.onclick = function () {
+            if (searchBox.classList.contains('active')) {
+                searchBox.classList.remove('active');
+                closeBtn.classList.remove('active');
+                searchBtn.classList.remove('active');
+                menuToggle.classList.remove('hide');
+            } else {
+                header.classList.remove('open');
+                closeBtn.classList.remove('active');
+                menuToggle.classList.remove('hide');
+            }
+        }
+
+        menuToggle.onclick = function () {
+            header.classList.toggle('open');
+            closeBtn.classList.toggle('active');
+            searchBtn.classList.remove('active');
+            menuToggle.classList.toggle('hide');
+        }
+    </script>
+
+    <script>
+        window.addEventListener('scroll', function () {
+            const header = document.getElementById('header');
+            const headerLine = document.getElementById('headerLine');
+
+            if (window.scrollY > 0) {
+                header.classList.add('scrolled');
+                headerLine.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+                headerLine.classList.remove('scrolled');
+            }
+        });
+
+        function toggleDropdown(event) {
+            event.preventDefault();
+            var dropdownContent = event.target.nextElementSibling;
+            dropdownContent.style.display = (dropdownContent.style.display === 'block') ? 'none' : 'block';
+        }
+
+        window.onclick = function (event) {
+            var dropdowns = document.querySelectorAll('.gallery-dropdown');
+            for (var i = 0; i < dropdowns.length; i++) {
+                if (!dropdowns[i].contains(event.target)) {
+                    var dropdownContent = dropdowns[i].querySelector('.dropdown-menu');
+                    dropdownContent.style.display = 'none';
+                }
+            }
+        }
+    </script>
+</body>
+</html>

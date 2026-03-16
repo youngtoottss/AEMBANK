@@ -197,7 +197,7 @@ header .search {
     color: #3f7e60;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 813px) {
 
     .searchBtn {
         left: 0;

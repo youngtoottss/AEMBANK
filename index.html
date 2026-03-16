@@ -21,7 +21,7 @@
             gap: 20px;
             padding: 0 20px;
             margin-top: 0;
-            align-items: stretch; /* makes all cards in a row the same height */
+            align-items: stretch;
         }
 
         .card-row-three {
@@ -53,7 +53,6 @@
             flex-shrink: 0;
         }
 
-        /* card-content fills remaining height and pushes btn to bottom */
         .card-content {
             display: flex;
             flex-direction: column;
@@ -71,7 +70,7 @@
             color: #666;
             font-size: 15px;
             line-height: 1.3;
-            flex: 1; /* pushes btn to the bottom */
+            flex: 1;
             margin-bottom: 0;
         }
 
@@ -79,7 +78,6 @@
             margin-top: 34px;
         }
 
-        /* btn always sticks to the bottom of the card */
         .card-content .btn {
             display: inline-block;
             padding: 8px 16px;
@@ -93,7 +91,6 @@
             flex-shrink: 0;
         }
 
-        /* wider cards for the second row */
         .card-wide {
             width: 500px;
         }
@@ -122,6 +119,170 @@
             .card, .card-wide { width: 100%; border-radius: 0; }
             .card-container { padding: 0; gap: 12px; }
         }
+
+        /* ══════════════════════════════════════════
+           HOMEPAGE NEWS BANNER
+        ══════════════════════════════════════════ */
+        .news-banner {
+            background: rgb(20, 49, 86);
+            padding: 60px 40px;
+        }
+
+        .news-banner-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .news-banner-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 35px;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .news-banner-header h2 {
+            color: #fff;
+            font-size: clamp(1.4rem, 3vw, 2rem);
+            font-weight: 800;
+            margin: 0;
+        }
+
+        .news-banner-header a.view-all {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            color: #72e2ae;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            text-decoration: none;
+            border: 2px solid rgba(114,226,174,0.5);
+            padding: 8px 20px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+
+        .news-banner-header a.view-all:hover {
+            background: rgba(114,226,174,0.12);
+            border-color: #72e2ae;
+        }
+
+        .news-banner-card {
+            display: grid;
+            grid-template-columns: 340px 1fr;
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 14px;
+            overflow: hidden;
+            text-decoration: none;
+            transition: background 0.3s ease, transform 0.3s ease;
+            backdrop-filter: blur(4px);
+        }
+
+        .news-banner-card:hover {
+            background: rgba(255,255,255,0.1);
+            transform: translateY(-3px);
+        }
+
+        .news-banner-card .nb-image {
+            height: 240px;
+            overflow: hidden;
+        }
+
+        .news-banner-card .nb-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .news-banner-card:hover .nb-image img {
+            transform: scale(1.04);
+        }
+
+        .news-banner-card .nb-body {
+            padding: 32px 36px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .nb-tag {
+            display: inline-block;
+            background: rgba(114,226,174,0.15);
+            color: #72e2ae;
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding: 5px 12px;
+            border-radius: 20px;
+            margin-bottom: 14px;
+        }
+
+        .nb-body h3 {
+            color: #fff;
+            font-size: clamp(1.1rem, 2vw, 1.5rem);
+            font-weight: 800;
+            line-height: 1.3;
+            margin-bottom: 12px;
+        }
+
+        .nb-body p {
+            color: rgba(255,255,255,0.65);
+            font-size: 14px;
+            line-height: 1.7;
+            margin-bottom: 0;
+        }
+
+        .nb-meta {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-top: 20px;
+            font-size: 12px;
+            color: rgba(255,255,255,0.45);
+        }
+
+        .nb-meta span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .nb-meta i { color: #72e2ae; }
+
+        .nb-read {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            color: #72e2ae;
+            font-size: 13px;
+            font-weight: 700;
+            margin-top: 20px;
+        }
+
+        .nb-read i { transition: transform 0.3s ease; }
+        .news-banner-card:hover .nb-read i { transform: translateX(4px); }
+
+        @media (max-width: 800px) {
+            .news-banner-card {
+                grid-template-columns: 1fr;
+            }
+            .news-banner-card .nb-image {
+                height: 200px;
+            }
+            .news-banner-card .nb-body {
+                padding: 24px 24px;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .news-banner { padding: 50px 20px; }
+        }
     </style>
 </head>
 
@@ -139,13 +300,14 @@
                         <li class="gallery-dropdown">
                             <a href="#" onclick="toggleDropdown(event)">Services</a>
                             <ul class="dropdown-menu">
-                                <li><a href="service.html">All Services</a>
+                                <li><a href="service.html">All Services</a></li>
                                 <li><a href="advisory.html">Advisory Services</a></li>
                                 <li><a href="development.html">Development Finance</a></li>
                                 <li><a href="trade.html">Trade Finance</a></li>
                             </ul>
                         </li>
                     </div>
+                    <li><a href="news.html">News</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
@@ -173,7 +335,7 @@
         <div class="overlay"></div>
 
         <div class="text">
-            <h2>Developing African Energy Transition through Critical Minerals</h2>
+            <h2>Financing Africa’s Energy Transition Ecosystem: Critical Minerals, Energy, and Maritime Infrastructure & Logistics</h2>
             <button class="cta-button"><a href="index.html#section1">Learn More</a></button>
         </div>
 
@@ -181,6 +343,38 @@
             <span>&#x25BC;</span>
         </div>
         </section>
+    </div>
+
+
+    <!-- ══════════════════════════════════════════
+         HOMEPAGE NEWS BANNER — inserted here
+    ══════════════════════════════════════════ -->
+    <div id="news-updates" class="news-banner">
+        <div class="news-banner-inner">
+            <div class="news-banner-header">
+                <h2>Latest News &amp; Announcements</h2>
+                <a href="news.html" class="view-all">
+                    View All News <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            <a href="news-nigeria-signing.html" class="news-banner-card">
+                <div class="nb-image">
+                    <img src="images/signing_ceremony.jpeg"
+                         alt="Nigeria signs the AEMBank Charter at the AFNIS London Roadshow">
+                </div>
+                <div class="nb-body">
+                    <span class="nb-tag">Institutional Milestone</span>
+                    <h3>Nigeria Signs AEMBank Charter</h3>
+                    <p>The Federal Republic of Nigeria has formally signed the Charter of the African Extractive Minerals
+                        Development Bank, reinforcing regional support for the Bank's mandate and marking a significant
+                        step in the institution's establishment.</p>
+                    <div class="nb-meta">
+                        <span><i class="far fa-calendar-alt"></i> December 2025</span>
+                    </div>
+                    <div class="nb-read">Read Full Story <i class="fas fa-arrow-right"></i></div>
+                </div>
+            </a>
+        </div>
     </div>
 
     <div class="section" id="section1">
@@ -274,10 +468,11 @@
                         </ul>
                     </div>
                     <div class="footer-col">
-                        <h4>mission & activities</h4>
+                        <h4>mission &amp; activities</h4>
                         <ul>
                             <li><a href="company.html">company history</a></li>
                             <li><a href="company.html#need">need for bank</a></li>
+                            <li><a href="news.html">news</a></li>
                             <li><a href="contact.html">contact us</a></li>
                         </ul>
                     </div>
@@ -291,6 +486,10 @@
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+
+
 
     <script>
         let searchBtn = document.querySelector('.searchBtn');
@@ -389,6 +588,8 @@
             { name: 'Maritime Projects', url: 'index.html#section2' },
             { name: 'Mezzanine/Structured Debt', url: 'developmental.html#mezzanine' },
             { name: 'Need for Bank', url: 'company.html#need' },
+            { name: 'News', url: 'news.html' },
+            { name: 'Nigeria Signs AEMBank Charter', url: 'news-nigeria-signing.html' },
             { name: 'Notes Purchases', url: 'trade.html#notes-purchases' },
             { name: 'Our Mission', url: 'learn.html#mission' },
             { name: 'Our Vision', url: 'learn.html#vision' },
@@ -439,7 +640,6 @@
             }
         });
     </script>
-
 </body>
 
 </html>

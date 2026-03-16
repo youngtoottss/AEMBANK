@@ -203,7 +203,7 @@ header .search {
     display: none;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 813px) {
 
     .searchBtn {
         left: 0;
