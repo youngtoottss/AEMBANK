@@ -10,6 +10,7 @@
     <link rel="icon" href="images/Untitled-3.png" type="image/png">
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
 </head>
 
 <body>
@@ -35,7 +36,15 @@
                             </ul>
                         </li>
                     </div>
-                    <li><a href="news.html">News</a></li>
+                    <div>
+                        <li class="gallery-dropdown">
+                            <a href="#" onclick="toggleDropdown(event)">News</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="news.html">Recent Updates</a></li>
+                                <li><a href="newsletter.html">Newsletter</a></li>
+                            </ul>
+                        </li>
+                    </div>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
@@ -68,36 +77,36 @@
 
     <!-- ── NEWS BODY ── -->
     <section class="news-body">
-        <div class="news-body-inner">
 
-            <div class="news-section-row">
-                <div>
-                    <div class="news-section-label">Latest</div>
-                    <div class="news-section-title">Recent Updates</div>
-                </div>
-            </div>
-
-            <!-- FEATURED article -->
-            <a href="news-nigeria-signing.html" class="featured-card">
-                <div class="fc-image">
-                    <img src="images/signing_ceremony.jpeg"
-                         alt="Nigeria signs the AEMBank Charter at the AFNIS London Roadshow, December 2025">
-                </div>
-                <div class="fc-body">
-                    <span class="fc-tag">&#9670; Institutional Milestone</span>
-                    <h2>Nigeria Signs AEMBank Charter</h2>
-                    <p>The Federal Republic of Nigeria has formally signed the Charter of the African Extractive
-                        Minerals Development Bank, marking a significant milestone in the establishment of the
-                        institution and reinforcing regional support for the Bank's mandate.</p>
-                    <div class="fc-meta">
-                        <span><i class="far fa-calendar-alt"></i> December 2025</span>
+            <div class="news-body-inner">
+                <div class="news-section-row">
+                    <div>
+                        <div class="news-section-label">Latest</div>
+                        <div class="news-section-title">Recent Updates</div>
                     </div>
-                    <div class="fc-read">Read Full Story <i class="fas fa-arrow-right"></i></div>
                 </div>
-            </a>
-            </div>
 
+                <a href="news-nigeria-signing.html" class="featured-card">
+                    <div class="fc-image">
+                        <img src="images/signing_ceremony.jpeg"
+                             alt="Nigeria signs the AEMBank Charter at the AFNIS London Roadshow, December 2025">
+                    </div>
+                    <div class="fc-body">
+                        <span class="fc-tag">&#9670; Institutional Milestone</span>
+                        <h2>Nigeria Signs AEMBank Charter</h2>
+                        <p>The Federal Republic of Nigeria has formally signed the Charter of the African Extractive
+                            Minerals Development Bank, marking a significant milestone in the establishment of the
+                            institution and reinforcing regional support for the Bank's mandate.</p>
+                        <div class="fc-meta">
+                            <span><i class="far fa-calendar-alt"></i> December 2025</span>
+                        </div>
+                        <div class="fc-read">Read Full Story <i class="fas fa-arrow-right"></i></div>
+                    </div>
+                </a>
+            </div>
         </div>
+
+
     </section>
 
     <!-- ── FOOTER ── -->
@@ -118,8 +127,14 @@
                     <ul>
                         <li><a href="company.html">company history</a></li>
                         <li><a href="company.html#need">need for bank</a></li>
-                        <li><a href="news.html">news</a></li>
                         <li><a href="contact.html">contact us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>news & updates</h4>
+                    <ul>
+                        <li><a href="news.html">recent updates</a></li>
+                        <li><a href="newsletter.html">newsletter</a></li>
                     </ul>
                 </div>
             </div>
@@ -167,13 +182,10 @@
             searchBtn.classList.remove('active');
             menuToggle.classList.toggle('hide');
         }
-    </script>
 
-    <script>
         window.addEventListener('scroll', function () {
             const header = document.getElementById('header');
             const headerLine = document.getElementById('headerLine');
-
             if (window.scrollY > 0) {
                 header.classList.add('scrolled');
                 headerLine.classList.add('scrolled');

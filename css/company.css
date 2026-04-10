@@ -308,9 +308,11 @@ header .search {
 .dropdown-menu {
     display: none;
     position: absolute;
-    width: 161px;
+    width: 200px;
     top: 100%;
-    left: -34px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: 0;
     background: rgb(20, 49, 86);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     padding: 10px;
@@ -338,7 +340,7 @@ header .search {
     color: white;
     text-decoration: none;
     font-size: 10px; /* Adjust the font size as needed */
-    display: block;
+    display: inline-block;
     transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
 }
 
@@ -578,7 +580,7 @@ ul {
 }
 
 .footer-col {
-    width: 33%;
+    width: 33.333%;
     padding: 0 15px;
 }
 

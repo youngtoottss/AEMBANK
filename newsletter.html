@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="author" content="Adetutu Aderogba">
+    <meta name="description" content="Weekly Extractive Minerals Snapshot from AEMBank — market pulse, commodity prices, deals and policy signals.">
+    <title>Newsletter | African Extractive Minerals Development Bank (AEMBANK)</title>
+    <link rel="icon" href="images/Untitled-3.png" type="image/png">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        .news-hero { padding-bottom: 30px; }
+    </style>
+</head>
+
+<body>
+
+    <!-- ── HEADER ── -->
+    <header class="header" id="header">
+        <a href="index.html">
+            <img src="images/MagicEraser_240731_182314.PNG" alt="Logo" class="logo">
+        </a>
+        <div class="group">
+            <nav>
+                <ul class="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <div>
+                        <li class="gallery-dropdown">
+                            <a href="#" onclick="toggleDropdown(event)">Services</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="service.html">All Services</a></li>
+                                <li><a href="advisory.html">Advisory Services</a></li>
+                                <li><a href="development.html">Development Finance</a></li>
+                                <li><a href="trade.html">Trade Finance</a></li>
+                            </ul>
+                        </li>
+                    </div>
+                    <div>
+                        <li class="gallery-dropdown">
+                            <a href="#" onclick="toggleDropdown(event)">News</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="news.html">Recent Updates</a></li>
+                                <li><a href="newsletter.html">Newsletter</a></li>
+                            </ul>
+                        </li>
+                    </div>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="search">
+                <span class="icon">
+                    <ion-icon name="search-outline" class="searchBtn"></ion-icon>
+                    <ion-icon name="close-outline" class="closeBtn"></ion-icon>
+                </span>
+            </div>
+            <ion-icon name="menu-outline" class="menuToggle"></ion-icon>
+        </div>
+        <div class="searchBox">
+            <input type="text" id="input-box" placeholder="Search Anything" autocomplete="off">
+        </div>
+        <div class="result-box"></div>
+        <div class="header__line" id="headerLine"></div>
+    </header>
+
+    <!-- ── HERO ── -->
+    <div class="news-hero">
+        <div class="news-hero-inner">
+            <div class="news-hero-eyebrow">AEMBank</div>
+            <h1>Extractive Minerals <em>Snapshot</em></h1>
+            <p class="news-hero-sub">
+                Weekly market intelligence on commodities, geopolitics, deals and
+                financing trends across Africa's extractive minerals sector.
+            </p>
+        </div>
+    </div>
+
+    <!-- ── NEWSLETTER BODY ── -->
+    <section class="news-body">
+        <div class="nl-wrap">
+
+            <!-- Header row with week selector -->
+            <div class="nl-header">
+                <div>
+                    <div class="nl-eyebrow">Weekly Snapshot</div>
+                </div>
+                <div class="nl-week-selector" id="weekSelector">
+                    <button class="nl-week-btn" onclick="toggleWeekDropdown(event)">
+                        <i class="far fa-calendar-alt"></i>
+                        <span id="selectedWeek">30 March – 5 April 2025</span>
+                        <i class="fas fa-chevron-down nl-chevron"></i>
+                    </button>
+                    <div class="nl-week-dropdown" id="weekDropdown">
+                        <div class="nl-week-dropdown-label">Select Week</div>
+                        <button class="nl-week-option active" onclick="selectWeek(this, '30 March – 5 April 2025', 'week-mar30')">
+                            30 March – 5 April 2025
+                        </button>
+                        <!-- Add new weeks below as you publish them, e.g.: -->
+                        <!-- <button class="nl-week-option" onclick="selectWeek(this, '7 – 13 April 2025', 'week-apr7')">7 – 13 April 2025</button> -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- ── WEEK: 30 March – 5 April 2025 ── -->
+            <div class="nl-week-content active" id="week-mar30">
+
+                <div class="nl-overview">
+                    <p>Global mining markets this week were shaped by moderating geopolitical tensions, sustained energy
+                        price sensitivity, and intensifying competition for critical minerals. Brent crude remained
+                        elevated around $100/bbl despite slight easing, reflecting persistent supply-side risks. Gold
+                        strengthened on renewed safe-haven demand, while copper stabilised following recent declines,
+                        supported by strong long-term fundamentals linked to electrification and industrial expansion.
+                        For Africa, cost pressures remain elevated, but the continent's strategic importance continues
+                        to strengthen as global players intensify efforts to secure diversified mineral supply chains.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Market Pulse</div>
+                    <p class="nl-body-text">This week reflected partial market stabilisation following prior volatility,
+                        with commodity-specific trends shaping investor positioning.</p>
+                    <div class="nl-signals">
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span><strong>Gold</strong> — Strengthening on safe-haven demand and continued central bank accumulation.</span></div>
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span><strong>Copper</strong> — Stabilising after recent declines, supported by long-term electrification demand.</span></div>
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span><strong>Mineral Sands</strong> — Renewed investment activity in long-life assets supporting titanium and zircon supply chains.</span></div>
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span><strong>Critical Minerals</strong> — Intensifying global competition for supply chain positioning.</span></div>
+                    </div>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Market Snapshot</div>
+                    <div class="nl-market-grid">
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Gold</div><div class="nl-commodity-price">$4,600 – $4,720/oz</div></div>
+                            <div class="nl-commodity-trend up">↑</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Brent Oil</div><div class="nl-commodity-price">$98 – $105/bbl</div></div>
+                            <div class="nl-commodity-trend flat">→</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Copper</div><div class="nl-commodity-price">$12,250 – $12,700/t</div></div>
+                            <div class="nl-commodity-trend up">↑</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Platinum</div><div class="nl-commodity-price">$1,750 – $1,950/oz</div></div>
+                            <div class="nl-commodity-trend up">↑</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Geopolitics Driving Markets</div>
+                    <p class="nl-body-text">While immediate tensions in the Middle East showed signs of easing, underlying risks remain, particularly around energy security and global trade alignment. This is reinforcing copper, cobalt, lithium, and rare earths as strategic assets, while gold continues to reflect safe-haven positioning in uncertain markets.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">What This Means for Africa</div>
+                    <p class="nl-body-text">Current dynamics present both opportunity and threat for African mining. Continued global supply chain diversification is increasing demand for African mineral assets, particularly in copper, cobalt, and other transition metals. Strategic corridors and production expansion targets across Zambia and the DRC continue to attract long-term capital.</p>
+                    <div class="nl-two-col">
+                        <div class="nl-col-card opps">
+                            <h4><i class="fas fa-arrow-up" style="margin-right:6px;"></i>Opportunities</h4>
+                            <ul>
+                                <li>Increasing global reliance on African mineral supply</li>
+                                <li>Strong investor interest in copper, cobalt, lithium, and gold</li>
+                                <li>Expansion of regional infrastructure and logistics corridors</li>
+                                <li>Growing use of structured financing and DFI-led equity participation</li>
+                            </ul>
+                        </div>
+                        <div class="nl-col-card threats">
+                            <h4><i class="fas fa-exclamation-triangle" style="margin-right:6px;"></i>Threats</h4>
+                            <ul>
+                                <li>Elevated fuel and logistics costs</li>
+                                <li>FX volatility impacting project economics</li>
+                                <li>Increasingly selective capital allocation</li>
+                                <li>Currency volatility across key markets</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nl-takeaway">
+                    <div class="nl-takeaway-label">Key Takeaway</div>
+                    <p>Africa's position in global supply chains continues to deepen, but capital is becoming more disciplined — favouring well-structured, bankable projects over early-stage exposure.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Deals &amp; Strategic Moves</div>
+                    <div class="nl-deals">
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-handshake"></i></div>
+                            <div class="nl-deal-text"><strong>Orion Minerals (South Africa)</strong> — Industrial Development Corporation converting its loan facility into equity, taking a 23.8% stake in the Prieska copper-zinc project.</div>
+                        </div>
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-globe-africa"></i></div>
+                            <div class="nl-deal-text"><strong>Copper (Regional)</strong> — Continued investment momentum across Zambia and the DRC linked to supply chain positioning.</div>
+                        </div>
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-industry"></i></div>
+                            <div class="nl-deal-text"><strong>Mineral Sands (South Africa)</strong> — Ongoing restart and development of large-scale, long-life projects.</div>
+                        </div>
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-road"></i></div>
+                            <div class="nl-deal-text"><strong>Infrastructure</strong> — Continued momentum around mining-linked corridors such as Lobito.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">FX &amp; Macro Watch</div>
+                    <table class="nl-fx-table">
+                        <thead>
+                            <tr><th>Currency</th><th>Range (vs USD)</th><th>Trend</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>NGN — Nigerian Naira</td><td>~1,500 – 1,650</td><td class="trend-weak">Weak</td></tr>
+                            <tr><td>ZAR — South African Rand</td><td>~18.5 – 19.8</td><td class="trend-volatile">Volatile</td></tr>
+                            <tr><td>GHS — Ghanaian Cedi</td><td>~14 – 15.5</td><td class="trend-weak">Weakening</td></tr>
+                            <tr><td>ZMW — Zambian Kwacha</td><td>~25 – 27</td><td class="trend-stable">Stable</td></tr>
+                            <tr><td>EUR — Euro</td><td>~1.07 – 1.10</td><td class="trend-firm">Firm vs USD</td></tr>
+                            <tr><td>GBP — British Pound</td><td>~1.30 – 1.34</td><td class="trend-firm">Firm vs USD</td></tr>
+                        </tbody>
+                    </table>
+                    <p class="nl-body-text" style="font-size:13px;color:#4a5a68;margin-top:12px;">Weaker currencies support USD revenues but increase import and financing costs, while volatility continues to complicate project planning and capital structuring.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Policy Signals</div>
+                    <div class="nl-policy-grid">
+                        <div class="nl-policy-card"><h5>Zambia</h5><p>Continued policy alignment toward expanding copper production and attracting long-term investment.</p></div>
+                        <div class="nl-policy-card"><h5>DRC</h5><p>Ongoing focus on maximising value from critical mineral resources across the value chain.</p></div>
+                        <div class="nl-policy-card"><h5>Nigeria</h5><p>Continued FX and fiscal reforms aimed at improving investor confidence and project viability.</p></div>
+                    </div>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Implications for Financing Institutions</div>
+                    <p class="nl-body-text">The current environment presents both risks and opportunities for financiers. Recent transactions — including the IDC's conversion of debt into equity in Orion Minerals' Prieska project — highlight a growing trend of development finance institutions taking strategic equity positions to de-risk projects and catalyse private capital participation.</p>
+                    <div class="nl-trend-list">
+                        <div class="nl-trend-item">Increasingly selective credit appetite across the market</div>
+                        <div class="nl-trend-item">Increased emphasis on strong sponsors and secured offtake agreements</div>
+                        <div class="nl-trend-item">Resilient logistics and power structures as key bankability criteria</div>
+                        <div class="nl-trend-item">Rising participation from DFIs and sovereign-backed investors</div>
+                    </div>
+                </div>
+
+            </div><!-- end week-mar30 -->
+
+        </div>
+    </section>
+
+    <!-- ── FOOTER ── -->
+    <footer class="footer">
+        <div class="containerr">
+            <div class="roww">
+                <div class="footer-col">
+                    <h4>company overview</h4>
+                    <ul>
+                        <li><a href="about.html">about us</a></li>
+                        <li><a href="service.html">our services</a></li>
+                        <li><a href="privacy.html">privacy policy</a></li>
+                        <li><a href="index.html#customerprofile">customer profile</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>mission &amp; activities</h4>
+                    <ul>
+                        <li><a href="company.html">company history</a></li>
+                        <li><a href="company.html#need">need for bank</a></li>
+                        <li><a href="contact.html">contact us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>news & updates</h4>
+                    <ul>
+                        <li><a href="news.html">recent updates</a></li>
+                        <li><a href="newsletter.html">newsletter</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p>&copy; 2024 African Extractive Minerals Development Bank (AEMBank). All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script>
+        function toggleWeekDropdown(e) {
+            e.stopPropagation();
+            document.getElementById('weekDropdown').classList.toggle('open');
+            document.getElementById('weekSelector').classList.toggle('open');
+        }
+
+        function selectWeek(btn, label, contentId) {
+            document.getElementById('selectedWeek').textContent = label;
+            document.getElementById('weekDropdown').classList.remove('open');
+            document.getElementById('weekSelector').classList.remove('open');
+            document.querySelectorAll('.nl-week-option').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            document.querySelectorAll('.nl-week-content').forEach(c => c.classList.remove('active'));
+            const target = document.getElementById(contentId);
+            if (target) target.classList.add('active');
+        }
+
+        document.addEventListener('click', function(e) {
+            const sel = document.getElementById('weekSelector');
+            if (sel && !sel.contains(e.target)) {
+                document.getElementById('weekDropdown').classList.remove('open');
+                sel.classList.remove('open');
+            }
+        });
+
+        let searchBtn = document.querySelector('.searchBtn');
+        let closeBtn = document.querySelector('.closeBtn');
+        let searchBox = document.querySelector('.searchBox');
+        let menuToggle = document.querySelector('.menuToggle');
+        let header = document.querySelector('header');
+
+        searchBtn.onclick = function() {
+            searchBox.classList.add('active');
+            closeBtn.classList.add('active');
+            searchBtn.classList.add('active');
+            menuToggle.classList.add('hide');
+            header.classList.remove('open');
+        }
+
+        closeBtn.onclick = function() {
+            if (searchBox.classList.contains('active')) {
+                searchBox.classList.remove('active');
+                closeBtn.classList.remove('active');
+                searchBtn.classList.remove('active');
+                menuToggle.classList.remove('hide');
+            } else {
+                header.classList.remove('open');
+                closeBtn.classList.remove('active');
+                menuToggle.classList.remove('hide');
+            }
+        }
+
+        menuToggle.onclick = function() {
+            header.classList.toggle('open');
+            closeBtn.classList.toggle('active');
+            searchBtn.classList.remove('active');
+            menuToggle.classList.toggle('hide');
+        }
+
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            const headerLine = document.getElementById('headerLine');
+            if (window.scrollY > 0) {
+                header.classList.add('scrolled');
+                headerLine.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+                headerLine.classList.remove('scrolled');
+            }
+        });
+
+        function toggleDropdown(event) {
+            event.preventDefault();
+            var dropdownContent = event.target.nextElementSibling;
+            dropdownContent.style.display = (dropdownContent.style.display === 'block') ? 'none' : 'block';
+        }
+
+        window.onclick = function(event) {
+            var dropdowns = document.querySelectorAll('.gallery-dropdown');
+            for (var i = 0; i < dropdowns.length; i++) {
+                if (!dropdowns[i].contains(event.target)) {
+                    dropdowns[i].querySelector('.dropdown-menu').style.display = 'none';
+                }
+            }
+        }
+    </script>
+</body>
+</html>

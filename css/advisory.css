@@ -302,7 +302,7 @@ ul {
 }
 
 .footer-col {
-    width: 50%;
+    width: 33.333%;
     padding: 0 15px;
 }
 
@@ -403,10 +403,11 @@ ul {
 .dropdown-menu {
     display: none;
     position: absolute;
-    width: 161px;
+    width: 200px;
     top: 100%;
-    left: -34px;
-    margin-left: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: 0;
     background: #191a2b;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     padding: 10px;
@@ -415,7 +416,6 @@ ul {
     white-space: nowrap;
     justify-content: space-around;
     z-index: 99;
-    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out; /* Smooth transition */
 }
 
 .dropdown-menu li {
@@ -436,9 +436,9 @@ ul {
 .dropdown-menu a {
     color: white;
     text-decoration: none;
-    font-size: 10px; /* Adjust the font size */
-    display: block; /* Make the link fill the list item */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+    font-size: 10px;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Hover effect for dropdown items */
