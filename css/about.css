@@ -2257,10 +2257,3 @@ span {
 /* ── Week content panels ── */
 .nl-week-content { display: none; }
 .nl-week-content.active { display: block; }
-
-@media (max-width: 768px) {
-    .nl-week-dropdown {
-        right: auto;
-        left: 0;
-    }
-}
