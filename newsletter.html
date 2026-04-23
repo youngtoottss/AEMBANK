@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <style>
         .news-hero { padding-bottom: 30px; }
+        .nl-wrap { padding-top: 10px; }
     </style>
 </head>
 
@@ -89,22 +90,148 @@
                 <div class="nl-week-selector" id="weekSelector">
                     <button class="nl-week-btn" onclick="toggleWeekDropdown(event)">
                         <i class="far fa-calendar-alt"></i>
-                        <span id="selectedWeek">30 March – 5 April 2025</span>
+                        <span id="selectedWeek">6 – 10 April 2026</span>
                         <i class="fas fa-chevron-down nl-chevron"></i>
                     </button>
                     <div class="nl-week-dropdown" id="weekDropdown">
                         <div class="nl-week-dropdown-label">Select Week</div>
-                        <button class="nl-week-option active" onclick="selectWeek(this, '30 March – 5 April 2025', 'week-mar30')">
-                            30 March – 5 April 2025
+                        <button class="nl-week-option active" onclick="selectWeek(this, '6 – 10 April 2026', 'week-apr6')">
+                            6 – 10 April 2026
                         </button>
-                        <!-- Add new weeks below as you publish them, e.g.: -->
-                        <!-- <button class="nl-week-option" onclick="selectWeek(this, '7 – 13 April 2025', 'week-apr7')">7 – 13 April 2025</button> -->
+                        <button class="nl-week-option" onclick="selectWeek(this, '30 March – 5 April 2026', 'week-mar30')">
+                            30 March – 5 April 2026
+                        </button>
                     </div>
                 </div>
             </div>
 
-            <!-- ── WEEK: 30 March – 5 April 2025 ── -->
-            <div class="nl-week-content active" id="week-mar30">
+
+            <!-- ── WEEK: 6 – 10 April 2026 ── -->
+            <div class="nl-week-content active" id="week-apr6">
+
+                <div class="nl-overview">
+                    <p>This week's developments highlight two key structural shifts shaping global mining markets.
+                        Central banks — particularly among BRICS+ countries — continue to increase gold reserves, now
+                        exceeding 6,000 tonnes, reflecting a broader shift toward reserve diversification and reduced
+                        reliance on the US dollar. Rare earth supply chains remain highly concentrated, with China
+                        maintaining dominance across both mining and refining. Together, these trends reinforce the
+                        increasing strategic importance of both gold and critical minerals within global financial and
+                        industrial systems.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Market Snapshot</div>
+                    <div class="nl-market-grid">
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Gold</div><div class="nl-commodity-price">$4,628 – $4,761/oz</div></div>
+                            <div class="nl-commodity-trend up">↑</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Brent Oil</div><div class="nl-commodity-price">$98 – $114/bbl</div></div>
+                            <div class="nl-commodity-trend flat">→</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Copper</div><div class="nl-commodity-price">$12,252 – $12,661/t</div></div>
+                            <div class="nl-commodity-trend flat">→</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Platinum</div><div class="nl-commodity-price">$1,976 – $2,044/oz</div></div>
+                            <div class="nl-commodity-trend up">↑</div>
+                        </div>
+                    </div>
+                    <table class="nl-fx-table" style="margin-top:24px;">
+                        <thead>
+                            <tr><th>Currency</th><th>Range (vs USD)</th><th>Trend</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>NGN — Nigerian Naira</td><td>~1,500 – 1,650</td><td class="trend-weak">Weak</td></tr>
+                            <tr><td>ZAR — South African Rand</td><td>~18.5 – 19.8</td><td class="trend-volatile">Volatile</td></tr>
+                            <tr><td>GHS — Ghanaian Cedi</td><td>~14 – 15.5</td><td class="trend-weak">Weakening</td></tr>
+                            <tr><td>ZMW — Zambian Kwacha</td><td>~25 – 27</td><td class="trend-stable">Stable</td></tr>
+                            <tr><td>EUR — Euro</td><td>~1.07 – 1.10</td><td class="trend-firm">Firm vs USD</td></tr>
+                            <tr><td>GBP — British Pound</td><td>~1.30 – 1.34</td><td class="trend-firm">Firm vs USD</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Geopolitical Context</div>
+                    <p class="nl-body-text">Central banks — particularly among BRICS+ countries — continue to increase gold reserves, now exceeding 6,000 tonnes, reflecting a broader move toward reserve diversification and reduced reliance on the US dollar. Meanwhile, rare earth supply chains remain highly concentrated, with China maintaining dominance across both mining and refining. While global demand continues to grow, the development of alternative supply chains is being slowed by financing constraints and project risk.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Africa Positioning</div>
+                    <p class="nl-body-text">Africa's strategic importance continues to strengthen, but the pace at which this translates into investment and production is increasingly dependent on financing, infrastructure, and execution capacity.</p>
+                    <div class="nl-two-col">
+                        <div class="nl-col-card opps">
+                            <h4><i class="fas fa-arrow-up" style="margin-right:6px;"></i>Opportunities</h4>
+                            <ul>
+                                <li>Sustained central bank demand supporting long-term gold markets</li>
+                                <li>Increasing global reliance on African critical minerals</li>
+                                <li>Potential role in diversifying rare earth supply chains</li>
+                                <li>Growing use of structured financing and DFI-led equity participation</li>
+                            </ul>
+                        </div>
+                        <div class="nl-col-card threats">
+                            <h4><i class="fas fa-exclamation-triangle" style="margin-right:6px;"></i>Threats</h4>
+                            <ul>
+                                <li>Elevated energy and logistics costs</li>
+                                <li>FX volatility impacting project economics</li>
+                                <li>Increasingly selective capital allocation</li>
+                                <li>Limited financing and processing capacity for emerging mineral supply chains</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nl-takeaway">
+                    <div class="nl-takeaway-label">Key Takeaway</div>
+                    <p>Africa's strategic importance continues to strengthen, but the pace at which this translates into investment and production is increasingly dependent on financing, infrastructure, and execution capacity.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Deals &amp; Strategic Moves</div>
+                    <div class="nl-deals">
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-handshake"></i></div>
+                            <div class="nl-deal-text"><strong>Orion Minerals (South Africa)</strong> — Industrial Development Corporation converting its loan facility into equity, taking a 23.8% stake in the Prieska copper-zinc project.</div>
+                        </div>
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-coins"></i></div>
+                            <div class="nl-deal-text"><strong>Gold Markets</strong> — Continued central bank accumulation reinforcing long-term demand dynamics, with BRICS+ reserves now exceeding 6,000 tonnes.</div>
+                        </div>
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-globe"></i></div>
+                            <div class="nl-deal-text"><strong>Rare Earths (Global)</strong> — Increasing focus on supply chain concentration risks and need for diversification away from Chinese dominance.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Financing Implications</div>
+                    <p class="nl-body-text">The current environment highlights a growing shift in how mining projects are financed. Rare earth supply chains illustrate that the key constraint is increasingly financing rather than resource availability — high project risk, long development timelines, and price volatility continue to limit access to capital. Transactions such as the IDC's equity participation in the Prieska project demonstrate how development finance institutions are using capital structuring to de-risk projects and unlock investment.</p>
+                    <div class="nl-trend-list">
+                        <div class="nl-trend-item">Flexible financing models combining equity, debt, and strategic partnerships</div>
+                        <div class="nl-trend-item">DFI equity participation as a tool to de-risk and unlock private capital</div>
+                        <div class="nl-trend-item">Financing constraints identified as the primary barrier for rare earth supply chain development</div>
+                        <div class="nl-trend-item">Capital increasingly concentrated in strategic, policy-aligned assets</div>
+                    </div>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Watch Next Week</div>
+                    <div class="nl-signals">
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>Continued movement in gold prices linked to central bank demand and macro conditions.</span></div>
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>Developments in copper pricing and supply constraints.</span></div>
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>Policy or financing announcements related to critical minerals and rare earths.</span></div>
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>Updates on African mining projects progressing toward production or financing milestones.</span></div>
+                    </div>
+                </div>
+
+            </div><!-- end week-apr6 -->
+
+            <!-- ── WEEK: 30 March – 5 April 2026 ── -->
+            <div class="nl-week-content" id="week-mar30">
 
                 <div class="nl-overview">
                     <p>Global mining markets this week were shaped by moderating geopolitical tensions, sustained energy
@@ -268,14 +395,9 @@
                     <ul>
                         <li><a href="company.html">company history</a></li>
                         <li><a href="company.html#need">need for bank</a></li>
-                        <li><a href="contact.html">contact us</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>news & updates</h4>
-                    <ul>
                         <li><a href="news.html">recent updates</a></li>
                         <li><a href="newsletter.html">newsletter</a></li>
+                        <li><a href="contact.html">contact us</a></li>
                     </ul>
                 </div>
             </div>

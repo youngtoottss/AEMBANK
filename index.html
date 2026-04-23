@@ -268,6 +268,79 @@
         .nb-read i { transition: transform 0.3s ease; }
         .news-banner-card:hover .nb-read i { transform: translateX(4px); }
 
+        /* Two card grid */
+        .nb-cards-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .nb-cards-grid .news-banner-card {
+            grid-template-columns: 1fr;
+        }
+
+        .nb-cards-grid .news-banner-card .nb-image {
+            height: 200px;
+        }
+
+        /* Newsletter cover graphic */
+        .nb-image-newsletter {
+            background: linear-gradient(135deg, #0d2640 0%, #143152 60%, #0d3320 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nb-newsletter-cover {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .nb-nl-eyebrow {
+            font-size: 9px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #72e2ae;
+            margin-bottom: 8px;
+        }
+
+        .nb-nl-title {
+            font-family: Georgia, serif;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #ffffff;
+            line-height: 1.2;
+            margin-bottom: 10px;
+        }
+
+        .nb-nl-date {
+            font-size: 10px;
+            color: rgba(255,255,255,0.5);
+            margin-bottom: 14px;
+        }
+
+        .nb-nl-pills {
+            display: flex;
+            gap: 6px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .nb-nl-pills span {
+            background: rgba(114,226,174,0.15);
+            color: #72e2ae;
+            font-size: 10px;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 20px;
+            border: 1px solid rgba(114,226,174,0.3);
+        }
+
+        @media (max-width: 900px) {
+            .nb-cards-grid { grid-template-columns: 1fr; }
+        }
+
         @media (max-width: 800px) {
             .news-banner-card {
                 grid-template-columns: 1fr;
@@ -343,7 +416,7 @@
         <div class="overlay"></div>
 
         <div class="text">
-            <h2>Financing Africa’s Energy Transition Ecosystem: Critical Minerals, Energy, and Maritime Infrastructure & Logistics</h2>
+            <h2>Financing Africa's Energy Transition Ecosystem: Critical Minerals, Energy, and Maritime Infrastructure &amp; Logistics</h2>
             <button class="cta-button"><a href="index.html#section1">Learn More</a></button>
         </div>
 
@@ -353,9 +426,8 @@
         </section>
     </div>
 
-
     <!-- ══════════════════════════════════════════
-         HOMEPAGE NEWS BANNER — inserted here
+         HOMEPAGE NEWS BANNER
     ══════════════════════════════════════════ -->
     <div id="news-updates" class="news-banner">
         <div class="news-banner-inner">
@@ -365,23 +437,48 @@
                     View All News <i class="fas fa-arrow-right"></i>
                 </a>
             </div>
-            <a href="news-nigeria-signing.html" class="news-banner-card">
-                <div class="nb-image">
-                    <img src="images/signing_ceremony.jpeg"
-                         alt="Nigeria signs the AEMBank Charter at the AFNIS London Roadshow">
-                </div>
-                <div class="nb-body">
-                    <span class="nb-tag">Institutional Milestone</span>
-                    <h3>Nigeria Signs AEMBank Charter</h3>
-                    <p>The Federal Republic of Nigeria has formally signed the Charter of the African Extractive Minerals
-                        Development Bank, reinforcing regional support for the Bank's mandate and marking a significant
-                        step in the institution's establishment.</p>
-                    <div class="nb-meta">
-                        <span><i class="far fa-calendar-alt"></i> December 2025</span>
+            <div class="nb-cards-grid">
+                <a href="news-nigeria-signing.html" class="news-banner-card">
+                    <div class="nb-image">
+                        <img src="images/signing_ceremony.jpeg"
+                             alt="Nigeria signs the AEMBank Charter at the AFNIS London Roadshow">
                     </div>
-                    <div class="nb-read">Read Full Story <i class="fas fa-arrow-right"></i></div>
-                </div>
-            </a>
+                    <div class="nb-body">
+                        <span class="nb-tag">Institutional Milestone</span>
+                        <h3>Nigeria Signs AEMBank Charter</h3>
+                        <p>The Federal Republic of Nigeria has formally signed the Charter of the African Extractive Minerals
+                            Development Bank, reinforcing regional support for the Bank's mandate and marking a significant
+                            step in the institution's establishment.</p>
+                        <div class="nb-meta">
+                            <span><i class="far fa-calendar-alt"></i> December 2025</span>
+                        </div>
+                        <div class="nb-read">Read Full Story <i class="fas fa-arrow-right"></i></div>
+                    </div>
+                </a>
+                <a href="newsletter.html" class="news-banner-card">
+                    <div class="nb-image nb-image-newsletter">
+                        <div class="nb-newsletter-cover">
+                            <div class="nb-nl-eyebrow">Weekly Snapshot</div>
+                            <div class="nb-nl-title">Extractive Minerals Snapshot</div>
+                            <div class="nb-nl-date">6 – 10 April 2026</div>
+                            <div class="nb-nl-pills">
+                                <span>Gold ↑</span>
+                                <span>Copper →</span>
+                                <span>Platinum ↑</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nb-body">
+                        <span class="nb-tag">Weekly Snapshot</span>
+                        <h3>Extractive Minerals Snapshot</h3>
+                        <p>Central banks exceeding 6,000 tonnes in gold reserves as BRICS+ nations diversify away from the US dollar. Rare earth supply chain concentration remains a key structural risk.</p>
+                        <div class="nb-meta">
+                            <span><i class="far fa-calendar-alt"></i> 6 – 10 April 2026</span>
+                        </div>
+                        <div class="nb-read">Read Snapshot <i class="fas fa-arrow-right"></i></div>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
 
@@ -462,6 +559,7 @@
             </div>
         </div>
     </div>
+
     <div id="section3">
         <footer class="footer">
             <div class="containerr">
@@ -484,7 +582,7 @@
                         </ul>
                     </div>
                     <div class="footer-col">
-                        <h4>news & updates</h4>
+                        <h4>news &amp; updates</h4>
                         <ul>
                             <li><a href="news.html">recent updates</a></li>
                             <li><a href="newsletter.html">newsletter</a></li>
@@ -500,10 +598,6 @@
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
-
-
-
 
     <script>
         let searchBtn = document.querySelector('.searchBtn');
