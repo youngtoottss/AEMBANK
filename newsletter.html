@@ -412,14 +412,10 @@
 
     <script>
         function toggleWeekDropdown(e) {
-    e.stopPropagation();
-    const dropdown = document.getElementById('weekDropdown');
-    const selector = document.getElementById('weekSelector');
-    dropdown.classList.toggle('open');
-    selector.classList.toggle('open');
-    // Force reflow so position calculates correctly on first open
-    dropdown.getBoundingClientRect();
-}
+            e.stopPropagation();
+            document.getElementById('weekDropdown').classList.toggle('open');
+            document.getElementById('weekSelector').classList.toggle('open');
+        }
 
         function selectWeek(btn, label, contentId) {
             document.getElementById('selectedWeek').textContent = label;

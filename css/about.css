@@ -2203,7 +2203,7 @@ span {
 .nl-week-dropdown {
     display: none;
     position: absolute;
-    right: 0;
+    left: 0;
     top: calc(100% + 8px);
     background: #ffffff;
     border: 1px solid #dde4ec;
