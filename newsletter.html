@@ -90,24 +90,155 @@
                 <div class="nl-week-selector" id="weekSelector">
                     <button class="nl-week-btn" onclick="toggleWeekDropdown(event)">
                         <i class="far fa-calendar-alt"></i>
-                        <span id="selectedWeek">6 – 10 April 2026</span>
+                        <span id="selectedWeek">13 – 17 April 2026</span>
                         <i class="fas fa-chevron-down nl-chevron"></i>
                     </button>
                     <div class="nl-week-dropdown" id="weekDropdown">
                         <div class="nl-week-dropdown-label">Select Week</div>
-                        <button class="nl-week-option active" onclick="selectWeek(this, '6 – 10 April 2026', 'week-apr6')">
+                        <button class="nl-week-option active" onclick="selectWeek(this, '13 – 17 April 2026', 'week-apr13')">
+                            13 – 17 April 2026
+                        </button>
+                        <button class="nl-week-option" onclick="selectWeek(this, '6 – 10 April 2026', 'week-apr6')">
                             6 – 10 April 2026
                         </button>
-                        <button class="nl-week-option" onclick="selectWeek(this, '30 March – 5 April 2026', 'week-mar30')">
-                            30 March – 5 April 2026
+                        <button class="nl-week-option" onclick="selectWeek(this, '31 March – 3 April 2026', 'week-mar31')">
+                            31 March – 3 April 2026
                         </button>
                     </div>
                 </div>
             </div>
 
 
+
+            <!-- ── WEEK: 13 – 17 April 2026 ── -->
+            <div class="nl-week-content active" id="week-apr13">
+
+                <div class="nl-overview">
+                    <p>Gold prices continued their steady upward trend this week, reinforcing momentum across Africa's
+                        gold sector as prices remain near recent highs. Geopolitical tensions — particularly in the
+                        Middle East — continue to drive safe-haven demand, with investors and central banks
+                        increasingly turning to gold as a stable reserve asset. Oil prices softened slightly over the
+                        week, suggesting some easing in immediate supply concerns. Elevated copper prices continue to
+                        reflect tightening supply conditions and strong structural demand linked to electrification and
+                        infrastructure.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Market Snapshot</div>
+                    <div class="nl-market-grid">
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Gold</div><div class="nl-commodity-price">$4,729 – $4,835/oz</div></div>
+                            <div class="nl-commodity-trend up">↑</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Brent Oil</div><div class="nl-commodity-price">$103 → $97/bbl</div></div>
+                            <div class="nl-commodity-trend flat">↓</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Copper</div><div class="nl-commodity-price">$12,817 – $13,149/t</div></div>
+                            <div class="nl-commodity-trend up">↑</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Platinum</div><div class="nl-commodity-price">$2,078 – $2,141/oz</div></div>
+                            <div class="nl-commodity-trend up">↑</div>
+                        </div>
+                    </div>
+                    <table class="nl-fx-table" style="margin-top:24px;">
+                        <thead>
+                            <tr><th>Currency</th><th>Range (vs USD)</th><th>Trend</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>NGN — Nigerian Naira</td><td>~1,340 – 1,400</td><td class="trend-weak">Weak</td></tr>
+                            <tr><td>ZAR — South African Rand</td><td>~18.0 – 19.2</td><td class="trend-volatile">Volatile</td></tr>
+                            <tr><td>GHS — Ghanaian Cedi</td><td>~13.5 – 14.8</td><td class="trend-weak">Weakening</td></tr>
+                            <tr><td>ZMW — Zambian Kwacha</td><td>~24.5 – 26.5</td><td class="trend-stable">Stable</td></tr>
+                            <tr><td>EUR — Euro</td><td>~1.06 – 1.09</td><td class="trend-firm">Firm vs USD</td></tr>
+                            <tr><td>GBP — British Pound</td><td>~1.30 – 1.34</td><td class="trend-firm">Firm vs USD</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Geopolitical Context</div>
+                    <p class="nl-body-text">Ongoing tensions in the Middle East are beginning to impact global economies more broadly. A joint policy document presented by the African Union Commission, African Development Bank Group, UNECA, and UNDP forecasts that growth across African countries could decline by up to 0.2 percentage points, largely due to higher energy prices, rising import costs, and increased pressure on fiscal balances. Despite this, gold's safe-haven appeal continues to strengthen, with central banks and investors turning to it as a stable reserve asset.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Africa Positioning</div>
+                    <p class="nl-body-text">Africa's gold sector is gaining renewed momentum, supported by sustained high prices and strong global demand. The development of pilot gold refining capacity in the DRC signals a broader shift toward capturing more value locally. The pace of translating this momentum into production, however, continues to depend on financing, infrastructure, and execution capacity.</p>
+
+                    <figure style="margin: 24px 0; border-radius: 12px; overflow: hidden; box-shadow: 0 6px 24px rgba(20,49,86,0.12);">
+                        <img src="images/gold-mining.jpg"
+                             alt="African gold mining operations"
+                             style="width:100%; height:280px; object-fit:cover; display:block;">
+                        <figcaption style="background:rgb(20,49,86); color:rgba(255,255,255,0.7); font-size:12px; padding:12px 18px; border-left:4px solid #72e2ae; font-style:italic;">
+                            Africa's gold sector continues to attract long-term capital as prices remain near record highs.
+                        </figcaption>
+                    </figure>
+
+                    <div class="nl-two-col">
+                        <div class="nl-col-card opps">
+                            <h4><i class="fas fa-arrow-up" style="margin-right:6px;"></i>Opportunities</h4>
+                            <ul>
+                                <li>Strengthening gold prices reinforcing activity across Ghana, Mali, and DRC</li>
+                                <li>Sustained central bank demand supporting long-term gold market fundamentals</li>
+                                <li>Acceleration of gold project development across key producing countries</li>
+                                <li>Expansion of local refining and processing capacity to enhance value capture</li>
+                                <li>Growing use of alternative financing structures in West Africa</li>
+                            </ul>
+                        </div>
+                        <div class="nl-col-card threats">
+                            <h4><i class="fas fa-exclamation-triangle" style="margin-right:6px;"></i>Threats</h4>
+                            <ul>
+                                <li>Spillover effects from geopolitical tensions impacting growth and energy costs</li>
+                                <li>FX volatility affecting project economics and debt servicing</li>
+                                <li>Increasingly selective capital allocation</li>
+                                <li>Infrastructure and execution constraints across projects</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nl-takeaway">
+                    <div class="nl-takeaway-label">Key Takeaway</div>
+                    <p>Capital structuring — rather than capital availability — is increasingly determining which projects move forward. The Cora Gold streaming deal signals a maturing market where execution-ready projects can access funding on competitive terms.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Deals &amp; Strategic Moves</div>
+                    <div class="nl-deals">
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-coins"></i></div>
+                            <div class="nl-deal-text"><strong>Cora Gold (West Africa)</strong> — Secured a $120 million gold streaming agreement to fully fund the Sanankoro project through to production, underscoring the continued shift toward execution-focused capital deployment.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Financing Implications</div>
+                    <p class="nl-body-text">The Cora Gold transaction illustrates the growing use of streaming agreements, where upfront funding is secured in exchange for future production at discounted prices. This allows companies to advance projects without taking on traditional debt or diluting equity — a structure becoming increasingly relevant for African mining projects where access to conventional financing remains constrained.</p>
+                    <div class="nl-trend-list">
+                        <div class="nl-trend-item">Streaming agreements emerging as a viable alternative to traditional debt for African projects</div>
+                        <div class="nl-trend-item">Capital structuring increasingly determining which projects move forward</div>
+                        <div class="nl-trend-item">Execution-ready projects attracting disproportionate share of available capital</div>
+                        <div class="nl-trend-item">Beneficiation and local processing gaining traction as value-capture strategy</div>
+                    </div>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Watch Next</div>
+                    <div class="nl-signals">
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>Continued gold price movement amid geopolitical developments.</span></div>
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>Any further escalation or resolution in Middle East tensions and commodity impact.</span></div>
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>Developments in project financing structures across African mining assets.</span></div>
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>Momentum ahead of African Mining Week, including beneficiation initiatives and investor activity.</span></div>
+                    </div>
+                </div>
+
+            </div><!-- end week-apr13 -->
+
             <!-- ── WEEK: 6 – 10 April 2026 ── -->
-            <div class="nl-week-content active" id="week-apr6">
+            <div class="nl-week-content" id="week-apr6">
 
                 <div class="nl-overview">
                     <p>This week's developments highlight two key structural shifts shaping global mining markets.
@@ -230,8 +361,8 @@
 
             </div><!-- end week-apr6 -->
 
-            <!-- ── WEEK: 30 March – 5 April 2026 ── -->
-            <div class="nl-week-content" id="week-mar30">
+            <!-- ── WEEK: 31 March – 3 April 2026 ── -->
+            <div class="nl-week-content" id="week-mar31">
 
                 <div class="nl-overview">
                     <p>Global mining markets this week were shaped by moderating geopolitical tensions, sustained energy
@@ -372,7 +503,7 @@
                     </div>
                 </div>
 
-            </div><!-- end week-mar30 -->
+            </div><!-- end week-mar31 -->
 
         </div>
     </section>
