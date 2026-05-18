@@ -90,12 +90,15 @@
                 <div class="nl-week-selector" id="weekSelector">
                     <button class="nl-week-btn" onclick="toggleWeekDropdown(event)">
                         <i class="far fa-calendar-alt"></i>
-                        <span id="selectedWeek">27 April – 1 May 2026</span>
+                        <span id="selectedWeek">4 – 8 May 2026</span>
                         <i class="fas fa-chevron-down nl-chevron"></i>
                     </button>
                     <div class="nl-week-dropdown" id="weekDropdown">
                         <div class="nl-week-dropdown-label">Select Week</div>
-                        <button class="nl-week-option active" onclick="selectWeek(this, '27 April – 1 May 2026', 'week-apr27')">
+                        <button class="nl-week-option active" onclick="selectWeek(this, '4 – 8 May 2026', 'week-may4')">
+                            4 – 8 May 2026
+                        </button>
+                        <button class="nl-week-option" onclick="selectWeek(this, '27 April – 1 May 2026', 'week-apr27')">
                             27 April – 1 May 2026
                         </button>
                         <button class="nl-week-option" onclick="selectWeek(this, '20 – 24 April 2026', 'week-apr20')">
@@ -118,8 +121,151 @@
 
 
 
+
+            <!-- ── WEEK: 4 – 8 May 2026 ── -->
+            <div class="nl-week-content active" id="week-may4">
+
+                <div class="nl-overview">
+                    <p>Two landmark earnings results this week illustrate the scale of returns that elevated precious
+                        metal prices are generating. AngloGold Ashanti reported record free cash flow of $1.2 billion
+                        — almost tripling year on year — from African gold operations. Wheaton Precious Metals posted
+                        record revenue of $901 million with net earnings up 129%. At the same time, Australia and
+                        Japan signed a A$1.3 billion critical minerals deal, signalling that allied countries are now
+                        building independent supply chains without China or the US. Africa holds the minerals at the
+                        centre of all of these developments.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Market Snapshot</div>
+                    <div class="nl-market-grid">
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Gold</div><div class="nl-commodity-price">$4,558 – $4,720/oz</div></div>
+                            <div class="nl-commodity-trend flat">↓</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Brent Oil</div><div class="nl-commodity-price">$103 – $112/bbl</div></div>
+                            <div class="nl-commodity-trend flat">↓</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Copper</div><div class="nl-commodity-price">$13,200 – $13,600/t</div></div>
+                            <div class="nl-commodity-trend up">↑</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Silver</div><div class="nl-commodity-price">$71.50 – $73.50/oz</div></div>
+                            <div class="nl-commodity-trend flat">→</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Platinum</div><div class="nl-commodity-price">$1,850 – $1,890/oz</div></div>
+                            <div class="nl-commodity-trend flat">↓</div>
+                        </div>
+                    </div>
+                    <table class="nl-fx-table" style="margin-top:24px;">
+                        <thead>
+                            <tr><th>Currency</th><th>Range (vs USD)</th><th>Trend</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>NGN — Nigerian Naira</td><td>~1,590 – 1,650</td><td class="trend-weak">Weak</td></tr>
+                            <tr><td>ZAR — South African Rand</td><td>~18.0 – 18.8</td><td class="trend-volatile">Volatile</td></tr>
+                            <tr><td>GHS — Ghanaian Cedi</td><td>~14.6 – 15.5</td><td class="trend-weak">Weakening</td></tr>
+                            <tr><td>ZMW — Zambian Kwacha</td><td>~25.0 – 26.2</td><td class="trend-stable">Stable</td></tr>
+                            <tr><td>EUR — Euro</td><td>~1.09 – 1.12</td><td class="trend-firm">Firm vs USD</td></tr>
+                            <tr><td>GBP — British Pound</td><td>~1.31 – 1.34</td><td class="trend-firm">Firm vs USD</td></tr>
+                        </tbody>
+                    </table>
+                    <p class="nl-body-text" style="font-size:13px;color:#4a5a68;margin-top:12px;">NGN and GHS continued to weaken against the dollar, adding to import cost pressures for African miners. ZMW held relatively stable.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Geopolitical Context</div>
+                    <p class="nl-body-text">Brent crude pulled back to $103–$112/bbl on reports of new Iranian peace proposals, providing partial relief on energy costs. Gold declined for a third consecutive week as rate-hike expectations driven by energy-led inflation continued to weigh on the metal — now down approximately 15% from its January high of $5,595/oz. Despite price weakness, Q1 earnings confirmed the gold price environment of the past twelve months has been transformative for African producers. Copper continued to find support from supply tightness, with China's sulphuric acid export halt still in effect. The Australia-Japan critical minerals agreement confirmed that allied nations are actively locking in supply of materials — graphite, nickel, rare earths and fluorite — all of which Africa holds in significant quantities.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Africa Positioning</div>
+                    <p class="nl-body-text">The earnings results this week tell a consistent story: elevated commodity prices are generating returns at a scale African producers have not seen before. AngloGold tripled its free cash flow. Wheaton posted record revenue of $901 million. Both results reflect the same dynamic — high prices meeting disciplined operations. At the same time, the Australia-Japan deal shows the geopolitical scramble for the minerals Africa holds is intensifying. The question is whether African producers and governments can use this window to negotiate better terms before alternative supply chains elsewhere become more developed.</p>
+
+                    <figure style="margin: 24px 0; border-radius: 12px; overflow: hidden; box-shadow: 0 6px 24px rgba(20,49,86,0.12);">
+                        <img src="images/mining-gold-africa.jpg"
+                             alt="African gold mining operations"
+                             style="width:100%; height:280px; object-fit:cover; display:block;">
+                        <figcaption style="background:rgb(20,49,86); color:rgba(255,255,255,0.7); font-size:12px; padding:12px 18px; border-left:4px solid #72e2ae; font-style:italic;">
+                            AngloGold Ashanti reported free cash flow of $1.2 billion in Q1 2026 — almost three times the prior year figure — from operations across Ghana, Tanzania, Guinea and Egypt.
+                        </figcaption>
+                    </figure>
+
+                    <div class="nl-two-col">
+                        <div class="nl-col-card opps">
+                            <h4><i class="fas fa-arrow-up" style="margin-right:6px;"></i>Opportunities</h4>
+                            <ul>
+                                <li>AngloGold Q1 results demonstrate the scale of returns from African gold assets — free cash flow nearly tripling year on year</li>
+                                <li>Wheaton Precious Metals record results confirm strong streaming appetite for projects with clear production timelines</li>
+                                <li>Australia-Japan A$1.3B deal signals allied countries diversifying mineral supply, creating demand for African graphite, nickel, rare earths and fluorite</li>
+                                <li>Brent crude easing from $118 reduces near-term fuel cost pressure for African operations</li>
+                                <li>Copper holding above $13,200/t with structural supply tightness intact</li>
+                                <li>Streaming proven at scale — Wheaton margins show why African projects are increasingly turning to streaming over conventional debt</li>
+                            </ul>
+                        </div>
+                        <div class="nl-col-card threats">
+                            <h4><i class="fas fa-exclamation-triangle" style="margin-right:6px;"></i>Threats</h4>
+                            <ul>
+                                <li>Gold declining for a third consecutive week — down 15% from January highs; rate-hike expectations are the primary headwind</li>
+                                <li>China sulphuric acid export halt still in effect — SX-EW copper producers in DRC and Zambia face sustained cost pressure</li>
+                                <li>African governments still negotiating individually rather than collectively</li>
+                                <li>FX pressure persisting across NGN and GHS, raising effective costs for miners with USD-denominated obligations</li>
+                                <li>Streaming agreements require clear production timelines — projects with permitting or infrastructure uncertainty will struggle</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nl-takeaway">
+                    <div class="nl-takeaway-label">Key Takeaway</div>
+                    <p>African gold assets — managed with cost discipline — can generate returns that repay debt, fund growth and return capital to shareholders simultaneously. The question is not whether the assets can perform. It is whether the right financing structures are in place to capture that performance.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Deals &amp; Strategic Moves</div>
+                    <div class="nl-deals">
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-coins"></i></div>
+                            <div class="nl-deal-text"><strong>AngloGold Ashanti (Africa)</strong> — Q1 2026 free cash flow of $1.2 billion, almost tripling year on year. Net cash of $868 million vs net debt of $755 million twelve months earlier. Record interim dividend of $585 million — up 828% per share. EBITDA up 130% to $2.3 billion. Operations across Ghana, Tanzania, Guinea and Egypt.</div>
+                        </div>
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-stream"></i></div>
+                            <div class="nl-deal-text"><strong>Wheaton Precious Metals</strong> — Record Q1 2026 revenue of $901 million, up 92% year on year. Net earnings up 129% to $582 million. Completed a $4.3 billion silver streaming agreement with BHP at the Antamina mine — the largest precious metal streaming transaction in Wheaton's history. Cash held: $2.16 billion.</div>
+                        </div>
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-handshake"></i></div>
+                            <div class="nl-deal-text"><strong>Australia – Japan Critical Minerals Deal</strong> — A$1.3 billion agreement signed May 4, covering graphite, nickel, rare earths and fluorite. Explicitly cites the Iran war and Hormuz closure. Does not involve China or the United States. Part of a broader pattern of countries building independent mineral supply arrangements.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Financing Implications</div>
+                    <p class="nl-body-text">Three financing themes emerge clearly this week. High commodity prices are generating transformative results for African producers — AngloGold's balance sheet swing from $755 million net debt to $868 million net cash in twelve months illustrates the leverage that sustained high gold prices deliver. Streaming is proving its value and the appetite for new agreements is active — Wheaton completed a $4.3 billion transaction with BHP and holds $2.16 billion in cash ready to deploy. The geopolitical scramble for minerals is creating new financing entry points — the Australia-Japan deal and broader bilateral mineral agreements signal that government-backed financing is increasingly available for projects in trusted supply chains.</p>
+                    <div class="nl-trend-list">
+                        <div class="nl-trend-item">African gold assets generating transformative balance sheet results — AngloGold from net debt to net cash in 12 months</div>
+                        <div class="nl-trend-item">Streaming appetite active and proven at scale — Wheaton holds $2.16B in cash for new agreements</div>
+                        <div class="nl-trend-item">Government-backed financing increasingly available through bilateral mineral deals for trusted supply chains</div>
+                        <div class="nl-trend-item">Window is open for African producers to negotiate better terms — it will not stay open indefinitely</div>
+                    </div>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Watch Next Week</div>
+                    <div class="nl-signals">
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>Gold down 16% from January high, trading around $4,564. US inflation at 3.8% in April — highest since 2023. Watch whether the $4,500 level holds as a floor.</span></div>
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>China rare earth enforcement comment period closes May 28. Any softening of extraterritorial rules before then would be a significant signal.</span></div>
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>Wheaton holds $2.16 billion in cash with an active deal pipeline — watch for any new streaming agreements involving African projects.</span></div>
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>Acid supply shortage still live — watch for first reported production impacts at SX-EW copper operations in the DRC and Zambia through May.</span></div>
+                    </div>
+                </div>
+
+            </div><!-- end week-may4 -->
+
             <!-- ── WEEK: 27 April – 1 May 2026 ── -->
-            <div class="nl-week-content active" id="week-apr27">
+            <div class="nl-week-content" id="week-apr27">
 
                 <div class="nl-overview">
                     <p>Three converging developments reinforced Africa's central position in global critical mineral
