@@ -90,12 +90,15 @@
                 <div class="nl-week-selector" id="weekSelector">
                     <button class="nl-week-btn" onclick="toggleWeekDropdown(event)">
                         <i class="far fa-calendar-alt"></i>
-                        <span id="selectedWeek">22 – 26 June 2026</span>
+                        <span id="selectedWeek">29 June – 3 July 2026</span>
                         <i class="fas fa-chevron-down nl-chevron"></i>
                     </button>
                     <div class="nl-week-dropdown" id="weekDropdown">
                         <div class="nl-week-dropdown-label">Select Week</div>
-                        <button class="nl-week-option active" onclick="selectWeek(this, '22 – 26 June 2026', 'week-jun22')">
+                        <button class="nl-week-option active" onclick="selectWeek(this, '29 June – 3 July 2026', 'week-jun29')">
+                            29 June – 3 July 2026
+                        </button>
+                        <button class="nl-week-option" onclick="selectWeek(this, '22 – 26 June 2026', 'week-jun22')">
                             22 – 26 June 2026
                         </button>
                         <button class="nl-week-option" onclick="selectWeek(this, '15 – 19 June 2026', 'week-jun15')">
@@ -140,7 +143,268 @@
 
 
             <!-- ── WEEK: 22 – 26 June 2026 ── -->
-            <div class="nl-week-content active" id="week-jun22">
+            <!-- ── WEEK: 29 June – 3 July 2026 ── -->
+            <div class="nl-week-content active" id="week-jun29">
+
+                <div class="nl-overview">
+                    <p>Gold broke above $4,100 on Thursday and was climbing toward $4,200 by Friday after the June US
+                        jobs report came in at 57,000 — less than half the 115,000 forecast — sharply reducing the
+                        probability of a Federal Reserve rate hike at its July 29 meeting from 63% six weeks ago to
+                        less than 30% today. Oil settled near $69 per barrel, the lowest since before the Iran war
+                        began in February, as Hormuz shipping continues to normalise and Saudi Arabia restores 90% of
+                        pre-war export volumes. The Lobito Corridor railway — 1,300 kilometres of rehabilitated rail
+                        linking the Port of Lobito in Angola to the DRC Copperbelt — achieved $753 million financial
+                        close on Friday, with $553 million from the US government and $200 million from the
+                        Development Bank of Southern Africa. South32 signed a binding agreement to sell its South
+                        African aluminium assets to Alcoa for up to $5.6 billion. The DRC withdrew unused cobalt
+                        export quotas and signed a diamond processing deal with Swiss firm ADEX — two minerals, same
+                        week, same direction. And mining cost pressures in South Africa accelerated sharply in May as
+                        energy costs surged, with the Minerals Council warning that relief will be gradual even as the
+                        global energy shock begins to unwind.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Market Snapshot</div>
+                    <div class="nl-market-grid">
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Gold</div><div class="nl-commodity-price">$4,100 – $4,200/oz</div></div>
+                            <div class="nl-commodity-trend up">↑</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Brent Oil</div><div class="nl-commodity-price">~$69/bbl</div></div>
+                            <div class="nl-commodity-trend flat">↓</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Silver</div><div class="nl-commodity-price">$77 – $80/oz</div></div>
+                            <div class="nl-commodity-trend up">↑</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Copper</div><div class="nl-commodity-price">$13,400 – $13,700/t</div></div>
+                            <div class="nl-commodity-trend flat">→</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Platinum</div><div class="nl-commodity-price">~$1,900/oz</div></div>
+                            <div class="nl-commodity-trend up">↑</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Cobalt</div><div class="nl-commodity-price">~$57,000/t</div></div>
+                            <div class="nl-commodity-trend flat">→</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Aluminium</div><div class="nl-commodity-price">~$2,450/t</div></div>
+                            <div class="nl-commodity-trend flat">↓</div>
+                        </div>
+                    </div>
+                    <table class="nl-fx-table" style="margin-top:24px;">
+                        <thead><tr><th>Currency</th><th>Range (vs USD)</th><th>Trend</th></tr></thead>
+                        <tbody>
+                            <tr><td>NGN — Nigerian Naira</td><td>~1,630 – 1,690</td><td class="trend-weak">Continued weakness</td></tr>
+                            <tr><td>ZAR — South African Rand</td><td>~18.0 – 18.8</td><td class="trend-firm">Firming; lower oil import bill and gold recovery</td></tr>
+                            <tr><td>GHS — Ghanaian Cedi</td><td>~15.0 – 16.0</td><td class="trend-weak">Weak</td></tr>
+                            <tr><td>ZMW — Zambian Kwacha</td><td>~25.0 – 26.2</td><td class="trend-firm">Stable to firming on lower fuel costs</td></tr>
+                            <tr><td>EUR — Euro</td><td>~1.08 – 1.12</td><td class="trend-firm">Firmer on lower oil</td></tr>
+                            <tr><td>GBP — British Pound</td><td>~1.31 – 1.35</td><td class="trend-firm">Broadly stable</td></tr>
+                        </tbody>
+                    </table>
+                    <p class="nl-body-text" style="font-size:13px;color:#4a5a68;margin-top:12px;">The US dollar softened
+                        on Friday following the weak jobs report as rate hike expectations declined sharply. ZAR and
+                        ZMW both benefited from the combination of lower oil import costs and recovering precious
+                        metals prices — the first week in which both tailwinds have been visible simultaneously.
+                        Sources: LME, ICE, Refinitiv, CME, Fastmarkets.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Key Developments — Updates from the Watch List</div>
+                    <p class="nl-body-text"><strong>Switzerland talks — rescheduled and concluded positively.</strong>
+                        The Friday 19 June postponement flagged in the prior edition resolved quickly. The main
+                        Switzerland talks took place on 21–22 June at Lake Lucerne and concluded positively — Iran
+                        agreed to IAEA nuclear inspector access and both sides agreed on a roadmap. Talks then moved
+                        to Doha this week, mediated by Qatar and Pakistan. Qatar confirmed positive progress on 1
+                        July. The next round is paused briefly for Iran's state funeral following the death of the
+                        former Supreme Leader in the February strikes. Talks resume after.</p>
+                    <p class="nl-body-text"><strong>Oil below $70 — Hormuz normalising on schedule.</strong> Brent at
+                        $69 — the IEA's two-to-three month normalisation timeline is tracking. Saudi Arabia at 90% of
+                        pre-war volumes. UAE fully restored. The lagged relief to African mining input costs — diesel
+                        and acid — is now within a one-to-two month window.</p>
+                    <p class="nl-body-text"><strong>Cobre Panama — audit passed, restart still pending.</strong>
+                        Panama's government has not yet confirmed a formal restart timeline. The 88% audit score
+                        keeps the option open but political risk around public sentiment remains the primary
+                        constraint.</p>
+                    <p class="nl-body-text"><strong>Diamonds for Development Fund — no board news for third
+                        consecutive week.</strong> Adesina is in office. Independent director appointments remain the
+                        outstanding milestone.</p>
+                    <p class="nl-body-text"><strong>Allied-Zijin — outside date 29 July approaching.</strong> No NDRC
+                        announcement. The 21% share price discount to the C$44 offer price has not narrowed,
+                        signalling continued institutional scepticism about Chinese approval ahead of the deadline.</p>
+                    <p class="nl-body-text"><strong>South African mining input costs accelerated sharply in May.</strong>
+                        The Minerals Council Mining Cost Index shows petroleum products up 15.3% month-on-month,
+                        chemicals up 11.5%, and overall costs up 2.3% in May alone. Domestic utility tariff increases
+                        now in force from mid-June mean cost relief will lag the oil price fall by at least one
+                        quarter, independent of the Hormuz resolution.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Africa Positioning</div>
+                    <p class="nl-body-text">Gold broke above $4,100 on Thursday 3 July after the June US nonfarm
+                        payroll report delivered a sharp downside surprise — 57,000 jobs added against a consensus
+                        forecast of 115,000, the weakest monthly gain since February. A weak jobs number signals
+                        economic softening, which means inflation is likely to ease, which removes the Fed's
+                        justification for raising rates — the CME FedWatch tool now shows less than a 30% probability
+                        of a hike at the 29 July meeting, down from 63% six weeks ago. Separately, the Lobito Corridor
+                        railway achieved $753 million financial close, backed by $553 million from the US DFC and
+                        $200 million from the Development Bank of Southern Africa. The 1,300-kilometre rehabilitated
+                        line links the Port of Lobito to the DRC Copperbelt, cutting transit time for cobalt and
+                        copper from 45 days to under 8 and cost by 30% — a direct extension of the US strategy of
+                        routing African critical minerals into Western supply chains through infrastructure rather
+                        than extraction. South32 agreed to sell its Hillside aluminium smelter in KwaZulu-Natal to
+                        Alcoa for up to $5.6 billion, a live valuation benchmark for South African processing assets.
+                        And the DRC withdrew unused cobalt export quotas while simultaneously signing a diamond
+                        processing joint venture with Swiss firm ADEX — two separate minerals, the same week,
+                        pointing in the same direction of Kinshasa actively managing its mineral portfolio rather than
+                        passively hosting extraction.</p>
+
+                    <figure style="margin: 24px 0; border-radius: 12px; overflow: hidden; box-shadow: 0 6px 24px rgba(20,49,86,0.12);">
+                        <img src="images/mining-lobito-corridor.jpg"
+                             alt="Lobito Corridor railway linking Angola to the DRC Copperbelt"
+                             style="width:100%; height:280px; object-fit:cover; display:block;">
+                        <figcaption style="background:rgb(20,49,86); color:rgba(255,255,255,0.7); font-size:12px; padding:12px 18px; border-left:4px solid #72e2ae; font-style:italic;">
+                            The Lobito Corridor achieved $753 million financial close — a 1,300-kilometre rehabilitated
+                            rail line cutting Copperbelt-to-port transit from 45 days to under 8, backed by $553
+                            million from the US DFC.
+                        </figcaption>
+                    </figure>
+
+                    <div class="nl-two-col">
+                        <div class="nl-col-card opps">
+                            <h4><i class="fas fa-arrow-up" style="margin-right:6px;"></i>Opportunities</h4>
+                            <ul>
+                                <li>Gold breaking above $4,100 on a weak jobs report confirms the rate-easing path is intact — rate hike probability at the July 29 Fed meeting below 30%, down from 63% six weeks ago</li>
+                                <li>Lobito Corridor financial close establishes the blended finance template — US DFC plus DBSA plus AFC advisory — that AEMBank should understand and work alongside for DRC and Zambia infrastructure transactions</li>
+                                <li>Oil at $69 means diesel cost relief is within one to two months of reaching South African, Zambian and DRC mining operations on the lagged physical normalisation timeline</li>
+                                <li>Alcoa's $5.6 billion Hillside acquisition establishes a live valuation reference for South African aluminium smelting capacity and signals global industrial confidence in SA assets</li>
+                                <li>DRC's ADEX diamond JV and Botswana's Diamonds for Development Fund together suggest a continental shift toward onshore diamond processing — a structural beneficiation trend</li>
+                                <li>Goldman's $5,400 year-end gold target and the WGC survey's record 45% central bank buying intention remain intact as the structural floor under AEMBank's gold project assessments</li>
+                            </ul>
+                        </div>
+                        <div class="nl-col-card threats">
+                            <h4><i class="fas fa-exclamation-triangle" style="margin-right:6px;"></i>Threats</h4>
+                            <ul>
+                                <li>South African mining cost pressures accelerated sharply in May — 15.3% fuel cost increase month-on-month — and domestic utility tariff increases will sustain pressure through Q3 independent of the Hormuz resolution</li>
+                                <li>Allied-Zijin outside date is 29 July with no NDRC announcement and a persistent 21% share price discount — the Mali jurisdiction risk embedded in this deal remains unresolved</li>
+                                <li>Iran deal 60-day window is running with nuclear parameters and sanctions architecture still deferred — any breakdown in the Doha follow-on talks reintroduces the full set of energy, acid and rate headwinds tracked across the past five editions</li>
+                                <li>DRC's active cobalt quota management signals supply tightening at precisely the moment the US is trying to lock in cobalt supply — a tension that could disrupt the DRC-US cobalt MoU framework</li>
+                                <li>Cobre Panama restart still pending — if approved, 300,000 tonnes of annual copper supply returns to the market, moderating the price support underpinning AEMBank's copper pipeline</li>
+                                <li>Diamonds for Development Fund — three consecutive weeks without board director news; the $74 million seed capital deployment cannot begin until governance is fully established</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nl-takeaway">
+                    <div class="nl-takeaway-label">Key Takeaway</div>
+                    <p>The rate-easing path and the Hormuz normalisation path are now both confirmed in market pricing,
+                        not just diplomatic signals — gold above $4,100 and oil near $69 tell the same story from two
+                        directions. Meanwhile the Lobito Corridor's financial close is the clearest evidence yet that
+                        Western capital is building permanent infrastructure into the Copperbelt, not just signing
+                        MoUs. And the DRC's simultaneous moves on cobalt and diamonds confirm that sovereign
+                        participation in African minerals is now a standing policy posture, not an episodic reaction —
+                        a theme AEMBank should treat as the new baseline for every transaction, not an emerging risk.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Deals &amp; Strategic Moves</div>
+                    <div class="nl-deals">
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-coins"></i></div>
+                            <div class="nl-deal-text"><strong>Gold Breaks Above $4,100</strong> — June US nonfarm
+                                payrolls came in at 57,000 versus a 115,000 forecast, the weakest since February.
+                                Fed rate-hike probability for 29 July fell below 30%, down from 63% six weeks ago.
+                                Goldman maintains its $5,400 year-end target.</div>
+                        </div>
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-train"></i></div>
+                            <div class="nl-deal-text"><strong>Lobito Corridor — $753M Financial Close</strong> — US
+                                DFC ($553M) and DBSA ($200M) financed the 1,300km Lobito-to-Copperbelt rail line.
+                                Concessionaire: Lobito Atlantic Railway (Mota-Engil/Trafigura JV), 30-year concession.
+                                Cuts transit from 45 days to under 8 at 30% lower cost; 4.6 million tonnes/year capacity
+                                at full operation.</div>
+                        </div>
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-industry"></i></div>
+                            <div class="nl-deal-text"><strong>South32 Sells Hillside Aluminium to Alcoa</strong> — Up
+                                to $5.6 billion: $3.1B cash, $1B in Alcoa shares, ~$750M assumed net debt, plus up to
+                                $750M contingent consideration to 2030. Hillside smelter in KwaZulu-Natal has ~720,000
+                                tonnes annual capacity.</div>
+                        </div>
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-gem"></i></div>
+                            <div class="nl-deal-text"><strong>DRC — Cobalt Quota Withdrawal &amp; ADEX Diamond JV</strong>
+                                — DRC's state cobalt agency withdrew unused export quotas on 30 June. Separately, DRC
+                                signed a 50-50 JV with Swiss firm ADEX Platform and state fund FOMIN to build a
+                                diamond cutting and jewellery facility plus a digital direct-sales platform.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Research Spotlight — Sovereign Participation Frameworks</div>
+                    <p class="nl-body-text">A question that has appeared in different forms across nearly every
+                        edition of this newsletter since April is crystallising this week into something that deserves
+                        to be named directly: when a foreign company mines African resources, how much of the value
+                        actually stays in Africa — and are African governments finally building the structures to
+                        change that? Ghana let the lease on Gold Fields' Damang mine expire and ran a restricted
+                        tender open only to Ghanaian companies, successfully transferring a working mine to a local
+                        operator, and is now weighing the same decision for the much larger Tarkwa mine ahead of its
+                        April 2027 lease expiry. Zimbabwe mandated state co-ownership across 14 critical minerals with
+                        an immediate raw export ban, yet simultaneously owes its platinum producers $228 million in
+                        unpaid export earnings — exposing the gap between policy ambition and fiscal capacity.
+                        Botswana renegotiated its entire De Beers relationship from a position of leverage. This
+                        week's DRC stories — cobalt quota withdrawal and the ADEX diamond JV — add two more data
+                        points in the same direction: Kinshasa is managing its mineral portfolio as an active
+                        sovereign instrument, not a passive resource base. For AEMBank, the practical implication is
+                        not abstract — lease renewal risk, state participation requirements and sovereign payment
+                        timing are no longer edge cases; they are the new baseline for any transaction involving a
+                        foreign operator in an African jurisdiction.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Financing Implications</div>
+                    <p class="nl-body-text">Three themes stand out this week. The Lobito Corridor financial close is a
+                        direct benchmark for AEMBank infrastructure financing — the $753 million deal was structured
+                        by AFC and Eaglestone using a blended architecture of US DFC concessional lending and DBSA
+                        senior debt, directly challenging the conventional view that African infrastructure deals of
+                        this complexity cannot be financed domestically. South African cost pressure requires an
+                        explicit Q3 overlay on all SA mining models — the Minerals Council's May data (15.3% fuel
+                        cost increase, 11.5% chemicals increase, 2.3% overall index rise) combined with utility tariff
+                        increases now in force mean cost assumptions cannot assume immediate normalisation simply
+                        because oil has fallen. Sovereign participation risk should be formally incorporated as a
+                        first-order credit criterion — the convergence of DRC, Ghana, Zimbabwe and Botswana actions
+                        confirms that who controls an asset, and on what terms, is now a primary credit consideration
+                        across every major African mining jurisdiction.</p>
+                    <div class="nl-trend-list">
+                        <div class="nl-trend-item">Map the Lobito Corridor's blended finance structure (DFC concessional lending + DBSA senior debt + AFC/Eaglestone advisory) against AEMBank's infrastructure pipeline</div>
+                        <div class="nl-trend-item">Apply an explicit Q3 fuel and utility cost stress scenario to all South African mining models, independent of the oil price recovery</div>
+                        <div class="nl-trend-item">Formally test every African mining transaction for lease renewal risk, state participation trajectory and sovereign payment timing</div>
+                        <div class="nl-trend-item">Re-run gold-exposed pipeline sensitivity using current spot (~$4,100–$4,200) as the base case, with the 29 July Fed meeting as the next key catalyst</div>
+                    </div>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Watch Next Week</div>
+                    <div class="nl-signals">
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>Federal Reserve — 29 July meeting: with rate hike probability now below 30%, the base case is a hold. Watch the language on inflation and the rate path.</span></div>
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>Iran Doha talks — resumption after funeral: watch for the resumption date and the first substantive report from the Doha session on sanctions relief and nuclear parameters.</span></div>
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>Allied-Zijin — 29 July outside date: three weeks to the deadline. Watch for any NDRC announcement or further extension.</span></div>
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>South African mining costs — Q2 earnings season: first Q2 results from SA gold and PGM producers begin appearing toward end of July; watch for fuel and electricity cost commentary.</span></div>
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>Lobito Corridor — DRC extension fundraising: the ~450km DRC extension to Kolwezi requires an estimated $410 million; AFC is lead developer. Watch for any fundraising announcement.</span></div>
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>Diamonds for Development Fund — board appointments: fourth consecutive week to watch; independent director appointments remain the outstanding milestone.</span></div>
+                    </div>
+                </div>
+
+            </div><!-- end week-jun29 -->
+
+            <!-- ── WEEK: 22 – 26 June 2026 ── -->
+            <div class="nl-week-content" id="week-jun22">
 
                 <div class="nl-overview">
                     <p>Gold surged to $4,887 an ounce this week — its highest level since mid-March — after Iran declared the
