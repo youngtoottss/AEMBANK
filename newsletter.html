@@ -90,12 +90,18 @@
                 <div class="nl-week-selector" id="weekSelector">
                     <button class="nl-week-btn" onclick="toggleWeekDropdown(event)">
                         <i class="far fa-calendar-alt"></i>
-                        <span id="selectedWeek">6 – 10 July 2026</span>
+                        <span id="selectedWeek">20 – 24 July 2026</span>
                         <i class="fas fa-chevron-down nl-chevron"></i>
                     </button>
                     <div class="nl-week-dropdown" id="weekDropdown">
                         <div class="nl-week-dropdown-label">Select Week</div>
-                        <button class="nl-week-option active" onclick="selectWeek(this, '6 – 10 July 2026', 'week-jul6')">
+                        <button class="nl-week-option active" onclick="selectWeek(this, '20 – 24 July 2026', 'week-jul20')">
+                            20 – 24 July 2026
+                        </button>
+                        <button class="nl-week-option" onclick="selectWeek(this, '14 – 17 July 2026', 'week-jul14')">
+                            14 – 17 July 2026
+                        </button>
+                        <button class="nl-week-option" onclick="selectWeek(this, '6 – 10 July 2026', 'week-jul6')">
                             6 – 10 July 2026
                         </button>
                         <button class="nl-week-option" onclick="selectWeek(this, '29 June – 3 July 2026', 'week-jun29')">
@@ -144,11 +150,498 @@
                 </div>
             </div>
 
+            <!-- ── WEEK: 20 – 24 July 2026 ── -->
+            <div class="nl-week-content active" id="week-jul20">
 
-            <!-- ── WEEK: 22 – 26 June 2026 ── -->
-            <!-- ── WEEK: 29 June – 3 July 2026 ── -->
+                <div class="nl-overview">
+                    <p>Brent crude crossed $100 a barrel for the first time since May after Trump warned of expanded
+                        military action against Iran and Houthi militants targeted two Saudi oil tankers in the Red
+                        Sea, opening a new front in the broader conflict. Gold held near $4,030 for a modest weekly
+                        gain as markets priced the Federal Reserve's July 29 hold — but September hike probability
+                        surged above 80%, confirming the higher-for-longer environment is not resolved. Sweden
+                        formally declared mining of critical metals and rare earth minerals a national security interest
+                        on Thursday — the latest Western government to treat African mineral supply chains as a
+                        strategic imperative rather than a commercial transaction. Zimbabwe's state-owned lithium
+                        miner Mutapa Energy Resources closed $300 million in financing from a Chinese-linked group,
+                        demonstrating that African sovereign mineral entities can attract institutional capital
+                        independently. Mali's government projections show gold output staying below its 2023 record
+                        through 2029 — a direct consequence of the 2023 mining code overhaul and the Barrick dispute.
+                        And the DRC's July 31 deadline for 10% local equity transfer is seven days away, with no
+                        major operator having complied.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Market Snapshot</div>
+                    <div class="nl-market-grid">
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Gold</div><div class="nl-commodity-price">$4,030 – $4,100/oz</div></div>
+                            <div class="nl-commodity-trend up">↑</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Brent Oil</div><div class="nl-commodity-price">$98 – $103/bbl</div></div>
+                            <div class="nl-commodity-trend up">↑</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Silver</div><div class="nl-commodity-price">$78 – $82/oz</div></div>
+                            <div class="nl-commodity-trend up">↑</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Copper</div><div class="nl-commodity-price">$13,100 – $13,400/t</div></div>
+                            <div class="nl-commodity-trend flat">↓</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Platinum</div><div class="nl-commodity-price">$1,540 – $1,580/oz</div></div>
+                            <div class="nl-commodity-trend flat">↓</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Lithium</div><div class="nl-commodity-price">$21,000 – $22,000/t</div></div>
+                            <div class="nl-commodity-trend up">↑</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Cobalt</div><div class="nl-commodity-price">~$57,000/t</div></div>
+                            <div class="nl-commodity-trend flat">→</div>
+                        </div>
+                    </div>
+                    <table class="nl-fx-table" style="margin-top:24px;">
+                        <thead><tr><th>Currency</th><th>Range (vs USD)</th><th>Trend</th></tr></thead>
+                        <tbody>
+                            <tr><td>NGN — Nigerian Naira</td><td>~1,645 – 1,705</td><td class="trend-weak">Continued weakness</td></tr>
+                            <tr><td>ZAR — South African Rand</td><td>~18.6 – 19.4</td><td class="trend-weak">Weak; gold softness and oil spike compounding pressure</td></tr>
+                            <tr><td>ZWL — Zimbabwean Dollar</td><td>~13.5 – 14.2</td><td class="trend-firm">Stable; $300m lithium financing a confidence signal</td></tr>
+                            <tr><td>ZMW — Zambian Kwacha</td><td>~25.5 – 26.9</td><td class="trend-volatile">Mild softening; oil above $100 reversing prior relief</td></tr>
+                            <tr><td>EUR — Euro</td><td>~1.06 – 1.09</td><td class="trend-firm">Steady; ECB held Thursday, September hike live</td></tr>
+                            <tr><td>GBP — British Pound</td><td>~1.29 – 1.33</td><td class="trend-firm">Broadly stable</td></tr>
+                        </tbody>
+                    </table>
+                    <p class="nl-body-text" style="font-size:13px;color:#4a5a68;margin-top:12px;">The dollar
+                        strengthened on the oil spike and renewed rate hike expectations, weighing on African
+                        currencies with significant import bills. ZAR under particular pressure as both gold softness
+                        and higher oil costs compound simultaneously. The ECB held rates Thursday but left the
+                        September door open — dollar strength therefore has no European offset. Sources: LME, ICE,
+                        Refinitiv, CME, Fastmarkets.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Key Developments — Updates from the Watch List</div>
+                    <p class="nl-body-text"><strong>Iran — new front opened; oil back above $100.</strong> Houthi
+                        militants targeted two Saudi oil tankers in the Red Sea this week, opening a new front in the
+                        broader conflict. Trump warned of expanded military action against Iran. Brent crossed $100
+                        for the first time since May. The conflict is no longer confined to the Strait of Hormuz — the
+                        Red Sea route is now also threatened.</p>
+                    <p class="nl-body-text"><strong>Federal Reserve — hold July 29, September hike above 80%.</strong>
+                        Markets assign a 34% probability to a rate hike next week and above 80% probability to a
+                        September hike. The June CPI softening that briefly eased pressure has been overridden by oil
+                        back above $100.</p>
+                    <p class="nl-body-text"><strong>ECB — held Thursday, September hike door open.</strong> The
+                        European Central Bank kept rates unchanged Thursday but signalled a September increase
+                        remains live depending on inflation data.</p>
+                    <p class="nl-body-text"><strong>Allied-Zijin — extended past July 29, still no NDRC approval.</strong>
+                        The outside date has been extended. Chinese regulatory approval remains the constraint, now
+                        further contextualised by Mali's output projections through 2029.</p>
+                    <p class="nl-body-text"><strong>Ghana mining law — parliament submission pending.</strong> Cabinet
+                        approved the overhaul last week. Watch for the parliamentary submission timeline and any
+                        formal operator response from Newmont, AngloGold or Gold Fields.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Africa Positioning</div>
+                    <p class="nl-body-text">Zimbabwe's state-owned lithium miner, Mutapa Energy Resources, closed
+                        $300 million in financing from a group of investors including Chinese entities. Zimbabwe
+                        supplied approximately 10% of global mined lithium in the past year and has halted concentrate
+                        exports, requiring domestic processing into higher-value intermediates before lithium can leave
+                        the country — the same beneficiation logic running through Guinea, Ghana and the DRC
+                        simultaneously. Sweden's government separately designated the mining of critical metals and
+                        rare earth minerals a national security interest, following the US Defence Logistics Agency's
+                        $300 million lithium stockpile procurement, the EU Critical Raw Materials Act, Japan's
+                        strategic mineral reserve programme and Australia's Critical Minerals Strategy — every major
+                        Western economy has now formally designated critical mineral supply a national security
+                        priority. Mali's mines ministry, meanwhile, circulated a 2026–2029 production plan projecting
+                        industrial gold output staying below its 2023 record of 66.5 tonnes through the planning
+                        horizon, a direct consequence of the 2023 mining code overhaul and the Barrick dispute over
+                        the Loulo-Gounkoto complex. And the DRC's July 31 deadline for operators to transfer 10%
+                        equity to Congolese nationals is seven days away, with Glencore, Ivanhoe Mines, CMOC and
+                        Huayou Cobalt all formally notified but none yet compliant.</p>
+
+                    <figure style="margin: 24px 0; border-radius: 12px; overflow: hidden; box-shadow: 0 6px 24px rgba(20,49,86,0.12);">
+                        <img src="images/mining-zimbabwe-lithium-financing.jpg"
+                             alt="Lithium mining operations in Zimbabwe"
+                             style="width:100%; height:280px; object-fit:cover; display:block;">
+                        <figcaption style="background:rgb(20,49,86); color:rgba(255,255,255,0.7); font-size:12px; padding:12px 18px; border-left:4px solid #72e2ae; font-style:italic;">
+                            Zimbabwe's state-owned Mutapa Energy Resources closed $300 million in Chinese-linked
+                            financing — proof that African sovereign mineral entities can attract institutional capital
+                            independently.
+                        </figcaption>
+                    </figure>
+
+                    <div class="nl-two-col">
+                        <div class="nl-col-card opps">
+                            <h4><i class="fas fa-arrow-up" style="margin-right:6px;"></i>Opportunities</h4>
+                            <ul>
+                                <li>Sweden's national security designation completes the circle of Western strategic mineral demand — every major Western economy has now formally backed African critical mineral supply as a security priority</li>
+                                <li>Zimbabwe's $300m Mutapa financing proves state-owned African mineral entities can attract institutional capital independently — AEMBank should be originating this category of transaction with governance conditions Chinese capital cannot provide</li>
+                                <li>Silver surging 5% on Tuesday is a forward demand signal — India premium at six-month high means pent-up demand will hit global markets when restrictions ease</li>
+                                <li>Mali's production data quantifies the sovereign participation risk premium — a 20 to 30% production decline over two to three years is now an empirically grounded stress scenario rather than a theoretical assumption</li>
+                                <li>The DRC July 31 deadline, if extended again, would confirm that enforcement timelines are negotiable — reducing the immediate compliance risk for operators currently in AEMBank's pipeline</li>
+                            </ul>
+                        </div>
+                        <div class="nl-col-card threats">
+                            <h4><i class="fas fa-exclamation-triangle" style="margin-right:6px;"></i>Threats</h4>
+                            <ul>
+                                <li>Oil back above $100 and a Red Sea second front reinstates the full input cost pressure on African mining that had partially eased in late June — all operational cost models need updating</li>
+                                <li>September Fed hike probability above 80% means the higher-for-longer interest rate environment is not resolving in the near term — gold ceiling set by September, not July</li>
+                                <li>Mali production data shows a 37% output decline from the 2023 peak with no recovery to prior levels projected through 2029 — the clearest evidence yet of what aggressive sovereign participation costs in lost production</li>
+                                <li>DRC July 31 equity deadline — if enforced with sanctions, production disruption at Kamoa-Kakula and other major DRC operations becomes a near-term scenario</li>
+                                <li>Chinese capital funding Zimbabwe's beneficiation mandate without governance conditions sets a competitive benchmark that reduces African governments' incentive to engage with more conditional Western finance</li>
+                                <li>Allied-Zijin deal extended with no NDRC approval — Mali output projections further contextualise the jurisdiction risk embedded in the deal structure</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nl-takeaway">
+                    <div class="nl-takeaway-label">Key Takeaway</div>
+                    <p>The world's largest economies have decided African critical minerals are essential to their
+                        national security and are competing to secure access — Sweden's declaration completes that
+                        picture. African governments are caught between two very different models of engagement:
+                        Western capital that attaches governance conditions, and Chinese capital that moves faster
+                        without them, as Zimbabwe's Mutapa financing shows. Mali shows what neither model can fix on
+                        its own — when sovereign control moves faster than operator confidence can absorb, output
+                        falls and the value a government sought to capture is partially offset by the value foregone.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Deals &amp; Strategic Moves</div>
+                    <div class="nl-deals">
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-oil-can"></i></div>
+                            <div class="nl-deal-text"><strong>Oil Crosses $100 — New Red Sea Front</strong> — Trump
+                                warned of expanded military action against Iran; Houthi militants targeted two Saudi
+                                oil tankers in the Red Sea. Brent crossed $100 for the first time since May. Gold held
+                                near $4,030; September Fed hike probability above 80%.</div>
+                        </div>
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-shield-alt"></i></div>
+                            <div class="nl-deal-text"><strong>Sweden — Critical Minerals National Security Designation</strong>
+                                — Formally declared mining of critical metals and rare earths a national security
+                                interest on 23 July. LKAB's Kiruna/Per Geijer deposit holds 1.2 billion tonnes of
+                                resources including 2.2 million tonnes of rare earth oxides.</div>
+                        </div>
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-battery-full"></i></div>
+                            <div class="nl-deal-text"><strong>Zimbabwe — Mutapa Energy Resources $300M Financing</strong>
+                                — State-owned lithium miner closed financing from a Chinese-linked investor group.
+                                Sandawana operation has mined 2 million tonnes of ore, scaling toward 3 million
+                                tonnes/year.</div>
+                        </div>
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-chart-line"></i></div>
+                            <div class="nl-deal-text"><strong>Mali — Gold Output Below 2023 Record Through 2029</strong>
+                                — Ministry projects 43.2 tonnes in 2026, peaking at 57 tonnes in 2028, versus the 2023
+                                record of 66.5 tonnes. Industrial reserves projected to fall from 906.8 to 748.6 tonnes
+                                by 2029.</div>
+                        </div>
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-landmark"></i></div>
+                            <div class="nl-deal-text"><strong>DRC — July 31 Local Equity Deadline</strong> — Glencore,
+                                Ivanhoe Mines, CMOC and Huayou Cobalt formally notified in January to demonstrate
+                                compliance with the 2018 code's 10% local equity provision. No major operator has yet
+                                complied.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Research Spotlight — The Competition for African Minerals Is Intensifying</div>
+                    <p class="nl-body-text">Three stories this week — Sweden's national security declaration,
+                        Zimbabwe's Chinese-backed lithium financing, and Mali's five-year production decline — sit at
+                        the centre of the most important strategic question in global mining right now. The Western
+                        model is based on traceability, governance conditions and supply chain integration, deploying
+                        concessional capital with conditions attached. The Chinese model is based on speed, capital
+                        availability and alignment with African government priorities, funding state-owned entities
+                        directly without the same governance conditions. Mali shows what neither model can fix on its
+                        own: when a government asserts aggressive sovereign control, output falls, reserves decline
+                        and the sector takes years to recover. For AEMBank, the gap to step into is specific —
+                        transactions that combine the governance conditions and traceability alignment that Western
+                        offtake buyers require with the speed and sovereign relationship depth that African
+                        governments need, backed by a development finance mandate that makes both possible
+                        simultaneously.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Financing Implications</div>
+                    <p class="nl-body-text">Oil above $100 requires immediate operational cost model updates across
+                        the African mining pipeline — any AEMBank transaction modelled against an oil below $90
+                        assumption needs to be re-run, and the Red Sea front introduces a second geographic risk
+                        beyond scenarios modelled to date. Zimbabwe lithium is an active origination opportunity —
+                        the Mutapa financing demonstrates $300 million of institutional capital is available for
+                        state-owned African lithium entities, and AEMBank should assess its ability to originate
+                        similar transactions with governance conditions as the differentiating value-add over
+                        Chinese bilateral capital. Mali's production data should be applied as a standard stress
+                        scenario for sovereign participation risk — a 20 to 30% production decline over a two to
+                        three year adjustment period should be a default sensitivity input for any credit review in a
+                        jurisdiction implementing mining law reforms, directly applicable to Ghana, Guinea and the
+                        DRC.</p>
+                    <div class="nl-trend-list">
+                        <div class="nl-trend-item">Re-run all operational cost models built on an oil-below-$90 assumption given the Red Sea second front</div>
+                        <div class="nl-trend-item">Assess AEMBank's ability to originate and co-structure Zimbabwe-style state-owned lithium financing with governance conditions attached</div>
+                        <div class="nl-trend-item">Apply a 20–30% production-decline stress scenario, drawn from Mali, to any credit review in a jurisdiction implementing mining law reform</div>
+                        <div class="nl-trend-item">Track the DRC's July 31 local equity deadline for enforcement, extension, or a finalised compliance framework</div>
+                    </div>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Watch Next Week</div>
+                    <div class="nl-signals">
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>Federal Reserve — July 29 meeting: base case is a hold at 3.50–3.75%. Watch for rate path language — any signal that September is less certain than currently priced would be positive for gold.</span></div>
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>DRC — July 31 local equity deadline: seven days away, no major operator has complied. Watch for enforcement, extension, or a finalised compliance framework.</span></div>
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>Iran — Red Sea and Hormuz: watch for any escalation in Red Sea attacks and whether Saudi Arabia responds militarily.</span></div>
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>Allied-Zijin — NDRC: deal extended past July 29. Watch for any Chinese regulatory announcement.</span></div>
+                    </div>
+                </div>
+
+            </div><!-- end week-jul20 -->
+
+            <!-- ── WEEK: 14 – 17 July 2026 ── -->
+            <div class="nl-week-content" id="week-jul14">
+
+                <div class="nl-overview">
+                    <p>Gold fell below $4,000 this week for the first time since November 2025 — down more than 3%
+                        for the week — as six consecutive days of US-Iran airstrikes pushed oil above $86 a barrel and
+                        revived fears of a prolonged inflation shock. Iran has refused to relinquish control of the
+                        Strait of Hormuz, holding firm on its primary bargaining chip as Trump warned of strikes on
+                        Iranian infrastructure next week unless a diplomatic breakthrough emerges. June CPI came in
+                        at 3.5% — softer than May's 4.2% — providing a partial offset, but markets remain cautious.
+                        The week's most significant development for African mining sits away from the commodity
+                        markets entirely: in three days, Ghana, the DRC and Guinea all moved to tighten state control
+                        over their mineral sectors simultaneously. Ghana cut maximum mining leases from 30 to 10
+                        years and doubled royalties. The DRC proposed to amend more than 40 articles of its mining
+                        code, prompting an emergency industry forum. Guinea banned raw gold exports outright. And at
+                        the AfDB Ministerial Forum on Critical Minerals in Nigeria, African governments formally
+                        endorsed a continental beneficiation policy consensus.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Market Snapshot</div>
+                    <div class="nl-market-grid">
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Gold</div><div class="nl-commodity-price">$3,980 – $4,060/oz</div></div>
+                            <div class="nl-commodity-trend flat">↓</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Brent Oil</div><div class="nl-commodity-price">$84 – $88/bbl</div></div>
+                            <div class="nl-commodity-trend up">↑</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Silver</div><div class="nl-commodity-price">$75 – $78/oz</div></div>
+                            <div class="nl-commodity-trend flat">↓</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Copper</div><div class="nl-commodity-price">$13,100 – $13,500/t</div></div>
+                            <div class="nl-commodity-trend flat">→</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Platinum</div><div class="nl-commodity-price">$1,540 – $1,590/oz</div></div>
+                            <div class="nl-commodity-trend flat">→</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Cobalt</div><div class="nl-commodity-price">~$57,000/t</div></div>
+                            <div class="nl-commodity-trend flat">→</div>
+                        </div>
+                    </div>
+                    <table class="nl-fx-table" style="margin-top:24px;">
+                        <thead><tr><th>Currency</th><th>Range (vs USD)</th><th>Trend</th></tr></thead>
+                        <tbody>
+                            <tr><td>NGN — Nigerian Naira</td><td>~1,640 – 1,700</td><td class="trend-weak">Continued weakness</td></tr>
+                            <tr><td>ZAR — South African Rand</td><td>~18.5 – 19.3</td><td class="trend-weak">Weak; gold below $4,000 a direct headwind</td></tr>
+                            <tr><td>GHS — Ghanaian Cedi</td><td>~15.0 – 16.2</td><td class="trend-weak">Weak; mining law uncertainty adding pressure</td></tr>
+                            <tr><td>ZMW — Zambian Kwacha</td><td>~25.5 – 26.8</td><td class="trend-volatile">Mild softening; oil spike reversing prior relief</td></tr>
+                            <tr><td>EUR — Euro</td><td>~1.06 – 1.09</td><td class="trend-weak">Softening on strong dollar</td></tr>
+                            <tr><td>GBP — British Pound</td><td>~1.29 – 1.33</td><td class="trend-firm">Broadly stable</td></tr>
+                        </tbody>
+                    </table>
+                    <p class="nl-body-text" style="font-size:13px;color:#4a5a68;margin-top:12px;">ZAR under
+                        particular pressure this week as gold falling below $4,000 directly compresses South African
+                        mining revenue expectations. GHS facing the dual headwind of currency weakness and mining law
+                        uncertainty as the new royalty and lease regime heads to parliament. Sources: LME, ICE,
+                        Refinitiv, CME, Fastmarkets.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Key Developments — Updates from the Watch List</div>
+                    <p class="nl-body-text"><strong>Iran — escalation, not resolution.</strong> Six consecutive days
+                        of US-Iran airstrikes this week. The US is now striking roads, bridges and military
+                        infrastructure. Iran has held firm on the Strait of Hormuz. Trump warned of strikes on Iranian
+                        energy infrastructure next week. The 60-day MoU window from Versailles has effectively
+                        collapsed in practice.</p>
+                    <p class="nl-body-text"><strong>Gold below $4,000 — November 2025 lows.</strong> Gold opened
+                        Friday at $3,980 and has been holding near $4,000, down more than 3% for the week. The
+                        partial offset is June CPI at 3.5% — softer than May's 4.2% — but oil above $86 is
+                        reinflating that same concern in real time.</p>
+                    <p class="nl-body-text"><strong>Fed July 29 meeting — hold still most likely.</strong> CME
+                        FedWatch shows a 66.3% probability of a hold at 3.50–3.75%. June CPI softening is the reason,
+                        but the renewed oil spike this week adds risk to that assessment.</p>
+                    <p class="nl-body-text"><strong>Allied-Zijin — deadline passed, deal extended.</strong> The July
+                        29 outside date has been extended as Chinese regulatory approval remains pending. The Mali
+                        jurisdiction risk remains the constraint.</p>
+                    <p class="nl-body-text"><strong>Northam Platinum — record production year.</strong> Reported
+                        record total equivalent refined metal production of 938,754 oz 4E PGMs for the financial year
+                        ended June 30, with chrome concentrate also at a record 1.69 million tonnes, up 17.4% year on
+                        year — the fifth consecutive extraordinary African mining result tracked in this newsletter.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Africa Positioning</div>
+                    <p class="nl-body-text">Ghana's cabinet approved the most comprehensive overhaul of its mining
+                        legislation in nearly two decades this week. Maximum lease renewal periods are cut from 30
+                        years to 10, royalties move to a sliding scale of 9% to 12% up from 3% to 5%, and stability
+                        agreements held by Newmont, AngloGold Ashanti and Gold Fields are being phased out as they
+                        lapse. Ghana's Minerals Commission has separately ordered those companies, plus Zijin Mining,
+                        to transfer mining operations to Ghanaian local contractors by December 2026. Meanwhile the
+                        DRC is moving to amend more than 40 articles of its 2018 mining code — a bill proposing
+                        expanded state control over strategic minerals, government-managed stockpiles, and the power
+                        to suspend or revoke permits at regulatory discretion, prompting the DRC Chamber of Mines to
+                        call an emergency industry forum for 15–17 July. Guinea's President Mamadi Doumbouya banned
+                        raw gold exports outright, requiring all gold to be processed domestically through the new
+                        Nimba Gold Refinery in Conakry before it can leave the country. And at the AfDB Ministerial
+                        Forum on Critical Minerals in Abuja, Nigeria joined African governments in formally endorsing
+                        a continental push to leverage the continent's mineral resources for industrialisation and
+                        value addition.</p>
+
+                    <figure style="margin: 24px 0; border-radius: 12px; overflow: hidden; box-shadow: 0 6px 24px rgba(20,49,86,0.12);">
+                        <img src="images/mining-ghana-mining-law.jpg"
+                             alt="African gold mining operations"
+                             style="width:100%; height:280px; object-fit:cover; display:block;">
+                        <figcaption style="background:rgb(20,49,86); color:rgba(255,255,255,0.7); font-size:12px; padding:12px 18px; border-left:4px solid #72e2ae; font-style:italic;">
+                            Gold fell below $4,000 for the first time since November 2025, even as Ghana, the DRC and
+                            Guinea moved in the same week to tighten state control over their mineral sectors.
+                        </figcaption>
+                    </figure>
+
+                    <div class="nl-two-col">
+                        <div class="nl-col-card opps">
+                            <h4><i class="fas fa-arrow-up" style="margin-right:6px;"></i>Opportunities</h4>
+                            <ul>
+                                <li>June CPI at 3.5% — the softest print since the Iran war began — suggests the energy-driven inflation peak may be passing through the data; if confirmed next month the Fed rate-hike case weakens materially</li>
+                                <li>Northam Platinum's record 938,754 oz 4E PGM production confirms the South African PGM earnings thesis remains intact despite gold pressure</li>
+                                <li>Guinea's export ban and Ghana's local contractor mandate create direct demand for processing infrastructure financing — a development finance opportunity commercial banks will not readily provide</li>
+                                <li>Ghana, DRC and Guinea all moving toward beneficiation simultaneously creates a continental policy environment where AEMBank's mandate aligns directly with government priorities</li>
+                                <li>Central bank structural gold demand — WGC survey 45%, China buying record volumes in June — remains intact as the medium-term price floor</li>
+                            </ul>
+                        </div>
+                        <div class="nl-col-card threats">
+                            <h4><i class="fas fa-exclamation-triangle" style="margin-right:6px;"></i>Threats</h4>
+                            <ul>
+                                <li>Gold below $4,000 for the first time since November 2025 — down more than 3% this week — requires an immediate update to every AEMBank credit model with gold price exposure</li>
+                                <li>Iran holding Hormuz; Trump warning of infrastructure strikes next week; oil above $86 — the prolonged conflict scenario is now the base case, not a tail risk</li>
+                                <li>Ghana's lease reduction from 30 to 10 years compresses the project finance certainty window for all existing and pipeline Ghanaian mining transactions</li>
+                                <li>The DRC's permit suspension discretion is an unhedgeable political risk that must be explicitly priced into every DRC-exposed AEMBank transaction from origination</li>
+                                <li>Guinea's export ban creates immediate operational compliance costs for all gold operators — licence suspension risk for non-compliance is real and immediate</li>
+                                <li>Allied-Zijin deal extended past the July 29 deadline with no NDRC approval — the Mali jurisdiction risk signal continues to harden</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nl-takeaway">
+                    <div class="nl-takeaway-label">Key Takeaway</div>
+                    <p>In three days, Ghana, the DRC and Guinea all moved to tighten state control over their mineral
+                        sectors — not a coincidence, but a pattern. African governments are moving from taxing and
+                        licensing extractive industries toward actively controlling how minerals are processed and
+                        exported. Lease terms, export restrictions and permit discretion are all changing
+                        simultaneously — and every AEMBank transaction needs to reflect that this is now the
+                        operating environment, not an emerging risk.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Deals &amp; Strategic Moves</div>
+                    <div class="nl-deals">
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-coins"></i></div>
+                            <div class="nl-deal-text"><strong>Gold Falls Below $4,000</strong> — Six consecutive days
+                                of US-Iran airstrikes pushed oil above $86, reviving inflation fears. Gold opened
+                                Friday at $3,980, its lowest since November 2025. June CPI at 3.5% offered a partial
+                                offset.</div>
+                        </div>
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-landmark"></i></div>
+                            <div class="nl-deal-text"><strong>Ghana — Mining Law Overhaul</strong> — Leases cut from
+                                30 to 10 years; royalties raised to a 9–12% sliding scale; stability agreements phased
+                                out; Newmont, AngloGold, Gold Fields and Zijin ordered to transfer operations to
+                                Ghanaian local contractors by December 2026.</div>
+                        </div>
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-gavel"></i></div>
+                            <div class="nl-deal-text"><strong>DRC — Mining Code Amendment Proposed</strong> — Bill
+                                proposes to amend 40+ articles of the 2018 code, including permit suspension powers
+                                and penalties up to $1 million and 20 years imprisonment. Chamber of Mines called an
+                                emergency forum for 15–17 July.</div>
+                        </div>
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-ban"></i></div>
+                            <div class="nl-deal-text"><strong>Guinea — Raw Gold Export Ban</strong> — All gold must
+                                now be processed domestically through the Nimba Gold Refinery (250 tonnes/year
+                                capacity) before export. Guinea produces approximately 65–70 tonnes annually, ~90% of
+                                which currently leaves unprocessed.</div>
+                        </div>
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-globe-africa"></i></div>
+                            <div class="nl-deal-text"><strong>Nigeria — AfDB Beneficiation Forum</strong> — At the
+                                Ministerial Forum on Critical Minerals, Value Chains and Beneficiation in Abuja,
+                                African governments formally endorsed a continental beneficiation policy consensus.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Research Spotlight — African Nations Are Protecting Their Own Mineral Growth</div>
+                    <p class="nl-body-text">Ghana, the DRC, Guinea and the AfDB forum are not four separate stories —
+                        they are four expressions of the same shift. Three things changed structurally this week.
+                        First, lease terms as a financing anchor: Ghana cutting leases from 30 to 10 years compresses
+                        the certainty window for project debt, and tenor, covenants and renewal risk provisions all
+                        need to reflect this. Second, export restrictions as an operating constraint: Guinea's export
+                        ban and Ghana's local contractor mandate both change project economics, infrastructure needs
+                        and offtake arrangements. Third, permit discretion as a credit risk: the DRC's proposed power
+                        to suspend permits at discretion introduces a category of political risk that is difficult to
+                        hedge. The positive reading is that African governments asserting control over processing and
+                        export terms creates a demand for infrastructure financing that did not exist before —
+                        refineries, smelters and processing plants need capital, and development finance institutions
+                        are better placed than commercial banks to provide it with the governance conditions that
+                        make it work, using the Lobito Corridor's blended finance model as the template.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Financing Implications</div>
+                    <p class="nl-body-text">Ghana's lease reduction requires immediate tenor review on all pipeline
+                        transactions — any AEMBank transaction with Ghana exposure where debt tenor extends beyond
+                        the current lease term needs review for renewal risk provisions, covenant requirements and
+                        security package adequacy. Gold below $4,000 warrants a stress test update across all
+                        gold-exposed deals — AEMBank should run sensitivity analysis at $3,800 and $3,500 for any gold
+                        project currently in credit review, alongside the Goldman and J.P. Morgan medium-term
+                        recovery cases above $5,000. Beneficiation infrastructure financing is the emerging
+                        opportunity — Guinea, Ghana and the DRC are all creating compliance requirements that demand
+                        processing infrastructure that commercial banks are not naturally positioned to finance.</p>
+                    <div class="nl-trend-list">
+                        <div class="nl-trend-item">Review all Ghana-exposed transactions for renewal risk provisions and security package adequacy against the new 10-year lease ceiling</div>
+                        <div class="nl-trend-item">Run gold stress tests at $3,800 and $3,500 alongside the $5,000+ medium-term recovery case for all pipeline gold projects</div>
+                        <div class="nl-trend-item">Explicitly price DRC permit-suspension discretion into every DRC-exposed transaction, including Metalex Africa, from origination</div>
+                        <div class="nl-trend-item">Assess blended financing structures for beneficiation infrastructure — refineries, smelters, certified processing facilities — across Guinea, Ghana and the DRC</div>
+                    </div>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Watch Next Week</div>
+                    <div class="nl-signals">
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>Iran — Trump's infrastructure strike warning: if executed, expect Brent above $90 and further pressure on gold. If diplomacy produces a breakthrough instead, the reverse.</span></div>
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>Federal Reserve — July 29 meeting: base case remains a hold at 3.50–3.75%. Watch for the rate path language — any dovish signal would be the most positive catalyst available for gold right now.</span></div>
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>Ghana mining law — parliament submission: watch for the submission date and any industry response from Newmont, AngloGold or Gold Fields on the lease reduction and royalty changes.</span></div>
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>Guinea export ban — operator response: watch for the first formal responses from gold operators to the raw export ban and the transition window timeline.</span></div>
+                    </div>
+                </div>
+
+            </div><!-- end week-jul14 -->
+
             <!-- ── WEEK: 6 – 10 July 2026 ── -->
-            <div class="nl-week-content active" id="week-jul6">
+            <div class="nl-week-content" id="week-jul6">
 
                 <div class="nl-overview">
                     <p>The most dramatic week in the Iran peace process since Versailles. Trump declared the
