@@ -90,12 +90,15 @@
                 <div class="nl-week-selector" id="weekSelector">
                     <button class="nl-week-btn" onclick="toggleWeekDropdown(event)">
                         <i class="far fa-calendar-alt"></i>
-                        <span id="selectedWeek">27 – 31 July 2026</span>
+                        <span id="selectedWeek">3 – 7 August 2026</span>
                         <i class="fas fa-chevron-down nl-chevron"></i>
                     </button>
                     <div class="nl-week-dropdown" id="weekDropdown">
                         <div class="nl-week-dropdown-label">Select Week</div>
-                        <button class="nl-week-option active" onclick="selectWeek(this, '27 – 31 July 2026', 'week-jul27')">
+                        <button class="nl-week-option active" onclick="selectWeek(this, '3 – 7 August 2026', 'week-aug3')">
+                            3 – 7 August 2026
+                        </button>
+                        <button class="nl-week-option" onclick="selectWeek(this, '27 – 31 July 2026', 'week-jul27')">
                             27 – 31 July 2026
                         </button>
                         <button class="nl-week-option" onclick="selectWeek(this, '20 – 24 July 2026', 'week-jul20')">
@@ -153,9 +156,269 @@
                 </div>
             </div>
 
-            <!-- ── WEEK: 20 – 24 July 2026 ── -->
             <!-- ── WEEK: 27 – 31 July 2026 ── -->
-            <div class="nl-week-content active" id="week-jul27">
+            <!-- ── WEEK: 3 – 7 August 2026 ── -->
+            <div class="nl-week-content active" id="week-aug3">
+
+                <div class="nl-overview">
+                    <p>Gold surged to $4,343 per ounce on Friday 7 August — its highest level in two months — as
+                        China's central bank reported its largest monthly gold purchase since October 2023 and
+                        institutional investors continued building gold-backed positions as a hedge against
+                        technology stock volatility. Gold miners surged more than 20% for the week in what
+                        Mining.com described as a breakout week, with junior miners and the TSX Venture posting
+                        outsized gains. AngloGold Ashanti reported Q2 headline earnings of $1.01 billion — up 58%
+                        year on year — driven by a 35% increase in the average gold price received, with free cash
+                        flow up 36% to $727 million and a $2 billion share buyback approved. Glencore reported H1
+                        earnings up 86% to $10 billion. China's rare earth exports fell 10% through July as Beijing
+                        blacklisted 10 US companies in June and 14 EU firms in July, with the IEA warning that full
+                        enforcement could put $6.5 trillion of downstream production at risk. Guinea selected
+                        Glencore as offtaker for its state-owned bauxite miner. And Nigeria's President Tinubu
+                        committed to reforming and listing NNPC on the Nigerian Exchange — Africa's largest oil
+                        company on Africa's largest stock market.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Market Snapshot</div>
+                    <div class="nl-market-grid">
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Gold</div><div class="nl-commodity-price">$4,300 – $4,343/oz</div></div>
+                            <div class="nl-commodity-trend up">↑</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Silver</div><div class="nl-commodity-price">$63 – $65/oz</div></div>
+                            <div class="nl-commodity-trend up">↑</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Brent Oil</div><div class="nl-commodity-price">$96 – $102/bbl</div></div>
+                            <div class="nl-commodity-trend flat">↕</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Copper</div><div class="nl-commodity-price">$13,200 – $13,600/t</div></div>
+                            <div class="nl-commodity-trend up">↑</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Platinum</div><div class="nl-commodity-price">$1,950 – $1,973/oz</div></div>
+                            <div class="nl-commodity-trend up">↑</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Cobalt</div><div class="nl-commodity-price">~$57,000/t</div></div>
+                            <div class="nl-commodity-trend flat">→</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Zinc</div><div class="nl-commodity-price">~$3,200/t</div></div>
+                            <div class="nl-commodity-trend up">↑</div>
+                        </div>
+                    </div>
+                    <table class="nl-fx-table" style="margin-top:24px;">
+                        <thead><tr><th>Currency</th><th>Range (vs USD)</th><th>Trend</th></tr></thead>
+                        <tbody>
+                            <tr><td>NGN — Nigerian Naira</td><td>~1,630 – 1,690</td><td class="trend-firm">Firming; NGX market cap N160trn; NNPC listing signal positive</td></tr>
+                            <tr><td>ZAR — South African Rand</td><td>~18.0 – 18.6</td><td class="trend-firm">Strong recovery; gold above $4,300 direct tailwind</td></tr>
+                            <tr><td>ZWL — Zimbabwean Dollar</td><td>~13.3 – 13.9</td><td class="trend-firm">Stable; lithium export revenues underpinning reserves</td></tr>
+                            <tr><td>ZMW — Zambian Kwacha</td><td>~25.0 – 26.0</td><td class="trend-firm">Broadly stable; copper firming supportive</td></tr>
+                            <tr><td>EUR — Euro</td><td>~1.07 – 1.11</td><td class="trend-firm">Steady</td></tr>
+                            <tr><td>GBP — British Pound</td><td>~1.30 – 1.34</td><td class="trend-firm">Broadly stable</td></tr>
+                        </tbody>
+                    </table>
+                    <p class="nl-body-text" style="font-size:13px;color:#4a5a68;margin-top:12px;">African
+                        currencies broadly benefiting from the gold recovery this week. ZAR tracking gold above
+                        $4,300 directly — a sustained move above this level would be the most positive South African
+                        currency signal since January. NGN firming on positive capital market sentiment following the
+                        NNPC listing announcement. Sources: LME, ICE, Refinitiv, CME, Fastmarkets.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Key Developments — Updates from the Watch List</div>
+                    <p class="nl-body-text"><strong>Gold — breakout week confirmed.</strong> Gold at $4,343 on
+                        Friday, miners up 20%+. China's central bank added the most gold since October 2023 in July
+                        — a fifth consecutive month of purchases. The structural demand floor is not just intact, it is
+                        accelerating.</p>
+                    <p class="nl-body-text"><strong>September Fed hike — August inflation data the key
+                        input.</strong> No new CPI or PCE data landed this week. The September decision window is
+                        still open. Oil remaining elevated around $96 to $102 is the primary upside risk to inflation.
+                        Watch for the August CPI release in the coming weeks.</p>
+                    <p class="nl-body-text"><strong>Allied Gold — post-collapse positioning.</strong> The $295
+                        million Zijin strategic stake closes around 10 August. Allied Gold management has confirmed
+                        the proceeds will be deployed toward Kurmuk development in Ethiopia. No asset sale
+                        announcements yet.</p>
+                    <p class="nl-body-text"><strong>Iran — pause holding, Doha talks progressing.</strong> No major
+                        new strikes reported. Oil remains elevated at $96 to $102 on residual risk premium rather
+                        than active escalation. The 60-day MoU window has effectively expired — any new agreement
+                        is a fresh negotiation.</p>
+                    <p class="nl-body-text"><strong>Ghana mining law — parliamentary submission still
+                        pending.</strong> No formal timeline confirmed. Newmont, AngloGold and Gold Fields operator
+                        responses still awaited.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Africa Positioning</div>
+                    <p class="nl-body-text">AngloGold posted $1.01 billion in quarterly earnings. Glencore reported
+                        $10 billion for the half year. Gold miners surged 20% in a single week. These are not
+                        incremental results — they are the financial expression of a structural shift: African minerals
+                        are no longer priced as commodities in a buyer's market but as strategic assets in a seller's
+                        market. AngloGold is now capturing a margin exceeding $3,000 per ounce at an all-in
+                        sustaining cost of roughly $1,400 against a realised gold price of $4,446 — a year earlier at
+                        roughly $3,293 per ounce that margin was closer to $1,900. Glencore's trading book,
+                        combining mining and trading across coal, copper, cobalt, nickel, zinc and oil, captured value
+                        from the volatility itself as much as from elevated prices, with its DRC cobalt, Zambian copper
+                        and South African coal exposure all benefiting directly. Guinea's Glencore offtake deal and
+                        Nigeria's NNPC listing intention sit in the same context: African governments are not just
+                        watching these extraordinary earnings flow to foreign shareholders, they are restructuring
+                        who owns the production, who controls the offtake and where the value is listed.</p>
+
+                    <figure style="margin: 24px 0; border-radius: 12px; overflow: hidden; box-shadow: 0 6px 24px rgba(20,49,86,0.12);">
+                        <img src="images/mining-gold-breakout-china-buying.jpg"
+                             alt="Open-pit mining equipment moving ore during the week gold broke out to $4,343 an ounce"
+                             style="width:100%; height:280px; object-fit:cover; display:block;">
+                        <figcaption style="background:rgb(20,49,86); color:rgba(255,255,255,0.7); font-size:12px; padding:12px 18px; border-left:4px solid #72e2ae; font-style:italic;">
+                            Gold miners surged more than 20% for the week as China's central bank posted its
+                            largest monthly gold purchase since October 2023.
+                        </figcaption>
+                    </figure>
+
+                    <div class="nl-two-col">
+                        <div class="nl-col-card opps">
+                            <h4><i class="fas fa-arrow-up" style="margin-right:6px;"></i>Opportunities</h4>
+                            <ul>
+                                <li>Gold at $4,343 and miners up 20%+ confirms the structural recovery thesis — central bank buying accelerating, institutional positioning building</li>
+                                <li>AngloGold's $3,000/oz margin at current prices illustrates the extraordinary earnings leverage available to African gold producers at elevated price levels</li>
+                                <li>Glencore's 86% H1 earnings jump validates the DRC cobalt and Zambia copper exposure — both African assets contributing to a record result</li>
+                                <li>Guinea-Glencore bauxite offtake model is a template for state mining entities seeking commercial outlets without sacrificing sovereign ownership</li>
+                                <li>China rare earth controls make African rare earth supply — particularly Makuutu Uganda — strategically essential rather than commercially optional for Western buyers</li>
+                                <li>Nigeria NNPC listing intention signals a direction of travel consistent with African capital market deepening and domestic ownership of strategic assets</li>
+                            </ul>
+                        </div>
+                        <div class="nl-col-card threats">
+                            <h4><i class="fas fa-exclamation-triangle" style="margin-right:6px;"></i>Threats</h4>
+                            <ul>
+                                <li>Oil at $96 to $102 with the Iran situation unresolved keeps September Fed hike probability elevated — the rate ceiling on gold's recovery remains in place</li>
+                                <li>China rare earth enforcement regime creates supply chain uncertainty for African producers selling into Chinese processing chains as well as Western buyers</li>
+                                <li>AngloGold production down 3.7% H1 year on year despite record earnings — cost and operational pressures persist even in the best price environment</li>
+                                <li>NNPC listing is a stated intention with no timetable, no transaction adviser and no regulatory filing — treating it as a near-term catalyst would be premature</li>
+                                <li>Guinea state mining model requires sustained government capacity to execute — the Glencore offtake provides commercial outlet but operational risk remains</li>
+                                <li>September Fed hike above 70% probability means any softening in gold price momentum could be sharp if August CPI data disappoints</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nl-takeaway">
+                    <div class="nl-takeaway-label">Key Takeaway</div>
+                    <p>Africa is naming its price. AngloGold's $3,000-per-ounce margin and Glencore's 86% earnings
+                        jump show what re-pricing looks like in practice once central bank buying, institutional
+                        hedging and geopolitical volatility become the dominant drivers rather than short-term macro
+                        noise — and Guinea's state offtake structure and Nigeria's NNPC listing intention show
+                        African governments moving to capture more of that value themselves rather than watching it
+                        flow entirely to foreign shareholders. The earnings results confirm there is a market willing to
+                        pay it.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Deals &amp; Strategic Moves</div>
+                    <div class="nl-deals">
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-coins"></i></div>
+                            <div class="nl-deal-text"><strong>Gold Surges to $4,343 — Miners Up 20%+</strong> —
+                                Gold rose to a two-month high on Friday 7 August as China's central bank posted its
+                                largest monthly gold purchase since October 2023, a fifth consecutive month of
+                                buying, alongside Chinese institutional investors building gold-backed positions as a
+                                tech-stock hedge. Silver surged toward $65.</div>
+                        </div>
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-chart-line"></i></div>
+                            <div class="nl-deal-text"><strong>AngloGold Ashanti — Q2 Earnings Up 58%</strong> —
+                                $1.01 billion headline earnings, free cash flow up 36% to $727 million, $949 million
+                                H1 dividends and a $2 billion buyback approved. Cerro Vanguardia divestment is being
+                                reconsidered given current gold prices.</div>
+                        </div>
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-industry"></i></div>
+                            <div class="nl-deal-text"><strong>Glencore — H1 Earnings Up 86% to $10 Billion</strong>
+                                — One of the largest half-year results in the company's history, reflecting the Iran
+                                war energy shock, critical minerals demand and elevated precious metals prices
+                                across its DRC, Zambia and South Africa operations.</div>
+                        </div>
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-globe-asia"></i></div>
+                            <div class="nl-deal-text"><strong>China — Rare Earth Exports Down 10%</strong> —
+                                Beijing blacklisted 10 US companies in June and 14 EU firms in July. The IEA warns
+                                full enforcement could put $6.5 trillion of downstream production at risk, with
+                                chokepoints concentrated in heavy rare earths like dysprosium, terbium and yttrium.</div>
+                        </div>
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-handshake"></i></div>
+                            <div class="nl-deal-text"><strong>Guinea — Glencore Named Bauxite Offtaker</strong> —
+                                State-owned Nimba Mining Company secures a guaranteed commercial outlet through
+                                Glencore, a pragmatic model of state production paired with private trading
+                                infrastructure and market access.</div>
+                        </div>
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-university"></i></div>
+                            <div class="nl-deal-text"><strong>Nigeria — Tinubu Commits to NNPC Listing</strong> —
+                                President Tinubu committed to reforming and listing NNPC on the Nigerian Exchange,
+                                which has grown from N30 trillion to N160 trillion market cap since 2023. No
+                                timetable, adviser or SEC filing confirmed yet.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Research Spotlight — Africa Names Its Price: What This Week's Earnings Say About the New Mineral Economy</div>
+                    <p class="nl-body-text">AngloGold posted $1.01 billion in quarterly earnings. Glencore reported
+                        $10 billion for the half year. Gold miners surged 20% in a single week. These are not
+                        incremental results — they are the financial expression of a structural shift that has been
+                        building for years and accelerating in 2026. The shift is this: African minerals are no longer
+                        priced as commodities in a buyer's market. They are priced as strategic assets in a seller's
+                        market. The Iran war made energy supply a national security question. China's rare earth
+                        export controls made critical mineral supply a national security question. The green energy
+                        transition made lithium, cobalt and copper a national security question. Every major economy
+                        has now formally designated African mineral supply as strategically essential. The earnings
+                        results this week show what that re-pricing looks like in practice: AngloGold capturing a
+                        $3,000-per-ounce margin compared with $1,900 a year ago, and Glencore's trading book
+                        capturing value from the volatility that the geopolitical environment itself creates. Guinea's
+                        Glencore offtake deal and Nigeria's NNPC listing intention both sit in this same context —
+                        African governments restructuring who owns the production, who controls the offtake and
+                        where the value is listed, echoing the Lamola call for value-added critical minerals
+                        industrialisation and the AfDB Ministerial Forum from three weeks ago. Africa is naming its
+                        price. The earnings results confirm there is a market willing to pay it.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Financing Implications</div>
+                    <p class="nl-body-text">Three themes stand out this week. AngloGold's widening margin at
+                        current gold prices — now exceeding $3,000 per ounce against a roughly $1,400 all-in
+                        sustaining cost — should be applied directly to gold-project financing structures across the
+                        AEMBank pipeline: at these price levels, cost-floor economics matter far less than they did a
+                        year ago, and structures should be built to capture upside rather than only protect the
+                        downside. Guinea's state-offtake model, pairing sovereign production ownership with a major
+                        trader's market access and commercial infrastructure, is a directly replicable structure for
+                        other AEMBank member states establishing state mining entities without the balance sheet to
+                        build trading capability themselves. Nigeria's NNPC listing intention should be tracked as a
+                        capital markets signal rather than a near-term transaction — no timetable, adviser or
+                        regulatory filing exists yet, and any AEMBank engagement should treat it as a direction-of-
+                        travel indicator alongside Ghana's local contractor mandate and Zimbabwe's beneficiation
+                        requirements rather than a pending deal.</p>
+                    <div class="nl-trend-list">
+                        <div class="nl-trend-item">Apply AngloGold's widened per-ounce margin as a benchmark when structuring upside-sharing terms on gold financing across the pipeline</div>
+                        <div class="nl-trend-item">Use the Guinea-Glencore state-offtake model as a reference structure for member states building state mining entities without in-house trading capability</div>
+                        <div class="nl-trend-item">Track Nigeria's NNPC listing intention as a capital markets direction-of-travel signal, not a near-term transaction, pending a confirmed timetable and adviser</div>
+                        <div class="nl-trend-item">Monitor China's rare earth product-level chokepoints for their read-through to financing conditions on African heavy rare earth projects such as Makuutu</div>
+                    </div>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Watch Next Week</div>
+                    <div class="nl-signals">
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>August US CPI — the September Fed decision input: the most important data point for gold and rate expectations. If energy-driven inflation has eased with oil off its $100 peak, September hike probability falls and gold has room above $4,400; a hot print makes September near-certain.</span></div>
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>Allied Gold — Zijin stake closing 10 August: the $295 million strategic stake closes this weekend. Watch for any strategic announcements following receipt of proceeds, particularly on the Kurmuk development timeline in Ethiopia.</span></div>
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>Ghana mining law — parliamentary submission: cabinet approved the overhaul three weeks ago with no formal timeline confirmed. Watch for a parliamentary submission date and operator responses from Newmont and Gold Fields.</span></div>
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>Guinea-Glencore bauxite — commercial terms: the offtake agreement was announced without pricing, volume or duration terms. Watch for disclosure that will set the reference point for other African state mining offtake structures.</span></div>
+                    </div>
+                </div>
+
+            </div><!-- end week-aug3 -->
+
+            <div class="nl-week-content" id="week-jul27">
 
                 <div class="nl-overview">
                     <p>The Federal Reserve held rates at 3.50–3.75% on Wednesday 29 July, voted 9-3 with three
