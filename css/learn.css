@@ -593,6 +593,142 @@ main {
     transform: scale(1.1);
 }
 
+/* ═══════════════════════════════════════════════
+   CORPORATE GOVERNANCE — SHAREHOLDING STRUCTURE
+═══════════════════════════════════════════════ */
+:root {
+    --gov-navy-deep: #0d2640;
+    --gov-gold: #c9a84c;
+    --gov-gold-light: #e2c27a;
+    --gov-gold-pale: #f5edd8;
+    --gov-mist: #f0f4f8;
+    --gov-border: #dde4ec;
+    --gov-ink-soft: #4a5a68;
+}
+
+.governance-section {
+    background: #fff;
+    padding: 20px 20px 40px;
+    /* offset the fixed header so the anchor jump lands at the top of the section, not behind it */
+    scroll-margin-top: 135px;
+}
+
+.gov-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 40px 30px;
+    background: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.gov-title {
+    color: #123448;
+    font-size: 25px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.gov-title span {
+    color: #f9004d;
+}
+
+.gov-intro {
+    color: #123448;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    text-align: center;
+    max-width: 820px;
+    margin: 0 auto 18px;
+}
+
+.gov-classes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin: 36px auto 28px;
+}
+
+.gov-class-card {
+    background: var(--gov-mist);
+    border: 1px solid var(--gov-border);
+    border-radius: 12px;
+    padding: 26px 24px;
+    text-align: left;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gov-class-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 24px rgba(20, 49, 86, 0.12);
+    border-color: var(--gov-gold);
+}
+
+.gov-class-tag {
+    display: inline-block;
+    background: var(--gov-navy-deep);
+    color: var(--gov-gold-light);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 5px 14px;
+    border-radius: 20px;
+    margin-bottom: 16px;
+}
+
+.gov-class-card h4 {
+    color: #123448;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.35;
+    margin-bottom: 8px;
+}
+
+.gov-class-card p {
+    color: var(--gov-ink-soft);
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.gov-amsg {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    background: linear-gradient(120deg, var(--gov-gold-pale) 0%, #ffffff 75%);
+    border: 1px solid var(--gov-gold);
+    border-radius: 12px;
+    padding: 24px 28px;
+}
+
+.gov-amsg i {
+    color: var(--gov-gold);
+    font-size: 20px;
+    margin-top: 3px;
+    flex-shrink: 0;
+}
+
+.gov-amsg p {
+    color: #123448;
+    font-size: 15px;
+    line-height: 1.75;
+    margin: 0;
+}
+
+.gov-amsg strong {
+    color: var(--gov-navy-deep);
+}
+
+@media screen and (max-width: 900px) {
+    .gov-classes { grid-template-columns: 1fr; }
+    .gov-amsg { flex-direction: column; }
+    .governance-section { padding: 50px 20px; }
+}
+
 @media screen and (max-width: 1200px) {
 
 }

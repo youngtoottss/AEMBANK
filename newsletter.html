@@ -90,12 +90,18 @@
                 <div class="nl-week-selector" id="weekSelector">
                     <button class="nl-week-btn" onclick="toggleWeekDropdown(event)">
                         <i class="far fa-calendar-alt"></i>
-                        <span id="selectedWeek">3 – 7 August 2026</span>
+                        <span id="selectedWeek">17 – 21 August 2026</span>
                         <i class="fas fa-chevron-down nl-chevron"></i>
                     </button>
                     <div class="nl-week-dropdown" id="weekDropdown">
                         <div class="nl-week-dropdown-label">Select Week</div>
-                        <button class="nl-week-option active" onclick="selectWeek(this, '3 – 7 August 2026', 'week-aug3')">
+                        <button class="nl-week-option active" onclick="selectWeek(this, '17 – 21 August 2026', 'week-aug17')">
+                            17 – 21 August 2026
+                        </button>
+                        <button class="nl-week-option" onclick="selectWeek(this, '10 – 14 August 2026', 'week-aug10')">
+                            10 – 14 August 2026
+                        </button>
+                        <button class="nl-week-option" onclick="selectWeek(this, '3 – 7 August 2026', 'week-aug3')">
                             3 – 7 August 2026
                         </button>
                         <button class="nl-week-option" onclick="selectWeek(this, '27 – 31 July 2026', 'week-jul27')">
@@ -156,9 +162,534 @@
                 </div>
             </div>
 
+            <!-- ── WEEK: 10 – 14 August 2026 ── -->
+            <!-- ── WEEK: 17 – 21 August 2026 ── -->
+            <div class="nl-week-content active" id="week-aug17">
+
+                <div class="nl-overview">
+                    <p>Gold is holding near $4,390 with five forces in play simultaneously: the Iran ceasefire has
+                        formally expired, FOMC minutes from the July meeting dropped Wednesday, Jackson Hole runs
+                        August 27-29 with Chair Warsh's first keynote address as Fed chair, central banks recorded
+                        their strongest quarterly gold buying on record in Q2 at 288.9 tonnes, and three consecutive
+                        soft data prints — jobs, CPI and PPI — have brought September hike probability to 31%.
+                        Wheaton Precious Metals reported record H1 revenue of $901 million. Sibanye-Stillwater
+                        reported H1 earnings up 371%. DRDGold confirmed full annual results with free cash flow up
+                        85% to R2.3 billion and CEO Niël Pretorius saying simply: 'It's been a very good year.' At
+                        least 49 people were killed in an artisanal gold mine collapse in the Central African Republic
+                        — the third consecutive week of fatal artisanal mining incidents following Rustenburg last
+                        week and Samancor's tailings collapse. Ghana's mineworkers union petitioned the central
+                        bank for $34.5 million in frozen savings — a human cost story sitting directly alongside the
+                        government's mining law overhaul. And South Africa's government-business partnership
+                        selected mining as one of four sectors to raise national growth to 3%.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Market Snapshot</div>
+                    <div class="nl-market-grid">
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Gold</div><div class="nl-commodity-price">$4,390 – $4,534/oz</div></div>
+                            <div class="nl-commodity-trend up">↑</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Silver</div><div class="nl-commodity-price">$63 – $67/oz</div></div>
+                            <div class="nl-commodity-trend up">↑</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Brent Oil</div><div class="nl-commodity-price">$85 – $96/bbl</div></div>
+                            <div class="nl-commodity-trend flat">↓</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Copper</div><div class="nl-commodity-price">$13,300 – $13,700/t</div></div>
+                            <div class="nl-commodity-trend up">↑</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Platinum</div><div class="nl-commodity-price">$1,880 – $1,980/oz</div></div>
+                            <div class="nl-commodity-trend up">↑</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Cobalt</div><div class="nl-commodity-price">~$57,000/t</div></div>
+                            <div class="nl-commodity-trend flat">→</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Zinc</div><div class="nl-commodity-price">~$3,200/t</div></div>
+                            <div class="nl-commodity-trend up">↑</div>
+                        </div>
+                    </div>
+                    <table class="nl-fx-table" style="margin-top:24px;">
+                        <thead><tr><th>Currency</th><th>Range (vs USD)</th><th>Trend</th></tr></thead>
+                        <tbody>
+                            <tr><td>NGN — Nigerian Naira</td><td>~1,620 – 1,680</td><td class="trend-firm">Firming; government-business 3% growth target includes mining</td></tr>
+                            <tr><td>ZAR — South African Rand</td><td>~17.6 – 18.3</td><td class="trend-firm">Strong; gold above $4,400 and Ramaphosa mining growth signal</td></tr>
+                            <tr><td>ZWL — Zimbabwean Dollar</td><td>~13.1 – 13.7</td><td class="trend-firm">Stable; lithium revenues and Sibanye earnings both positive</td></tr>
+                            <tr><td>ZMW — Zambian Kwacha</td><td>~24.5 – 25.5</td><td class="trend-firm">Firming; BHP copper dividend signal supportive</td></tr>
+                            <tr><td>EUR — Euro</td><td>~1.08 – 1.12</td><td class="trend-firm">Steady; dollar soft ahead of Jackson Hole</td></tr>
+                            <tr><td>GBP — British Pound</td><td>~1.31 – 1.35</td><td class="trend-firm">Broadly stable</td></tr>
+                        </tbody>
+                    </table>
+                    <p class="nl-body-text" style="font-size:13px;color:#4a5a68;margin-top:12px;">The dollar is
+                        soft ahead of Jackson Hole as markets wait for Warsh's first major speech as chair. African
+                        currencies broadly benefiting — ZAR at its strongest level of the year as gold above $4,400
+                        combines with a constructive domestic policy signal from the government-business
+                        partnership. Sources: LME, ICE, Refinitiv, CME, Fastmarkets.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Key Developments — Updates from the Watch List</div>
+                    <p class="nl-body-text"><strong>Jackson Hole — nine days away.</strong> The symposium runs
+                        August 27-29. Warsh speaks Friday morning August 28 — his first Jackson Hole address as
+                        Fed chair. Three soft data prints — July CPI at 3.4%, July PPI unchanged, retail sales down
+                        0.6% — have reduced September hike probability to 31%. Warsh has said his remarks will
+                        focus on long-term structural questions. The decisive input remains August CPI releasing
+                        September 10 — five days before the FOMC meets.</p>
+                    <p class="nl-body-text"><strong>DRDGold full results — confirmed August 19.</strong> Free cash
+                        flow up 85% to R2.3bn. CEO Niël Pretorius: 'It's been a very good year.' Full results confirm
+                        the trading statement from last week in every material respect.</p>
+                    <p class="nl-body-text"><strong>Ghana mining law — still no parliamentary submission.</strong>
+                        Five weeks since cabinet approval. No formal submission date. Meanwhile Ghana's
+                        mineworkers union has petitioned the central bank for $34.5 million in frozen savings — a
+                        separate but connected human cost story within the same sector.</p>
+                    <p class="nl-body-text"><strong>Rustenburg illegal mining — rescue complete.</strong> Final
+                        casualty count confirmed at 14. Department of Mineral Resources has ordered an
+                        investigation. No enforcement or closure announcements yet on surrounding informal
+                        operations.</p>
+                    <p class="nl-body-text"><strong>Iran ceasefire — formally expired.</strong> The 60-day MoU
+                        window from Versailles has now formally elapsed. Any new agreement is a fresh negotiation.
+                        Doha talks continuing but oil retains a residual risk premium of $5 to $10 above pre-war
+                        levels.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Africa Positioning</div>
+                    <p class="nl-body-text">Sibanye-Stillwater's 371% earnings jump. Wheaton's record $901 million
+                        H1 revenue. DRDGold's free cash flow up 85% to R2.3 billion. Three results in one week
+                        complete a run of five consecutive extraordinary African mining results — AngloGold,
+                        Glencore, DRDGold, Wheaton and now Sibanye — that together confirm the operating leverage
+                        thesis at every level of the value chain, from tailings retreatment to streaming to integrated
+                        PGM-gold-lithium producers. Sibanye's Capital Markets Day disclosure that gold overtook US
+                        Treasury bonds as the largest central bank reserve asset in 2025 — rising from 20% to 27% of
+                        global reserves — sits alongside the Q2 record of 288.9 tonnes of central bank buying as
+                        confirmation that this is a structural repricing, not a cyclical spike. South Africa's
+                        government-business partnership naming mining as one of four sectors to lift growth to 3% is
+                        the domestic policy expression of the same recognition. Wheaton's streaming exposure to
+                        Kurmuk in Ethiopia and Platreef in South Africa's Bushveld Complex means African production
+                        is now directly embedded in the earnings of the world's largest streaming company, not just
+                        its own operators.</p>
+
+                    <figure style="margin: 24px 0; border-radius: 12px; overflow: hidden; box-shadow: 0 6px 24px rgba(20,49,86,0.12);">
+                        <img src="images/mining-jackson-hole-gold.jpg"
+                             alt="Gold bars and mining infrastructure as markets await Fed Chair Warsh's first Jackson Hole address"
+                             style="width:100%; height:280px; object-fit:cover; display:block;">
+                        <figcaption style="background:rgb(20,49,86); color:rgba(255,255,255,0.7); font-size:12px; padding:12px 18px; border-left:4px solid #72e2ae; font-style:italic;">
+                            Central banks bought a record 288.9 tonnes of gold in Q2 2026 as markets awaited Fed
+                            Chair Warsh's first Jackson Hole address.
+                        </figcaption>
+                    </figure>
+
+                    <div class="nl-two-col">
+                        <div class="nl-col-card opps">
+                            <h4><i class="fas fa-arrow-up" style="margin-right:6px;"></i>Opportunities</h4>
+                            <ul>
+                                <li>Gold up 10% in August — best monthly gain since January — with Jackson Hole as the next catalyst and September hike probability at 31%</li>
+                                <li>Five extraordinary earnings results confirm the operating leverage thesis — Sibanye up 371%, Wheaton record revenue, DRDGold free cash flow up 85%</li>
+                                <li>Central bank Q2 gold buying record at 288.9 tonnes — even as prices fell during the quarter — confirms the structural demand floor is accelerating</li>
+                                <li>BHP copper highest dividend in 4 years signals sustained confidence in copper demand — positive for DRC and Zambia pipeline</li>
+                                <li>South Africa government-business 3% growth target selects mining as one of four growth platforms — a domestic policy endorsement of the sector</li>
+                                <li>NeoTerra Mozambique rare earth PFS — USTDA funded — adds another African rare earth project to the US supply chain building programme</li>
+                            </ul>
+                        </div>
+                        <div class="nl-col-card threats">
+                            <h4><i class="fas fa-exclamation-triangle" style="margin-right:6px;"></i>Threats</h4>
+                            <ul>
+                                <li>Three fatal artisanal mining incidents in three consecutive weeks — CAR, Rustenburg, Samancor — represent a reputational and governance risk that sits directly alongside extraordinary earnings headlines</li>
+                                <li>Jackson Hole is a risk event — if Warsh signals September hike despite soft data, gold gives back some of August's gains sharply</li>
+                                <li>Iran ceasefire formally expired — any renewed escalation returns oil toward $100 and reinstates the full inflation and rate pressure scenario</li>
+                                <li>Ghana mining law five weeks without parliamentary submission — regulatory uncertainty compounding while $34.5m in mineworker savings remains frozen</li>
+                                <li>September hike probability at 31% — not zero; August CPI on September 10 is the decisive input and could reverse the current gold trajectory</li>
+                                <li>Artisanal mining formalisation infrastructure being built slowly relative to the pace of commodity price repricing — the distributional gap is widening</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nl-takeaway">
+                    <div class="nl-takeaway-label">Key Takeaway</div>
+                    <p>The earnings supercycle is real, and it is now documented across every category of African
+                        mineral producer — precious, base and battery metals alike. But the same five weeks that
+                        produced these results also produced 14 deaths in Rustenburg, 49 in the Central African
+                        Republic and a mineworkers' union still waiting on $34.5 million owed since 2019. The value
+                        chain structures that would let this repricing reach the people closest to the minerals are
+                        being built — but slowly, relative to the pace at which the prices have moved.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Deals &amp; Strategic Moves</div>
+                    <div class="nl-deals">
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-coins"></i></div>
+                            <div class="nl-deal-text"><strong>Gold Holds Near $4,390 — Five Forces Hitting the
+                                Market</strong> — Iran ceasefire expired, FOMC minutes confirmed the 9-3 hold vote,
+                                Jackson Hole runs August 27-29 with Warsh's first keynote, central banks bought a
+                                record 288.9 tonnes in Q2, and September hike probability fell to 31% on three soft
+                                data prints.</div>
+                        </div>
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-water"></i></div>
+                            <div class="nl-deal-text"><strong>Wheaton Precious Metals — Record H1 Revenue of
+                                $901 Million</strong> — A 78% increase in the average realised gold-equivalent price
+                                and a 5% increase in ounces sold to 414,755. Operating cash flow reached $1.4
+                                billion. Kurmuk first gold and Platreef Q4 production are the upcoming African
+                                catalysts.</div>
+                        </div>
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-chart-line"></i></div>
+                            <div class="nl-deal-text"><strong>Sibanye-Stillwater — H1 Earnings Up 371%</strong> —
+                                The most dramatic earnings increase of any major African miner this year, spanning
+                                SA gold via its 50.1% DRDGold stake, SA PGMs, US PGM recycling and the Keliber
+                                lithium project in Finland.</div>
+                        </div>
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-university"></i></div>
+                            <div class="nl-deal-text"><strong>DRDGold — Full Year Results Confirmed, FCF Up 85%
+                                to R2.3bn</strong> — Revenue R11.16 billion, production of 155,577 ounces beat
+                                guidance, R2.77 billion cash with no bank debt, and a R779.3 million dividend paid
+                                during the year.</div>
+                        </div>
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-exclamation-triangle"></i></div>
+                            <div class="nl-deal-text"><strong>49 Killed in Central African Republic Mine
+                                Collapse</strong> — The third fatal artisanal mining incident in three weeks, following
+                                Rustenburg and the Samancor tailings collapse. CAR authorities ordered the mine
+                                closed.</div>
+                        </div>
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-hand-holding-usd"></i></div>
+                            <div class="nl-deal-text"><strong>Ghana's Mineworkers Demand $34.5 Million in Frozen
+                                Savings</strong> — The union petitioned the central bank for savings frozen since the
+                                2017-2019 banking crisis, arriving five weeks after cabinet approved the mining law
+                                overhaul.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Research Spotlight — The Earnings Are Extraordinary. The Question Is Who They Reach.</div>
+                    <p class="nl-body-text">Five results in five weeks. AngloGold up 58%. Glencore up 86%. DRDGold
+                        up 85%. Wheaton record revenue. Sibanye up 371%. The African mining earnings supercycle is
+                        now fully documented across every major category of precious and critical metal producer.
+                        The numbers are extraordinary by any historical measure. And in the same five weeks: 14
+                        illegal miners killed in Rustenburg. 49 artisanal miners killed in the Central African
+                        Republic. A tailings collapse at Samancor. Ghana's mineworkers petitioning for $34.5 million
+                        in savings their government has not returned. These are not unrelated stories. They are the
+                        same story seen from different positions in the value chain. The earnings supercycle is real.
+                        It reflects a genuine structural repricing of African minerals as strategic assets rather than
+                        commodities. Central banks are buying gold at record quarterly volumes. Governments are
+                        asserting more control over their mineral endowments. The Western world is designating
+                        African mineral supply a national security priority. The question that sits underneath it is
+                        direct: how much of this repricing reaches the people closest to the minerals? The
+                        formalisation infrastructure — the World Gold Council's assurance standard, the Dynacor
+                        processing plant model, the beneficiation mandates that create formal sector employment —
+                        is being built. But it is being built slowly relative to the pace at which the commodity
+                        prices have moved.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Financing Implications</div>
+                    <p class="nl-body-text">Three themes stand out this week. Wheaton's streaming exposure to
+                        Kurmuk and Platreef is a live illustration of how upfront, fixed-price financing structures
+                        capture upside without operating risk — a model directly relevant to AEMBank's own
+                        project-finance instruments across gold and PGM assets nearing production. Sibanye's 371%
+                        earnings jump, built on a diversified base spanning SA gold, PGMs, US recycling and Finnish
+                        lithium, is a reminder that diversified balance sheets absorb commodity-specific shocks far
+                        better than single-asset producers — a consideration for how AEMBank structures exposure
+                        across its member-state pipeline. And the coexistence of record earnings with three
+                        consecutive fatal artisanal mining incidents strengthens the case for AEMBank to treat
+                        formalisation financing — processing infrastructure, safety equipment, traceability systems
+                        — as a distinct line item within the broader mining finance mandate rather than a peripheral
+                        concern.</p>
+                    <div class="nl-trend-list">
+                        <div class="nl-trend-item">Use Wheaton's streaming model as a reference structure for upfront, fixed-price financing on African gold and PGM assets nearing production</div>
+                        <div class="nl-trend-item">Apply Sibanye's diversified-asset resilience as a benchmark when assessing concentration risk across single-commodity financing exposures in the pipeline</div>
+                        <div class="nl-trend-item">Treat artisanal mining formalisation — processing infrastructure, safety equipment, traceability — as a distinct financing line item following three fatal incidents in three weeks</div>
+                        <div class="nl-trend-item">Track the August CPI print on September 10 for its read-through to gold-linked financing structures ahead of the September FOMC meeting</div>
+                    </div>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Watch Next Week</div>
+                    <div class="nl-signals">
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>Jackson Hole — Warsh's first keynote, August 28: the single most important event for gold in the near term. Warsh speaks Friday morning. Any signal on the rate path — even framed as structural commentary — will move markets. A dovish tone on inflation unlocks gold above $4,500; a hawkish pivot reverses August's gains.</span></div>
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>Ghana mining law — parliamentary submission: now five weeks since cabinet approval with no submission date. Watch for any parliamentary timeline. The longer the gap the greater the uncertainty for Newmont, AngloGold and Gold Fields.</span></div>
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>Central African Republic — mine closure and response: authorities ordered the mine closed. Watch for any broader regulatory response to artisanal mining safety and whether regional bodies respond to three consecutive weeks of fatal incidents across different jurisdictions.</span></div>
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>Wheaton — Kurmuk first gold and Platreef Q4: Kurmuk first gold is expected within weeks of the August startup. Platreef Q4 commercial production is the other major upcoming catalyst, with direct implications for Wheaton's H2 results.</span></div>
+                    </div>
+                </div>
+
+            </div><!-- end week-aug17 -->
+
+            <div class="nl-week-content" id="week-aug10">
+
+                <div class="nl-overview">
+                    <p>Gold touched a 10-week high of $4,454.60 on Friday after July CPI came in at 3.4% annually
+                        and 0.1% month-on-month — in line with forecasts and enough to push September Fed hike
+                        probability from 52% to 36%, with markets now pricing a 64% chance of a hold. The dollar
+                        softened, treasury yields fell, and gold surged. Jackson Hole at the end of August is now
+                        the next decisive signal — Fed Chair Warsh's tone on inflation and the rate path there will
+                        set September expectations. DRDGold flagged full-year earnings up 85-95% on revenue of
+                        R11.16 billion — up 42% year on year — with production of 155,577 ounces beating guidance
+                        despite unchanged volumes, demonstrating the extraordinary operating leverage available at
+                        current gold prices. Fourteen illegal miners were killed in a mine dump collapse near
+                        Rustenburg as they dug for platinum group metals at a disused site — the artisanal and
+                        illegal mining story in its most tragic form, arriving in the same week that Dynacor and the
+                        World Gold Council announced a partnership to formalise the sector. Pensana, the
+                        Anglo-African rare earths company with the Longonjo project in Angola, attended a US
+                        Presidential briefing on rare earths supply. And the UN Economic Commission for Africa
+                        designated SADC as the continent's best-positioned testing ground for turning critical
+                        minerals into development — with demand for those minerals forecast to more than triple by
+                        2030.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Market Snapshot</div>
+                    <div class="nl-market-grid">
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Gold</div><div class="nl-commodity-price">$4,435 – $4,455/oz</div></div>
+                            <div class="nl-commodity-trend up">↑</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Silver</div><div class="nl-commodity-price">$63 – $67/oz</div></div>
+                            <div class="nl-commodity-trend up">↑</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Brent Oil</div><div class="nl-commodity-price">$87 – $96/bbl</div></div>
+                            <div class="nl-commodity-trend flat">↓</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Copper</div><div class="nl-commodity-price">$13,200 – $13,600/t</div></div>
+                            <div class="nl-commodity-trend up">↑</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Platinum</div><div class="nl-commodity-price">$1,950 – $1,980/oz</div></div>
+                            <div class="nl-commodity-trend up">↑</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Aluminium</div><div class="nl-commodity-price">$2,380 – $2,450/t</div></div>
+                            <div class="nl-commodity-trend flat">→</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Cobalt</div><div class="nl-commodity-price">~$57,000/t</div></div>
+                            <div class="nl-commodity-trend flat">→</div>
+                        </div>
+                    </div>
+                    <table class="nl-fx-table" style="margin-top:24px;">
+                        <thead><tr><th>Currency</th><th>Range (vs USD)</th><th>Trend</th></tr></thead>
+                        <tbody>
+                            <tr><td>NGN — Nigerian Naira</td><td>~1,625 – 1,685</td><td class="trend-firm">Firming; capital market sentiment positive following NNPC listing signal</td></tr>
+                            <tr><td>ZAR — South African Rand</td><td>~17.8 – 18.4</td><td class="trend-firm">Strong; gold above $4,400 most positive SA currency signal of the year</td></tr>
+                            <tr><td>ZWL — Zimbabwean Dollar</td><td>~13.2 – 13.8</td><td class="trend-firm">Stable; lithium revenues underpinning hard currency reserves</td></tr>
+                            <tr><td>ZMW — Zambian Kwacha</td><td>~24.8 – 25.8</td><td class="trend-firm">Broadly stable; copper firming supportive</td></tr>
+                            <tr><td>EUR — Euro</td><td>~1.08 – 1.12</td><td class="trend-firm">Firmer; dollar softening post-CPI</td></tr>
+                            <tr><td>GBP — British Pound</td><td>~1.31 – 1.35</td><td class="trend-firm">Broadly stable</td></tr>
+                        </tbody>
+                    </table>
+                    <p class="nl-body-text" style="font-size:13px;color:#4a5a68;margin-top:12px;">The dollar
+                        softened on Wednesday's CPI print — the US Dollar Index slipped 0.1% to 99.66 immediately
+                        after the release. Treasury yields fell. African currencies broadly benefiting with ZAR
+                        tracking gold above $4,400 for the most positive week of the year. Aluminium worth noting:
+                        LME stocks hit a 36-year low this week — the most concrete available measure of the Iran
+                        war's lasting impact on supply chains. Sources: LME, ICE, Refinitiv, CME, Fastmarkets.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Key Developments — Updates from the Watch List</div>
+                    <p class="nl-body-text"><strong>August CPI — delivered, September hike probability
+                        collapses.</strong> July CPI at 3.4% annual, 0.1% monthly — in line with forecasts.
+                        September hold probability moved from 52% to 64% in a single session. The energy-driven
+                        inflation peak is washing through. Jackson Hole end of August is now the next decisive
+                        input.</p>
+                    <p class="nl-body-text"><strong>Allied Gold — Zijin stake closed August 10.</strong> The $295
+                        million strategic stake has closed. Allied Gold management confirmed proceeds are being
+                        deployed toward the Kurmuk development in Ethiopia. No further strategic announcements
+                        yet.</p>
+                    <p class="nl-body-text"><strong>Ghana mining law — parliamentary submission still
+                        pending.</strong> No formal submission date confirmed. Cabinet approved the overhaul four
+                        weeks ago. The longer this takes the more operator uncertainty compounds.</p>
+                    <p class="nl-body-text"><strong>Guinea Glencore bauxite offtake — commercial terms still
+                        undisclosed.</strong> The arrangement was announced without pricing, volume or duration
+                        details. Still the most significant African state-mining commercial structure to watch.</p>
+                    <p class="nl-body-text"><strong>DRC equity framework — BMI: no material market impact
+                        expected.</strong> Fitch Solutions BMI published a specific assessment this week concluding
+                        the agreed framework will not materially disrupt copper or cobalt markets. Provides
+                        important reassurance alongside the ongoing implementation process.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Africa Positioning</div>
+                    <p class="nl-body-text">DRDGold this week. AngloGold last week. Glencore the week before.
+                        Every significant African mining result in 2026 tells the same story: extraordinary revenue
+                        growth on largely unchanged production volumes, driven by commodity prices that have
+                        repriced African minerals from commercial commodities into strategic assets. DRDGold's
+                        result is the purest expression of this dynamic — revenue up 42% on production that was
+                        essentially flat, cash operating costs up only 8%, with the 34-percentage-point gap flowing
+                        entirely to earnings of 85% to 95%. The Pensana Presidential briefing and the UN ECA's SADC
+                        designation are institutional confirmations — from the US government and the UN
+                        simultaneously — that this repricing is structural rather than a temporary market condition.
+                        The Rustenburg collapse is the shadow side of the same story: fourteen people dead digging
+                        for PGMs in a disused mine dump because the formal sector's extraordinary margins have not
+                        yet translated into the formalisation infrastructure that would give artisanal miners a
+                        legal, safe and traceable pathway into the value chain.</p>
+
+                    <figure style="margin: 24px 0; border-radius: 12px; overflow: hidden; box-shadow: 0 6px 24px rgba(20,49,86,0.12);">
+                        <img src="images/mining-gold-10-week-high.jpg"
+                             alt="Gold tailings retreatment operations during the week gold touched a 10-week high of $4,454"
+                             style="width:100%; height:280px; object-fit:cover; display:block;">
+                        <figcaption style="background:rgb(20,49,86); color:rgba(255,255,255,0.7); font-size:12px; padding:12px 18px; border-left:4px solid #72e2ae; font-style:italic;">
+                            DRDGold's tailings retreatment operations captured the full benefit of gold's 10-week
+                            high, with revenue up 42% on essentially unchanged production.
+                        </figcaption>
+                    </figure>
+
+                    <div class="nl-two-col">
+                        <div class="nl-col-card opps">
+                            <h4><i class="fas fa-arrow-up" style="margin-right:6px;"></i>Opportunities</h4>
+                            <ul>
+                                <li>Gold at 10-week high of $4,454 with September hold now 64% — the rate ceiling on gold's recovery is lifting; Jackson Hole is the next catalyst</li>
+                                <li>DRDGold revenue up 42% on flat production confirms operating leverage thesis — same dynamic applies across every African gold producer at current prices</li>
+                                <li>Pensana at US Presidential briefing confirms Angola's Longonjo is being evaluated as a strategic national security asset not a commercial opportunity</li>
+                                <li>UN ECA SADC designation provides institutional backing for the regional critical minerals development case at the highest multilateral level</li>
+                                <li>Dynacor-World Gold Council partnership creates a formalisation model that could reduce illegal mining risk across West African operations</li>
+                                <li>BMI confirming no material DRC market disruption removes a tail risk that had been weighing on copper and cobalt sentiment since July 31</li>
+                            </ul>
+                        </div>
+                        <div class="nl-col-card threats">
+                            <h4><i class="fas fa-exclamation-triangle" style="margin-right:6px;"></i>Threats</h4>
+                            <ul>
+                                <li>Rustenburg collapse — 14 deaths at a disused PGM dump — is a direct reputational and regulatory risk signal for South Africa's mining sector; illegal mining at scale is a systemic governance problem not an isolated incident</li>
+                                <li>LME aluminium stocks at 36-year low confirms the Iran war's supply chain damage is structural not temporary — even if Iran resolves, rebuilding smelting capacity takes years</li>
+                                <li>South Africa mining production down 4% in June with PGMs the largest contributor — production weakness persisting even as earnings are extraordinary</li>
+                                <li>Jackson Hole is a risk event as much as a catalyst — if Warsh signals September hike despite the CPI improvement, gold gives back this week's gains quickly</li>
+                                <li>Ghana mining law parliamentary submission still pending four weeks after cabinet approval — regulatory uncertainty compounding for Newmont, AngloGold and Gold Fields</li>
+                                <li>Guinea Glencore offtake commercial terms still undisclosed — without pricing and volume detail the template value of the structure cannot be assessed</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nl-takeaway">
+                    <div class="nl-takeaway-label">Key Takeaway</div>
+                    <p>Africa is naming its price. DRDGold's 85-95% earnings growth on essentially flat production,
+                        alongside institutional confirmations from the US government and the UN that African
+                        critical minerals are strategic assets, show a market willing to pay it. The Rustenburg
+                        tragedy is the reminder that the work remaining is ensuring the value reaches the people
+                        closest to the ground.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Deals &amp; Strategic Moves</div>
+                    <div class="nl-deals">
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-coins"></i></div>
+                            <div class="nl-deal-text"><strong>Gold Hits 10-Week High — July CPI Kills the
+                                September Hike Narrative</strong> — Gold touched $4,454.60 intraday on Friday 14
+                                August, its highest level in ten weeks, after July CPI landed exactly in line with
+                                forecasts at 3.4% annual and 0.1% monthly. September hold probability moved from
+                                52% to 64%. Jackson Hole is now the next decisive input.</div>
+                        </div>
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-chart-line"></i></div>
+                            <div class="nl-deal-text"><strong>DRDGold — Earnings Up 85-95%, Revenue Up 42% on
+                                Unchanged Production</strong> — Full-year EPS growth of 481.2 to 507.2 cents against
+                                260 cents the prior year. Production of 155,577 ounces beat guidance. R2.77 billion
+                                cash, no bank debt.</div>
+                        </div>
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-exclamation-triangle"></i></div>
+                            <div class="nl-deal-text"><strong>14 Illegal Miners Killed in Rustenburg Mine Dump
+                                Collapse</strong> — Miners from Lesotho died digging for platinum group metals at a
+                                disused site in North West province. Arrives the same week Dynacor and the World
+                                Gold Council announced a formalisation partnership.</div>
+                        </div>
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-globe-africa"></i></div>
+                            <div class="nl-deal-text"><strong>Pensana Attends US Presidential Briefing on Rare
+                                Earths Supply</strong> — The Anglo-African rare earths company developing Longonjo
+                                in Angola attended a White House-level briefing, confirming the project is being
+                                evaluated within the US critical minerals supply diversification framework.</div>
+                        </div>
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-handshake"></i></div>
+                            <div class="nl-deal-text"><strong>UN ECA: SADC Is Africa's Best Testing Ground for
+                                Critical Minerals</strong> — SADC designated the continent's best-positioned
+                                regional bloc for turning its critical mineral endowment into development, with
+                                demand forecast to more than triple by 2030.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Research Spotlight — Africa Names Its Price: The Earnings Results Are the Evidence</div>
+                    <p class="nl-body-text">Four weeks into what this newsletter has called Africa's earnings
+                        supercycle, the picture is now clear enough to name directly. DRDGold this week. AngloGold
+                        last week. Glencore the week before. Every significant African mining result in 2026 tells
+                        the same story: extraordinary revenue growth on largely unchanged production volumes,
+                        driven by commodity prices that have repriced African minerals from commercial commodities
+                        into strategic assets. DRDGold's result is the purest expression of this dynamic. Revenue up
+                        42% on production that was essentially flat. Cash operating costs up 8%. The difference —
+                        34 percentage points of revenue growth above cost growth — flows entirely to earnings.
+                        Earnings up 85% to 95%. No new mines. No production breakthrough. Just the same ore
+                        processed at a gold price that has repriced everything. The Pensana Presidential briefing
+                        and the UN ECA SADC designation both sit in this context. They are institutional
+                        confirmations — from the US government and the UN simultaneously — that the repricing of
+                        African minerals is not a temporary market condition. It is a structural shift backed by the
+                        energy transition, supply chain decoupling, and national security frameworks across the
+                        world's largest economies. African governments are drawing the same conclusion from
+                        different angles. Guinea's Nimba Refinery. Zimbabwe's lithium sulphate plant. Ghana's local
+                        contractor mandate. Nigeria's NNPC listing intention. The Rustenburg collapse is the shadow
+                        side of the same story — fourteen people dead digging for PGMs in a disused mine dump
+                        because the formal sector's extraordinary margins have not yet translated into the
+                        formalisation infrastructure that would give artisanal miners a legal, safe and traceable
+                        pathway into the value chain. Africa is naming its price. The earnings confirm the market is
+                        willing to pay it. The work that remains is ensuring the value reaches the people closest to
+                        the ground.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Financing Implications</div>
+                    <p class="nl-body-text">DRDGold's result is the clearest financing signal of the week: an
+                        85-95% earnings increase built entirely on cost discipline rather than production growth
+                        confirms that tailings-retreatment and similarly low-capex, cost-stable models capture gold
+                        price upside more efficiently than conventional underground or open-pit development — a
+                        structure worth weighting more heavily across AEMBank's gold-sector pipeline while prices
+                        remain elevated. Pensana's Presidential briefing attendance and the UN ECA's SADC
+                        designation both strengthen the case for treating rare earth and critical mineral projects as
+                        strategic rather than purely commercial financings, with blended and concessional structures
+                        likely to find a more receptive audience among Western government counterparts. And the
+                        Rustenburg deaths make the case directly: formalisation financing — processing capacity,
+                        safety equipment, traceability infrastructure of the kind Dynacor is building in Senegal —
+                        should be assessed as a parallel, not competing, use of capital alongside large-scale
+                        project finance.</p>
+                    <div class="nl-trend-list">
+                        <div class="nl-trend-item">Weight low-capex, cost-stable models like tailings retreatment more heavily across the gold pipeline while prices remain at current elevated levels</div>
+                        <div class="nl-trend-item">Treat Pensana's Longonjo and comparable African rare earth projects as strategic financings eligible for blended or concessional structures given confirmed US government interest</div>
+                        <div class="nl-trend-item">Assess formalisation financing — processing capacity, safety equipment, traceability — as a parallel use of capital alongside large-scale project finance, not a peripheral concern</div>
+                        <div class="nl-trend-item">Monitor the Guinea-Glencore offtake for disclosed commercial terms that could set a reference structure for other AEMBank member-state offtake financings</div>
+                    </div>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Watch Next Week</div>
+                    <div class="nl-signals">
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>Jackson Hole Symposium — Warsh tone on rates: the Federal Reserve's annual Jackson Hole symposium takes place at the end of August. Fed Chair Warsh's remarks on inflation and the rate path are the most important forward signal available before the September 15-16 FOMC meeting. A dovish tone confirms the hold and unlocks gold above $4,500. A hawkish pivot reverses this week's gains.</span></div>
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>DRDGold full annual results — August 19: DRDGold releases its full annual results on Wednesday 19 August. The trading statement confirmed 85-95% earnings growth. Watch the full results for dividend announcement, Vision 2028 expansion update and any production guidance for FY2027.</span></div>
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>Ghana mining law — parliamentary submission: now four weeks since cabinet approval with no submission date confirmed. Watch for any parliamentary timeline — the longer the delay the greater the operator uncertainty for Newmont, AngloGold and Gold Fields.</span></div>
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>Rustenburg — search and rescue update: an unknown number of miners may still be trapped at the Rustenburg site. Watch for the final casualty count and any regulatory or enforcement response from South Africa's Department of Mineral Resources.</span></div>
+                    </div>
+                </div>
+
+            </div><!-- end week-aug10 -->
+
             <!-- ── WEEK: 27 – 31 July 2026 ── -->
             <!-- ── WEEK: 3 – 7 August 2026 ── -->
-            <div class="nl-week-content active" id="week-aug3">
+            <div class="nl-week-content" id="week-aug3">
 
                 <div class="nl-overview">
                     <p>Gold surged to $4,343 per ounce on Friday 7 August — its highest level in two months — as
