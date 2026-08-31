@@ -5,17 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="author" content="Adetutu Aderogba">
-    <meta name="description" content="Latest news and announcements from the African Extractive Minerals Development Bank (AEMBank).">
-    <title>News | African Extractive Minerals Development Bank (AEMBANK)</title>
+    <meta name="description" content="AEMBank is admitted into the Association of African Development Finance Institutions (AADFI), August 2026.">
+    <title>AEMBank Joins AADFI | African Extractive Minerals Development Bank</title>
     <link rel="icon" href="images/Untitled-3.png" type="image/png">
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
 </head>
 
 <body>
-
-    <!-- ── HEADER ── -->
     <header class="header" id="header">
         <a href="index.html">
             <img src="images/MagicEraser_240731_182314.PNG" alt="Logo" class="logo">
@@ -63,66 +60,46 @@
         <div class="header__line" id="headerLine"></div>
     </header>
 
-    <!-- ── HERO ── -->
-    <div class="news-hero">
-        <div class="news-hero-inner">
-            <div class="news-hero-eyebrow">AEMBank</div>
-            <h1>News &amp; <em>Announcements</em></h1>
-            <p class="news-hero-sub">
-                The latest updates, milestones, and institutional news from the African
-                Extractive Minerals Development Bank.
-            </p>
+    <!-- ── ARTICLE HERO ── -->
+    <div class="na-hero">
+        <div class="na-hero-inner">
+            <a href="news.html" class="na-breadcrumb">
+                <i class="fas fa-arrow-left"></i> News
+            </a>
+            <div class="na-tag">&#9670; AADFI Membership</div>
+            <h1>AEMBank Joins the Association of African Development Finance Institutions</h1>
+            <p class="na-hero-sub">AEMBank formalises its membership in the continental development finance community</p>
+            <div class="na-meta-bar">
+                <span><i class="far fa-calendar-alt"></i> August 2026</span>
+                <span><i class="fas fa-tag"></i> AADFI Membership</span>
+            </div>
         </div>
     </div>
 
-    <!-- ── NEWS BODY ── -->
-    <section class="news-body">
+    <!-- ── ARTICLE BODY ── -->
+    <div class="na-wrap">
 
-            <div class="news-body-inner">
-                <div class="news-section-row">
-                    <div>
-                        <div class="news-section-label">Latest</div>
-                        <div class="news-section-title">Recent Updates</div>
-                    </div>
-                </div>
+        <div class="na-body">
+            <p>Following an invitation by the Association of African Development Finance Institutions (AADFI), the
+                African Extractive Minerals Development Bank (AEMBank) is pleased to announce its acceptance and
+                admission into AADFI.</p>
 
-                <a href="news-aadfi-membership.html" class="featured-card-text">
-                    <div class="fc-icon"><i class="fas fa-handshake"></i></div>
-                    <div class="fc-body">
-                        <span class="fc-tag">&#9670; AADFI Membership</span>
-                        <h2>AEMBank Joins the Association of African Development Finance Institutions</h2>
-                        <p>Following an invitation by AADFI, AEMBank is pleased to announce its acceptance and
-                            admission — a milestone that deepens institutional collaboration, knowledge exchange
-                            and capacity building with leading African development finance institutions.</p>
-                        <div class="fc-meta">
-                            <span><i class="far fa-calendar-alt"></i> August 2026</span>
-                        </div>
-                        <div class="fc-read">Read Full Story <i class="fas fa-arrow-right"></i></div>
-                    </div>
-                </a>
+            <p>AADFI is a continental body established to promote cooperation among African development finance
+                institutions and strengthen their contribution to sustainable economic development across the
+                continent. Membership provides opportunities for institutional collaboration, knowledge exchange,
+                capacity building and engagement with leading continental development finance institutions.</p>
 
-                <a href="news-nigeria-signing.html" class="featured-card">
-                    <div class="fc-image">
-                        <img src="images/signing_ceremony.jpeg"
-                             alt="Nigeria signs the AEMBank Charter at the AFNIS London Roadshow, December 2025">
-                    </div>
-                    <div class="fc-body">
-                        <span class="fc-tag">&#9670; Institutional Milestone</span>
-                        <h2>Nigeria Signs AEMBank Charter</h2>
-                        <p>The Federal Republic of Nigeria has formally signed the Charter of the African Extractive
-                            Minerals Development Bank, marking a significant milestone in the establishment of the
-                            institution and reinforcing regional support for the Bank's mandate.</p>
-                        <div class="fc-meta">
-                            <span><i class="far fa-calendar-alt"></i> December 2025</span>
-                        </div>
-                        <div class="fc-read">Read Full Story <i class="fas fa-arrow-right"></i></div>
-                    </div>
-                </a>
-            </div>
+            <p>This important milestone reflects AEMBank's commitment to building strong strategic partnerships and
+                advancing the sustainable development of Africa's extractive minerals sector.</p>
         </div>
 
+        <hr class="na-rule">
 
-    </section>
+        <a href="news.html" class="na-back-btn">
+            <i class="fas fa-arrow-left"></i> Back to News
+        </a>
+
+    </div>
 
     <!-- ── FOOTER ── -->
     <footer class="footer">
@@ -197,10 +174,13 @@
             searchBtn.classList.remove('active');
             menuToggle.classList.toggle('hide');
         }
+    </script>
 
+    <script>
         window.addEventListener('scroll', function () {
             const header = document.getElementById('header');
             const headerLine = document.getElementById('headerLine');
+
             if (window.scrollY > 0) {
                 header.classList.add('scrolled');
                 headerLine.classList.add('scrolled');
@@ -226,5 +206,6 @@
             }
         }
     </script>
+
 </body>
 </html>
