@@ -1622,6 +1622,11 @@ span {
     margin-bottom: 20px;
 }
 
+/* Longer headlines get a smaller ceiling so they wrap to 2 lines, not 4 */
+.na-hero h1.na-title-long {
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+}
+
 .na-hero-sub {
     font-family: var(--font-body);
     font-size: 1.05rem;
