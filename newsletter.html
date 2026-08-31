@@ -90,12 +90,15 @@
                 <div class="nl-week-selector" id="weekSelector">
                     <button class="nl-week-btn" onclick="toggleWeekDropdown(event)">
                         <i class="far fa-calendar-alt"></i>
-                        <span id="selectedWeek">17 – 21 August 2026</span>
+                        <span id="selectedWeek">24 – 28 August 2026</span>
                         <i class="fas fa-chevron-down nl-chevron"></i>
                     </button>
                     <div class="nl-week-dropdown" id="weekDropdown">
                         <div class="nl-week-dropdown-label">Select Week</div>
-                        <button class="nl-week-option active" onclick="selectWeek(this, '17 – 21 August 2026', 'week-aug17')">
+                        <button class="nl-week-option active" onclick="selectWeek(this, '24 – 28 August 2026', 'week-aug24')">
+                            24 – 28 August 2026
+                        </button>
+                        <button class="nl-week-option" onclick="selectWeek(this, '17 – 21 August 2026', 'week-aug17')">
                             17 – 21 August 2026
                         </button>
                         <button class="nl-week-option" onclick="selectWeek(this, '10 – 14 August 2026', 'week-aug10')">
@@ -162,9 +165,268 @@
                 </div>
             </div>
 
+            <!-- ── WEEK: 17 – 21 August 2026 ── -->
+            <!-- ── WEEK: 24 – 28 August 2026 ── -->
+            <div class="nl-week-content active" id="week-aug24">
+
+                <div class="nl-overview">
+                    <p>The week that began with gold touching a three-month high of $4,700 ended with a sharp
+                        reversal. Fed Chair Kevin Warsh's Jackson Hole speech on Friday morning shocked financial
+                        markets by delivering a hawkish message on inflation — vowing to return PCE inflation to the
+                        Fed's 2% target and suggesting that recent soft data prints do not indicate meaningful
+                        underlying improvement. Gold fell more than 3% inside ten minutes, settling near $4,460.
+                        September rate-hike probability moved from below 40% to above 50%. Earlier in the week gold
+                        had been lifted by the US Treasury's announcement of support for long-duration bonds and
+                        ongoing central bank buying — making the Friday reversal particularly sharp. Against this
+                        macro backdrop, Harmony Gold reported its record year: revenue up 34% to R100 billion,
+                        headline earnings up 87%, operating free cash flow up 54% to R17 billion, and a record
+                        annual dividend of R12.80 per share — all on production of 1.43 million ounces that met
+                        guidance for the eleventh consecutive year. South32 more than doubled operating profit from
+                        continuing operations, declaring a 5.4 US cent final dividend. Gold Fields confirmed its
+                        Tarkwa renewal application has been with Ghana's Minerals Commission since November 2025
+                        and is still awaiting approval — the most concrete signal yet of where the Ghana sovereign
+                        participation story stands. And copper had a strong week on its own structural merits — a
+                        Mining.com analysis piece made the case that copper's current moment may be a long one.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Market Snapshot</div>
+                    <div class="nl-market-grid">
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Gold</div><div class="nl-commodity-price">$4,460 – $4,700/oz</div></div>
+                            <div class="nl-commodity-trend flat">↕</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Silver</div><div class="nl-commodity-price">$67 – $70/oz</div></div>
+                            <div class="nl-commodity-trend up">↑</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Brent Oil</div><div class="nl-commodity-price">$87 – $96/bbl</div></div>
+                            <div class="nl-commodity-trend flat">→</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Copper</div><div class="nl-commodity-price">$13,400 – $13,800/t</div></div>
+                            <div class="nl-commodity-trend up">↑</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Platinum</div><div class="nl-commodity-price">$1,870 – $1,960/oz</div></div>
+                            <div class="nl-commodity-trend up">↑</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Cobalt</div><div class="nl-commodity-price">~$57,000/t</div></div>
+                            <div class="nl-commodity-trend flat">→</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Zinc</div><div class="nl-commodity-price">~$3,200/t</div></div>
+                            <div class="nl-commodity-trend up">↑</div>
+                        </div>
+                    </div>
+                    <table class="nl-fx-table" style="margin-top:24px;">
+                        <thead><tr><th>Currency</th><th>Range (vs USD)</th><th>Trend</th></tr></thead>
+                        <tbody>
+                            <tr><td>NGN — Nigerian Naira</td><td>~1,615 – 1,675</td><td class="trend-firm">Broadly stable</td></tr>
+                            <tr><td>ZAR — South African Rand</td><td>~17.8 – 18.6</td><td class="trend-firm">Volatile; gold swing from $4,700 to $4,460 in one session</td></tr>
+                            <tr><td>ZWL — Zimbabwean Dollar</td><td>~13.1 – 13.7</td><td class="trend-firm">Stable; lithium revenues underpinning reserves</td></tr>
+                            <tr><td>ZMW — Zambian Kwacha</td><td>~24.5 – 25.5</td><td class="trend-firm">Firming; Hichilema second term continuity signal positive</td></tr>
+                            <tr><td>EUR — Euro</td><td>~1.07 – 1.10</td><td class="trend-firm">Softening; dollar stronger post-Warsh</td></tr>
+                            <tr><td>GBP — British Pound</td><td>~1.30 – 1.33</td><td class="trend-firm">Broadly stable</td></tr>
+                        </tbody>
+                    </table>
+                    <p class="nl-body-text" style="font-size:13px;color:#4a5a68;margin-top:12px;">The dollar
+                        strengthened materially after Warsh's speech — the US Dollar Index rose sharply on Friday as
+                        markets repriced the rate path. ZAR volatile on the gold swing. Zambian kwacha firming on
+                        Hichilema's re-election continuity signal. Sources: LME, ICE, Refinitiv, CME, Fastmarkets.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Key Developments — Updates from the Watch List</div>
+                    <p class="nl-body-text"><strong>Jackson Hole — Warsh delivered a hawkish surprise.</strong>
+                        Gold hit $4,700 Tuesday before falling more than 3% on Friday after Warsh's speech.
+                        September hike probability moved from below 40% to above 50%. The August Jobs Report is
+                        due next Friday — the next decisive input before the September 15-16 FOMC meeting.</p>
+                    <p class="nl-body-text"><strong>Ghana mining law — Gold Fields Tarkwa renewal waiting nine
+                        months.</strong> Gold Fields confirmed this week that its November 2025 renewal application
+                        is still with the Minerals Commission without a decision. The Tarkwa lease expires April
+                        2027. The application and the new mining law are now both in play simultaneously.</p>
+                    <p class="nl-body-text"><strong>Wheaton — Kurmuk first gold imminent.</strong> No formal
+                        announcement yet but the company confirmed first gold pour is expected within weeks of the
+                        August startup. Watch for the announcement which triggers Wheaton's stream revenue from
+                        the project.</p>
+                    <p class="nl-body-text"><strong>CAR mine collapse — investigation ongoing.</strong> Authorities
+                        have closed the site. No broader regulatory announcement from CAR or regional bodies yet.</p>
+                    <p class="nl-body-text"><strong>Iran — pause holding, dollar strengthening.</strong> No new
+                        strikes reported. Warsh's hawkish speech strengthened the dollar which adds a new headwind
+                        to oil price recovery — a stronger dollar makes dollar-denominated oil more expensive for
+                        non-dollar buyers, typically suppressing demand.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Africa Positioning</div>
+                    <p class="nl-body-text">Harmony Gold's record year — revenue up 34% to R100 billion, earnings
+                        up 87%, free cash flow up 54% to R17 billion — is the sixth in a sequence of extraordinary
+                        African precious metals results tracked across this newsletter in 2026: AngloGold up 58%,
+                        Glencore up 86%, DRDGold up 85%, Wheaton record revenue, Sibanye up 371%, and now Harmony
+                        up 87%. Every major category of African gold producer has delivered a record or near-record
+                        result in the same financial year. South32's more-than-doubled operating profit confirms its
+                        post-Hillside portfolio — anchored by South African manganese, where the country holds
+                        roughly 80% of the world's known high-grade reserves — is performing strongly. But Warsh's
+                        hawkish Jackson Hole speech reset the macro backdrop that enabled these results: gold fell
+                        from a three-month high of $4,700 to $4,460 in a single session as September hike
+                        probability moved above 50%. And the Gold Fields Tarkwa story — a nine-month unanswered
+                        renewal application on Africa's largest foreign-operated gold mine, with the April 2027 lease
+                        expiry eight months away — sits alongside the Damang precedent and the new mining law as
+                        the clearest available signal of where Ghana's sovereign participation story is heading.</p>
+
+                    <figure style="margin: 24px 0; border-radius: 12px; overflow: hidden; box-shadow: 0 6px 24px rgba(20,49,86,0.12);">
+                        <img src="images/mining-harmony-gold-record-year.jpg"
+                             alt="Gold mining operations during the week Harmony Gold reported its record year and gold swung from $4,700 to $4,460"
+                             style="width:100%; height:280px; object-fit:cover; display:block;">
+                        <figcaption style="background:rgb(20,49,86); color:rgba(255,255,255,0.7); font-size:12px; padding:12px 18px; border-left:4px solid #72e2ae; font-style:italic;">
+                            Harmony Gold reported revenue above R100 billion for the first time as gold swung from a
+                            three-month high of $4,700 to $4,460 following Warsh's hawkish Jackson Hole speech.
+                        </figcaption>
+                    </figure>
+
+                    <div class="nl-two-col">
+                        <div class="nl-col-card opps">
+                            <h4><i class="fas fa-arrow-up" style="margin-right:6px;"></i>Opportunities</h4>
+                            <ul>
+                                <li>Gold up 13.3% for August despite Friday's fall — the structural demand story is intact; central bank buying, sovereign demand, energy transition all continuing</li>
+                                <li>Harmony record year confirms the sixth consecutive extraordinary African earnings result — the supercycle is real and documented across every major producer category</li>
+                                <li>South32 doubling operating profit confirms the portfolio after Hillside sale is performing strongly — South African manganese a significant contributor</li>
+                                <li>Copper structural outlook constructive — BHP Escondida, Kamoa-Kakula, Lobito Corridor all pointing toward sustained demand above current supply capacity</li>
+                                <li>Silver at $70 mid-week — sixth consecutive annual deficit projected, India restriction premium persisting; silver by-product credits improving for copper and gold producers simultaneously</li>
+                                <li>Hichilema re-election provides Zambia copper continuity — KoBold Mingomba investment, Lobito Corridor and Chingola B all stable under second term</li>
+                            </ul>
+                        </div>
+                        <div class="nl-col-card threats">
+                            <h4><i class="fas fa-exclamation-triangle" style="margin-right:6px;"></i>Threats</h4>
+                            <ul>
+                                <li>Warsh's hawkish Jackson Hole speech puts September hike above 50% probability — the rate ceiling above gold is back and August CPI on September 10 is decisive</li>
+                                <li>Gold fell from $4,700 to $4,460 in a single session on Friday — the speed of the move shows how rate-sensitive gold remains despite structural support</li>
+                                <li>Gold Fields Tarkwa renewal unanswered nine months — April 2027 lease expiry eight months away with the Damang precedent and new mining law both active</li>
+                                <li>PCE inflation at 3.7% annually — still 1.7 percentage points above target; Warsh explicitly said recent data does not indicate meaningful improvement</li>
+                                <li>Dollar strengthening post-Warsh creates headwinds for all dollar-denominated commodity exports from African producers</li>
+                                <li>August Jobs Report due next Friday — a strong number above 200,000 cements the September hike case and could push gold below $4,400</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nl-takeaway">
+                    <div class="nl-takeaway-label">Key Takeaway</div>
+                    <p>Six results in six weeks completes the African mining earnings supercycle across every major
+                        producer category. Warsh's speech does not reverse the structural drivers behind it — central
+                        banks are still buying, the energy transition still needs cobalt, lithium and copper, and
+                        Western governments still treat African mineral supply as a national security priority. What
+                        changed is the rate ceiling above gold — but based on the cost structures across six earnings
+                        results, the margins are wide enough to absorb a rate-driven correction. The more important
+                        question is Gold Fields' Tarkwa story: a nine-month unanswered renewal application is the
+                        clearest signal yet of where sovereign participation is heading.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Deals &amp; Strategic Moves</div>
+                    <div class="nl-deals">
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-coins"></i></div>
+                            <div class="nl-deal-text"><strong>Warsh's Hawkish Jackson Hole Speech Sends Gold from
+                                $4,700 to $4,460</strong> — Gold's most dramatic single-session move since May.
+                                Warsh declared the Fed's 2% PCE target 'a firm, fixed target' and said recent soft
+                                data 'do not tell me that underlying trends have meaningfully improved.' September
+                                hike probability jumped from one-in-three to more than two-in-five.</div>
+                        </div>
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-chart-line"></i></div>
+                            <div class="nl-deal-text"><strong>Harmony Gold — Record Year, Revenue Above R100
+                                Billion</strong> — Revenue up 34% to R99.24 billion, headline earnings per share up
+                                87% to R43.63, free cash flow up 54% to R17.15 billion, record R12.80 per share
+                                dividend. Production of 1.43 million ounces met guidance for the eleventh
+                                consecutive year.</div>
+                        </div>
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-industry"></i></div>
+                            <div class="nl-deal-text"><strong>South32 — Operating Profit More Than Doubles</strong>
+                                — Strongest result since selling Hillside Aluminium to Alcoa for $5.6 billion.
+                                Declared a 5.4 US cent final dividend, with South African manganese operations a
+                                meaningful contributor.</div>
+                        </div>
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-exclamation-triangle"></i></div>
+                            <div class="nl-deal-text"><strong>Gold Fields — Tarkwa Renewal Unanswered After Nine
+                                Months</strong> — Application submitted to Ghana's Minerals Commission in November
+                                2025 still awaits a decision. Tarkwa lease expires April 2027; the Damang precedent
+                                and new mining law both loom over the outcome.</div>
+                        </div>
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-globe-africa"></i></div>
+                            <div class="nl-deal-text"><strong>Copper — Structural Case for a Long Cycle</strong> —
+                                A Mining.com analysis argued copper's current strength reflects structural rather
+                                than cyclical demand, with BHP, Kamoa-Kakula and the Lobito Corridor all pointing
+                                the same direction.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Research Spotlight — Six Results in Six Weeks: And What Comes Next</div>
+                    <p class="nl-body-text">The African mining earnings supercycle is now complete across six
+                        consecutive results. AngloGold up 58%. Glencore up 86%. DRDGold up 85%. Wheaton record
+                        revenue. Sibanye up 371%. Harmony up 87%. Every major category of African precious metals
+                        and diversified mineral producer has delivered a record or near-record year in 2026. The
+                        question now is what comes next — and Warsh's Jackson Hole speech this week provides the
+                        most direct available answer. The extraordinary earnings of 2026 were enabled by a specific
+                        macro environment: gold above $4,000 sustained by central bank buying and geopolitical
+                        risk; oil elevated by the Iran war creating an inflation premium that kept rate expectations
+                        high without tipping into a full tightening cycle; and the structural repricing of African
+                        minerals as strategic assets by Western governments. Warsh's speech does not reverse any of
+                        those structural drivers. What changed on Friday is the rate ceiling above gold. September
+                        hike probability is now above 50%. The question for African mining finance is whether the
+                        margin structure that enabled these extraordinary results can withstand a gold price that
+                        gives back some of August's gains. The answer, based on the cost structures visible across
+                        six earnings results, is almost certainly yes — at $4,200 or even $4,000 gold, every one of
+                        the six companies reporting this year remains highly profitable. The more important question
+                        is the Gold Fields Tarkwa story. A nine-month unanswered renewal application on Africa's
+                        largest foreign-operated gold mine, with April 2027 eight months away, is the clearest
+                        available signal of where the sovereign participation story is heading.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Financing Implications</div>
+                    <p class="nl-body-text">Three themes stand out this week. Harmony's record year — built on a
+                        diversified gold-and-copper base after the CSA acquisition — and South32's post-Hillside
+                        strength both confirm that portfolio diversification away from a single commodity or
+                        jurisdiction continues to outperform, a consideration worth weighting when structuring
+                        financing across the AEMBank pipeline. The margin analysis underlying six consecutive
+                        record results — remaining highly profitable even at $4,000 to $4,200 gold — supports
+                        stress-testing financing structures against a rate-driven pullback rather than treating
+                        current prices as a permanent floor. And the Gold Fields Tarkwa renewal, unanswered nine
+                        months into a process that historically moved faster, should be tracked as a leading
+                        indicator for sovereign participation risk across AEMBank's Ghana-exposed gold financing,
+                        alongside the Damang precedent and the pending mining law.</p>
+                    <div class="nl-trend-list">
+                        <div class="nl-trend-item">Weight portfolio and jurisdictional diversification — following Harmony's copper diversification and South32's post-Hillside portfolio — when structuring financing across the pipeline</div>
+                        <div class="nl-trend-item">Stress-test gold-linked financing structures against a pullback to $4,000-$4,200, the level at which six consecutive record results remain highly profitable</div>
+                        <div class="nl-trend-item">Track the Gold Fields Tarkwa renewal delay as a leading indicator for sovereign participation risk on Ghana-exposed gold financing</div>
+                        <div class="nl-trend-item">Monitor the August Jobs Report and September 10 CPI print for their direct read-through to gold-linked financing conditions ahead of the September FOMC meeting</div>
+                    </div>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Watch Next Week</div>
+                    <div class="nl-signals">
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>August Jobs Report — Friday 5 September: the most important near-term input for the September Fed decision. A number above 200,000 cements the hike case and likely pushes gold toward $4,300 to $4,400. A weak number below 100,000 reverses Friday's damage and rebuilds the hold case.</span></div>
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>August CPI — Wednesday 10 September: five days before the FOMC meets. The decisive input. At or below 3.4% holds the door open for a September pause despite Warsh's speech. Above 3.5% confirms the hike. This single number will determine the rate environment for Q4.</span></div>
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>Ghana — Tarkwa renewal and parliamentary submission: nine months without a response on the renewal application. Parliamentary submission of the new mining law still pending six weeks after cabinet approval. Watch for any movement on either — both carry direct implications for Gold Fields.</span></div>
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>Wheaton — Kurmuk first gold: first gold pour from the Allied Gold Ethiopia project is expected within weeks. Watch for the formal announcement which triggers Wheaton's stream and provides the first production signal from a project backed by Zijin's $295 million stake.</span></div>
+                    </div>
+                </div>
+
+            </div><!-- end week-aug24 -->
+
             <!-- ── WEEK: 10 – 14 August 2026 ── -->
             <!-- ── WEEK: 17 – 21 August 2026 ── -->
-            <div class="nl-week-content active" id="week-aug17">
+            <div class="nl-week-content" id="week-aug17">
 
                 <div class="nl-overview">
                     <p>Gold is holding near $4,390 with five forces in play simultaneously: the Iran ceasefire has
