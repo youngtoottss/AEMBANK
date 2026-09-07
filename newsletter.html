@@ -90,12 +90,15 @@
                 <div class="nl-week-selector" id="weekSelector">
                     <button class="nl-week-btn" onclick="toggleWeekDropdown(event)">
                         <i class="far fa-calendar-alt"></i>
-                        <span id="selectedWeek">24 – 28 August 2026</span>
+                        <span id="selectedWeek">1 – 4 September 2026</span>
                         <i class="fas fa-chevron-down nl-chevron"></i>
                     </button>
                     <div class="nl-week-dropdown" id="weekDropdown">
                         <div class="nl-week-dropdown-label">Select Week</div>
-                        <button class="nl-week-option active" onclick="selectWeek(this, '24 – 28 August 2026', 'week-aug24')">
+                        <button class="nl-week-option active" onclick="selectWeek(this, '1 – 4 September 2026', 'week-sep1')">
+                            1 – 4 September 2026
+                        </button>
+                        <button class="nl-week-option" onclick="selectWeek(this, '24 – 28 August 2026', 'week-aug24')">
                             24 – 28 August 2026
                         </button>
                         <button class="nl-week-option" onclick="selectWeek(this, '17 – 21 August 2026', 'week-aug17')">
@@ -165,9 +168,284 @@
                 </div>
             </div>
 
+            <!-- ── WEEK: 24 – 28 August 2026 ── -->
+            <!-- ── WEEK: 1 – 4 September 2026 ── -->
+            <div class="nl-week-content active" id="week-sep1">
+
+                <div class="nl-overview">
+                    <p>Gold recovered from last week's Warsh-driven selloff to trade near $4,470 on Friday as Fed
+                        Governor Waller tempered rate-hike expectations and August's ADP private employment data
+                        came in at just 38,000 — the weakest since January and well below the 47,000 forecast. The
+                        August Non-Farm Payrolls report lands Friday and is the decisive input before the September
+                        15-16 FOMC meeting. Markets are pricing a 66% chance of a hike following Warsh's Jackson
+                        Hole speech, but Waller's comments are pulling that back. Impala Platinum generated R22
+                        billion in free cash and returned a record R17 billion to shareholders, with CEO Nico Muller
+                        announcing a new-phase R60 billion capital expenditure programme — the seventh
+                        consecutive extraordinary South African precious metals earnings result. Sibanye-Stillwater
+                        confirmed earnings up 111% with an R5.7 billion dividend declared, and approved its first
+                        copper project — Mount Lyell in Australia. Zambia's state-controlled mining investor
+                        announced it expects to unlock more than $1.8 billion from the country's small-scale gold
+                        industry by adopting Ghana's formalisation model. Ionic Rare Earths secured a term sheet
+                        for a magnet recycling joint venture in the US with Missouri-based US Strategic Metals. And
+                        Valterra Platinum's Unki mine in Zimbabwe completed the first-ever renewal audit in IRMA's
+                        history — a governance milestone in one of Africa's most complex mining regulatory
+                        environments.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Market Snapshot</div>
+                    <div class="nl-market-grid">
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Gold</div><div class="nl-commodity-price">$4,330 – $4,470/oz</div></div>
+                            <div class="nl-commodity-trend up">↑</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Silver</div><div class="nl-commodity-price">$65 – $70/oz</div></div>
+                            <div class="nl-commodity-trend up">↑</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Brent Oil</div><div class="nl-commodity-price">$83 – $96/bbl</div></div>
+                            <div class="nl-commodity-trend flat">↓</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Copper</div><div class="nl-commodity-price">$13,500 – $13,900/t</div></div>
+                            <div class="nl-commodity-trend up">↑</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Platinum</div><div class="nl-commodity-price">$1,834 – $1,974/oz</div></div>
+                            <div class="nl-commodity-trend up">↑</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Cobalt</div><div class="nl-commodity-price">~$57,000/t</div></div>
+                            <div class="nl-commodity-trend flat">→</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Zinc</div><div class="nl-commodity-price">~$3,200/t</div></div>
+                            <div class="nl-commodity-trend up">↑</div>
+                        </div>
+                    </div>
+                    <table class="nl-fx-table" style="margin-top:24px;">
+                        <thead><tr><th>Currency</th><th>Range (vs USD)</th><th>Trend</th></tr></thead>
+                        <tbody>
+                            <tr><td>NGN — Nigerian Naira</td><td>~1,610 – 1,670</td><td class="trend-firm">Broadly stable; oil easing a marginal import cost relief</td></tr>
+                            <tr><td>ZAR — South African Rand</td><td>~15.99 – 18.6</td><td class="trend-firm">Firming; gold recovery and PGM earnings supercycle both supportive</td></tr>
+                            <tr><td>ZWL — Zimbabwean Dollar</td><td>~13.1 – 13.7</td><td class="trend-firm">Stable; Valterra Unki IRMA audit a governance confidence signal</td></tr>
+                            <tr><td>ZMW — Zambian Kwacha</td><td>~24.5 – 25.5</td><td class="trend-firm">Firming; $1.8bn small-scale gold formalisation target positive</td></tr>
+                            <tr><td>EUR — Euro</td><td>~1.08 – 1.12</td><td class="trend-firm">Firmer; dollar softening on Waller comments</td></tr>
+                            <tr><td>GBP — British Pound</td><td>~1.31 – 1.35</td><td class="trend-firm">Broadly stable</td></tr>
+                        </tbody>
+                    </table>
+                    <p class="nl-body-text" style="font-size:13px;color:#4a5a68;margin-top:12px;">The dollar
+                        softened after Waller's comments and the weak ADP data — providing relief to African
+                        currencies that had been under pressure since Warsh's Jackson Hole speech. ZAR at its best
+                        level since the Iran war began, supported by gold recovery and the PGM earnings
+                        supercycle. The R/$ moved to 15.99 at the Mining Weekly ticker — the most positive South
+                        African currency signal of the year. Sources: LME, ICE, Refinitiv, CME, Fastmarkets.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Key Developments — Updates from the Watch List</div>
+                    <p class="nl-body-text"><strong>August Jobs Report — lands today, Friday 4
+                        September.</strong> ADP came in at 38,000 — the weakest since January — pointing toward a
+                        weak official payrolls number. A reading below 100,000 would significantly reduce the
+                        September hike probability and push gold above $4,500. A strong number above 200,000
+                        cements the hike case.</p>
+                    <p class="nl-body-text"><strong>Gold recovering from Warsh selloff.</strong> Gold stabilised at
+                        $4,330 mid-week before climbing to $4,470 on Friday after Waller's comments. August's total
+                        return is still positive — gold up approximately 10% for the month even after the Jackson
+                        Hole selloff.</p>
+                    <p class="nl-body-text"><strong>Iran — Trump says strikes short-lived, oil easing.</strong>
+                        Trump indicated this week that the latest attacks on Iran would be short-lived while
+                        confirming the US stands ready for further strikes if needed. Oil eased off recent highs on
+                        the comment. Brent trading near $83 to $96 — still elevated but directionally lower.</p>
+                    <p class="nl-body-text"><strong>Ghana Tarkwa renewal — still no response after nine
+                        months.</strong> Gold Fields' November 2025 renewal application remains unanswered. The
+                        April 2027 lease expiry is now seven months away.</p>
+                    <p class="nl-body-text"><strong>Wheaton Kurmuk first gold — still imminent.</strong> No formal
+                        announcement yet. Watch for the pour confirmation which triggers Wheaton's stream
+                        revenue.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Africa Positioning</div>
+                    <p class="nl-body-text">Implats' R22 billion free cash generation and R60 billion new capex
+                        programme — the seventh consecutive extraordinary result in the African precious metals
+                        earnings supercycle tracked across this newsletter since April 2026 — signals that producers
+                        are treating current prices as a durable platform for long-term investment rather than a
+                        temporary windfall. Sibanye's 111% earnings jump and R5.7 billion dividend arrived alongside
+                        approval of its first copper project, Mount Lyell in Australia, diversifying the company into
+                        the critical mineral with the most consistent structural demand signal across the energy
+                        transition. Zambia's $1.8 billion small-scale gold formalisation target — explicitly modelled
+                        on Ghana's Gold Board — is the clearest available quantification yet of the gap between the
+                        formal sector's extraordinary earnings and the informal sector's currently untaxed,
+                        untraceable production. Ionic Rare Earths' US magnet recycling joint venture completes an
+                        African-to-American rare earth supply chain from Uganda to Missouri, while Valterra
+                        Platinum's Unki mine became the first in IRMA's history to complete a renewal audit — a
+                        governance milestone inside one of Africa's most complex regulatory environments. Against
+                        this backdrop, gold's recovery to $4,470 on Waller's dovish tone and a weak ADP print sets
+                        up today's August Non-Farm Payrolls report as the decisive input before the September
+                        FOMC meeting.</p>
+
+                    <figure style="margin: 24px 0; border-radius: 12px; overflow: hidden; box-shadow: 0 6px 24px rgba(20,49,86,0.12);">
+                        <img src="images/mining-implats-pgm-capex.jpg"
+                             alt="Platinum group metals mining operations during the week Implats announced a R60 billion capex programme and gold recovered to $4,470"
+                             style="width:100%; height:280px; object-fit:cover; display:block;">
+                        <figcaption style="background:rgb(20,49,86); color:rgba(255,255,255,0.7); font-size:12px; padding:12px 18px; border-left:4px solid #72e2ae; font-style:italic;">
+                            Impala Platinum generated R22 billion in free cash and committed to a new R60 billion
+                            capex phase as gold recovered from last week's Jackson Hole selloff to $4,470.
+                        </figcaption>
+                    </figure>
+
+                    <div class="nl-two-col">
+                        <div class="nl-col-card opps">
+                            <h4><i class="fas fa-arrow-up" style="margin-right:6px;"></i>Opportunities</h4>
+                            <ul>
+                                <li>Gold recovering to $4,470 with weak ADP pointing to a soft jobs number — a reading below 100,000 today could push gold above $4,500 and materially reduce the September hike probability</li>
+                                <li>Implats R22bn free cash and R60bn capex programme confirms PGM supercycle is being invested for the long term — not treated as a windfall to be distributed</li>
+                                <li>Sibanye copper project approval — Mount Lyell in Australia — adds direct copper exposure alongside PGM and gold operations</li>
+                                <li>Zambia's $1.8bn small-scale gold formalisation target is the clearest available quantification of the artisanal mining opportunity — with Ghana's proven model as the implementation framework</li>
+                                <li>Ionic Rare Earths US magnet recycling JV completes the African-to-American rare earth supply chain at the JV term sheet stage — Uganda to Missouri</li>
+                                <li>Valterra Unki IRMA renewal audit — first in IRMA history — is a responsible mining governance signal in Zimbabwe's complex regulatory environment</li>
+                            </ul>
+                        </div>
+                        <div class="nl-col-card threats">
+                            <h4><i class="fas fa-exclamation-triangle" style="margin-right:6px;"></i>Threats</h4>
+                            <ul>
+                                <li>August NFP today — a strong number above 200,000 confirms September hike and reverses this week's gold recovery; 66% hike probability still elevated</li>
+                                <li>Sibanye US operations strike notice from United Steelworkers — PGM recycling disruption risk at Stillwater East and Columbus metallurgical complex</li>
+                                <li>Ghana Tarkwa renewal unanswered nine months — April 2027 seven months away with no Minerals Commission response and new mining law still not submitted to parliament</li>
+                                <li>Iran situation unresolved — Trump says strikes short-lived but US 'stands ready for further strikes'; oil retains residual risk premium</li>
+                                <li>LME zinc squeeze signalling deepening supply risks — same structural tightness pattern as copper; Western supply chain vulnerability broadening</li>
+                                <li>September FOMC hike above 66% probability — the decisive data point is today; any upside surprise in NFP immediately reinstates full rate pressure on gold</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nl-takeaway">
+                    <div class="nl-takeaway-label">Key Takeaway</div>
+                    <p>Seven results in seven weeks completes the African precious metals earnings supercycle
+                        across every major South African and pan-African producer. But this week also put a number
+                        on the other side of the story: Zambia's $1.8 billion small-scale gold formalisation target
+                        quantifies the gap between the formal sector's extraordinary earnings and an informal sector
+                        that currently generates deaths and smuggled production rather than tax revenue. Ghana's
+                        Gold Board, Dynacor's Senegal plant, the WGC's assurance standard and now Zambia's explicit
+                        adoption of the Ghana model are the operational structures beginning to close that gap —
+                        alongside Valterra's Unki IRMA audit, which shows governance infrastructure being built in
+                        exactly the jurisdiction where it is hardest to build it.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Deals &amp; Strategic Moves</div>
+                    <div class="nl-deals">
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-coins"></i></div>
+                            <div class="nl-deal-text"><strong>Gold Recovers to $4,470 — Waller Tempers Hike
+                                Bets</strong> — Fed Governor Waller's more measured tone on inflation, combined
+                                with August ADP private payrolls of just 38,000 — the weakest since January —
+                                pulled September hike probability back from post-Jackson Hole highs to 66%. Today's
+                                official NFP report is decisive.</div>
+                        </div>
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-chart-line"></i></div>
+                            <div class="nl-deal-text"><strong>Implats — R22bn Free Cash, Record R17bn Returned,
+                                New R60bn Capex Phase</strong> — CEO Nico Muller announced a new-phase capital
+                                programme to sustain and grow the business through the next decade, the seventh
+                                consecutive extraordinary South African precious metals result.</div>
+                        </div>
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-industry"></i></div>
+                            <div class="nl-deal-text"><strong>Sibanye — Earnings Up 111%, First Copper Project
+                                Approved</strong> — R5.7 billion dividend declared alongside board approval of the
+                                Mount Lyell copper, gold and silver project in Tasmania — Sibanye's first direct
+                                copper exposure — plus the Burnstone gold project in South Africa.</div>
+                        </div>
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-hand-holding-usd"></i></div>
+                            <div class="nl-deal-text"><strong>Zambia — Targets $1.8 Billion from Small-Scale Gold
+                                Formalisation</strong> — State-controlled mining investor to adopt Ghana's Gold Board
+                                model, routing artisanal production through certified assay facilities and a
+                                transparent buying mechanism.</div>
+                        </div>
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-globe-africa"></i></div>
+                            <div class="nl-deal-text"><strong>Ionic Rare Earths — US Magnet Recycling JV Term
+                                Sheet</strong> — Joint venture with US Strategic Metals in Missouri completes an
+                                African-to-American rare earth supply chain from Ionic's Makuutu project in Uganda.</div>
+                        </div>
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-shield-alt"></i></div>
+                            <div class="nl-deal-text"><strong>Valterra Platinum — Unki Completes First-Ever IRMA
+                                Renewal Audit</strong> — A governance milestone at the Zimbabwe mine, achieved in
+                                a jurisdiction where the government owes producers $228 million in unpaid earnings
+                                and has mandated state co-ownership across 14 critical minerals.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Research Spotlight — Seven Results in Seven Weeks: And a $1.8 Billion Question About What Comes Next</div>
+                    <p class="nl-body-text">The African precious metals earnings supercycle reached seven
+                        consecutive extraordinary results this week. AngloGold up 58%. Glencore up 86%. DRDGold
+                        up 85%. Wheaton record revenue. Sibanye up 111%. Harmony up 87%. Implats R22 billion free
+                        cash. Every major category of South African and pan-African precious metals producer has
+                        delivered a record or near-record result in the same financial year. The numbers are now a
+                        matter of documented fact, not expectation. And this week Zambia put a number on a
+                        different kind of opportunity. $1.8 billion from formalising the small-scale gold sector —
+                        using the same model Ghana has been building. That number sits alongside the
+                        extraordinary formal sector earnings in a way that makes the contrast visible and
+                        quantifiable. The formal sector has generated billions in earnings this year. The informal
+                        sector — 20 million people across the continent — has generated thousands of deaths and
+                        billions of dollars in smuggled production that reaches no tax authority and no government
+                        revenue account. The formalisation infrastructure is being built. Ghana's Gold Board.
+                        Dynacor's processing plant in Senegal. The World Gold Council's assurance standard.
+                        Zambia's explicit adoption of the Ghana model. These are operational structures beginning
+                        to create formal pathways that currently do not exist for the 20 million people in the
+                        artisanal sector. Valterra Platinum's Unki mine completing the first-ever IRMA renewal audit
+                        in Zimbabwe this week is a different expression of the same underlying theme — governance
+                        infrastructure being built in exactly the environment where it is hardest to build it. Seven
+                        results. Seven weeks. The earnings are real and documented. The question is whether the
+                        governance, formalisation and responsible mining infrastructure being built in parallel with
+                        those earnings is moving fast enough to match them.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Financing Implications</div>
+                    <p class="nl-body-text">Three themes stand out this week. Implats' R60 billion capex commitment
+                        and Sibanye's Mount Lyell approval both signal that the region's largest PGM producers are
+                        deploying supercycle cash flow into long-dated capital programmes rather than distributions
+                        alone — a reference point for structuring AEMBank financing alongside rather than in
+                        competition with producer-funded expansion. Zambia's $1.8 billion formalisation target, built
+                        explicitly on Ghana's Gold Board model, is a directly replicable structure for AEMBank member
+                        states seeking to convert artisanal gold production into a formal, taxable revenue base —
+                        worth tracking for early-stage advisory or blended-finance engagement as implementation
+                        detail emerges. And the Ionic Rare Earths Uganda-to-Missouri supply chain, alongside
+                        Valterra's Unki IRMA audit in Zimbabwe, both illustrate that governance and downstream
+                        processing infrastructure — not just resource extraction — are now bankable components of
+                        the African critical minerals financing case.</p>
+                    <div class="nl-trend-list">
+                        <div class="nl-trend-item">Track producer-funded capex programmes like Implats' R60bn phase and Sibanye's Mount Lyell approval as reference points for co-financing rather than competing capital structures</div>
+                        <div class="nl-trend-item">Monitor Zambia's Ghana-model implementation detail for early-stage advisory or blended-finance opportunities in small-scale gold formalisation</div>
+                        <div class="nl-trend-item">Treat governance and downstream processing infrastructure — IRMA audits, magnet recycling JVs — as bankable components of the critical minerals financing case, not preconditions to it</div>
+                        <div class="nl-trend-item">Watch today's August NFP and the September 10 CPI print for their direct read-through to gold-linked financing conditions ahead of the September FOMC meeting</div>
+                    </div>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Watch Next Week</div>
+                    <div class="nl-signals">
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>August NFP — today, Friday 4 September: the most important near-term input for the September Fed decision. Below 100,000 reduces hike probability materially and supports gold above $4,500. Above 200,000 confirms September and reverses this week's recovery. This single number sets the tone for the week ahead.</span></div>
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>September FOMC — 15-16 September: two weeks away. August CPI lands September 10 — five days before the meeting. The combination of NFP today and CPI on the 10th will settle September. A hold with dovish language is the most positive available catalyst for gold.</span></div>
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>Ghana — Tarkwa renewal and parliamentary submission: seven months to April 2027. Nine months without a Minerals Commission response. Parliamentary submission of the new mining law still pending. Watch for any movement on either this week.</span></div>
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>Zambia — small-scale gold formalisation implementation: the $1.8bn target has been announced. Watch for any operational detail on how Zambia's state mining investor plans to implement the Ghana model — specifically whether a state gold buying mechanism is being established.</span></div>
+                    </div>
+                </div>
+
+            </div><!-- end week-sep1 -->
+
             <!-- ── WEEK: 17 – 21 August 2026 ── -->
             <!-- ── WEEK: 24 – 28 August 2026 ── -->
-            <div class="nl-week-content active" id="week-aug24">
+            <div class="nl-week-content" id="week-aug24">
 
                 <div class="nl-overview">
                     <p>The week that began with gold touching a three-month high of $4,700 ended with a sharp
