@@ -90,12 +90,15 @@
                 <div class="nl-week-selector" id="weekSelector">
                     <button class="nl-week-btn" onclick="toggleWeekDropdown(event)">
                         <i class="far fa-calendar-alt"></i>
-                        <span id="selectedWeek">1 – 4 September 2026</span>
+                        <span id="selectedWeek">7 – 11 September 2026</span>
                         <i class="fas fa-chevron-down nl-chevron"></i>
                     </button>
                     <div class="nl-week-dropdown" id="weekDropdown">
                         <div class="nl-week-dropdown-label">Select Week</div>
-                        <button class="nl-week-option active" onclick="selectWeek(this, '1 – 4 September 2026', 'week-sep1')">
+                        <button class="nl-week-option active" onclick="selectWeek(this, '7 – 11 September 2026', 'week-sep7')">
+                            7 – 11 September 2026
+                        </button>
+                        <button class="nl-week-option" onclick="selectWeek(this, '1 – 4 September 2026', 'week-sep1')">
                             1 – 4 September 2026
                         </button>
                         <button class="nl-week-option" onclick="selectWeek(this, '24 – 28 August 2026', 'week-aug24')">
@@ -168,9 +171,275 @@
                 </div>
             </div>
 
+            <!-- ── WEEK: 1 – 4 September 2026 ── -->
+            <!-- ── WEEK: 7 – 11 September 2026 ── -->
+            <div class="nl-week-content active" id="week-sep7">
+
+                <div class="nl-overview">
+                    <p>A difficult week for gold as two inflationary signals arrived simultaneously. August PPI came
+                        in at 5.4% annually on Thursday — the highest reading of the year — while Brent crude
+                        crossed $100 again as US-Iran strikes resumed, pushing September Fed rate-hike probability
+                        from 60% to 70% in a single session. August jobs growth surged well above expectations
+                        earlier in the week, adding further pressure. Gold traded near $4,349 on Thursday before
+                        August CPI — the last major input before the September 15-16 FOMC meeting — landed
+                        today, Friday 11 September. Against this backdrop, African Rainbow Minerals reported a
+                        twelve-fold increase in annual profit to R4 billion — completing the eight-result African
+                        mining earnings supercycle. China's People's Bank added 650,000 troy ounces in July — its
+                        twentieth consecutive month of purchases. Gold ETFs recorded $18 billion in August inflows
+                        — the second largest monthly inflow on record — confirming both official and private buyers
+                        are moving in the same direction simultaneously. South Africa's mining production fell 7.5%
+                        in July, its largest decline this year. Fortuna Mining approved a $109 million, 30% capacity
+                        expansion of its Séguéla gold mine in Côte d'Ivoire. And the DRC's mining code reform is
+                        advancing toward a parliamentary vote.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Market Snapshot</div>
+                    <div class="nl-market-grid">
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Gold</div><div class="nl-commodity-price">$4,349 – $4,470/oz</div></div>
+                            <div class="nl-commodity-trend flat">↓</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Silver</div><div class="nl-commodity-price">$63 – $67/oz</div></div>
+                            <div class="nl-commodity-trend flat">↕</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Brent Oil</div><div class="nl-commodity-price">$98 – $105/bbl</div></div>
+                            <div class="nl-commodity-trend up">↑</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Copper</div><div class="nl-commodity-price">$13,400 – $13,800/t</div></div>
+                            <div class="nl-commodity-trend up">↑</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Platinum</div><div class="nl-commodity-price">$1,834 – $1,973/oz</div></div>
+                            <div class="nl-commodity-trend flat">→</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Cobalt</div><div class="nl-commodity-price">~$57,000/t</div></div>
+                            <div class="nl-commodity-trend flat">→</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Gold ETFs</div><div class="nl-commodity-price">$615bn AUM</div></div>
+                            <div class="nl-commodity-trend up">↑</div>
+                        </div>
+                    </div>
+                    <table class="nl-fx-table" style="margin-top:24px;">
+                        <thead><tr><th>Currency</th><th>Range (vs USD)</th><th>Trend</th></tr></thead>
+                        <tbody>
+                            <tr><td>NGN — Nigerian Naira</td><td>~1,615 – 1,675</td><td class="trend-firm">Stable; oil above $100 negative but NNPC listing sentiment positive</td></tr>
+                            <tr><td>ZAR — South African Rand</td><td>~18.0 – 19.0</td><td class="trend-firm">Weakening; gold below $4,400 and production decline compounding</td></tr>
+                            <tr><td>ZWL — Zimbabwean Dollar</td><td>~13.2 – 13.8</td><td class="trend-firm">Stable; lithium revenues underpinning reserves</td></tr>
+                            <tr><td>ZMW — Zambian Kwacha</td><td>~24.8 – 25.8</td><td class="trend-firm">Broadly stable; copper firming supportive</td></tr>
+                            <tr><td>EUR — Euro</td><td>~1.07 – 1.10</td><td class="trend-firm">Softening; ECB hiked this week; dollar stronger on hot data</td></tr>
+                            <tr><td>GBP — British Pound</td><td>~1.30 – 1.33</td><td class="trend-firm">Broadly stable</td></tr>
+                        </tbody>
+                    </table>
+                    <p class="nl-body-text" style="font-size:13px;color:#4a5a68;margin-top:12px;">The ECB
+                        delivered an expected rate hike this week and warned that inflation risks remain tilted to
+                        the upside — the same oil-driven inflation dynamic running through the Fed is running
+                        through European monetary policy simultaneously. Dollar strengthening on hot US data is
+                        weighing on African currencies. ZAR under particular pressure as gold below $4,400
+                        compounds with the July production decline. Sources: LME, ICE, Refinitiv, CME, Fastmarkets.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Key Developments — Updates from the Watch List</div>
+                    <p class="nl-body-text"><strong>August CPI — lands today, Friday 11 September.</strong> This
+                        is the publication date of this newsletter. The CPI result will be known before close of
+                        business. At or below 3.4% keeps the hold case alive. Above 3.5% makes September
+                        near-certain. The result determines the opening position of the September 15-16 FOMC
+                        meeting.</p>
+                    <p class="nl-body-text"><strong>August jobs — surged above expectations.</strong> Non-Farm
+                        Payrolls came in well above the consensus forecast earlier this week, giving the three FOMC
+                        dissenters who voted for an immediate hike in July fresh ammunition. Combined with the PPI
+                        miss on Thursday, the data picture heading into September is the most hawkish of the year.</p>
+                    <p class="nl-body-text"><strong>ECB hiked rates this week.</strong> The European Central Bank
+                        delivered a rate increase and warned that inflation risks remain tilted to the upside. Both
+                        the Fed and the ECB are now in active tightening mode simultaneously — the first time since
+                        early 2026.</p>
+                    <p class="nl-body-text"><strong>Ghana Tarkwa renewal — unanswered nine months.</strong> Gold
+                        Fields confirmed it has received no response to its November 2025 renewal application.
+                        Analysts cited by Miningmx say the company is being unfairly penalised for regulatory
+                        struggles. April 2027 is six months away.</p>
+                    <p class="nl-body-text"><strong>Electra Mining Africa — ran this week in Johannesburg.</strong>
+                        Africa's largest mining exhibition, 7-11 September at the Johannesburg Expo Centre in
+                        Nasrec. Mining Weekly reported Italian companies targeting South African partnerships, AI
+                        reducing tyre downtime by up to 20% and significant technology showcases at the event.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Africa Positioning</div>
+                    <p class="nl-body-text">African Rainbow Minerals' twelve-fold profit increase to R4 billion
+                        completes the eighth and final result in the African precious metals and diversified mining
+                        earnings supercycle tracked since April 2026: AngloGold up 58%, Glencore up 86%, DRDGold
+                        up 85%, Wheaton record revenue, Sibanye up 111%, Harmony up 87%, Implats R22 billion
+                        free cash, and now ARM up twelve-fold — with Pan African Resources separately flagging
+                        earnings per share up 141 to 151%, confirming the supercycle extends across mid-tier
+                        producers too. But the tactical backdrop turned sharply hawkish this week: hot PPI, strong
+                        jobs and oil back above $100 pushed September hike probability to 70% and gold down to
+                        $4,349. The structural picture underneath is more constructive — China's PBoC buying for a
+                        twentieth consecutive month and gold ETFs recording their second largest monthly inflow on
+                        record show official and private buyers converging simultaneously. South Africa's mining
+                        production fell 7.5% in July, the largest decline this year, even as Fortuna Mining committed
+                        $109 million to expand its Séguéla mine in Côte d'Ivoire — a sign that capital is still backing
+                        production growth in stable West African jurisdictions even as output falls in South Africa
+                        and sovereign tightening advances in the DRC.</p>
+
+                    <figure style="margin: 24px 0; border-radius: 12px; overflow: hidden; box-shadow: 0 6px 24px rgba(20,49,86,0.12);">
+                        <img src="images/mining-arm-pgm-supercycle.jpg"
+                             alt="South African PGM mining operations during the week ARM reported a twelve-fold profit increase completing the eight-result earnings supercycle"
+                             style="width:100%; height:280px; object-fit:cover; display:block;">
+                        <figcaption style="background:rgb(20,49,86); color:rgba(255,255,255,0.7); font-size:12px; padding:12px 18px; border-left:4px solid #72e2ae; font-style:italic;">
+                            African Rainbow Minerals reported a twelve-fold profit increase to R4 billion, completing
+                            the eighth consecutive extraordinary result in the 2026 African mining earnings
+                            supercycle.
+                        </figcaption>
+                    </figure>
+
+                    <div class="nl-two-col">
+                        <div class="nl-col-card opps">
+                            <h4><i class="fas fa-arrow-up" style="margin-right:6px;"></i>Opportunities</h4>
+                            <ul>
+                                <li>Gold ETFs hit record $615bn AUM with $18bn August inflows — institutional and official buyers converging simultaneously; structural demand floor intact</li>
+                                <li>ARM twelve-fold profit completes eight-result supercycle — every major producer documented; the earnings case is confirmed record not expectation</li>
+                                <li>Fortuna Séguéla $109m expansion confirms West Africa investment appetite at scale — Côte d'Ivoire attracting capital as stable regulatory contrast to Ghana, Guinea and Mali</li>
+                                <li>UBS: rate-hike selloff likely contained; risk-reward into year-end skewed higher; Goldman holds $4,900 year-end target; structural case unchanged</li>
+                                <li>US-Kenya critical minerals partnership extends Western African supply chain building to East Africa; Ionic Uganda JV, Angola Pensana, Mozambique NeoTerra all active simultaneously</li>
+                                <li>Transnet first profit in four years — logistics infrastructure recovery beginning to reduce the bottleneck suppressing South African mining exports</li>
+                            </ul>
+                        </div>
+                        <div class="nl-col-card threats">
+                            <h4><i class="fas fa-exclamation-triangle" style="margin-right:6px;"></i>Threats</h4>
+                            <ul>
+                                <li>August PPI 5.4%, strong jobs, oil above $100 — three consecutive hawkish signals heading into the most consequential Fed meeting of the year; September hike at 70% probability</li>
+                                <li>ECB also hiked this week — both major central banks tightening simultaneously for first time in 2026; dollar strength a headwind for all dollar-denominated commodity exports from Africa</li>
+                                <li>South Africa mining production down 7.5% in July — structural capacity constraint becoming visible; production does not automatically recover when prices normalise</li>
+                                <li>DRC mining code advancing toward parliamentary vote — permit suspension powers the most consequential threat to DRC mining investment confidence since 2018</li>
+                                <li>Ghana Tarkwa renewal unanswered nine months — Gold Fields being unfairly penalised per analysts; April 2027 now six months away</li>
+                                <li>Gold below $4,400 for much of the week — ZAR under renewed pressure; a hike with hawkish dot plot next Wednesday is the most negative available near-term outcome</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nl-takeaway">
+                    <div class="nl-takeaway-label">Key Takeaway</div>
+                    <p>Eight results in eight weeks completes the African precious metals and diversified mining
+                        earnings supercycle across every major South African and pan-African producer. This week's
+                        hawkish data run — hot PPI, strong jobs, oil back above $100 — compresses gold's near-term
+                        ceiling ahead of next week's FOMC meeting, but the structural floor is unchanged: China's
+                        PBoC buying for twenty consecutive months and record ETF inflows show official and private
+                        capital converging at the same time. South Africa's 7.5% production decline is the clearest
+                        signal yet of what the sector's operating leverage has been masking — and Fortuna's $109
+                        million Séguéla expansion shows where new production capital is actually flowing while that
+                        question remains unresolved.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Deals &amp; Strategic Moves</div>
+                    <div class="nl-deals">
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-coins"></i></div>
+                            <div class="nl-deal-text"><strong>Gold Under Pressure — PPI, Jobs and $100 Oil Put
+                                September Hike at 70%</strong> — Gold fell to $4,349, its lowest since mid-August,
+                                as three consecutive hawkish data points hardened the case for a September hike.
+                                August CPI, the last major input before the FOMC meets, lands today.</div>
+                        </div>
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-chart-line"></i></div>
+                            <div class="nl-deal-text"><strong>African Rainbow Minerals — Profit Up Twelve-Fold to
+                                R4 Billion</strong> — PGM operations swung from a R1.288bn loss to a R1.345bn
+                                profit as prices rose more than 50%. The eighth and final result in the 2026 African
+                                mining earnings supercycle.</div>
+                        </div>
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-globe-asia"></i></div>
+                            <div class="nl-deal-text"><strong>China's PBoC — 20th Consecutive Month of Gold
+                                Buying</strong> — Added 650,000 troy ounces in July, taking official holdings to a
+                                record 2,387 tonnes, as gold ETFs simultaneously recorded $18bn in August inflows
+                                and hit $615bn AUM.</div>
+                        </div>
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-exclamation-triangle"></i></div>
+                            <div class="nl-deal-text"><strong>DRC — Mining Code Reform Advancing to
+                                Parliamentary Vote</strong> — Bill amending 40+ articles of the 2018 code includes
+                                permit suspension powers and penalties up to $1 million and 20 years' imprisonment.
+                                The Chamber of Mines formally opposes it.</div>
+                        </div>
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-industry"></i></div>
+                            <div class="nl-deal-text"><strong>Fortuna Mining — $109 Million Séguéla Expansion in
+                                Côte d'Ivoire</strong> — 30% capacity increase funded from operating cash flow,
+                                expected to support 200,000+ ounces of annual production for a decade at a 2.5-year
+                                payback.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Research Spotlight — Eight Results. Eight Weeks. Production Down 7.5%. What African Mining Looks Like When Prices Normalise.</div>
+                    <p class="nl-body-text">The 2026 African precious metals earnings supercycle is now complete
+                        and documented across eight consecutive extraordinary results. Every major South African
+                        and pan-African producer. Historically significant earnings driven by elevated gold and PGM
+                        prices. The numbers are a matter of confirmed record. This week South Africa's mining
+                        production fell 7.5% in July — the largest monthly decline of the year — with PGMs the
+                        biggest contributor. The sector earning extraordinary revenues on declining production
+                        volumes is what operating leverage looks like when it is working in your favour. Revenue up
+                        34% at Harmony on 1.43 million ounces that met guidance. DRDGold revenue up 42% on
+                        essentially unchanged volumes. The price is doing the work that production growth would
+                        otherwise do. But production declining while prices are elevated raises a direct question:
+                        what does the sector's financial performance look like when prices normalise? The structural
+                        demand answer is more constructive than the tactical picture suggests. China's PBoC is
+                        buying for twenty consecutive months. Gold ETFs just recorded their second largest monthly
+                        inflow on record. Central banks globally bought a quarterly record in Q2. Goldman Sachs
+                        maintains a year-end target above $4,900. UBS describes the risk-reward into year-end as
+                        skewed higher. The structural case is intact. A September rate hike — if it comes —
+                        compresses the near-term ceiling. It does not change the structural floor. The Fortuna
+                        Séguéla expansion is the most constructive production story of the week — a $109 million
+                        investment in West Africa's fastest-growing gold jurisdiction, funded from operating cash
+                        flow, delivering more than 200,000 ounces per year for a decade. The production question
+                        for African mining is not unanswerable. It is being answered, one jurisdiction at a time, by
+                        companies making the bet that the structural demand for African gold is real and durable.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Financing Implications</div>
+                    <p class="nl-body-text">Three themes stand out this week. South Africa's 7.5% production
+                        decline alongside eight consecutive record earnings results confirms that price, not volume,
+                        has been carrying the sector's financial performance — a structural risk worth stress-testing
+                        into any financing that assumes current margins persist once prices normalise or production
+                        recovers. Fortuna's $109 million Séguéla expansion, funded entirely from operating cash flow
+                        in a stable regulatory jurisdiction, is a useful benchmark for the kind of production-growth
+                        financing AEMBank should be competing to originate in Côte d'Ivoire and comparable West
+                        African jurisdictions, rather than ceding to internally funded expansion. And the DRC mining
+                        code's advance toward a parliamentary vote — with permit suspension powers opposed by the
+                        Chamber of Mines — should be tracked as a direct input into the risk pricing of any
+                        DRC-exposed cobalt or copper financing in the pipeline.</p>
+                    <div class="nl-trend-list">
+                        <div class="nl-trend-item">Stress-test gold and PGM financing structures against a scenario where production volumes stay depressed even as prices normalise, given South Africa's 7.5% July decline</div>
+                        <div class="nl-trend-item">Use Fortuna's operating-cash-funded Séguéla expansion as a benchmark when competing to originate production-growth financing in Côte d'Ivoire and similarly stable West African jurisdictions</div>
+                        <div class="nl-trend-item">Price DRC mining code risk — specifically discretionary permit suspension powers — directly into any cobalt or copper financing with DRC exposure ahead of the parliamentary vote</div>
+                        <div class="nl-trend-item">Track next week's FOMC decision and dot plot for their direct read-through to gold-linked financing conditions into year-end</div>
+                    </div>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Watch Next Week</div>
+                    <div class="nl-signals">
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>August CPI — today, Friday 11 September: the last input before the Fed meets. At or below 3.4% keeps the hold alive despite strong jobs and hot PPI. Above 3.5% makes September near-certain. The result is known before close of business today.</span></div>
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>September FOMC — Tuesday 15 and Wednesday 16 September: rate decision, updated dot plot and Warsh press conference. A hold with neutral language is the most constructive outcome for gold. A hike with hawkish dots is the most negative. Watch whether Warsh submits a dot-plot projection for the first time since taking office.</span></div>
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>DRC mining code — parliamentary vote timeline: advancing. Watch for any committee schedule or vote date. If the code passes into law it is the most significant DRC regulatory change since 2018.</span></div>
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>Ghana — Tarkwa renewal and mining law submission: nine months without a Minerals Commission response. Six months to April 2027. Parliamentary submission still pending. Watch for any movement on either.</span></div>
+                    </div>
+                </div>
+
+            </div><!-- end week-sep7 -->
+
             <!-- ── WEEK: 24 – 28 August 2026 ── -->
             <!-- ── WEEK: 1 – 4 September 2026 ── -->
-            <div class="nl-week-content active" id="week-sep1">
+            <div class="nl-week-content" id="week-sep1">
 
                 <div class="nl-overview">
                     <p>Gold recovered from last week's Warsh-driven selloff to trade near $4,470 on Friday as Fed
