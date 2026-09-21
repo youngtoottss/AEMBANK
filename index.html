@@ -337,118 +337,6 @@
             border: 1px solid rgba(114,226,174,0.3);
         }
 
-        /* Full-width text-only announcement card */
-        .nb-announce-card {
-            grid-column: 1 / -1;
-            display: flex;
-            align-items: center;
-            gap: 22px;
-            background: linear-gradient(120deg, rgba(114,226,174,0.10) 0%, rgba(255,255,255,0.05) 65%);
-            border: 1px solid rgba(114,226,174,0.28);
-            border-radius: 14px;
-            padding: 26px 32px;
-            text-decoration: none;
-            position: relative;
-            overflow: hidden;
-            transition: background 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
-        }
-
-        .nb-announce-card::after {
-            content: '';
-            position: absolute;
-            top: -50px;
-            right: -30px;
-            width: 180px;
-            height: 180px;
-            background: radial-gradient(circle, rgba(114,226,174,0.18) 0%, transparent 70%);
-            border-radius: 50%;
-            pointer-events: none;
-        }
-
-        .nb-announce-card:hover {
-            background: linear-gradient(120deg, rgba(114,226,174,0.16) 0%, rgba(255,255,255,0.08) 65%);
-            border-color: rgba(114,226,174,0.55);
-            transform: translateY(-3px);
-        }
-
-        .nb-announce-icon {
-            flex-shrink: 0;
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            background: rgba(114,226,174,0.15);
-            border: 1px solid rgba(114,226,174,0.4);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 22px;
-            color: #72e2ae;
-            position: relative;
-            z-index: 1;
-        }
-
-        .nb-announce-body {
-            flex: 1;
-            min-width: 0;
-            position: relative;
-            z-index: 1;
-        }
-
-        .nb-announce-body h3 {
-            color: #fff;
-            font-size: clamp(1.05rem, 2vw, 1.3rem);
-            font-weight: 800;
-            line-height: 1.3;
-            margin: 6px 0 8px;
-        }
-
-        .nb-announce-body p {
-            color: rgba(255,255,255,0.65);
-            font-size: 14px;
-            line-height: 1.7;
-            margin: 0;
-            max-width: 640px;
-        }
-
-        .nb-announce-side {
-            flex-shrink: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-            gap: 12px;
-            margin-left: auto;
-            position: relative;
-            z-index: 1;
-        }
-
-        .nb-announce-date {
-            display: flex;
-            align-items: center;
-            gap: 5px;
-            font-size: 12px;
-            color: rgba(255,255,255,0.45);
-            white-space: nowrap;
-        }
-
-        .nb-announce-date i { color: #72e2ae; }
-
-        .nb-announce-card:hover .nb-read i { transform: translateX(4px); }
-
-        @media (max-width: 700px) {
-            .nb-announce-card {
-                flex-direction: column;
-                align-items: flex-start;
-                text-align: left;
-            }
-            .nb-announce-side {
-                align-items: flex-start;
-                margin-left: 0;
-                flex-direction: row;
-                justify-content: space-between;
-                width: 100%;
-            }
-        }
-
         @media (max-width: 900px) {
             .nb-cards-grid { grid-template-columns: 1fr; }
         }
@@ -550,6 +438,45 @@
                 </a>
             </div>
             <div class="nb-cards-grid">
+                <a href="newsletter.html" class="news-banner-card">
+                    <div class="nb-image" style="position:relative; overflow:hidden;">
+                        <img src="images/mining-fed-hike-gold-copper.jpg"
+                             alt="Copper and gold mining operations during the week the Federal Reserve hiked rates and copper hit an all-time high of $14,779 per tonne" style="width:100%;height:100%;object-fit:cover;">
+                        <div style="position:absolute;inset:0;background:linear-gradient(to top, rgba(13,38,64,0.85) 0%, rgba(13,38,64,0.3) 100%);display:flex;flex-direction:column;justify-content:flex-end;padding:16px 20px;">
+                            <div style="font-size:9px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#72e2ae;margin-bottom:4px;">Weekly Snapshot</div>
+                            <div style="font-size:10px;color:rgba(255,255,255,0.6);">14 – 18 September 2026</div>
+                            <div style="display:flex;gap:6px;margin-top:8px;flex-wrap:wrap;">
+                                <span style="background:rgba(114,226,174,0.15);color:#72e2ae;font-size:10px;font-weight:700;padding:3px 9px;border-radius:20px;border:1px solid rgba(114,226,174,0.3);">Fed Hikes 25bp</span>
+                                <span style="background:rgba(114,226,174,0.15);color:#72e2ae;font-size:10px;font-weight:700;padding:3px 9px;border-radius:20px;border:1px solid rgba(114,226,174,0.3);">Gold +2.5%</span>
+                                <span style="background:rgba(114,226,174,0.15);color:#72e2ae;font-size:10px;font-weight:700;padding:3px 9px;border-radius:20px;border:1px solid rgba(114,226,174,0.3);">Copper Record $14,779</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nb-body">
+                        <span class="nb-tag">Weekly Snapshot</span>
+                        <h3>Extractive Minerals Snapshot</h3>
+                        <p>The Fed hikes 25bp for the first time since 2023 — and gold surges 2.5% on the day; copper hits an all-time high of $14,779 per tonne; Sibanye reports record H1 revenue of R90 billion; Gold Fields' Tarkwa renewal sits unanswered nine months on and the DRC mining code advances toward a parliamentary vote.</p>
+                        <div class="nb-meta">
+                            <span><i class="far fa-calendar-alt"></i> 14 – 18 September 2026</span>
+                        </div>
+                        <div class="nb-read">Read Snapshot <i class="fas fa-arrow-right"></i></div>
+                    </div>
+                </a>
+                <a href="news-aadfi-membership.html" class="news-banner-card">
+                    <div class="nb-image">
+                        <img src="images/aadfi-membership.jpg"
+                             alt="AEMBank formalises its membership in the Association of African Development Finance Institutions">
+                    </div>
+                    <div class="nb-body">
+                        <span class="nb-tag">AADFI Membership</span>
+                        <h3>AEMBank Joins the Association of African Development Finance Institutions</h3>
+                        <p>Following an invitation by AADFI, AEMBank is pleased to announce its acceptance and admission — a milestone that deepens institutional collaboration, knowledge exchange and capacity building with leading African development finance institutions.</p>
+                        <div class="nb-meta">
+                            <span><i class="far fa-calendar-alt"></i> August 2026</span>
+                        </div>
+                        <div class="nb-read">Read Full Story <i class="fas fa-arrow-right"></i></div>
+                    </div>
+                </a>
                 <a href="news-nigeria-signing.html" class="news-banner-card">
                     <div class="nb-image">
                         <img src="images/signing_ceremony.jpeg"
@@ -564,42 +491,6 @@
                         <div class="nb-meta">
                             <span><i class="far fa-calendar-alt"></i> December 2025</span>
                         </div>
-                        <div class="nb-read">Read Full Story <i class="fas fa-arrow-right"></i></div>
-                    </div>
-                </a>
-                <a href="newsletter.html" class="news-banner-card">
-                    <div class="nb-image" style="position:relative; overflow:hidden;">
-                        <img src="images/mining-arm-pgm-supercycle.jpg"
-                             alt="South African PGM mining operations during the week ARM reported a twelve-fold profit increase completing the eight-result earnings supercycle" style="width:100%;height:100%;object-fit:cover;">
-                        <div style="position:absolute;inset:0;background:linear-gradient(to top, rgba(13,38,64,0.85) 0%, rgba(13,38,64,0.3) 100%);display:flex;flex-direction:column;justify-content:flex-end;padding:16px 20px;">
-                            <div style="font-size:9px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:#72e2ae;margin-bottom:4px;">Weekly Snapshot</div>
-                            <div style="font-size:10px;color:rgba(255,255,255,0.6);">7 – 11 September 2026</div>
-                            <div style="display:flex;gap:6px;margin-top:8px;flex-wrap:wrap;">
-                                <span style="background:rgba(114,226,174,0.15);color:#72e2ae;font-size:10px;font-weight:700;padding:3px 9px;border-radius:20px;border:1px solid rgba(114,226,174,0.3);">ARM +12x Profit</span>
-                                <span style="background:rgba(114,226,174,0.15);color:#72e2ae;font-size:10px;font-weight:700;padding:3px 9px;border-radius:20px;border:1px solid rgba(114,226,174,0.3);">September Hike 70%</span>
-                                <span style="background:rgba(114,226,174,0.15);color:#72e2ae;font-size:10px;font-weight:700;padding:3px 9px;border-radius:20px;border:1px solid rgba(114,226,174,0.3);">Gold ETFs $615bn</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="nb-body">
-                        <span class="nb-tag">Weekly Snapshot</span>
-                        <h3>Extractive Minerals Snapshot</h3>
-                        <p>Gold falls to $4,349 as hot PPI, strong jobs and $100 oil push the September hike probability to 70%; African Rainbow Minerals reports a twelve-fold profit increase completing the eight-result earnings supercycle; China's PBoC buys for a 20th consecutive month; South Africa's mining production falls 7.5% in July.</p>
-                        <div class="nb-meta">
-                            <span><i class="far fa-calendar-alt"></i> 7 – 11 September 2026</span>
-                        </div>
-                        <div class="nb-read">Read Snapshot <i class="fas fa-arrow-right"></i></div>
-                    </div>
-                </a>
-                <a href="news-aadfi-membership.html" class="nb-announce-card">
-                    <div class="nb-announce-icon"><i class="fas fa-handshake"></i></div>
-                    <div class="nb-announce-body">
-                        <span class="nb-tag">AADFI Membership</span>
-                        <h3>AEMBank Joins the Association of African Development Finance Institutions</h3>
-                        <p>Following an invitation by AADFI, AEMBank is pleased to announce its acceptance and admission — a milestone that deepens institutional collaboration, knowledge exchange and capacity building with leading African development finance institutions.</p>
-                    </div>
-                    <div class="nb-announce-side">
-                        <span class="nb-announce-date"><i class="far fa-calendar-alt"></i> August 2026</span>
                         <div class="nb-read">Read Full Story <i class="fas fa-arrow-right"></i></div>
                     </div>
                 </a>

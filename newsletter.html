@@ -90,12 +90,15 @@
                 <div class="nl-week-selector" id="weekSelector">
                     <button class="nl-week-btn" onclick="toggleWeekDropdown(event)">
                         <i class="far fa-calendar-alt"></i>
-                        <span id="selectedWeek">7 – 11 September 2026</span>
+                        <span id="selectedWeek">14 – 18 September 2026</span>
                         <i class="fas fa-chevron-down nl-chevron"></i>
                     </button>
                     <div class="nl-week-dropdown" id="weekDropdown">
                         <div class="nl-week-dropdown-label">Select Week</div>
-                        <button class="nl-week-option active" onclick="selectWeek(this, '7 – 11 September 2026', 'week-sep7')">
+                        <button class="nl-week-option active" onclick="selectWeek(this, '14 – 18 September 2026', 'week-sep14')">
+                            14 – 18 September 2026
+                        </button>
+                        <button class="nl-week-option" onclick="selectWeek(this, '7 – 11 September 2026', 'week-sep7')">
                             7 – 11 September 2026
                         </button>
                         <button class="nl-week-option" onclick="selectWeek(this, '1 – 4 September 2026', 'week-sep1')">
@@ -171,9 +174,273 @@
                 </div>
             </div>
 
+            <!-- ── WEEK: 7 – 11 September 2026 ── -->
+            <!-- ── WEEK: 14 – 18 September 2026 ── -->
+            <div class="nl-week-content active" id="week-sep14">
+
+                <div class="nl-overview">
+                    <p>The Federal Reserve raised interest rates by 25 basis points to 3.75-4.00% on Wednesday 16
+                        September — its first rate hike since July 2023 and the most anticipated monetary policy
+                        decision of the year. In a unanimous vote, the FOMC moved rates higher, with 16 of 18
+                        officials signalling support for further tightening. Gold's reaction defied the conventional
+                        playbook — surging 2.5% to $4,368 on the day as Treasury yields reversed after the initial
+                        spike, oil fell 4%, and real yields moved in gold's favour rather than against it. ETF investors
+                        had added $2 billion to gold funds in the five sessions before the hike, treating the decision
+                        as already priced in. Gold mining equities corrected 35-40% from their 2026 highs over the
+                        period of hike uncertainty, creating a divergence between physical gold and equity
+                        performance that makes the allocation decision consequential. Sibanye-Stillwater reported
+                        record H1 revenue of R90 billion — up 64% — with headline EPS up 216% to R6.01 and a cash
+                        dividend of $0.499 per share. The DRC's mining code reform is advancing toward a
+                        parliamentary vote. Gold Fields confirmed its Tarkwa renewal application has been
+                        unanswered for nine months with April 2027 six months away. And copper hit an all-time
+                        high of $14,779 per tonne on the London Metal Exchange this week.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Market Snapshot</div>
+                    <div class="nl-market-grid">
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Gold</div><div class="nl-commodity-price">$4,270 – $4,390/oz</div></div>
+                            <div class="nl-commodity-trend up">↑</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Silver</div><div class="nl-commodity-price">$63 – $68/oz</div></div>
+                            <div class="nl-commodity-trend flat">↕</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Brent Oil</div><div class="nl-commodity-price">$87 – $96/bbl</div></div>
+                            <div class="nl-commodity-trend flat">↓</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Copper</div><div class="nl-commodity-price">$13,500 – $13,900/t</div></div>
+                            <div class="nl-commodity-trend up">↑</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Platinum</div><div class="nl-commodity-price">$1,834 – $1,973/oz</div></div>
+                            <div class="nl-commodity-trend flat">→</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Cobalt</div><div class="nl-commodity-price">~$57,000/t</div></div>
+                            <div class="nl-commodity-trend flat">→</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Gold ETFs</div><div class="nl-commodity-price">$615bn AUM</div></div>
+                            <div class="nl-commodity-trend up">↑</div>
+                        </div>
+                    </div>
+                    <table class="nl-fx-table" style="margin-top:24px;">
+                        <thead><tr><th>Currency</th><th>Range (vs USD)</th><th>Trend</th></tr></thead>
+                        <tbody>
+                            <tr><td>NGN — Nigerian Naira</td><td>~1,610 – 1,670</td><td class="trend-firm">Broadly stable; oil easing marginally positive for import costs</td></tr>
+                            <tr><td>ZAR — South African Rand</td><td>~17.8 – 18.8</td><td class="trend-firm">Volatile week; gold resilience post-hike partially supportive</td></tr>
+                            <tr><td>ZWL — Zimbabwean Dollar</td><td>~13.1 – 13.7</td><td class="trend-firm">Stable; lithium revenues underpinning reserves</td></tr>
+                            <tr><td>ZMW — Zambian Kwacha</td><td>~24.5 – 25.5</td><td class="trend-firm">Broadly stable; copper firming supportive</td></tr>
+                            <tr><td>EUR — Euro</td><td>~1.07 – 1.11</td><td class="trend-firm">Recovering; dollar softened post-Fed as real yields fell</td></tr>
+                            <tr><td>GBP — British Pound</td><td>~1.30 – 1.34</td><td class="trend-firm">Broadly stable</td></tr>
+                        </tbody>
+                    </table>
+                    <p class="nl-body-text" style="font-size:13px;color:#4a5a68;margin-top:12px;">The dollar
+                        strengthened into the Fed decision then softened after as real yields fell on the Treasury
+                        reversal — providing unexpected relief to emerging market currencies including the rand
+                        and kwacha. Oil falling 4% on Fed day was a secondary positive signal for African economies
+                        with significant energy import bills. Sources: LME, ICE, Refinitiv, CME, Fastmarkets.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Key Developments — Updates from the Watch List</div>
+                    <p class="nl-body-text"><strong>Fed hiked 25bp — unanimously — first time in three
+                        years.</strong> The FOMC raised the federal funds rate to 3.75-4.00% in a unanimous 12-0 vote
+                        on Wednesday 16 September. Sixteen of 18 officials signalled support for further tightening.
+                        The median dot plot now shows a year-end rate of 4.1%, up from 3.8% — indicating one more
+                        hike is expected before year-end. Gold surged 2.5% on the day.</p>
+                    <p class="nl-body-text"><strong>August CPI — came in at 3.4%, in line with July.</strong> The CPI
+                        print on 11 September was not the upside shock that PPI had suggested. Core inflation held
+                        at 2.5% annually. The relatively contained CPI meant the hike was already fully priced by
+                        Wednesday — removing the element of surprise that typically drives sharp gold selloffs on
+                        rate decisions.</p>
+                    <p class="nl-body-text"><strong>Ghana Tarkwa — nine months, still no response.</strong> Gold
+                        Fields has received no answer from Ghana's Minerals Commission. April 2027 is six months
+                        away. Analysts continue to describe the company as unfairly penalised.</p>
+                    <p class="nl-body-text"><strong>DRC mining code — advancing toward parliamentary
+                        vote.</strong> The bill continues to progress through the legislative process. No vote date
+                        confirmed but momentum is building.</p>
+                    <p class="nl-body-text"><strong>Copper — all-time high of $14,779 per tonne on the LME.</strong>
+                        The record came this week driven by supply tightness, anticipated US tariffs pulling metal
+                        into American warehouses, and structural energy transition demand. Smelter treatment
+                        charges at zero — the lowest on record.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Africa Positioning</div>
+                    <p class="nl-body-text">The question underneath every edition of this newsletter since August —
+                        what happens to gold when the Fed actually hikes? — was answered on Wednesday: gold
+                        surged 2.5% on the day of a unanimous 25-basis-point rate increase. The reason is structural
+                        rather than tactical. Gold's price is now primarily determined by a demand base — central
+                        banks buying for twenty-two consecutive months, record ETF inflows, sovereign reallocation
+                        away from US Treasuries — that is not rate-sensitive in the way retail and speculative
+                        investors are. For African mining finance the implication is direct: the extraordinary
+                        earnings of 2026, documented across eight consecutive results, were built on a gold price
+                        above $4,000, and Wednesday's answer is the most constructive available on whether that
+                        environment is durable. Sibanye's record R90 billion H1 revenue and Mount Lyell copper
+                        approval show that supercycle cash flow is being reinvested for the long term, while copper's
+                        all-time high of $14,779 per tonne — with smelter treatment charges at zero — is repricing
+                        African copper assets at Kamoa-Kakula, Lumwana and Mingomba. Against this, Ghana's
+                        unanswered Tarkwa renewal, six months from the April 2027 lease expiry, and the DRC's
+                        advancing mining code remain the clearest signals of where sovereign participation is
+                        heading.</p>
+
+                    <figure style="margin: 24px 0; border-radius: 12px; overflow: hidden; box-shadow: 0 6px 24px rgba(20,49,86,0.12);">
+                        <img src="images/mining-fed-hike-gold-copper.jpg"
+                             alt="Copper and gold mining operations during the week the Federal Reserve hiked rates and copper hit an all-time high of $14,779 per tonne"
+                             style="width:100%; height:280px; object-fit:cover; display:block;">
+                        <figcaption style="background:rgb(20,49,86); color:rgba(255,255,255,0.7); font-size:12px; padding:12px 18px; border-left:4px solid #72e2ae; font-style:italic;">
+                            Gold surged 2.5% on the day the Fed hiked for the first time since 2023, while copper
+                            reached an all-time high of $14,779 per tonne on the London Metal Exchange.
+                        </figcaption>
+                    </figure>
+
+                    <div class="nl-two-col">
+                        <div class="nl-col-card opps">
+                            <h4><i class="fas fa-arrow-up" style="margin-right:6px;"></i>Opportunities</h4>
+                            <ul>
+                                <li>Gold surging 2.5% on the Fed hike day confirms structural demand is now the dominant price driver — central bank buying, ETF inflows and sovereign reallocation all intact through the rate cycle</li>
+                                <li>Copper all-time high at $14,779/t — the structural energy transition demand story is repricing African copper assets; Kamoa-Kakula, Lumwana and Mingomba all positioned in the highest-price copper environment on record</li>
+                                <li>Sibanye record R90bn H1 revenue and Mount Lyell copper approval confirms the earnings supercycle is being reinvested for the long term across both PGMs and copper</li>
+                                <li>Oil falling 4% on Fed day reduces the energy import cost headwind for African economies and eases the inflation signal that drove the hike</li>
+                                <li>Gold mining equity correction of 35-40% from 2026 highs vs gold's own 22% drawdown creates a potential rerating opportunity as rate uncertainty resolves</li>
+                                <li>J.P. Morgan $6,000 year-end gold target — if the structural demand thesis is correct and second hike does not materialise, African gold producer margins expand further from an already extraordinary base</li>
+                            </ul>
+                        </div>
+                        <div class="nl-col-card threats">
+                            <h4><i class="fas fa-exclamation-triangle" style="margin-right:6px;"></i>Threats</h4>
+                            <ul>
+                                <li>Dot plot signals one more hike before year-end — November and December FOMC meetings both live; a second 25bp hike would lift rates to 4.00-4.25% and test the structural floor again</li>
+                                <li>Gold mining equities corrected 35-40% from 2026 highs — the equity market has priced significantly more rate risk than the physical gold price; reconciliation will favour one or the other</li>
+                                <li>Ghana Tarkwa renewal nine months unanswered — April 2027 six months away; three simultaneous Ghana policy instruments all pointing toward sovereign participation escalation</li>
+                                <li>DRC mining code advancing toward vote — permit suspension powers remain the most consequential risk to DRC investment confidence since 2018</li>
+                                <li>Sibanye US PGM operations strike notice — United Steelworkers covering Stillwater East and Columbus; unresolved potential operational disruption</li>
+                                <li>Copper smelter treatment charges at zero — processing economics broken; concentrate supply not keeping pace with smelting investment globally</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nl-takeaway">
+                    <div class="nl-takeaway-label">Key Takeaway</div>
+                    <p>Gold just passed its biggest test of the year. It surged 2.5% on the day of the Fed's first
+                        rate hike in three years, because its price is now driven by a structural demand base —
+                        central banks, record ETF inflows, sovereign reallocation — that is not rate-sensitive in the
+                        way speculative positioning is. For African mining finance, the earnings documented across
+                        eight consecutive results now have the most constructive available evidence that the price
+                        environment behind them is durable. The dot plot's signal of one more hike before year-end
+                        is the next variable, but oil at $87 and CPI at 3.4% both argue against a second move.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Deals &amp; Strategic Moves</div>
+                    <div class="nl-deals">
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-coins"></i></div>
+                            <div class="nl-deal-text"><strong>Fed Hikes 25bp — Gold Surges 2.5% the Same Day</strong>
+                                — The FOMC raised rates to 3.75-4.00% in a unanimous vote, the first hike since July
+                                2023. Gold rose to $4,368.91 as Treasury yields reversed, oil fell 4% and ETF
+                                investors had already added nearly $2bn in the prior five sessions. The dot plot
+                                signals one more hike before year-end.</div>
+                        </div>
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-chart-line"></i></div>
+                            <div class="nl-deal-text"><strong>Sibanye — Record H1 Revenue of R90 Billion, Up
+                                64%</strong> — Headline EPS up 216% to R6.01, cash flow from operations up 551%, and
+                                a cash dividend of $0.499 per share. Mount Lyell copper project approved alongside
+                                Burnstone gold. The United Steelworkers strike notice at US PGM recycling
+                                operations remains unresolved.</div>
+                        </div>
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-industry"></i></div>
+                            <div class="nl-deal-text"><strong>Copper — All-Time High of $14,779 per Tonne</strong>
+                                — Smelter treatment charges settled at zero for 2026, the lowest on record, with spot
+                                rates negative. Anticipated US tariffs are pulling metal into American warehouses
+                                while a Chinese-built smelting glut competes for scarce concentrate.</div>
+                        </div>
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-exclamation-triangle"></i></div>
+                            <div class="nl-deal-text"><strong>Gold Fields — Tarkwa Renewal Unanswered Nine
+                                Months</strong> — Analysts say the company is being 'unfairly penalised.' April 2027
+                                lease expiry is six months away, with the Damang precedent, the pending mining law
+                                and the December 2026 local contractor mandate all active simultaneously.</div>
+                        </div>
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-balance-scale"></i></div>
+                            <div class="nl-deal-text"><strong>DRC — Mining Code Advancing Toward Parliamentary
+                                Vote</strong> — No vote date confirmed, but momentum is building. Permit suspension
+                                powers remain the most consequential provision for investor confidence.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Research Spotlight — Gold Just Passed Its Biggest Test of the Year. Here Is What That Means.</div>
+                    <p class="nl-body-text">The question that has been sitting underneath every edition of this
+                        newsletter since August is now answered. What happens to gold when the Fed actually hikes?
+                        The answer arrived Wednesday. Gold surged 2.5% on the day of a unanimous 25-basis-point
+                        rate increase. The conventional playbook — higher rates make gold less attractive, gold falls
+                        — did not play out. The reason is structural rather than tactical. The conventional playbook
+                        assumes that gold is priced primarily as a rate-sensitive asset competing with bonds for
+                        yield. That assumption held through most of the 2022-2024 tightening cycle. It does not hold
+                        in 2026. Gold's price is now primarily determined by a structural demand base — central
+                        banks buying for twenty-two consecutive months, global ETF inflows at record pace,
+                        sovereign wealth funds reallocating away from US Treasuries — that is not rate-sensitive in
+                        the same way retail and speculative investors are. When the Fed hiked on Wednesday, the
+                        structural buyers did not sell. The tactical shorts who had positioned for a hike-driven
+                        selloff covered their positions. Gold rose. For African mining finance the implications are
+                        direct. The extraordinary earnings of 2026 were built on a gold price above $4,000. Those
+                        earnings are now documented across eight consecutive results. The question heading into Q4
+                        is whether the price environment that enabled them is durable. Wednesday's answer is the
+                        most constructive available. The dot plot's signal of one more hike before year-end is the
+                        next variable. November and December are the remaining FOMC meetings. A second hike
+                        would lift real yields further and test the structural floor again. The August CPI at 3.4% and
+                        the fact that oil has fallen from above $100 to near $87 both argue that the inflation picture is
+                        improving — which reduces the probability of a second hike even as the dot plot signals it.
+                        J.P. Morgan's $6,000 year-end target and Goldman's more cautious view represent the range
+                        of outcomes. The structural case for African gold production sits above both.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Financing Implications</div>
+                    <p class="nl-body-text">Three themes stand out this week. Gold's ability to rise on the day of
+                        the Fed's first hike in three years supports treating the structural demand base — not the
+                        rate cycle — as the primary driver when underwriting gold-linked financing, though the
+                        35-40% correction in gold mining equities against gold's own 22% drawdown is a reminder
+                        that equity-linked instruments carry materially more rate risk than physical-price-linked
+                        ones, a distinction worth reflecting in how AEMBank structures instruments across the
+                        pipeline. Copper's all-time high alongside zero smelter treatment charges signals that mine
+                        supply — not processing capacity — is the binding constraint, strengthening the case for
+                        financing new African concentrate production and the logistics corridors that serve it. And
+                        the Tarkwa renewal delay, now six months from lease expiry, should be tracked as a live
+                        input to sovereign-participation risk pricing on any Ghana-exposed gold financing.</p>
+                    <div class="nl-trend-list">
+                        <div class="nl-trend-item">Underwrite gold-linked financing against the structural demand base rather than the rate cycle, while distinguishing physical-price-linked instruments from more rate-sensitive equity-linked ones</div>
+                        <div class="nl-trend-item">Prioritise financing for new African copper concentrate production and its logistics corridors, given zero smelter treatment charges signal mine supply is the binding constraint</div>
+                        <div class="nl-trend-item">Reflect the Tarkwa renewal delay and the Damang precedent in sovereign-participation risk pricing on Ghana-exposed gold financing ahead of the April 2027 lease expiry</div>
+                        <div class="nl-trend-item">Monitor Fed commentary ahead of the November 4-5 meeting for a read-through to gold-linked financing conditions, given the dot plot's signal of one more hike</div>
+                    </div>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Watch Next Week</div>
+                    <div class="nl-signals">
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>Fed dot plot and November meeting signals: the dot plot signalled one more hike before year-end. Watch for any Fed official commentary on the November 4-5 meeting — whether the data flow post-September supports a second hike or allows a pause. Oil at $87 and CPI holding at 3.4% both argue against November tightening.</span></div>
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>Ghana — Tarkwa renewal response and parliamentary submission: nine months unanswered. Six months to April 2027. Three simultaneous policy instruments active. Watch for any Minerals Commission response or parliamentary submission timeline for the new mining law.</span></div>
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>DRC mining code — parliamentary vote: advancing. Any committee schedule or vote date announcement this week would be the most significant DRC regulatory development of the year.</span></div>
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>Copper — $14,779 record and smelter economics: the all-time high and zero treatment charges are a stress signal as much as a demand signal. Watch for any smelter curtailment announcements or mine supply responses that could ease concentrate tightness.</span></div>
+                    </div>
+                </div>
+
+            </div><!-- end week-sep14 -->
+
             <!-- ── WEEK: 1 – 4 September 2026 ── -->
             <!-- ── WEEK: 7 – 11 September 2026 ── -->
-            <div class="nl-week-content active" id="week-sep7">
+            <div class="nl-week-content" id="week-sep7">
 
                 <div class="nl-overview">
                     <p>A difficult week for gold as two inflationary signals arrived simultaneously. August PPI came
