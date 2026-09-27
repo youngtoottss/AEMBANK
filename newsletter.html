@@ -90,12 +90,15 @@
                 <div class="nl-week-selector" id="weekSelector">
                     <button class="nl-week-btn" onclick="toggleWeekDropdown(event)">
                         <i class="far fa-calendar-alt"></i>
-                        <span id="selectedWeek">14 – 18 September 2026</span>
+                        <span id="selectedWeek">21 – 25 September 2026</span>
                         <i class="fas fa-chevron-down nl-chevron"></i>
                     </button>
                     <div class="nl-week-dropdown" id="weekDropdown">
                         <div class="nl-week-dropdown-label">Select Week</div>
-                        <button class="nl-week-option active" onclick="selectWeek(this, '14 – 18 September 2026', 'week-sep14')">
+                        <button class="nl-week-option active" onclick="selectWeek(this, '21 – 25 September 2026', 'week-sep21')">
+                            21 – 25 September 2026
+                        </button>
+                        <button class="nl-week-option" onclick="selectWeek(this, '14 – 18 September 2026', 'week-sep14')">
                             14 – 18 September 2026
                         </button>
                         <button class="nl-week-option" onclick="selectWeek(this, '7 – 11 September 2026', 'week-sep7')">
@@ -174,9 +177,278 @@
                 </div>
             </div>
 
+            <!-- ── WEEK: 14 – 18 September 2026 ── -->
+            <!-- ── WEEK: 21 – 25 September 2026 ── -->
+            <div class="nl-week-content active" id="week-sep21">
+
+                <div class="nl-overview">
+                    <p>The United Nations General Assembly dominated the macro picture this week, with Iran
+                        diplomacy providing the most significant geopolitical signal since the Versailles MoU in June.
+                        Trump indicated he was open to meeting Iranian President Pezeshkian on the UNGA sidelines
+                        — and oil fell more than 9% over four sessions on the diplomatic signal, its sharpest weekly
+                        decline since the conflict began. Gold remained volatile in the $4,280 to $4,413 range as
+                        Iran diplomacy pulled it in one direction while hawkish Fed commentary and strong US PMI
+                        data pulled it in the other. China's gold imports hit 1,000 tonnes in the first eight months of
+                        2026 while the PBoC added 20 tonnes in August alone — the structural demand floor
+                        deepening as tactical uncertainty persists. On the Africa side, Nigeria and the United States
+                        signed a landmark $700 billion critical minerals framework agreement at UNGA on 24
+                        September — covering geological data sharing, mineral exploration, processing
+                        infrastructure and technical capacity building. And Somalia's President Hassan Sheikh
+                        Mohamud made the first presidential-level public confirmation of uranium, lithium and cobalt
+                        deposits within Somalia's borders, formally opening Africa's most underexplored major
+                        jurisdiction to international mining investment.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Market Snapshot</div>
+                    <div class="nl-market-grid">
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Gold</div><div class="nl-commodity-price">$4,280 – $4,413/oz</div></div>
+                            <div class="nl-commodity-trend flat">↕</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Silver</div><div class="nl-commodity-price">$65 – $70/oz</div></div>
+                            <div class="nl-commodity-trend up">↑</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Brent Oil</div><div class="nl-commodity-price">$88 – $100/bbl</div></div>
+                            <div class="nl-commodity-trend flat">↓</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Copper</div><div class="nl-commodity-price">$13,500 – $14,000/t</div></div>
+                            <div class="nl-commodity-trend up">↑</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Platinum</div><div class="nl-commodity-price">$1,834 – $1,973/oz</div></div>
+                            <div class="nl-commodity-trend flat">→</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Cobalt</div><div class="nl-commodity-price">~$57,000/t</div></div>
+                            <div class="nl-commodity-trend flat">→</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Uranium</div><div class="nl-commodity-price">Emerging</div></div>
+                            <div class="nl-commodity-trend up">↑</div>
+                        </div>
+                    </div>
+                    <table class="nl-fx-table" style="margin-top:24px;">
+                        <thead><tr><th>Currency</th><th>Range (vs USD)</th><th>Trend</th></tr></thead>
+                        <tbody>
+                            <tr><td>NGN — Nigerian Naira</td><td>~1,610 – 1,670</td><td class="trend-firm">Firming; US-Nigeria $700bn critical minerals framework signed at UNGA</td></tr>
+                            <tr><td>ZAR — South African Rand</td><td>~17.8 – 18.6</td><td class="trend-firm">Recovering; gold holding above $4,300 despite Fed hawkishness</td></tr>
+                            <tr><td>ZWL — Zimbabwean Dollar</td><td>~13.1 – 13.7</td><td class="trend-firm">Stable; lithium revenues underpinning reserves</td></tr>
+                            <tr><td>ZMW — Zambian Kwacha</td><td>~24.5 – 25.5</td><td class="trend-firm">Broadly stable; copper above $13,500 supportive</td></tr>
+                            <tr><td>EUR — Euro</td><td>~1.07 – 1.11</td><td class="trend-firm">Volatile; dollar at two-month highs on strong PMI then softened</td></tr>
+                            <tr><td>GBP — British Pound</td><td>~1.30 – 1.34</td><td class="trend-firm">Broadly stable</td></tr>
+                        </tbody>
+                    </table>
+                    <p class="nl-body-text" style="font-size:13px;color:#4a5a68;margin-top:12px;">Oil falling 9%
+                        over four sessions provided the most significant input cost relief for African economies
+                        since the Versailles MoU partial reprieve in June. The naira firming on the US-Nigeria
+                        framework signing reflects genuine capital market confidence in the agreement's potential to
+                        unlock DFI-backed project flows. Dollar at two-month highs mid-week on strong PMI then
+                        softened as Iran diplomacy shifted risk appetite. Sources: LME, ICE, Refinitiv, CME,
+                        Fastmarkets.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Key Developments — Updates from the Watch List</div>
+                    <p class="nl-body-text"><strong>Iran diplomacy at UNGA — oil falls 9% in four
+                        sessions.</strong> Trump indicated openness to meeting Iranian President Pezeshkian on UNGA
+                        sidelines. Oil lost more than 9% over four sessions — its sharpest weekly decline since the
+                        conflict began in February. Iran's President maintained a firm stance on Hormuz. The
+                        diplomatic signal is real. The resolution is not yet.</p>
+                    <p class="nl-body-text"><strong>Fed officials signal more hikes possible.</strong> Chicago Fed's
+                        Goolsbee warned that persistent supply shocks could require a policy response. St. Louis
+                        Fed's Musalem said further hikes may be needed. September PMI data showed US business
+                        activity at its fastest pace in more than five years.</p>
+                    <p class="nl-body-text"><strong>China gold demand accelerating.</strong> Chinese gold imports hit
+                        1,000 tonnes in the first eight months of 2026. The PBoC added 20 tonnes in August.
+                        Chinese gold ETFs added approximately 44 tonnes in August — three separate buyer
+                        categories all accelerating simultaneously.</p>
+                    <p class="nl-body-text"><strong>Ghana Tarkwa — still no response, nine months.</strong> No
+                        Minerals Commission response to Gold Fields' renewal application. Parliamentary submission
+                        of the new mining law still pending. April 2027 is now six months away.</p>
+                    <p class="nl-body-text"><strong>USTDA signs Lobito Corridor power agreement.</strong> The US
+                        Trade and Development Agency signed an agreement with Anzana Electric Group to fund a
+                        feasibility study for expanded hydropower and upgraded power infrastructure along the
+                        Lobito Corridor. Harmony also issued a $500 million bond this week, optimising its funding
+                        profile following its record R100bn revenue year.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Africa Positioning</div>
+                    <p class="nl-body-text">Two stories this week sit at opposite ends of the same strategic question
+                        — how international capital finds its way to Africa's mineral endowment. Nigeria's $700
+                        billion critical minerals framework with the US, signed at UNGA, is the most advanced
+                        expression of the Western engagement model tracked all year — a government-to-government
+                        foundation explicitly designed to counter Chinese financing of Nigeria's newer lithium and
+                        solid minerals infrastructure. The US named Glencore founding partner of VaultCo, its
+                        strategic critical minerals reserve, the same week — capital deployment following the
+                        framework-level commitments. Somalia's presidential confirmation of uranium, lithium and
+                        cobalt deposits is a different kind of signal: an opening bid for investment in Africa's most
+                        underexplored major jurisdiction, with no grade data or feasibility work behind it yet. Against
+                        this, China's gold imports hitting 1,000 tonnes in eight months confirm the structural demand
+                        floor is deepening even as Iran diplomacy and hawkish Fed commentary pull gold in opposite
+                        tactical directions — and Ghana's central bank pausing its own Gold for Reserves programme
+                        to defend FX reserves shows that sovereign participation ambitions carry real implementation
+                        risk alongside the policy risk facing foreign operators.</p>
+
+                    <figure style="margin: 24px 0; border-radius: 12px; overflow: hidden; box-shadow: 0 6px 24px rgba(20,49,86,0.12);">
+                        <img src="images/mining-nigeria-us-critical-minerals.jpg"
+                             alt="Mineral exploration infrastructure during the week Nigeria and the US signed a $700 billion critical minerals framework at UNGA"
+                             style="width:100%; height:280px; object-fit:cover; display:block;">
+                        <figcaption style="background:rgb(20,49,86); color:rgba(255,255,255,0.7); font-size:12px; padding:12px 18px; border-left:4px solid #72e2ae; font-style:italic;">
+                            Nigeria and the United States signed a $700 billion critical minerals framework at UNGA,
+                            the fourth distinct African critical minerals engagement in the US framework in two
+                            months.
+                        </figcaption>
+                    </figure>
+
+                    <div class="nl-two-col">
+                        <div class="nl-col-card opps">
+                            <h4><i class="fas fa-arrow-up" style="margin-right:6px;"></i>Opportunities</h4>
+                            <ul>
+                                <li>Nigeria-US $700bn critical minerals framework opens DFI and US EXIM Bank financing pathways for Nigerian solid minerals processing — directly relevant to AEMBank's Nigerian pipeline and home jurisdiction mandate</li>
+                                <li>Glencore named founding partner of US-backed VaultCo strategic mineral reserve — the US is now deploying capital not just signing frameworks; African mineral supply chains at the centre of US physical reserve architecture</li>
+                                <li>Somalia presidential confirmation of uranium, lithium and cobalt — first-mover exploration opportunity in one of Africa's most geologically underexplored jurisdictions; early engagement yields the best positioning</li>
+                                <li>Oil falling 9% over four sessions on Iran UNGA diplomacy — if diplomatic progress translates to Hormuz easing, input cost relief for African mining reinflates across diesel, acid and energy simultaneously</li>
+                                <li>China gold imports 1,000 tonnes in 8 months; PBoC adds 20 tonnes in August; ETFs add 44 tonnes in August — three buyer categories accelerating; structural gold demand floor deepening</li>
+                                <li>Western critical mineral supply chain map expanding — Nigeria, Kenya, Uganda, Angola, Mozambique, Somalia all now in the US framework orbit</li>
+                            </ul>
+                        </div>
+                        <div class="nl-col-card threats">
+                            <h4><i class="fas fa-exclamation-triangle" style="margin-right:6px;"></i>Threats</h4>
+                            <ul>
+                                <li>Fed officials signalling further hikes — Goolsbee and Musalem both hawkish this week; September PMI at fastest pace in 5 years argues the economy is not slowing enough to pause tightening</li>
+                                <li>Iran President maintaining firm Hormuz stance — diplomacy is a signal not a resolution; oil could reverse its 9% fall quickly</li>
+                                <li>Ghana gold export pause — central bank pausing its own Gold for Reserves programme to rebuild FX reserves; implementation gap between policy ambition and fiscal capacity now visible and consequential</li>
+                                <li>Ghana Tarkwa renewal nine months unanswered — April 2027 six months away; parliamentary submission of new mining law still pending; three simultaneous sovereign instruments active</li>
+                                <li>DRC mining code advancing toward vote — permit suspension powers remain the most consequential risk to DRC investment confidence since 2018</li>
+                                <li>Nigeria-US framework is non-binding with no committed capital or timelines — the deal is a foundation not a transaction; implementation risk is the primary variable</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nl-takeaway">
+                    <div class="nl-takeaway-label">Key Takeaway</div>
+                    <p>The race for African minerals just got bigger. Nigeria's $700 billion framework with the US
+                        and Somalia's presidential confirmation of uranium, lithium and cobalt sit at opposite ends
+                        of the same question — how international capital finds its way to Africa's mineral
+                        endowment — and both point toward the same structural signal alongside Glencore's VaultCo
+                        role: the world needs what Africa has, and African governments and Western governments
+                        alike now know it. Ghana's gold export pause is the reminder that turning that leverage into
+                        durable institutional capacity is a separate and harder problem than signing the framework.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Deals &amp; Strategic Moves</div>
+                    <div class="nl-deals">
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-handshake"></i></div>
+                            <div class="nl-deal-text"><strong>Nigeria and the US Sign $700bn Critical Minerals
+                                Framework at UNGA</strong> — Signed at Nigeria's Mission House by Minister Dele
+                                Alake and US Deputy Secretary of State Christopher Landau, covering geological data
+                                sharing, exploration, processing infrastructure and technical capacity building.
+                                Non-binding, with DFI and US EXIM Bank financing pathways expected to follow.</div>
+                        </div>
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-globe-africa"></i></div>
+                            <div class="nl-deal-text"><strong>Somalia Confirms Uranium, Lithium and Cobalt
+                                Deposits</strong> — President Hassan Sheikh Mohamud made the first
+                                presidential-level public confirmation, opening one of Africa's most underexplored
+                                jurisdictions to investment, though no grade data or feasibility work has been
+                                released yet.</div>
+                        </div>
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-shield-alt"></i></div>
+                            <div class="nl-deal-text"><strong>Glencore Named Founding Partner of US-Backed
+                                VaultCo Reserve</strong> — Positions Glencore, the world's largest cobalt producer via
+                                its DRC operations, as the commercial bridge between African mineral production and
+                                US strategic reserve requirements.</div>
+                        </div>
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-coins"></i></div>
+                            <div class="nl-deal-text"><strong>China Imports 1,000 Tonnes of Gold in Eight
+                                Months</strong> — PBoC added 20 tonnes in August, its 22nd consecutive month of
+                                buying, as Chinese ETFs added 44 tonnes. Gold held above $4,300 despite Iran
+                                diplomacy and hawkish Fed commentary pulling in opposite directions.</div>
+                        </div>
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-exclamation-triangle"></i></div>
+                            <div class="nl-deal-text"><strong>Ghana's Central Bank Pauses Gold Exports to Rebuild
+                                Reserves</strong> — The Gold for Reserves programme, buying 30% of large-scale gold
+                                output since July, is being paused as the bank prioritises its FX position amid a
+                                weaker current account.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Research Spotlight — The Race for African Minerals Just Got Bigger: Somalia, Nigeria and the New Frontier Map</div>
+                    <p class="nl-body-text">Two stories this week — Somalia's uranium, lithium and cobalt
+                        confirmation and Nigeria's $700 billion framework with the United States — sit at opposite
+                        ends of the same strategic question. How does international capital find its way to Africa's
+                        mineral endowment? And which relationships structure that access? Nigeria's framework
+                        with the US is the most advanced expression of the Western model this newsletter has been
+                        tracking all year. Government-to-government foundation. Business-to-business transactions
+                        to follow. DFI financing pathways and US EXIM Bank involvement expected. Nigeria's $700
+                        billion mineral resource estimate is significant — but the number that matters more is the
+                        competitive context. Chinese firms already finance most of Nigeria's newer lithium and
+                        solid minerals processing infrastructure. The US framework is Washington acknowledging
+                        that competition directly and choosing to engage rather than cede the ground. Somalia is a
+                        different kind of story. Not a framework agreement with a committed counterparty. A
+                        presidential announcement of geological potential in a jurisdiction that has had almost no
+                        formal mining investment for decades. The gap between announcing mineral potential and
+                        having a bankable project is measured in years and hundreds of millions of dollars of
+                        exploration spending. But the announcement matters because of what it signals about
+                        direction. Every African country that has recently moved to formally assert its mineral
+                        endowment — Ghana, Guinea, the DRC, Zimbabwe, Tanzania, Somalia this week — is
+                        responding to the same structural signal: the world needs what Africa has, and African
+                        governments know it. The map of African critical mineral engagement is expanding every
+                        month. For AEMBank, operating at the intersection of African sovereign mineral policy and
+                        international development finance, this week's UNGA developments are the most direct
+                        available signal of where the capital flows are heading.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Financing Implications</div>
+                    <p class="nl-body-text">Three themes stand out this week. The Nigeria-US framework, though
+                        non-binding, is the most directly relevant development of the year for AEMBank's home
+                        jurisdiction mandate — the geological data sharing and processing infrastructure components
+                        are natural co-financing points once DFI and US EXIM Bank pathways firm up, and AEMBank
+                        should position early to identify projects alongside rather than after US engagement.
+                        Somalia's opening signal is a multi-year exploration-stage opportunity rather than a
+                        near-term financing one — worth tracking for eventual first-mover positioning once geological
+                        survey and legislative groundwork advances, but not yet bankable. And Ghana's gold export
+                        pause is a direct data point for sovereign-risk pricing across the AEMBank pipeline: a
+                        government's mineral policy ambition can outrun its fiscal capacity to implement it, and that
+                        gap — not just headline policy changes like royalty increases — is what financing structures
+                        need to price.</p>
+                    <div class="nl-trend-list">
+                        <div class="nl-trend-item">Position early for co-financing opportunities under the Nigeria-US framework's geological data sharing and processing infrastructure components ahead of DFI and EXIM Bank pathway formalisation</div>
+                        <div class="nl-trend-item">Track Somalia's geological survey investment and legislative modernisation as a multi-year first-mover exploration opportunity, not a near-term financing one</div>
+                        <div class="nl-trend-item">Price the gap between sovereign mineral policy ambition and fiscal implementation capacity — illustrated by Ghana's gold export pause — directly into sovereign-risk assessments across the pipeline</div>
+                        <div class="nl-trend-item">Monitor Iran-US diplomacy and oil's hold below $90 for their read-through to November Fed hike probability and gold-linked financing conditions</div>
+                    </div>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Watch Next Week</div>
+                    <div class="nl-signals">
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>Iran-US diplomacy — post-UNGA progress: Trump-Pezeshkian UNGA signals raised hopes of direct engagement. Watch for any follow-up diplomatic contact and whether oil holds its 9% decline. A sustained oil price below $90 would significantly reduce November Fed hike probability and provide the most positive gold catalyst available.</span></div>
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>Fed — November meeting signals: multiple officials signalled further hikes this week. Watch for any clarification on the November 4-5 meeting probability. October CPI will be the decisive input, releasing before the November meeting.</span></div>
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>Ghana — Tarkwa renewal and mining law: nine months without a response. April 2027 six months away. Parliamentary submission still pending. Watch for any movement this week.</span></div>
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>Nigeria-US framework — implementation signals: the framework was signed Wednesday. Watch for any announcement of specific project identification missions, geological survey partnerships or US EXIM Bank Nigeria engagement in the weeks following the signing.</span></div>
+                    </div>
+                </div>
+
+            </div><!-- end week-sep21 -->
+
             <!-- ── WEEK: 7 – 11 September 2026 ── -->
             <!-- ── WEEK: 14 – 18 September 2026 ── -->
-            <div class="nl-week-content active" id="week-sep14">
+            <div class="nl-week-content" id="week-sep14">
 
                 <div class="nl-overview">
                     <p>The Federal Reserve raised interest rates by 25 basis points to 3.75-4.00% on Wednesday 16
