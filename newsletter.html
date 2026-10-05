@@ -90,12 +90,15 @@
                 <div class="nl-week-selector" id="weekSelector">
                     <button class="nl-week-btn" onclick="toggleWeekDropdown(event)">
                         <i class="far fa-calendar-alt"></i>
-                        <span id="selectedWeek">21 – 25 September 2026</span>
+                        <span id="selectedWeek">28 Sep – 2 Oct 2026</span>
                         <i class="fas fa-chevron-down nl-chevron"></i>
                     </button>
                     <div class="nl-week-dropdown" id="weekDropdown">
                         <div class="nl-week-dropdown-label">Select Week</div>
-                        <button class="nl-week-option active" onclick="selectWeek(this, '21 – 25 September 2026', 'week-sep21')">
+                        <button class="nl-week-option active" onclick="selectWeek(this, '28 Sep – 2 Oct 2026', 'week-sep28')">
+                            28 Sep – 2 Oct 2026
+                        </button>
+                        <button class="nl-week-option" onclick="selectWeek(this, '21 – 25 September 2026', 'week-sep21')">
                             21 – 25 September 2026
                         </button>
                         <button class="nl-week-option" onclick="selectWeek(this, '14 – 18 September 2026', 'week-sep14')">
@@ -177,9 +180,274 @@
                 </div>
             </div>
 
+            <!-- ── WEEK: 21 – 25 September 2026 ── -->
+            <!-- ── WEEK: 28 Sep – 2 Oct 2026 ── -->
+            <div class="nl-week-content active" id="week-sep28">
+
+                <div class="nl-overview">
+                    <p>Gold had its sharpest weekly decline in months, falling roughly 6-7% to around
+                        $4,140-$4,150 as 10-year and 30-year Treasury yields surged to levels last seen more than
+                        two decades ago and the dollar strengthened. The pullback briefly reversed on Friday after
+                        September US payrolls came in at just 29,000 — far below the 90,000 forecast — which cut
+                        the implied probability of an October Fed rate hike from around 70% earlier in the week to
+                        roughly 22%. HSBC cut its 2026 and 2027 average gold price forecasts to $4,490 and $4,825
+                        respectively, arguing gold is likely nearing a bottom and that central banks will resume
+                        buying near or below $4,000. In the biggest African mining corporate story of the year, Gold
+                        Fields' unsolicited A$38.7 billion ($27.1 billion) takeover approach for Australia's Northern
+                        Star Resources was rejected by the target's board, which called the offer 'highly
+                        opportunistic' and undervaluing — though Gold Fields says it remains open to talks and
+                        activist investor Elliott is pushing Northern Star to engage. Barrick reached a new labour
+                        agreement with unions at its Loulo-Gounkoto mine in Mali, easing a strike threat at one of the
+                        country's largest gold operations. Montage Gold poured first gold at its Koné mine in Côte
+                        d'Ivoire ahead of schedule. And Moody's downgraded Botswana's credit rating again, citing
+                        the ongoing diamond market slump.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Market Snapshot</div>
+                    <div class="nl-market-grid">
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Gold</div><div class="nl-commodity-price">$4,140 – $4,250/oz</div></div>
+                            <div class="nl-commodity-trend flat">↓</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Silver</div><div class="nl-commodity-price">$58 – $62/oz</div></div>
+                            <div class="nl-commodity-trend flat">↓</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Brent Oil</div><div class="nl-commodity-price">$88 – $96/bbl</div></div>
+                            <div class="nl-commodity-trend up">↑</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Copper</div><div class="nl-commodity-price">$13,500 – $14,000/t</div></div>
+                            <div class="nl-commodity-trend up">↑</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Platinum</div><div class="nl-commodity-price">$1,900 – $2,000/oz</div></div>
+                            <div class="nl-commodity-trend flat">→</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Cobalt</div><div class="nl-commodity-price">~$57,000/t</div></div>
+                            <div class="nl-commodity-trend flat">→</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Diamonds</div><div class="nl-commodity-price">Weak</div></div>
+                            <div class="nl-commodity-trend flat">↓</div>
+                        </div>
+                    </div>
+                    <table class="nl-fx-table" style="margin-top:24px;">
+                        <thead><tr><th>Currency</th><th>Range (vs USD)</th><th>Trend</th></tr></thead>
+                        <tbody>
+                            <tr><td>NGN — Nigerian Naira</td><td>~1,605 – 1,665</td><td class="trend-firm">Broadly stable; post-UNGA framework sentiment still supportive</td></tr>
+                            <tr><td>ZAR — South African Rand</td><td>~18.2 – 19.2</td><td class="trend-firm">Weakening; gold below $4,200 a direct headwind this week</td></tr>
+                            <tr><td>ZWL — Zimbabwean Dollar</td><td>~13.1 – 13.7</td><td class="trend-firm">Stable; gold export earnings hit $3.36bn by July</td></tr>
+                            <tr><td>ZMW — Zambian Kwacha</td><td>~24.5 – 25.5</td><td class="trend-firm">Broadly stable; copper firming a partial offset to gold weakness</td></tr>
+                            <tr><td>EUR — Euro</td><td>~1.06 – 1.10</td><td class="trend-firm">Softer; dollar firm on Treasury yield surge</td></tr>
+                            <tr><td>GBP — British Pound</td><td>~1.29 – 1.33</td><td class="trend-firm">Broadly stable</td></tr>
+                        </tbody>
+                    </table>
+                    <p class="nl-body-text" style="font-size:13px;color:#4a5a68;margin-top:12px;">The dollar
+                        strengthened for most of the week on the Treasury yield surge before easing slightly Friday on
+                        the weak jobs print. ZAR under pressure as gold's decline below $4,200 removes a key
+                        support that had held through September. Sources: LME, ICE, Refinitiv, CME, Fastmarkets.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Key Developments — Updates from the Watch List</div>
+                    <p class="nl-body-text"><strong>Gold — sharpest fall in months, then a partial
+                        reversal.</strong> Gold broke below its $4,230-$4,510 September range early in the week,
+                        falling more than 3% on Monday alone as 10-year Treasury yields moved above 5.2% and the
+                        30-year topped 5.3% — both multi-decade highs. September payrolls of just 29,000 on Friday
+                        sharply cut October hike odds and gold briefly rose over 1% before fading again on broader
+                        dollar strength. It still closed the week down roughly 3.3-3.4%, its second consecutive
+                        weekly loss.</p>
+                    <p class="nl-body-text"><strong>Nigeria-US framework — the follow-through begins.</strong> One
+                        week on from the UNGA signing, no project-level announcements yet, consistent with the
+                        framework's own non-binding structure. Watching for the first geological data-sharing or
+                        technical assistance initiative to be announced.</p>
+                    <p class="nl-body-text"><strong>Ghana Tarkwa and gold export pause.</strong> No change to
+                        either story this week — Gold Fields' Tarkwa renewal remains unanswered and the central
+                        bank's Gold for Reserves pause continues as it prioritises FX reserve rebuilding.</p>
+                    <p class="nl-body-text"><strong>DRC mining code.</strong> Still advancing through the legislative
+                        process with no confirmed vote date.</p>
+                    <p class="nl-body-text"><strong>Glencore VaultCo.</strong> No further detail released this week
+                        on fund size or initial transactions; the founding partnership announcement from last week
+                        stands as the latest confirmed development.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Africa Positioning</div>
+                    <p class="nl-body-text">Gold's roughly 6-7% weekly decline — its sharpest in months, driven by
+                        two-decade-high Treasury yields and dollar strength rather than any change in the structural
+                        demand case — is the sharpest test yet of the thesis this newsletter has tracked all year, but
+                        producer economics remain comfortably profitable at $4,000-$4,200, a level still roughly 20%
+                        above where the year began. The bigger African mining corporate story is Gold Fields'
+                        rejected A$38.7 billion ($27.1 billion) bid for Northern Star Resources, which would have
+                        created the world's second-largest gold producer and materially diversified Gold Fields away
+                        from its African and Ghanaian jurisdictional exposure — including the unresolved Tarkwa
+                        renewal — but the deal isn't dead, with Gold Fields open to talks and activist investor Elliott
+                        pushing Northern Star's board to engage. Elsewhere, Barrick's union deal at Loulo-Gounkoto
+                        and Montage Gold's on-time, on-budget first pour at Koné both offer constructive West
+                        African data points, while Moody's second consecutive downgrade of Botswana on diamond
+                        weakness is the clearest reminder that not every African mineral economy is participating in
+                        this year's commodity supercycle.</p>
+
+                    <figure style="margin: 24px 0; border-radius: 12px; overflow: hidden; box-shadow: 0 6px 24px rgba(20,49,86,0.12);">
+                        <img src="images/mining-goldfields-northernstar-superpit.jpg"
+                             alt="An aerial view inside the Super Pit gold mine in Kalgoorlie-Boulder, Western Australia — the flagship Northern Star asset at the centre of Gold Fields' rejected $27bn takeover bid"
+                             style="width:100%; height:280px; object-fit:cover; display:block;">
+                        <figcaption style="background:rgb(20,49,86); color:rgba(255,255,255,0.7); font-size:12px; padding:12px 18px; border-left:4px solid #72e2ae; font-style:italic;">
+                            An aerial view inside the Super Pit gold mine in Kalgoorlie-Boulder, Western Australia —
+                            the flagship Northern Star asset at the centre of Gold Fields' rejected $27bn takeover
+                            bid.
+                        </figcaption>
+                    </figure>
+
+                    <div class="nl-two-col">
+                        <div class="nl-col-card opps">
+                            <h4><i class="fas fa-arrow-up" style="margin-right:6px;"></i>Opportunities</h4>
+                            <ul>
+                                <li>Weak September payrolls (29k vs 90k forecast) sharply cut October hike odds — a continued softening labour market would relieve the yield pressure driving this month's gold decline</li>
+                                <li>HSBC: gold likely nearing a bottom, central banks expected to resume or accelerate buying near or below $4,000 — a constructive medium-term signal</li>
+                                <li>Gold ETF holdings still rose ~50 tonnes in September despite the price fall — structural demand did not retreat even as tactical selling dominated</li>
+                                <li>Barrick-union deal at Loulo-Gounkoto removes a near-term disruption risk at one of Mali's largest gold assets, a rare positive data point for the jurisdiction</li>
+                                <li>Montage Gold's on-time, on-budget Koné first pour and Fortuna's Séguéla expansion reinforce Côte d'Ivoire as West Africa's most reliable delivery jurisdiction for new gold development capital</li>
+                                <li>African gold producer cost structures remain profitable at $4,000-$4,200 — the earnings supercycle documented all year is not dependent on gold holding above $4,400</li>
+                            </ul>
+                        </div>
+                        <div class="nl-col-card threats">
+                            <h4><i class="fas fa-exclamation-triangle" style="margin-right:6px;"></i>Threats</h4>
+                            <ul>
+                                <li>Gold posted its worst month since June, down ~6% in September and a further ~3.4% for the week — the sharpest test yet of the structural demand thesis this newsletter has tracked all year</li>
+                                <li>10-year and 30-year Treasury yields at levels last seen more than two decades ago are overpowering even active Iran conflict risk as the dominant price driver — a notable shift from earlier in the year</li>
+                                <li>Gold Fields-Northern Star $27bn bid rejected but not dead — continued uncertainty for Gold Fields' capital allocation and strategic direction while Tarkwa renewal remains separately unresolved after nine-plus months</li>
+                                <li>Moody's second consecutive downgrade of Botswana on diamond weakness — a reminder that not all African mineral economies are participating in the current commodity supercycle</li>
+                                <li>October 27-28 FOMC meeting probability swung from ~70% to ~22% in days — extreme data-dependency makes near-term gold positioning unusually volatile</li>
+                                <li>Silver and the broader precious metals complex posted weekly losses alongside gold, suggesting the pressure is systemic to precious metals rather than gold-specific</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nl-takeaway">
+                    <div class="nl-takeaway-label">Key Takeaway</div>
+                    <p>A 7% gold drop changes less than the headline suggests. Cost structures across AngloGold,
+                        Harmony, DRDGold, Sibanye and ARM remain comfortably profitable at $4,000-$4,200 — the
+                        earnings supercycle documented across eight-plus results this year was never built on gold
+                        holding above $4,400. What the move does touch is financing assumptions at the margin:
+                        anyone with deals underwritten on a $4,400-$4,500 base case should be revisiting sensitivity
+                        analysis now. With ETF holdings still rising through the decline and the October hike
+                        probability collapsing to 22%, the next three weeks are a reasonable window to hold pricing
+                        assumptions rather than reset them.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Deals &amp; Strategic Moves</div>
+                    <div class="nl-deals">
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-coins"></i></div>
+                            <div class="nl-deal-text"><strong>Gold Posts Its Worst Month Since June — Then Jobs
+                                Data Cuts October Hike Odds From 70% to 22%</strong> — Gold touched a seven-week
+                                low near $4,140-$4,150 as Treasury yields hit two-decade highs, before September
+                                payrolls of just 29,000 sharply cut hike odds. HSBC cut its 2026/2027 forecasts to
+                                $4,490/$4,825 while calling a bottom near.</div>
+                        </div>
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-handshake"></i></div>
+                            <div class="nl-deal-text"><strong>Northern Star Rejects Gold Fields' $27 Billion
+                                Takeover Bid</strong> — Northern Star's board called the offer 'highly opportunistic.'
+                                The implied value fell from a 22% to a 14% premium as Gold Fields' share price
+                                declined. Elliott Management is pushing the board to engage; one analyst puts the
+                                odds of an improved bid at roughly 50%.</div>
+                        </div>
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-industry"></i></div>
+                            <div class="nl-deal-text"><strong>Barrick Reaches Union Deal at Mali's
+                                Loulo-Gounkoto</strong> — A new collective bargaining agreement eases a strike
+                                threat at one of Mali's largest gold mines, a modest positive for a jurisdiction that has
+                                otherwise been this newsletter's clearest cautionary case on sovereign participation
+                                risk.</div>
+                        </div>
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-globe-africa"></i></div>
+                            <div class="nl-deal-text"><strong>Montage Gold Pours First Gold at Côte d'Ivoire's
+                                Koné Mine</strong> — Construction completed ahead of schedule and on budget,
+                                reinforcing Côte d'Ivoire's position as West Africa's most reliable delivery
+                                jurisdiction for new gold development capital.</div>
+                        </div>
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-exclamation-triangle"></i></div>
+                            <div class="nl-deal-text"><strong>Moody's Downgrades Botswana Again on Diamond
+                                Slump</strong> — Rating cut to 'Baa2' from 'Baa1', the second consecutive downgrade,
+                                as the global diamond market slump continues to weigh on public finances.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Research Spotlight — What a 7% Gold Drop Actually Means for African Mining Deals</div>
+                    <p class="nl-body-text">Gold fell roughly 6-7% this week, its worst stretch since June, as US
+                        Treasury yields surged to two-decade highs. For anyone structuring or reviewing African
+                        mining finance right now, the practical question isn't whether the move was dramatic — it
+                        clearly was — but what it changes. The short answer: less than the headline suggests. Start
+                        with producer economics. Cost structures across AngloGold, Harmony, DRDGold, Sibanye
+                        and ARM remain comfortably profitable even at $4,000-$4,200 gold, a level still roughly 20%
+                        above where the year began. The extraordinary earnings documented across eight-plus
+                        results this year were never built on gold holding above $4,400 — they were built on cost
+                        bases that stay profitable well below current spot. A 7% pullback doesn't touch the
+                        underlying margin story that has driven this year's African gold deal flow. What it does touch
+                        is financing assumptions at the margin — particularly for projects underwritten on
+                        recent-month price decks or for deals where gold price is a direct covenant trigger. Anyone
+                        with financing structured off a $4,400-$4,500 base case should be revisiting sensitivity
+                        analysis now, not waiting for further confirmation. The demand picture also matters for how
+                        temporary this is likely to be. Gold ETF holdings still rose roughly 50 tonnes in September
+                        despite the price fall, per ANZ — structural buying continued through the decline, it just
+                        wasn't large enough on its own to offset yield-driven selling. HSBC's view is that gold is
+                        probably nearing a bottom and that central banks will step up buying near or below $4,000.
+                        The clearest near-term signal to watch is the October 27-28 FOMC meeting. If the hike
+                        probability collapse from 70% to 22% holds, the yield and dollar pressure behind this month's
+                        decline should ease, and gold has room to recover without needing anything to change on
+                        the demand side. For deal teams, that makes the next three weeks a reasonable window to
+                        hold pricing assumptions rather than reset them.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Financing Implications</div>
+                    <p class="nl-body-text">Three themes stand out this week. The gap between a $4,400 base case
+                        and current spot near $4,150 is exactly the kind of move that shows up in covenant headroom
+                        calculations even when it doesn't touch project economics — AEMBank should be
+                        revisiting sensitivity analysis now on any gold-linked financing underwritten on recent-month
+                        price decks, rather than waiting for further confirmation of where gold settles. The Gold
+                        Fields-Northern Star situation, even if the current bid lapses, signals that African gold
+                        producers are actively considering diversification away from concentrated single-jurisdiction
+                        exposure — a theme worth tracking for its read-through to how AEMBank's own producer
+                        clients think about portfolio and jurisdictional risk. And Botswana's second consecutive
+                        downgrade is a reminder to price diamond-exposed sovereign and corporate risk separately
+                        from the broader gold and copper-driven African mining credit story, which remains
+                        structurally stronger.</p>
+                    <div class="nl-trend-list">
+                        <div class="nl-trend-item">Revisit sensitivity analysis now on any gold-linked financing underwritten on a $4,400-$4,500 base case, given the gap to current spot near $4,150</div>
+                        <div class="nl-trend-item">Treat the next three weeks as a reasonable window to hold rather than reset pricing assumptions on gold-linked deals, pending the October 27-28 FOMC outcome</div>
+                        <div class="nl-trend-item">Track the Gold Fields-Northern Star situation for its read-through to how African gold producer clients approach jurisdictional diversification</div>
+                        <div class="nl-trend-item">Price diamond-exposed sovereign and corporate risk separately from the broader gold and copper-driven African mining credit story following Botswana's second downgrade</div>
+                    </div>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Watch Next Week</div>
+                    <div class="nl-signals">
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>October FOMC meeting — 27-28 October: probability of a hike collapsed to ~22% following the weak September payrolls print. Watch for any further labour market or inflation data between now and the meeting that could shift this materially in either direction.</span></div>
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>Gold Fields-Northern Star — will a revised offer emerge? Gold Fields says it remains open to dialogue; one analyst puts the odds of an improved bid at roughly 50%. Watch for any signal of renewed engagement, and separately for news on Northern Star's potential divestment of smaller mines.</span></div>
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>Gold — does HSBC's bottom call play out? HSBC expects central bank buying to resume or accelerate near or below $4,000. Watch whether gold stabilises around current levels or continues lower, and for any fresh central bank purchase data confirming or challenging that view.</span></div>
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>Ghana — Tarkwa renewal and mining law: still unresolved after nine-plus months. Any movement here would be particularly notable given it now sits alongside the unresolved Gold Fields-Northern Star situation.</span></div>
+                    </div>
+                </div>
+
+            </div><!-- end week-sep28 -->
+
             <!-- ── WEEK: 14 – 18 September 2026 ── -->
             <!-- ── WEEK: 21 – 25 September 2026 ── -->
-            <div class="nl-week-content active" id="week-sep21">
+            <div class="nl-week-content" id="week-sep21">
 
                 <div class="nl-overview">
                     <p>The United Nations General Assembly dominated the macro picture this week, with Iran
