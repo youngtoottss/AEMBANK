@@ -90,12 +90,21 @@
                 <div class="nl-week-selector" id="weekSelector">
                     <button class="nl-week-btn" onclick="toggleWeekDropdown(event)">
                         <i class="far fa-calendar-alt"></i>
-                        <span id="selectedWeek">28 Sep – 2 Oct 2026</span>
+                        <span id="selectedWeek">19 – 23 October 2026</span>
                         <i class="fas fa-chevron-down nl-chevron"></i>
                     </button>
                     <div class="nl-week-dropdown" id="weekDropdown">
                         <div class="nl-week-dropdown-label">Select Week</div>
-                        <button class="nl-week-option active" onclick="selectWeek(this, '28 Sep – 2 Oct 2026', 'week-sep28')">
+                        <button class="nl-week-option active" onclick="selectWeek(this, '19 – 23 October 2026', 'week-oct19')">
+                            19 – 23 October 2026
+                        </button>
+                        <button class="nl-week-option" onclick="selectWeek(this, '12 – 16 October 2026', 'week-oct12')">
+                            12 – 16 October 2026
+                        </button>
+                        <button class="nl-week-option" onclick="selectWeek(this, '5 – 9 October 2026', 'week-oct5')">
+                            5 – 9 October 2026
+                        </button>
+                        <button class="nl-week-option" onclick="selectWeek(this, '28 Sep – 2 Oct 2026', 'week-sep28')">
                             28 Sep – 2 Oct 2026
                         </button>
                         <button class="nl-week-option" onclick="selectWeek(this, '21 – 25 September 2026', 'week-sep21')">
@@ -180,9 +189,738 @@
                 </div>
             </div>
 
+            <!-- ── WEEK: 12 – 16 October 2026 ── -->
+            <!-- ── WEEK: 19 – 23 October 2026 ── -->
+            <div class="nl-week-content active" id="week-oct19">
+
+                <div class="nl-overview">
+                    <p>Gold posted its steepest weekly decline in months, falling about 3.8% to close Friday near
+                        $4,012 after briefly touching a three-month low around $4,007. The 10-year Treasury yield
+                        reached 5.00%, the dollar firmed and US manufacturing data beat forecasts, while markets
+                        now expect the Fed to hold at its 28 October meeting with a December hike largely priced in.
+                        Oil moved the other way: Brent settled at $116.72 on Friday, up about 6.2% on the week, as
+                        Yemen's Houthis claimed attacks on Saudi oil facilities and airports. In Namibia, Bannerman
+                        and CNNC Overseas took a final investment decision on the $353 million Etango uranium
+                        mine, fully funded without project debt — a week after Deep Yellow deferred its own
+                        Namibian uranium decision for lack of equity funding. Ghana ordered its mining regulator to
+                        standardise pay and conditions as it forces a shift to local contractors, and Namib Minerals
+                        signed a term sheet with Ecobank for a $30 million loan to develop its Redwing gold project
+                        in Zimbabwe.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Market Snapshot</div>
+                    <div class="nl-market-grid">
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Gold</div><div class="nl-commodity-price">$4,007 – $4,170/oz</div></div>
+                            <div class="nl-commodity-trend flat">↓</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Silver</div><div class="nl-commodity-price">~$54.65/oz (Fri)</div></div>
+                            <div class="nl-commodity-trend flat">↓</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Brent Oil</div><div class="nl-commodity-price">$110 – $117/bbl</div></div>
+                            <div class="nl-commodity-trend up">↑</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Copper</div><div class="nl-commodity-price">$6.35 – $6.47/lb</div></div>
+                            <div class="nl-commodity-trend flat">↓</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Platinum</div><div class="nl-commodity-price">~$1,568/oz (Fri)</div></div>
+                            <div class="nl-commodity-trend flat">↓</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Palladium</div><div class="nl-commodity-price">~$1,066/oz (Fri)</div></div>
+                            <div class="nl-commodity-trend up">↑</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Tin</div><div class="nl-commodity-price">~$52,131/t</div></div>
+                            <div class="nl-commodity-trend up">↑</div>
+                        </div>
+                    </div>
+                    <table class="nl-fx-table" style="margin-top:24px;">
+                        <thead><tr><th>Currency</th><th>Range (vs USD)</th><th>Trend</th></tr></thead>
+                        <tbody>
+                            <tr><td>NGN — Nigerian Naira</td><td>~1,600 – 1,670 (indicative)</td><td class="trend-firm">Broadly stable; higher oil a support for reserves</td></tr>
+                            <tr><td>ZAR — South African Rand</td><td>~18.2 – 19.2 (indicative)</td><td class="trend-firm">Pressured by gold's fall and firmer dollar</td></tr>
+                            <tr><td>GHS — Ghanaian Cedi</td><td>Indicative</td><td class="trend-firm">Watch local-content and contractor transition</td></tr>
+                            <tr><td>ZMW — Zambian Kwacha</td><td>~24.5 – 25.5 (indicative)</td><td class="trend-firm">Copper weakness a mild headwind</td></tr>
+                            <tr><td>EUR / GBP</td><td>Indicative</td><td class="trend-firm">Dollar firmer as US yields hit 5%</td></tr>
+                        </tbody>
+                    </table>
+                    <p class="nl-body-text" style="font-size:13px;color:#4a5a68;margin-top:12px;">The dollar
+                        index edged up to about 101.75 as US yields touched 5.00%, adding pressure on gold-linked
+                        currencies. Higher oil supports net exporters such as Nigeria. FX ranges are indicative.
+                        Sources: LME, ICE, Refinitiv, CME, Fastmarkets.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Key Developments — Updates from the Watch List</div>
+                    <p class="nl-body-text"><strong>Gold's direction — lower.</strong> Last week's hot CPI and PPI
+                        prints set the tone: gold lost about 3.8% and fell to a three-month low as yields hit 5%.
+                        Markets now see the Fed holding on 28 October, with a December hike largely priced.</p>
+                    <p class="nl-body-text"><strong>Deep Yellow vs Etango — the funding contrast.</strong> A week
+                        after Deep Yellow deferred its Tumas decision on weak equity markets, Bannerman's Etango,
+                        also in Namibia, went ahead fully funded by its Chinese partner.</p>
+                    <p class="nl-body-text"><strong>World Bank follow-through.</strong> No new compacts
+                        announced; the Zambia, Malawi, Egypt and Mauritania partnerships remain the first African
+                        signatories.</p>
+                    <p class="nl-body-text"><strong>Gold Fields-Northern Star.</strong> No revised offer. Northern
+                        Star ordered 25 underground units from Sandvik for its Western Australian operations as it
+                        presses on with its standalone plan.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Africa Positioning</div>
+                    <p class="nl-body-text">Two Namibian uranium projects, in the same region and facing the same
+                        uranium market, reached opposite outcomes this week — and the difference was capital
+                        structure, not geology or jurisdiction. Bannerman's Etango took final investment decision
+                        fully funded and debt-free by its Chinese partner CNNC Overseas, which also secured 60% of
+                        lifetime production, a week after Deep Yellow deferred its own Tumas decision because
+                        equity markets would not fund construction. Ghana's move to force a shift to local
+                        contractors, with protected wages and a new classification system, is a different lever on the
+                        same underlying question of who captures value from African mines — following the Tarkwa
+                        stalemate, Burkina Faso's state-run mine model and Zimbabwe's export restrictions. Namib
+                        Minerals' Ecobank term sheet for its Redwing project points toward where financing
+                        alternatives are emerging: African lenders and development finance stepping in as equity
+                        markets stay selective. Against this backdrop, gold's slide to a three-month low near $4,007
+                        as the 10-year yield hit 5.00% confirms that rates, not geopolitics, are now setting the price
+                        — even a fresh escalation in the Gulf, which pushed Brent to $116.72, could not stop the
+                        decline.</p>
+
+                    <figure style="margin: 24px 0; border-radius: 12px; overflow: hidden; box-shadow: 0 6px 24px rgba(20,49,86,0.12);">
+                        <img src="images/mining-etango-uranium-namibia.jpg"
+                             alt="Uranium project construction site in Namibia's Erongo region, where Bannerman and CNNC Overseas took a final investment decision on the Etango mine"
+                             style="width:100%; height:280px; object-fit:cover; display:block;">
+                        <figcaption style="background:rgb(20,49,86); color:rgba(255,255,255,0.7); font-size:12px; padding:12px 18px; border-left:4px solid #72e2ae; font-style:italic;">
+                            Bannerman Energy and CNNC Overseas took a final investment decision on the $353
+                            million Etango uranium project in Namibia, fully funded without project debt.
+                        </figcaption>
+                    </figure>
+
+                    <div class="nl-two-col">
+                        <div class="nl-col-card opps">
+                            <h4><i class="fas fa-arrow-up" style="margin-right:6px;"></i>Opportunities</h4>
+                            <ul>
+                                <li>Etango's FID shows Namibian uranium can reach construction with the right partner; first production 2028</li>
+                                <li>Ecobank's term sheet signals growing appetite among African lenders for project-level gold finance</li>
+                                <li>Higher oil supports revenue for oil-exporting economies such as Nigeria and Angola</li>
+                                <li>Tin strength (Andrada +80% revenue) highlights value in smaller critical minerals</li>
+                                <li>Ghana's wage protections could reduce labour risk in the local-contractor transition</li>
+                            </ul>
+                        </div>
+                        <div class="nl-col-card threats">
+                            <h4><i class="fas fa-exclamation-triangle" style="margin-right:6px;"></i>Threats</h4>
+                            <ul>
+                                <li>Gold at a three-month low as yields hit 5%; further pressure if the Fed signals a December hike</li>
+                                <li>Brent near $117 lifts diesel and freight costs for African mines</li>
+                                <li>Equity funding remains closed for independent developers, as Tumas shows</li>
+                                <li>Ghana's December local-contractor deadline creates execution and cost risk for operators</li>
+                                <li>Antimony export uncertainty from 27 November could disrupt supply chains</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nl-takeaway">
+                    <div class="nl-takeaway-label">Key Takeaway</div>
+                    <p>Same ground, different outcomes. Etango and Tumas sit in the same Namibian region, chasing
+                        the same uranium market, yet one reached construction and the other stalled — because a
+                        strategic partner supplied capital and offtake for one, while the other depended on equity
+                        markets that will not underwrite construction risk at 5% yields. The emerging pattern across
+                        African mine financing is a three-way split: strategic foreign partners, regional lenders like
+                        Ecobank, and development finance institutions. Projects that secure one of these move;
+                        those depending on equity markets alone wait.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Deals &amp; Strategic Moves</div>
+                    <div class="nl-deals">
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-coins"></i></div>
+                            <div class="nl-deal-text"><strong>Gold Posts Steepest Weekly Fall in Months, Touches
+                                a Three-Month Low</strong> — Spot gold closed near $4,012, down roughly 3.8%, as
+                                the 10-year Treasury yield rose to 5.00% and the dollar index firmed to about
+                                101.75. Palladium was the only precious metal to gain, up 3.2%.</div>
+                        </div>
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-oil-can"></i></div>
+                            <div class="nl-deal-text"><strong>Houthi Attacks on Saudi Targets Push Brent to
+                                $117</strong> — Brent's third consecutive weekly gain reflects risk premium rather
+                                than confirmed lost barrels, with US-Israeli plans for renewed Iran strikes reported
+                                for after the 3 November midterms.</div>
+                        </div>
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-industry"></i></div>
+                            <div class="nl-deal-text"><strong>Etango Gets the Green Light — Fully Funded, No
+                                Project Debt</strong> — CNNC Overseas invested $320.4 million for 45% of the joint
+                                venture and 60% of lifetime production on market-based terms. Production of 3.5
+                                million pounds of uranium oxide a year is targeted from 2028.</div>
+                        </div>
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-balance-scale"></i></div>
+                            <div class="nl-deal-text"><strong>Ghana Orders Pay Standardisation as It Forces a
+                                Shift to Local Contractors</strong> — Minerals Commission to harmonise wages and
+                                classify contractors by capacity, with proposals due 30 November, affecting
+                                Newmont, AngloGold Ashanti, Zijin and Ghana Manganese Company.</div>
+                        </div>
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-hand-holding-usd"></i></div>
+                            <div class="nl-deal-text"><strong>Namib Minerals Signs Ecobank Term Sheet for $30m
+                                Redwing Loan</strong> — A non-binding, 36-month facility for the Zimbabwe gold
+                                project — a notable example of a pan-African bank stepping into project-level gold
+                                finance while equity markets stay selective.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Research Spotlight — Same Ground, Different Outcomes</div>
+                    <p class="nl-body-text">Two Namibian uranium projects, in the same region, facing the same
+                        uranium market, reached opposite outcomes in the space of a week. Deep Yellow deferred its
+                        Tumas decision because equity investors would not fund construction. Bannerman's Etango
+                        went ahead, fully funded and debt-free. The geology and the jurisdiction were not the
+                        difference. The capital structure was. Who funds decides what gets built. Etango's capital
+                        came from a strategic partner, CNNC Overseas, which also took 60% of the output. That
+                        model solves two problems at once — funding and offtake — but it also hands a large share
+                        of future supply to a single state-linked buyer. Deep Yellow, relying on public equity in a
+                        high-rate market, had no equivalent partner. With US yields at 5% and a Fed hike priced for
+                        December, that funding gap is likely to widen for independent developers. Who controls
+                        decides who benefits. Ghana's push to move mining to local contractors, with protected
+                        wages and a new classification system, is a different lever on the same question: who
+                        captures value from African mines. It follows the Tarkwa decision, Burkina Faso's state-run
+                        mine and Zimbabwe's export restrictions. Governments are no longer asking only for
+                        royalties; they want a say in who operates and who is employed. Where the alternatives are
+                        emerging. Namib Minerals' term sheet with Ecobank shows African lenders stepping into
+                        project finance, and the World Bank's $19 billion target points the same way. The emerging
+                        picture is a three-way split in how African mines get financed: strategic foreign partners who
+                        bring capital and buy the product, local and regional lenders, and development finance
+                        institutions providing guarantees. Projects that secure one of these will move; those
+                        depending on equity markets alone will wait.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Financing Implications</div>
+                    <p class="nl-body-text">Three themes stand out this week. The Etango-Tumas contrast is a
+                        direct illustration of the financing gap AEMBank is positioned to fill — independent African
+                        developers with permitted, shovel-ready assets but no strategic partner are exactly the
+                        clients equity markets are no longer underwriting at 5% yields, and development finance or
+                        structured debt can close that gap without ceding the offtake concentration that comes with
+                        a single state-linked strategic partner. Namib Minerals' Ecobank term sheet is a useful
+                        template for how regional banks are pricing project-level gold risk in Zimbabwe, worth
+                        benchmarking against AEMBank's own terms on comparable assets. And Ghana's
+                        local-contractor mandate, with its 30 November proposal deadline, should be tracked directly
+                        for its effect on operator cost structures and execution risk across any Ghana-exposed
+                        financing in the pipeline.</p>
+                    <div class="nl-trend-list">
+                        <div class="nl-trend-item">Position AEMBank financing toward permitted, shovel-ready African developers that equity markets are no longer funding at current yields, following the Etango-Tumas contrast</div>
+                        <div class="nl-trend-item">Benchmark Namib Minerals' Ecobank term sheet terms against AEMBank's own project-level gold financing in Zimbabwe and comparable jurisdictions</div>
+                        <div class="nl-trend-item">Track Ghana's local-contractor mandate and 30 November proposal deadline for its direct effect on operator cost structures across Ghana-exposed financing</div>
+                        <div class="nl-trend-item">Monitor the 27-28 October FOMC decision and Gulf escalation risk for their combined read-through to gold-linked financing conditions into year-end</div>
+                    </div>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Watch Next Week</div>
+                    <div class="nl-signals">
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>Fed meeting — 27-28 October: a hold is expected; the statement and press conference will set expectations for December and gold's next move.</span></div>
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>September PCE — 29 October: the Fed's preferred inflation gauge, after hot CPI and PPI prints.</span></div>
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>Gulf escalation: further Houthi attacks or confirmed damage to Saudi output would push Brent higher; watch for US-Iran developments ahead of the 3 November midterms.</span></div>
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>Ghana implementation: contractor classification and pay proposals due by 30 November; watch operator responses ahead of the December deadline.</span></div>
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>Etango construction and Tumas funding: early contracts at Etango and any funding update from Deep Yellow.</span></div>
+                    </div>
+                </div>
+
+            </div><!-- end week-oct19 -->
+
+            <div class="nl-week-content" id="week-oct12">
+
+                <div class="nl-overview">
+                    <p>Gold fell to around $4,084 early in the week after a hotter-than-expected September CPI
+                        print of 3.7%, which pushed odds of a Fed hike at the 27-28 October meeting from about 22%
+                        to somewhere between 31% and 47% (depending on the source), with a December move
+                        priced near 90%. The metal steadied later in the week as Treasury yields eased and a
+                        tech-led equity selloff lifted haven demand, trading near $4,168 on Friday morning and
+                        holding around $4,165 into the weekend, with September producer prices (+1.3% m/m, 6.3%
+                        y/y) a further reminder that inflation pressure is not fading. In South Africa, August mining
+                        output fell 12.7% year on year — platinum group metals down 22.5% and mineral sales down
+                        15.1% — a sharp contrast with this season's strong producer earnings. The World Bank,
+                        under President Banga, set a goal of quintupling minerals financing to $19 billion over
+                        FY2026-30, with Zambia, Malawi, Egypt and Mauritania among the first eight countries to
+                        sign compacts. Gold Fields' chief executive played down the prospect of a quick higher bid
+                        for Northern Star, while in Namibia Deep Yellow deferred the final investment decision on its
+                        Tumas uranium project.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Market Snapshot</div>
+                    <div class="nl-market-grid">
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Gold</div><div class="nl-commodity-price">$4,084 – $4,185/oz</div></div>
+                            <div class="nl-commodity-trend flat">↕</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Silver</div><div class="nl-commodity-price">~$57/oz (Thu)</div></div>
+                            <div class="nl-commodity-trend up">↑</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Brent Oil</div><div class="nl-commodity-price">$106 – $109/bbl</div></div>
+                            <div class="nl-commodity-trend up">↑</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Copper</div><div class="nl-commodity-price">$14,256 – $14,480/t</div></div>
+                            <div class="nl-commodity-trend up">↑</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Platinum</div><div class="nl-commodity-price">$1,620 – $1,690/oz</div></div>
+                            <div class="nl-commodity-trend flat">↓</div>
+                        </div>
+                    </div>
+                    <table class="nl-fx-table" style="margin-top:24px;">
+                        <thead><tr><th>Currency</th><th>Range (vs USD)</th><th>Trend</th></tr></thead>
+                        <tbody>
+                            <tr><td>NGN — Nigerian Naira</td><td>~1,600 – 1,670 (indicative)</td><td class="trend-firm">Broadly stable</td></tr>
+                            <tr><td>ZAR — South African Rand</td><td>~18.0 – 19.0 (indicative)</td><td class="trend-firm">Pressured by weak output data and firm dollar</td></tr>
+                            <tr><td>ZMW — Zambian Kwacha</td><td>~24.5 – 25.5 (indicative)</td><td class="trend-firm">Broadly stable</td></tr>
+                            <tr><td>EUR / GBP</td><td>Indicative</td><td class="trend-firm">Dollar firm on rate-hike repricing</td></tr>
+                        </tbody>
+                    </table>
+                    <p class="nl-body-text" style="font-size:13px;color:#4a5a68;margin-top:12px;">A hotter US
+                        inflation print firmed the dollar and lifted rate-hike odds, a headwind for non-yielding gold.
+                        FX ranges are indicative. Sources: LME, ICE, Refinitiv, CME, Fastmarkets.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Key Developments — Updates from the Watch List</div>
+                    <p class="nl-body-text"><strong>Gold's next move — hot CPI tilted the balance.</strong> Last
+                        week's split between a push to $4,300 and a dip to $4,100 resolved lower first: gold touched
+                        ~$4,084 before recovering. Direction now hinges on the 27-28 October Fed meeting.</p>
+                    <p class="nl-body-text"><strong>Gold Fields-Northern Star — no quick sweetener.</strong> Chief
+                        executive Mike Fraser downplayed a higher bid and said Gold Fields would walk away
+                        without engagement; Northern Star is pursuing its own Elliott-backed overhaul.</p>
+                    <p class="nl-body-text"><strong>North Mara expansion — no decision yet.</strong> No capital
+                        announcement following the 15-year licence renewal.</p>
+                    <p class="nl-body-text"><strong>DRC cobalt quota — unchanged.</strong> The 96,600 t annual cap
+                        remains in place.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Africa Positioning</div>
+                    <p class="nl-body-text">Commodity prices this week told one story; production and project data
+                        told another. Copper traded above $14,000 a tonne, gold held above $4,000 and Brent
+                        stayed above $105 a barrel. Yet South Africa's August mining output fell 12.7%, gold sales by
+                        value dropped almost half, and a permitted Namibian uranium project could not reach a final
+                        investment decision. South Africa's problem is physical capacity — power, rail, ports and
+                        ageing shafts, not demand — while Deep Yellow's Tumas stalled on the cost of capital, with
+                        equity investors demanding higher returns as US rates rise. Gold Fields' own standoff with
+                        Northern Star is, at its core, a bet that the market undervalues producers with heavy African
+                        exposure, trading at roughly half its Australian peers' multiples. The World Bank's $19
+                        billion target is the clearest institutional response to this gap, aimed squarely at the stages
+                        where private capital is most reluctant — early development and infrastructure — with
+                        Zambia, Malawi, Egypt and Mauritania among the first African compact countries at the front
+                        of the queue.</p>
+
+                    <figure style="margin: 24px 0; border-radius: 12px; overflow: hidden; box-shadow: 0 6px 24px rgba(20,49,86,0.12);">
+                        <img src="images/mining-world-bank-africa-compacts.jpg"
+                             alt="Mineral development infrastructure representing the World Bank's fivefold minerals financing target, with Zambia, Malawi, Egypt and Mauritania among the first African compact countries"
+                             style="width:100%; height:280px; object-fit:cover; display:block;">
+                        <figcaption style="background:rgb(20,49,86); color:rgba(255,255,255,0.7); font-size:12px; padding:12px 18px; border-left:4px solid #72e2ae; font-style:italic;">
+                            The World Bank set a goal of quintupling minerals financing to $19 billion over
+                            FY2026-30, with Zambia, Malawi, Egypt and Mauritania among the first compact
+                            countries.
+                        </figcaption>
+                    </figure>
+
+                    <div class="nl-two-col">
+                        <div class="nl-col-card opps">
+                            <h4><i class="fas fa-arrow-up" style="margin-right:6px;"></i>Opportunities</h4>
+                            <ul>
+                                <li>World Bank's $19bn minerals target, with Zambia, Malawi, Egypt and Mauritania among the first compacts, opens room for guarantees and co-financing</li>
+                                <li>Gold's recovery to ~$4,165–$4,170 shows buyers stepping in on dips</li>
+                                <li>Strong producer earnings give balance-sheet room to fund production recovery</li>
+                                <li>Compacts focus on licensing, geological data and infrastructure — the bottlenecks behind the price-production gap</li>
+                            </ul>
+                        </div>
+                        <div class="nl-col-card threats">
+                            <h4><i class="fas fa-exclamation-triangle" style="margin-right:6px;"></i>Threats</h4>
+                            <ul>
+                                <li>Rate-hike repricing (Oct 27-28; December ~90%) is a headwind for gold</li>
+                                <li>South African output down 12.7% y/y; PGMs down 22.5%</li>
+                                <li>Funding constraints delaying projects such as Tumas despite solid fundamentals</li>
+                                <li>Gold Fields-Northern Star uncertainty continues to weigh on sentiment</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nl-takeaway">
+                    <div class="nl-takeaway-label">Key Takeaway</div>
+                    <p>High prices are not turning into new supply at the pace the market assumes. South Africa's
+                        output problem is physical capacity, not demand; Tumas stalled on the cost of capital, not
+                        project economics; and Gold Fields' Northern Star bet is a wager on undervalued African
+                        exposure. The World Bank's $19 billion target is the clearest response — guarantees and
+                        blended capital aimed at exactly the stages where private capital is most reluctant, with
+                        African compact countries first in line.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Deals &amp; Strategic Moves</div>
+                    <div class="nl-deals">
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-coins"></i></div>
+                            <div class="nl-deal-text"><strong>Hot Inflation Knocks Gold to ~$4,084, Then It
+                                Recovers</strong> — September CPI at 3.7% and PPI at 6.3% y/y revived rate-hike
+                                bets, but gold rose as much as 1.8% on Thursday as yields eased and a tech-led
+                                equity selloff lifted haven demand, settling near $4,165-$4,170.</div>
+                        </div>
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-industry"></i></div>
+                            <div class="nl-deal-text"><strong>South African Mining Output Falls 12.7% in
+                                August</strong> — PGMs down 22.5%, coal down 11.7%, iron ore down 16.2%. Gold
+                                sales by value collapsed 48.6%. Ageing shafts, power reliability and logistics
+                                constraints continue to cap output despite strong prices.</div>
+                        </div>
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-globe-africa"></i></div>
+                            <div class="nl-deal-text"><strong>World Bank Sets $19bn Minerals Financing
+                                Target</strong> — A fivefold increase over FY2026-30, combining public financing,
+                                guarantees and policy support. Zambia, Malawi, Egypt and Mauritania are among the
+                                first eight compact countries.</div>
+                        </div>
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-handshake"></i></div>
+                            <div class="nl-deal-text"><strong>Gold Fields' Fraser Plays Down a Higher Bid for
+                                Northern Star</strong> — CEO says Gold Fields would walk away without engagement.
+                                His case rests on $4-5bn of synergies and a valuation re-rating, with Gold Fields
+                                trading at 3.5-4x EV/EBITDA against 7-8x for Northern Star.</div>
+                        </div>
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-exclamation-triangle"></i></div>
+                            <div class="nl-deal-text"><strong>Deep Yellow Defers Tumas FID on Funding
+                                Constraints</strong> — The Namibian uranium project remains shovel-ready and fully
+                                funded through to development, but equity markets are not underwriting
+                                construction risk despite compelling fundamentals.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Research Spotlight — The Gap Between Price and Production</div>
+                    <p class="nl-body-text">Commodity prices this week told one story; production and project data
+                        told another. Copper traded above $14,000 a tonne, gold held above $4,000 and Brent
+                        stayed above $105 a barrel. Yet South Africa's August mining output fell 12.7%, gold sales
+                        by value dropped almost half, and a permitted Namibian uranium project could not reach a
+                        final investment decision. High prices are not turning into new supply at the pace the
+                        market assumes. Three constraints recur across these stories. The first is physical capacity:
+                        South Africa's output problem is about power, rail, ports and ageing shafts, not demand. The
+                        second is the cost of capital: with US inflation at 3.7%, PPI at 6.3% and rate hikes back on
+                        the table, equity investors are demanding higher returns before they fund construction,
+                        which is why Tumas has stalled despite strong fundamentals. The third is valuation and
+                        control: Gold Fields' attempt to buy Northern Star is, at its core, a bet that the market
+                        undervalues producers with heavy African exposure — and Gold Fields trades at roughly half
+                        its Australian peers' multiples. The World Bank's $19 billion target is the clearest response.
+                        Its tools — guarantees, blended finance, geological data and licensing reform — are aimed at
+                        the stages where private capital is most reluctant: early development and infrastructure.
+                        With Zambia, Malawi, Egypt and Mauritania among the first eight compact countries, African
+                        producers are at the front of the queue. Supply is set less by price than by financing and
+                        execution. Countries that pair resources with reliable power, transport and clear licensing
+                        will capture the capital; those that do not will see high prices pass them by, as South
+                        Africa's August data shows.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Financing Implications</div>
+                    <p class="nl-body-text">Three themes stand out this week. The World Bank's $19 billion target
+                        — moving from advice into risk-taking via guarantees and blended capital — is the single
+                        most relevant structural development of the month for AEMBank, and the four African
+                        compact countries (Zambia, Malawi, Egypt, Mauritania) should be assessed now for
+                        co-financing and complementary guarantee structures before the remaining pipeline
+                        countries sign. Deep Yellow's Tumas deferral is a clean illustration of the gap AEMBank exists
+                        to fill: a permitted, partly built asset in a stable jurisdiction that cannot close funding
+                        because equity investors will not underwrite construction risk at current yields — exactly the
+                        profile debt, streaming and development finance are designed for. And South Africa's
+                        12.7% output decline, set against strong producer earnings, should be read as a logistics and
+                        power financing opportunity rather than only a production risk — the SAWEM launch planned
+                        for April 2027 is a relevant reform to track for its effect on the investment case.</p>
+                    <div class="nl-trend-list">
+                        <div class="nl-trend-item">Assess co-financing and guarantee structures alongside the World Bank's Zambia, Malawi, Egypt and Mauritania compacts ahead of further country signings</div>
+                        <div class="nl-trend-item">Treat permitted, shovel-ready African projects stalled on equity funding — the Tumas profile — as a direct target for debt and development finance structures</div>
+                        <div class="nl-trend-item">Track South Africa's power and logistics reform, including the April 2027 SAWEM launch, as a financing opportunity tied to the country's output recovery</div>
+                        <div class="nl-trend-item">Monitor the 27-28 October FOMC decision and 29 October PCE print for their read-through to gold-linked financing conditions</div>
+                    </div>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Watch Next Week</div>
+                    <div class="nl-signals">
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>Fed meeting — 27-28 October: markets are watching whether the hike odds hold; the decision will set gold's direction.</span></div>
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>September PCE — 29 October: the Fed's preferred inflation gauge, following the hot CPI print.</span></div>
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>Gold Fields roadshow: any sign of a revised Northern Star approach.</span></div>
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>World Bank follow-through: project pipelines under the Zambia, Malawi, Egypt and Mauritania compacts, and which of the remaining 20 target countries sign next.</span></div>
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>October CPI — 10 November: the next major inflation datapoint ahead.</span></div>
+                    </div>
+                </div>
+
+            </div><!-- end week-oct12 -->
+
+            <!-- ── WEEK: 28 Sep – 2 Oct 2026 ── -->
+            <!-- ── WEEK: 5 – 9 October 2026 ── -->
+            <div class="nl-week-content" id="week-oct5">
+
+                <div class="nl-overview">
+                    <p>Gold extended its September rout into early October, touching a fresh two-month low near
+                        $4,130 on Thursday as 10-year Treasury yields held near two-decade highs and the dollar
+                        stayed firm. The move reversed sharply on Friday — gold climbed back above $4,200 as
+                        yields and the dollar eased and President Trump described talks with Iran as 'productive,'
+                        with Reuters reporting he does not expect a US strike on Iran before the November midterms.
+                        Silver outpaced gold on the rebound, the SLV fund up 2.5% on Friday alone. In Tanzania,
+                        Barrick secured a 15-year renewal of the Special Mining Licences for its North Mara gold
+                        mine — the first renewal since 2012 — removing a major tenure overhang and securing
+                        operating rights through 2041. Gold Fields is reportedly weighing a larger cash component
+                        for a revived approach to Australia's Northern Star Resources, after Northern Star's board
+                        rejected its unsolicited $27.1 billion bid in late September calling it 'highly opportunistic.'
+                        And Chinese firms now hold minority or majority stakes in 54% of DRC critical mineral
+                        projects, up sharply from under a third in 2023 — the clearest evidence yet of how far
+                        Beijing's long-term Copperbelt positioning has advanced.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Market Snapshot</div>
+                    <div class="nl-market-grid">
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Gold</div><div class="nl-commodity-price">$4,130 – $4,210/oz</div></div>
+                            <div class="nl-commodity-trend flat">↕</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Silver</div><div class="nl-commodity-price">$54 – $56/oz</div></div>
+                            <div class="nl-commodity-trend up">↑</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Brent Oil</div><div class="nl-commodity-price">$88 – $100/bbl</div></div>
+                            <div class="nl-commodity-trend flat">↓</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Copper</div><div class="nl-commodity-price">$13,500 – $14,000/t</div></div>
+                            <div class="nl-commodity-trend up">↑</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Lithium Carbonate</div><div class="nl-commodity-price">~122,800 yuan/t</div></div>
+                            <div class="nl-commodity-trend flat">↓</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Cobalt</div><div class="nl-commodity-price">~$57,000/t</div></div>
+                            <div class="nl-commodity-trend flat">→</div>
+                        </div>
+                        <div class="nl-commodity">
+                            <div><div class="nl-commodity-name">Top 50 Miners</div><div class="nl-commodity-price">$2.26tn mkt cap</div></div>
+                            <div class="nl-commodity-trend flat">↓</div>
+                        </div>
+                    </div>
+                    <table class="nl-fx-table" style="margin-top:24px;">
+                        <thead><tr><th>Currency</th><th>Range (vs USD)</th><th>Trend</th></tr></thead>
+                        <tbody>
+                            <tr><td>NGN — Nigerian Naira</td><td>~1,605 – 1,665</td><td class="trend-firm">Broadly stable; post-UNGA framework sentiment still supportive</td></tr>
+                            <tr><td>ZAR — South African Rand</td><td>~18.0 – 18.9</td><td class="trend-firm">Recovering; gold's Friday rebound a partial relief after weeks of pressure</td></tr>
+                            <tr><td>ZWL — Zimbabwean Dollar</td><td>~13.1 – 13.7</td><td class="trend-firm">Stable; gold export earnings hit $3.36bn by July</td></tr>
+                            <tr><td>ZMW — Zambian Kwacha</td><td>~24.5 – 25.5</td><td class="trend-firm">Broadly stable; copper firming a partial offset to gold volatility</td></tr>
+                            <tr><td>TZS — Tanzanian Shilling</td><td>Stable</td><td class="trend-firm">Supportive; North Mara 15-year licence renewal a positive investment signal</td></tr>
+                            <tr><td>EUR — Euro</td><td>~1.07 – 1.11</td><td class="trend-firm">Firmer; dollar eased late week as yields pulled back</td></tr>
+                        </tbody>
+                    </table>
+                    <p class="nl-body-text" style="font-size:13px;color:#4a5a68;margin-top:12px;">The dollar
+                        stayed firm into Thursday on elevated Treasury yields before easing Friday as Iran
+                        de-escalation signals reduced the risk premium. ZAR tracking gold's volatility closely — the
+                        Friday rebound offers partial relief after a difficult September-October stretch. TZS
+                        supported by the North Mara licence renewal, a concrete positive signal for Tanzania's gold
+                        sector. Sources: LME, ICE, Refinitiv, CME, Fastmarkets.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Key Developments — Updates from the Watch List</div>
+                    <p class="nl-body-text"><strong>Gold's next move — settled, for now, by Friday's
+                        reversal.</strong> Last week we flagged a split between HSBC's 'gold is nearing a bottom' call
+                        and the risk of a further dip to $4,100. Both views got partial validation: gold touched
+                        $4,130 on Thursday before rebounding above $4,200 on Friday as yields eased and Iran
+                        talks turned conciliatory. Prediction markets are now pricing a 68% chance of a push back to
+                        $4,300 in October versus 57% odds of a further dip to $4,100 — still genuinely two-sided.</p>
+                    <p class="nl-body-text"><strong>Gold Fields-Northern Star — a revised offer may be
+                        coming.</strong> Bloomberg reports Gold Fields is weighing a larger cash component for a
+                        renewed approach, addressing the structural weakness of the original bid (roughly
+                        three-quarters stock-based, so its value moved with Gold Fields' own falling share price). No
+                        formal announcement yet.</p>
+                    <p class="nl-body-text"><strong>Mali — Barrick-union deal holding.</strong> No further
+                        developments this week; the labour agreement at Loulo-Gounkoto reached last week
+                        continues to ease strike risk at one of Mali's largest gold operations.</p>
+                    <p class="nl-body-text"><strong>Côte d'Ivoire — Koné on track.</strong> Montage Gold's
+                        on-time, on-budget first pour at Koné remains the standout delivery story for West African
+                        gold this quarter; no new updates this week.</p>
+                    <p class="nl-body-text"><strong>Botswana — no further rating action.</strong> Moody's second
+                        consecutive downgrade stands from last week; diamond market conditions unchanged.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Africa Positioning</div>
+                    <p class="nl-body-text">Tenure security was quietly the biggest African mining story of the
+                        month. Barrick's 15-year North Mara renewal — the first since 2012, securing operating
+                        rights through 2041 — is the clean positive case, with a joint-venture structure that has
+                        delivered consistent local benefit (96% Tanzanian workforce, $5.3 billion injected since
+                        2019) now unlocking the case for processing upgrades and complex-wide expansion. Set
+                        against that, Ghana's Tarkwa renewal remains unanswered after nine-plus months, and the
+                        DRC presents a structurally different risk: Chinese firms now hold stakes in 54% of its
+                        critical mineral projects, up from under a third in 2023, consolidating ownership of more than
+                        70% of global mined cobalt supply faster than most Western observers appreciated. Gold
+                        Fields' own position captures the tension from the corporate side — weighing a cash-heavier
+                        revived bid for Northern Star to diversify geographically while its African portfolio, including
+                        Tarkwa, continues to weigh on sentiment. Meanwhile gold's own volatility continued: a fresh
+                        two-month low near $4,130 on Thursday reversed sharply to above $4,200 on Friday as
+                        Treasury yields eased and Iran talks turned conciliatory, with prediction markets now
+                        genuinely split between a push to $4,300 and a further dip to $4,100.</p>
+
+                    <figure style="margin: 24px 0; border-radius: 12px; overflow: hidden; box-shadow: 0 6px 24px rgba(20,49,86,0.12);">
+                        <img src="images/mining-barrick-north-mara-tanzania.jpg"
+                             alt="Open-pit and underground gold mining operations at Barrick's North Mara mine in Tanzania, which secured a 15-year licence renewal through 2041"
+                             style="width:100%; height:280px; object-fit:cover; display:block;">
+                        <figcaption style="background:rgb(20,49,86); color:rgba(255,255,255,0.7); font-size:12px; padding:12px 18px; border-left:4px solid #72e2ae; font-style:italic;">
+                            Barrick secured a 15-year renewal of the Special Mining Licences at its North Mara mine
+                            in Tanzania — the first renewal since 2012, securing operating rights through 2041.
+                        </figcaption>
+                    </figure>
+
+                    <div class="nl-two-col">
+                        <div class="nl-col-card opps">
+                            <h4><i class="fas fa-arrow-up" style="margin-right:6px;"></i>Opportunities</h4>
+                            <ul>
+                                <li>Barrick's 15-year North Mara renewal (through 2041) removes a major tenure overhang and unlocks the case for processing upgrades and complex-wide expansion</li>
+                                <li>Gold's Friday rebound above $4,200 — on easing yields and Iran de-escalation signals — offers near-term relief after a punishing six-week stretch</li>
+                                <li>Silver outpacing gold on the bounce (SLV +2.5% Friday) suggests risk appetite for precious metals broadly is returning, not just a gold-specific trade</li>
+                                <li>A revised, cash-heavier Gold Fields bid for Northern Star would reduce the deal's exposure to Gold Fields' own share-price volatility if it materialises</li>
+                                <li>Prediction markets still assign meaningfully better-than-even odds (68%) to a push back toward $4,300 in October</li>
+                                <li>Mali's Barrick-union deal and Côte d'Ivoire's on-schedule Koné first pour remain intact positive signals from last week's watchlist</li>
+                            </ul>
+                        </div>
+                        <div class="nl-col-card threats">
+                            <h4><i class="fas fa-exclamation-triangle" style="margin-right:6px;"></i>Threats</h4>
+                            <ul>
+                                <li>Gold's underlying driver — 10-year and 30-year Treasury yields near two-decade highs — has not reversed; Friday's rally depends on that trend continuing</li>
+                                <li>Gold Fields-Northern Star remains unresolved; continued uncertainty over deal structure and capital allocation while Tarkwa renewal is separately unresolved after nine-plus months</li>
+                                <li>Chinese ownership of DRC critical mineral projects has jumped from under a third to 54% in three years — a structural concentration risk for Western battery and EV supply chain diversification efforts</li>
+                                <li>Lithium carbonate prices in Guangzhou fell roughly 22.5% after a Chinese pricing-method change — a reminder that reported stockpile data itself can move markets independent of physical supply/demand</li>
+                                <li>Iran de-escalation signals are not a resolution — any reversal in rhetoric would quickly reinstate upward pressure on oil and downward pressure on gold sentiment</li>
+                                <li>September's $264bn hit to the top 50 miners' market cap resets the valuation base for every African-exposed name (Gold Fields, Zijin, BHP) heading into Q4</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nl-takeaway">
+                    <div class="nl-takeaway-label">Key Takeaway</div>
+                    <p>Tenure security and clarity of ownership are proving at least as consequential for African
+                        mining capital allocation in 2026 as the gold price itself. North Mara's 15-year renewal shows
+                        what long-dated certainty unlocks — processing upgrades and complex-wide expansion that
+                        would have been far harder to underwrite against an uncertain licence. Ghana's unresolved
+                        Tarkwa renewal and the DRC's rapid Chinese ownership concentration are the other side of
+                        that same story: capital allocation risk in African gold and critical minerals right now sits as
+                        much in who controls the ground and for how long as it does in commodity prices.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Deals &amp; Strategic Moves</div>
+                    <div class="nl-deals">
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-coins"></i></div>
+                            <div class="nl-deal-text"><strong>Gold Hits a Two-Month Low, Then Rebounds Above
+                                $4,200</strong> — Gold touched $4,130 on Thursday before Iran de-escalation
+                                signals and easing Treasury yields drove a sharp Friday rally. Silver outpaced the
+                                move, with SLV up 2.5% and the gold-silver ratio narrowing to roughly 69.3.</div>
+                        </div>
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-industry"></i></div>
+                            <div class="nl-deal-text"><strong>Barrick Secures 15-Year North Mara Licence
+                                Renewal</strong> — The first renewal since 2012 secures Tanzanian operating rights
+                                through 2041. Barrick has injected roughly $5.3 billion into the Tanzanian economy
+                                since 2019, including $1.2 billion in 2025 alone.</div>
+                        </div>
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-handshake"></i></div>
+                            <div class="nl-deal-text"><strong>Gold Fields Weighs a Sweetened, Cash-Heavier Bid
+                                for Northern Star</strong> — Bloomberg reports a revised structure addressing the
+                                original bid's roughly three-quarters stock-based weakness, after Gold Fields shares
+                                fell 21% in September amid the broader gold selloff.</div>
+                        </div>
+                        <div class="nl-deal">
+                            <div class="nl-deal-icon"><i class="fas fa-globe-asia"></i></div>
+                            <div class="nl-deal-text"><strong>Chinese Stakes Now Cover 54% of DRC Critical
+                                Mineral Projects</strong> — Up from under a third in 2023, per The Africa Report's
+                                critical minerals database. Glencore's DRC cobalt output fell 39% in Q1 2026 even as
+                                copper production rose 19%, as producers shift mix around the cobalt export quota.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Research Spotlight — Tenure Security Is Quietly the Biggest African Mining Story of the Month</div>
+                    <p class="nl-body-text">Barrick's 15-year North Mara renewal sits alongside three other tenure
+                        and ownership stories in flux this month — Ghana's unresolved Tarkwa renewal (nine-plus
+                        months and counting), the DRC's rising Chinese ownership concentration, and Gold Fields'
+                        own strategic repositioning via the Northern Star approach. Taken together, they say
+                        something about where capital allocation risk actually sits in African gold and critical
+                        minerals right now: not primarily in commodity prices, but in who controls the ground and
+                        for how long. North Mara's renewal is the clean positive case. Fifteen years of certainty, a
+                        joint-venture structure that has delivered consistent local economic benefit (96% Tanzanian
+                        workforce, $5.3bn injected since 2019), and a government willing to lock that structure in
+                        for the long term. The result: Barrick can now justify processing upgrades and complex-wide
+                        expansion that would have been far harder to underwrite against licences with an uncertain
+                        future. Tenure security is not just a compliance checkbox — it is the single input that most
+                        directly unlocks or withholds long-dated capital investment. Contrast that with the DRC,
+                        where the structural risk is different in kind. It is not that licences are insecure — it is that
+                        ownership itself is consolidating toward a single foreign power faster than most Western
+                        observers appreciated. A jump from under a third to 54% of projects carrying Chinese stakes
+                        in three years is a strategic shift with direct consequences for how exposed Western battery
+                        and EV supply chains are to decisions made in Beijing rather than purely market-driven
+                        ones. And Gold Fields' own position captures the tension from the corporate side. The
+                        throughline across all three stories: in 2026, security of tenure and clarity of ownership are
+                        proving at least as consequential for African mining capital allocation as the gold price
+                        itself.</p>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Financing Implications</div>
+                    <p class="nl-body-text">Three themes stand out this week. North Mara's 15-year renewal is a
+                        direct template for how AEMBank should weight tenure security in financing decisions — long
+                        operating certainty is what unlocks long-dated capital commitments like processing upgrades
+                        and complex-wide expansion, and comparable renewal clarity should be treated as a
+                        materially positive input when assessing production-growth financing elsewhere on the
+                        continent. The DRC's rising Chinese ownership concentration is a structural factor AEMBank
+                        should weigh directly in any cobalt or copper financing with DRC exposure, independent of
+                        the commodity price case, given its direct bearing on supply chain diversification goals for
+                        Western-aligned capital. And the still-unresolved Gold Fields-Northern Star situation,
+                        alongside Tarkwa, is a reminder to price jurisdictional and tenure uncertainty as distinct
+                        risk factors from commodity price volatility when assessing producer-level credit exposure.</p>
+                    <div class="nl-trend-list">
+                        <div class="nl-trend-item">Treat secured, long-dated tenure renewals like North Mara's as a materially positive input when assessing production-growth financing opportunities</div>
+                        <div class="nl-trend-item">Weight rising Chinese ownership concentration directly into DRC cobalt and copper financing risk assessments, independent of the underlying commodity price case</div>
+                        <div class="nl-trend-item">Price jurisdictional and tenure uncertainty — illustrated by the unresolved Tarkwa renewal and Gold Fields-Northern Star situation — as a distinct risk factor from commodity price volatility</div>
+                        <div class="nl-trend-item">Monitor the next US inflation print and Fed commentary for their read-through to gold-linked financing conditions, given prediction markets remain genuinely split on direction</div>
+                    </div>
+                </div>
+
+                <div class="nl-section">
+                    <div class="nl-section-title">Watch Next Week</div>
+                    <div class="nl-signals">
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>Gold's next move: prediction markets split 68/57 between a push to $4,300 and a dip back to $4,100. The next US inflation print and any further Fed commentary will likely settle the direction — Iran headlines remain a wildcard in either direction.</span></div>
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>Gold Fields-Northern Star — formal revised bid? Watch for confirmation of a cash-heavier offer from Gold Fields and Northern Star's response. A deal at this scale would be one of the largest gold M&A transactions in years and would reshape Gold Fields' African capital allocation.</span></div>
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>North Mara expansion decision: with 15-year tenure now secured, watch for a formal capital decision on processing upgrades or complex-wide expansion at North Mara-Bulyanhulu.</span></div>
+                        <div class="nl-signal"><i class="fas fa-circle"></i><span>DRC cobalt quota review: the 2026-27 quota framework (96,600 t/year cap) remains a live policy lever; any adjustment would ripple through global cobalt pricing given the DRC's more than 70% share of mined supply — now set against a backdrop of rapidly rising Chinese project ownership.</span></div>
+                    </div>
+                </div>
+
+            </div><!-- end week-oct5 -->
+
             <!-- ── WEEK: 21 – 25 September 2026 ── -->
             <!-- ── WEEK: 28 Sep – 2 Oct 2026 ── -->
-            <div class="nl-week-content active" id="week-sep28">
+            <div class="nl-week-content" id="week-sep28">
 
                 <div class="nl-overview">
                     <p>Gold had its sharpest weekly decline in months, falling roughly 6-7% to around
